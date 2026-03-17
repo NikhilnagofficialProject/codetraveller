@@ -1,0 +1,46 @@
+{
+  "c1": {
+    "effects": []
+  },
+
+  "c2": {
+    "effects": []
+  },
+
+  "c4": {
+    "effects": [
+      {
+        "type": "damage_bonus",
+        "scope": "burst",
+        "value": 0.40
+      },
+      {
+        "type": "stack_consumption_modifier",
+        "resource": "cycleOfEnlightenment",
+        "noConsumeChance": 0.30
+      }
+    ]
+  },
+
+  "c6": {
+    "effects": [
+      {
+        "type": "def_ignore",
+        "scope": "burst",
+        "value": 0.30
+      },
+      {
+        "type": "conditional_def_ignore",
+        "scope": "burst",
+        "form": "darkDecay",
+        "additionalValue": 0.40
+      },
+      {
+        "type": "def_shred",
+        "value": 0.30,
+        "duration": 6,
+        "trigger": "whiteFlame_hit"
+      }
+    ]
+  }
+}
