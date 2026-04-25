@@ -1,0 +1,77 @@
+{
+  "name": "Durin",
+  "element": "Pyro",
+  "weapon": "Sword",
+  "scaling": "ATK",
+
+  "talents": {
+    "normal": {
+      "type": "normal",
+      "hits": [
+        { "multiplier": 0.902394 },
+        { "multiplier": 0.81056 },
+        { "multiplier": 0.576453 },
+        { "multiplier": 0.576453 },
+        { "multiplier": 1.406495 }
+      ]
+    },
+
+    "charged": {
+      "type": "charged",
+      "multiplier": 2.2423,
+      "staminaCost": 20
+    },
+
+    "skill": {
+      "type": "skill",
+      "cooldown": 12,
+      "snapshot": false,
+      "hits": [
+        { "multiplier": 1.9008, "name": "Confirmation of Purity" },
+        { "multiplier": 1.30032, "name": "Denial of Darkness (1)" },
+        { "multiplier": 0.9576,  "name": "Denial of Darkness (2)" },
+        { "multiplier": 1.16352, "name": "Denial of Darkness (3)" }
+      ]
+    },
+
+    "burst": {
+      "type": "burst",
+      "energyCost": 70,
+      "cooldown": 18,
+      "duration": 20,
+      "snapshot": true,
+
+      "hits": [
+        { "multiplier": 1.9008 },
+        { "multiplier": 1.9008 },
+        { "multiplier": 1.9008 }
+      ],
+      "periodicHits": {
+        "interval": 1.5,
+        "element": "Pyro"
+      }
+    }
+  },
+
+  "mechanics": {
+    "cycleOfEnlightenment": {
+      "maxStacks": 20,
+      "duration": 20,
+      "consumption": {
+        "whiteFlame": {
+          "perHit": 1,
+          "flatATKMultiplier": 0.6
+        },
+        "darkDecay": {
+          "perHit": 2,
+          "flatATKMultiplier": 1.5
+        }
+      }
+    },
+
+    "primordialFusion": {
+      "atkScalingPer100": 0.03,
+      "maxBonus": 0.75
+    }
+  }
+}

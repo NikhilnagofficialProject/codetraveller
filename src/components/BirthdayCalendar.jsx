@@ -1,10 +1,15 @@
 import React, { useMemo } from 'react';
 import { useCalendarData } from '../hooks/useCalendarData';
 
+<<<<<<< HEAD
 const BirthdayCalendar = ({ assets, onViewAll }) => {
     const { events, loading } = useCalendarData();
     const cakeLogo = assets?.logos?.cake;
 
+=======
+const BirthdayCalendar = ({ onViewAll }) => {
+    const { events, loading } = useCalendarData();
+>>>>>>> 7bb20d4b4a205f015614370ff883869d6628d8eb
 
     const upcomingBirthdays = useMemo(() => {
         if (loading || Object.keys(events).length === 0) return [];
@@ -38,6 +43,7 @@ const BirthdayCalendar = ({ assets, onViewAll }) => {
     }, [events, loading]);
 
     return (
+<<<<<<< HEAD
         <div className="container mt-2 mb-4 animate-fade-in">
             <div 
                 className="rounded-4 p-3 d-flex flex-column flex-md-row align-items-center justify-content-between gap-3"
@@ -80,10 +86,41 @@ const BirthdayCalendar = ({ assets, onViewAll }) => {
                                     <div className="overflow-hidden d-none d-md-block" style={{ minWidth: '80px' }}>
                                         <div className="fw-bold text-white small text-truncate" style={{ fontSize: '0.85rem' }}>{bday.character}</div>
                                         <div className="text-primary fw-bold" style={{ fontSize: '0.75rem' }}>{bday.dateDisplay}</div>
+=======
+        <div className="card border-0 shadow-sm mt-3" style={{ backgroundColor: '#1b1b1b', color: '#fff' }}>
+            <div className="card-header border-0 bg-transparent fw-bold text-white d-flex justify-content-between align-items-center">
+                <span>Calendar</span>
+                <small
+                    className="text-secondary"
+                    style={{ cursor: 'pointer' }}
+                    onClick={onViewAll}
+                >
+                    View all &gt;
+                </small>
+            </div>
+            <div className="card-body pt-0">
+                <div className="list-group list-group-flush">
+                    {loading ? (
+                        <div className="text-center text-secondary py-3">Loading...</div>
+                    ) : (
+                        upcomingBirthdays.length > 0 ? (
+                            upcomingBirthdays.map((bday, idx) => (
+                                <div key={idx} className="list-group-item bg-transparent border-secondary text-white d-flex align-items-center px-0">
+                                    <img
+                                        src={bday.image}
+                                        alt={bday.character}
+                                        className="rounded-circle me-3 border border-1 border-secondary"
+                                        style={{ width: '40px', height: '40px', objectFit: 'cover' }}
+                                    />
+                                    <div className="flex-grow-1">
+                                        <div className="fw-bold text-truncate" style={{ fontSize: '0.9rem' }}>{bday.character}</div>
+                                        <div className="small text-secondary">{bday.dateDisplay}</div>
+>>>>>>> 7bb20d4b4a205f015614370ff883869d6628d8eb
                                     </div>
                                 </div>
                             ))
                         ) : (
+<<<<<<< HEAD
                             <div className="text-white-50 small">No upcoming festivals found.</div>
                         )
                     )}
@@ -107,6 +144,18 @@ const BirthdayCalendar = ({ assets, onViewAll }) => {
         </div>
     );
 
+=======
+                            <div className="text-center text-secondary small">No upcoming birthdays soon.</div>
+                        )
+                    )}
+                    <div className="text-center mt-3">
+                        <small className="text-secondary">Upcoming Birthdays</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    );
+>>>>>>> 7bb20d4b4a205f015614370ff883869d6628d8eb
 };
 
 export default BirthdayCalendar;

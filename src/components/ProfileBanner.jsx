@@ -1,14 +1,21 @@
 import React, { useState, useEffect } from 'react';
 
+<<<<<<< HEAD
 // Removed local banner imports
 
 const ProfileBanner = ({ assets, posts = [], refreshPosts, refreshing: dataRefreshing }) => {
 
+=======
+const bannerImages = import.meta.glob('../assets/Hoyolab/ACCOUNT BACKGROUND/*.{jpg,png,webp}', { eager: true });
+
+const ProfileBanner = ({ refreshPosts, refreshing: dataRefreshing }) => {
+>>>>>>> 7bb20d4b4a205f015614370ff883869d6628d8eb
     const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzTxPyUvbWHiVl7VjPbiAJXS3Hob9AH6l8yb7oqNWQvryZ-WRfGcog3zjL_44XkxnKN/exec';
 
     const [syncing, setSyncing] = useState(false);
     const [showUpdated, setShowUpdated] = useState(false);
     const [randomBanner, setRandomBanner] = useState('');
+<<<<<<< HEAD
     const [avatarLoaded, setAvatarLoaded] = useState(false);
     const [avatarFailed, setAvatarFailed] = useState(false);
 
@@ -29,6 +36,16 @@ const ProfileBanner = ({ assets, posts = [], refreshPosts, refreshing: dataRefre
             setRandomBanner(fallbackBanners[Math.floor(Math.random() * fallbackBanners.length)]);
         }
     }, [assets]);
+=======
+
+    useEffect(() => {
+        const keys = Object.keys(bannerImages);
+        if (keys.length > 0) {
+            const randomKey = keys[Math.floor(Math.random() * keys.length)];
+            setRandomBanner(bannerImages[randomKey]?.default || '');
+        }
+    }, []);
+>>>>>>> 7bb20d4b4a205f015614370ff883869d6628d8eb
 
     const handleSync = async () => {
         if (syncing || showUpdated || dataRefreshing) return;
@@ -105,6 +122,7 @@ const ProfileBanner = ({ assets, posts = [], refreshPosts, refreshing: dataRefre
             <div className="container h-100 position-relative z-index-2">
                 <div className="h-100 d-flex flex-column justify-content-end pb-4">
                     <div className="d-flex align-items-end gap-3 gap-md-4">
+<<<<<<< HEAD
                         <div
                             className="rounded-circle bg-dark border border-4 border-dark overflow-hidden shadow-lg"
                             style={{ width: 'clamp(80px, 15vw, 110px)', height: 'clamp(80px, 15vw, 110px)', flexShrink: 0, position: 'relative' }}
@@ -142,6 +160,12 @@ const ProfileBanner = ({ assets, posts = [], refreshPosts, refreshing: dataRefre
 
 
 
+=======
+                        <div className="rounded-circle bg-dark border border-4 border-dark overflow-hidden shadow-lg profile-banner-avatar-container" style={{ width: 'clamp(80px, 15vw, 110px)', height: 'clamp(80px, 15vw, 110px)', flexShrink: 0 }}>
+                            <img src="src/assets/Logo/codetraveller.png" alt="Avatar" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                        </div>
+
+>>>>>>> 7bb20d4b4a205f015614370ff883869d6628d8eb
                         <div className="flex-grow-1 mb-2">
                             <div className="d-flex justify-content-between align-items-center">
                                 <div>
@@ -179,6 +203,7 @@ const ProfileBanner = ({ assets, posts = [], refreshPosts, refreshing: dataRefre
                             </div>
 
                             <div className="d-flex gap-3 mt-3 profile-stats-row">
+<<<<<<< HEAD
                                 <div className="text-white small"><span className="fw-bold">{posts.length || 0}</span> <span className="opacity-75">Posts</span></div>
                                 <div className="text-white small">
                                     <span className="fw-bold">
@@ -193,6 +218,13 @@ const ProfileBanner = ({ assets, posts = [], refreshPosts, refreshing: dataRefre
                             </div>
 
 
+=======
+                                <div className="text-white small"><span className="fw-bold">98</span> <span className="opacity-75">Posts</span></div>
+                                <div className="text-white small"><span className="fw-bold">18</span> <span className="opacity-75">Following</span></div>
+                                <div className="text-white small"><span className="fw-bold">205</span> <span className="opacity-75">Followers</span></div>
+                                <div className="text-white small"><span className="fw-bold">737</span> <span className="opacity-75">Likes</span></div>
+                            </div>
+>>>>>>> 7bb20d4b4a205f015614370ff883869d6628d8eb
                         </div>
                     </div>
                 </div>
