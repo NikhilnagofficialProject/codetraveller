@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { parseWeapons, cleanArtifactLabelV2, getPlaceholder, parseMainStats, extractArtifactNote } from '../../utils/characterUtils.jsx';
-import AlternativeWeaponDropdown from './AlternativeWeaponDropdown';
+import { parseWeapons, cleanArtifactLabelV2, getPlaceholder, parseMainStats, extractArtifactNote, getElementColor } from '../../utils/characterUtils.jsx';
+import WeaponTree from './WeaponTree';
 
 const GearSection = ({ character, assets }) => {
     const navigate = useNavigate();
@@ -41,12 +41,12 @@ const GearSection = ({ character, assets }) => {
         <div className="layout-row row-2">
             <div className="card weapons-card main-col p-3">
                 <div className="small-title mb-3 text-center">WEAPONS</div>
-                <div className="weapons-content d-flex flex-column gap-3">
-                    <div className="main-weapons-grid d-flex flex-wrap justify-content-center gap-4">
-                        {mainWeapons.map((weapon, i) => (
-                            <AlternativeWeaponDropdown key={i} mainWeapon={weapon} assets={assets} />
-                        ))}
-                    </div>
+                <div className="weapons-content">
+                    <WeaponTree 
+                        weaponGroups={weaponGroups} 
+                        assets={assets} 
+                        themeColor={getElementColor(character.element)} 
+                    />
                 </div>
             </div>
 

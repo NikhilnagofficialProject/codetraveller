@@ -55,7 +55,7 @@ const Navbar = ({
                     </div>
 
                     <ul className="nav nav-pills d-none d-lg-flex gap-1">
-                        {['posts', 'builds', 'weapons', 'artifacts', 'collections', 'calendar'].map((tab) => (
+                        {['posts', 'builds', 'weapons', 'artifacts', 'collections', 'calendar', 'lab'].map((tab) => (
                             <li className="nav-item" key={tab}>
                                 <button
                                     className={`nav-link fw-bold border-0 px-3 py-2 ${activeTab === tab ? 'active bg-primary text-white shadow-sm' : 'text-white-50 hov-white'}`}
@@ -68,7 +68,7 @@ const Navbar = ({
                                         background: activeTab === tab ? undefined : 'transparent'
                                     }}
                                 >
-                                    {tab === 'builds' ? 'Genshin Builds' : tab}
+                                    {tab === 'builds' ? 'Genshin Builds' : tab === 'lab' ? 'Lab 🧪' : tab}
                                 </button>
                             </li>
                         ))}

@@ -31,13 +31,13 @@ const CharacterDetail = ({ character: initialCharacter, assets, onBack }) => {
             container.style.position = 'absolute';
             container.style.left = '-9999px';
             container.style.top = '0';
-            container.style.width = '1200px';
+            container.style.width = '1080px';
             document.body.appendChild(container);
 
             // Clone the sheet and set up for download mode
             const clone = original.cloneNode(true);
             clone.classList.add('downloading');
-            clone.style.width = '1200px';
+            clone.style.width = '1080px';
             container.appendChild(clone);
 
             // Wait for images to load in the clone

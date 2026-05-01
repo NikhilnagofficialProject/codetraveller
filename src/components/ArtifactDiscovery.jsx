@@ -70,40 +70,55 @@ const ArtifactDiscovery = ({ builds, assets }) => {
 
             {users.length > 0 ? (
                 <div className="character-grid row g-4">
-                    {users.map((b, i) => {
-                        const char = Array.isArray(b) ? b[0] : b;
-                        
-                        // Robust portrait lookup
-                        const getPortrait = (name) => {
-                            if (!name || !assets?.characters) return null;
-                            const clean = (n) => n.toLowerCase().trim();
-                            const search = clean(name);
-                            if (assets.characters[search]?.portrait) return assets.characters[search].portrait;
-                            const normalized = search.replace(/[\s\-_]+/g, '-').replace(/[^a-z0-9-]/g, '');
-                            if (assets.characters[normalized]?.portrait) return assets.characters[normalized].portrait;
-                            const simpleName = search.replace(/\s*\(.*?\)/g, '').trim();
-                            if (assets.characters[simpleName]?.portrait) return assets.characters[simpleName].portrait;
-                            return null;
-                        };
+                        {users.map((b, i) => {
+                            const char = Array.isArray(b) ? b[0] : b;
+                            
+                            // Robust portrait lookup
+                            const getPortrait = (name) => {
+                                if (!name || !assets?.characters) return null;
+                                const clean = (n) => n.toLowerCase().trim();
+                                const search = clean(name);
+                                if (assets.characters[search]?.portrait) return assets.characters[search].portrait;
+                                const normalized = search.replace(/[\s\-_]+/g, '-').replace(/[^a-z0-9-]/g, '');
+                                if (assets.characters[normalized]?.portrait) return assets.characters[normalized].portrait;
+                                const simpleName = search.replace(/\s*\(.*?\)/g, '').trim();
+                                if (assets.characters[simpleName]?.portrait) return assets.characters[simpleName].portrait;
+                                return null;
+                            };
 
-                        const portrait = getPortrait(char.name) || getPortrait(char.uname) || getPlaceholder(100, 100, char.name[0]);
-                        
-                        return (
-                            <div key={i} className="col-6 col-md-4 col-lg-3 col-xl-2 d-flex justify-content-center">
-                                <div 
-                                    className="character-card-mini p-2 text-center rounded-4 border border-white border-opacity-10 bg-dark bg-opacity-25 hover-lift pointer d-flex flex-column"
-                                    onClick={() => navigate(`/builds/${(char.uname || char.name).toLowerCase()}`)}
-                                    style={{ width: '100%', maxWidth: '160px', aspectRatio: '1/1.3' }}
-                                >
-                                    <div className="portrait-box mx-auto mb-2 rounded-circle overflow-hidden border border-2 border-white border-opacity-10 shadow-sm" style={{ width: '80px', height: '80px' }}>
-                                        <img src={portrait} alt={char.name} className="w-100 h-100 object-cover" />
+                            const portrait = getPortrait(char.name) || getPortrait(char.uname) || getPlaceholder(100, 100, char.name[0]);
+                            const elColor = (() => {
+                                const map = {
+                                    'pyro': '#ff7b00', 'hydro': '#00aaff', 'cryo': '#8be8ff',
+                                    'electro': '#9b51e0', 'anemo': '#7ef9ff', 'geo': '#ffd700',
+                                    'dendro': '#7fff00'
+                                };
+                                return map[char.element?.toLowerCase()] || '#ffffff';
+                            })();
+                            
+                            return (
+                                <div key={i} className="col-6 col-md-4 col-lg-3 col-xl-2 d-flex justify-content-center">
+                                    <div 
+                                        className="character-card-mini p-2 text-center rounded-4 border hover-lift pointer d-flex flex-column position-relative overflow-hidden"
+                                        onClick={() => navigate(`/builds/${(char.uname || char.name).toLowerCase()}`)}
+                                        style={{ 
+                                            width: '100%', maxWidth: '160px', aspectRatio: '1/1.3',
+                                            background: `linear-gradient(135deg, rgba(255,255,255,0.03) 0%, ${elColor}10 100%)`, 
+                                            borderColor: `${elColor}30`,
+                                            backdropFilter: 'blur(10px)'
+                                        }}
+                                    >
+                                        <div className="portrait-box mx-auto mb-2 rounded-circle overflow-hidden border border-2 shadow-sm position-relative" 
+                                            style={{ width: '80px', height: '80px', borderColor: `${elColor}50`, zIndex: 1 }}>
+                                            <div className="position-absolute inset-0 opacity-20" style={{ background: elColor, filter: 'blur(10px)', zIndex: 0 }} />
+                                            <img src={portrait} alt={char.name} className="w-100 h-100 object-cover position-relative" style={{ zIndex: 1 }} />
+                                        </div>
+                                        <div className="fw-bold text-white small text-truncate w-100">{char.name}</div>
+                                        <div className="fw-bold" style={{ fontSize: '10px', color: elColor, letterSpacing: '1px', textTransform: 'uppercase' }}>{char.role}</div>
                                     </div>
-                                    <div className="fw-bold small text-truncate w-100">{char.name}</div>
-                                    <div className="opacity-50" style={{ fontSize: '10px' }}>{char.role}</div>
                                 </div>
-                            </div>
-                        );
-                    })}
+                            );
+                        })}
                 </div>
             ) : (
                 <div className="text-center py-5 opacity-50">

@@ -1,4 +1,5 @@
 import React from 'react';
+import { toDirectDriveLink } from './driveUtils';
 
 export const getPlaceholder = (w, h, text) => {
     const svg = `
@@ -18,9 +19,9 @@ export const getWeaponImage = (weaponName, weaponsMap) => {
     // Check for object or string entry
     const getUrl = (val) => typeof val === 'string' ? val : val?.image;
     
-    if (weaponsMap?.[lower]) return getUrl(weaponsMap[lower]);
-    const clean = lower.replace(/^\d+\.\s*/, '').split('(')[0].trim();
-    return getUrl(weaponsMap?.[clean]) || getPlaceholder(150, 150, 'Weapon');
+    if (weaponsMap?.[lower]) return toDirectDriveLink(getUrl(weaponsMap[lower]));
+    const clean = lower.replace(/^\d+\.\s*/, '').replace(/\b[rR][1-5]\b/gi, '').split('(')[0].split('[')[0].trim();
+    return toDirectDriveLink(getUrl(weaponsMap?.[clean])) || getPlaceholder(150, 150, 'Weapon');
 };
 
 export const parseWeapons = (rawText) => {
@@ -33,9 +34,10 @@ export const parseWeapons = (rawText) => {
         const trimmed = line.trim();
         if (!trimmed) return;
         
-        // Extract rarity e.g. (5) or (5*) -> 5★
+        // Extract rarity e.g. (5) or (5*) -> ★★★★★
         const rarityMatch = trimmed.match(/\((\d+)\*?\)/);
-        const rarity = rarityMatch ? `${rarityMatch[1]}★` : '';
+        const rarityNum = rarityMatch ? parseInt(rarityMatch[1]) : 0;
+        const rarity = rarityNum > 0 ? '★'.repeat(rarityNum) : '';
         
         // Extract tags [Best], [F2P], etc.
         const tags = trimmed.match(/\[(.*?)\]/g)?.map(t => t.replace(/[\[\]]/g, '')) || [];

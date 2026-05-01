@@ -13,12 +13,12 @@ export const toDirectDriveLink = (url) => {
     if (url.includes('lh3.googleusercontent.com')) return url;
 
     // Not a drive link — return as-is (e.g. external image URLs)
-    if (!url.includes('drive.google.com')) return url;
+    if (!url.includes('drive.google.com') && !url.includes('drive.usercontent.google.com')) return url;
 
     let id = '';
 
-    // Case 1: /file/d/ID/...
-    const fileDMatch = url.match(/\/file\/d\/([^/?#]+)/);
+    // Case 1: /file/d/ID/... or /d/ID/...
+    const fileDMatch = url.match(/\/(?:file\/)?d\/([^/?#]+)/);
     if (fileDMatch) {
         id = fileDMatch[1];
     } else {
@@ -30,8 +30,7 @@ export const toDirectDriveLink = (url) => {
     }
 
     if (id) {
-        // Using images.weserv.nl proxy to bypass Google Drive's 429 rate limits and CORS restrictions.
-        // Adding =s1000 ensures the image is served at a good quality and can help avoid some 500 errors.
+        //bypass Google Drive's 429 rate limits and CORS restrictions.
         return `https://images.weserv.nl/?url=https://lh3.googleusercontent.com/d/${id}=s1000`;
     }
 

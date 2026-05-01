@@ -2,20 +2,17 @@ import React from 'react';
 import { getTalentIcons } from '../../utils/characterUtils.jsx';
 
 const SummarySection = ({ character, assets }) => {
-    // Robust lookup for weapon icon
+    // lookup for weapon icon
     const getWeaponIcon = () => {
         if (!assets?.weaponTypes || !character.weaponType) return null;
         const type = character.weaponType.toLowerCase().trim();
-        
         // 1. Direct match
         if (assets.weaponTypes[type]) return assets.weaponTypes[type];
-        
         // 2. Singular/Plural variants
         const variants = [type, type + 's', type.replace(/s$/, ''), type.replace(/s$/, '') + 's'];
         for (const v of variants) {
             if (assets.weaponTypes[v]) return assets.weaponTypes[v];
         }
-        
         // 3. Partial match (last resort)
         const keys = Object.keys(assets.weaponTypes);
         const find = keys.find(k => k.includes(type) || type.includes(k));
@@ -23,7 +20,7 @@ const SummarySection = ({ character, assets }) => {
 
         return null;
     };
-    
+
     const weaponIcon = getWeaponIcon();
 
     // Helper to parse talent priority into items with rank
@@ -49,7 +46,7 @@ const SummarySection = ({ character, assets }) => {
                         <div className="label">Playstyle:</div>
                         <div className="value fw-bold text-primary">{character.role || 'General Build'}</div>
                     </div>
-                    
+
                     <div className="description-text small opacity-75 mb-3" style={{ whiteSpace: 'pre-line' }}>
                         {character.description?.split('\n').slice(0, 4).join('\n')}
                     </div>

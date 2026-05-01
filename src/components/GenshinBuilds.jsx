@@ -77,13 +77,14 @@ const GenshinBuilds = ({ builds, assets, loading, error, onCharacterClick }) => 
                             style={{
                                 cursor: 'pointer',
                                 background: '#1f2937',
-                                borderRadius: '12px',
+                                borderRadius: '16px',
                                 transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
                                 position: 'relative',
                                 aspectRatio: '3/4',
-                                border: '1px solid rgba(255,255,255,0.05)',
+                                border: `1px solid ${getElementColor(build.element)}40`,
                                 width: '100%',
-                                maxWidth: '200px'
+                                maxWidth: '200px',
+                                background: `linear-gradient(135deg, #151725 0%, ${getElementColor(build.element)}15 100%)`
                             }}
                         >
                             <div style={{ position: 'absolute', inset: 0 }}>
@@ -93,13 +94,16 @@ const GenshinBuilds = ({ builds, assets, loading, error, onCharacterClick }) => 
                                     style={{ width: '100%', height: '100%', objectFit: 'cover', opacity: 0.9 }}
                                     loading="lazy"
                                 />
-                                <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(0,0,0,0.9) 10%, transparent 70%)' }} />
+                                <div style={{ 
+                                    position: 'absolute', inset: 0, 
+                                    background: `linear-gradient(to top, rgba(0,0,0,0.95) 15%, transparent 70%), linear-gradient(to top right, ${getElementColor(build.element)}20, transparent)` 
+                                }} />
                             </div>
 
                             <div className="card-body d-flex flex-column justify-content-end p-3" style={{ position: 'relative', zIndex: 2 }}>
                                 <div className="d-flex align-items-center gap-2 mb-1">
-                                    <span style={{ width: '8px', height: '8px', borderRadius: '50%', backgroundColor: getElementColor(build.element) }} />
-                                    <span className="text-uppercase text-white-50" style={{ fontSize: '10px', letterSpacing: '1px' }}>{build.element}</span>
+                                    <span style={{ width: '8px', height: '8px', borderRadius: '50%', backgroundColor: getElementColor(build.element), boxShadow: `0 0 8px ${getElementColor(build.element)}` }} />
+                                    <span className="text-uppercase fw-bold" style={{ fontSize: '10px', letterSpacing: '1.2px', color: getElementColor(build.element) }}>{build.element}</span>
                                 </div>
                                 <h5 className="card-title text-white fw-bold mb-1" style={{ fontSize: '1rem', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>{build.name}</h5>
                                 <div className="text-warning small" style={{ letterSpacing: '2px' }}>

@@ -1,7 +1,7 @@
 import React from 'react';
 
 const MobileNav = ({ isMenuOpen, activeTab, handleTabChange }) => {
-    const tabs = ['posts', 'builds', 'weapons', 'collections', 'calendar'];
+    const tabs = ['posts', 'builds', 'weapons', 'collections', 'calendar', 'lab'];
 
     return (
         <div className={`mobile-nav-overlay ${isMenuOpen ? 'active' : ''}`}>
@@ -13,7 +13,9 @@ const MobileNav = ({ isMenuOpen, activeTab, handleTabChange }) => {
                             className={`mobile-nav-item ${activeTab === tab ? 'active' : ''}`}
                             onClick={() => handleTabChange(tab)}
                         >
-                            <span className="tab-label">{tab === 'builds' ? 'GENSHIN BUILDS' : tab.toUpperCase()}</span>
+                            <span className="tab-label">
+                                {tab === 'builds' ? 'GENSHIN BUILDS' : tab === 'lab' ? 'LAB 🧪' : tab.toUpperCase()}
+                            </span>
                             <span className="tab-arrow">→</span>
                         </button>
                     ))}

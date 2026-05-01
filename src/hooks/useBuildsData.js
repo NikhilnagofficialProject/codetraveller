@@ -84,6 +84,7 @@ export const useBuildsData = () => {
                     artifactShortNames: {},
                     regions: {},
                     stats: {},
+                    sourceIcons: {},
                     weaponTypes: {},
                     wallpapers: {},
                     logo: '',
@@ -107,16 +108,11 @@ export const useBuildsData = () => {
                             if (uArtifact) {
                                 assetsMap.artifacts[uArtifact.toLowerCase().trim()] = direct;
                                 assetsMap.artifactShortNames[clean] = uArtifact;
-                                // Add hyphenated and super-clean versions for robust lookup
                                 assetsMap.artifactShortNames[clean.replace(/\s+/g, '-')] = uArtifact;
                                 assetsMap.artifactShortNames[clean.replace(/['’]s/g, '').replace(/[^a-z0-9]/g, '')] = uArtifact;
-                                
-                                // Also handle the version processed by cleanArtifactLabelV2
                                 const superClean = artifactName.replace(/\s*\(.*?\)/g, '').replace(/\s*\[.*?\]/g, '').toLowerCase().trim();
                                 assetsMap.artifactShortNames[superClean] = uArtifact;
                             }
-                            
-                            // Handle aliases for cleaner matching
                             if (clean.includes("gladiator's")) assetsMap.artifacts["gladiator's"] = direct;
                             if (clean.includes("wanderer's troupe")) assetsMap.artifacts["wanderer's"] = direct;
                             if (clean.includes("emblem of severed fate")) assetsMap.artifacts["emblem"] = direct;
@@ -124,6 +120,13 @@ export const useBuildsData = () => {
                             if (clean.includes("heart of depth")) assetsMap.artifacts["hydro set"] = direct;
                             if (clean.includes("viridescent venerer")) assetsMap.artifacts["anemo set"] = direct;
                         }
+                    }
+
+                    // Source Icons (Master List from Assets tab)
+                    const sourceName = getRowVal(row, ['Source Name', 'SourceName', 'Source', 'Obtain Name', 'ObtainName']);
+                    if (sourceName) {
+                        const img = getRowVal(row, ['Source Icon', 'Source-Icon', 'Source-Link', 'SourceLink', 'SourceImage']);
+                        if (img) assetsMap.sourceIcons[sourceName.toLowerCase().trim()] = toDirectDriveLink(img);
                     }
 
                     // Region icons
@@ -174,28 +177,24 @@ export const useBuildsData = () => {
                         assetsMap.avatar = toDirectDriveLink(avatarVal);
                     }
 
-                    // Named Logos (Critical for the top banner)
+                    // Named Logos
                     const rawLogoName = getRowVal(row, ['Logo name', 'LogoName', 'Logo-Name', 'Logo']);
                     const rawLogoUrl = getRowVal(row, ['Logo', 'Logo Link', 'Logo-Link', 'LogoUrl', 'Image Logo']);
-                    
                     if (rawLogoName && rawLogoUrl) {
                         const cleanName = rawLogoName.toLowerCase().trim();
                         const directUrl = toDirectDriveLink(rawLogoUrl);
                         assetsMap.logos[cleanName] = directUrl;
-
-                        // Specifically look for 'profile' or similar terms for the banner
                         if (['profile', 'pfp', 'banner-logo', 'logo'].includes(cleanName)) {
                             assetsMap.logo = directUrl;
                             if (!assetsMap.avatar) assetsMap.avatar = directUrl;
                         }
                     }
 
-                    // Profile stats (following/followers/likes)
+                    // Profile stats
                     const parseNum = (v) => parseInt(String(v || '').replace(/,/g, ''), 10) || 0;
                     const following = getRowVal(row, ['Following', 'following']);
                     const followers = getRowVal(row, ['Followers', 'followers']);
                     const likes = getRowVal(row, ['Likes', 'likes', 'TotalLikes', 'Total Likes']);
-
                     if (following) assetsMap.profile.following = parseNum(following);
                     if (followers) assetsMap.profile.followers = parseNum(followers);
                     if (likes) assetsMap.profile.likes = parseNum(likes);
@@ -207,6 +206,13 @@ export const useBuildsData = () => {
                     const rawName = getRowVal(row, ['Weapon', 'weapon', 'Name', 'Weapon Name']);
                     if (rawName) {
                         const name = rawName.toLowerCase().trim();
+                        const source = getRowVal(row, ['Source', 'source']);
+                        const sourceIcon = getRowVal(row, ['Source-LInk', 'Source Link', 'SourceIcon']);
+                        
+                        if (source && sourceIcon) {
+                            assetsMap.sourceIcons[source.toLowerCase().trim()] = toDirectDriveLink(sourceIcon);
+                        }
+
                         weaponsMap[name] = {
                             name: rawName,
                             image: toDirectDriveLink(getRowVal(row, ['Weapon image', 'weapon image', 'Image', 'weapon-image'])),
@@ -217,7 +223,9 @@ export const useBuildsData = () => {
                             passiveName: getRowVal(row, ['Passive', 'Ability Name', 'Passive Name']),
                             description: getRowVal(row, ['Description', 'Ability Description', 'Passive Description']),
                             type: getRowVal(row, ['Weapon type', 'Category', 'Type']),
-                            howToGet: getRowVal(row, ['How to get', 'Source', 'Obtain'])
+                            howToGet: getRowVal(row, ['How to get', 'Source', 'Obtain']),
+                            sourceType: source,
+                            sourceIcon: sourceIcon ? toDirectDriveLink(sourceIcon) : null
                         };
                     }
                 });
@@ -240,6 +248,7 @@ export const useBuildsData = () => {
                             UName: uname || existing.UName || name.replace(/\s+/g, '-'),
                             CID: cid || existing.CID,
                             portrait: toDirectDriveLink(getRowVal(row, ['Portrait', 'portrait'])) || existing.portrait,
+                            splashArt: toDirectDriveLink(getRowVal(row, ['Splash Art', 'SplashArt', 'Splash-Art'])) || existing.splashArt,
                             namecard: toDirectDriveLink(getRowVal(row, ['Name Cards', 'Namecard', 'namecard'])) || existing.namecard,
                             Region: getRowVal(row, ['Region', 'region']) || existing.Region,
                             'Weapon Type': getRowVal(row, ['Weapon Type', 'weapon type', 'WeaponType']) || existing['Weapon Type'],
@@ -309,6 +318,7 @@ export const useBuildsData = () => {
                         teams: getVal(['Teams', 'Team', 'teams']) || '',
                         portrait: characterData.portrait || '',
                         namecard: characterData.namecard || '',
+                        splashArt: characterData.splashArt || '',
                         region: characterData.Region || characterData.region || 'Unknown',
                         weaponType: characterData['Weapon Type'] || characterData['weapon type'] || 'Unknown',
                         uname: characterData.UName || buildUname || rawName.replace(/\s+/g, '-'),

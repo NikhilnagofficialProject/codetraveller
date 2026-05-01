@@ -19,6 +19,7 @@ import ArtifactDiscovery from './components/ArtifactDiscovery';
 import WeaponDiscovery from './components/WeaponDiscovery';
 import WeaponsPage from './components/WeaponsPage';
 import ArtifactsPage from './components/ArtifactsPage';
+import Lab from './components/Lab';
 
 // Hooks
 import { usePostsData } from './hooks/usePostsData';
@@ -128,6 +129,7 @@ function App() {
                             <Route path="/weapons/:weaponName" element={<WeaponDiscovery builds={builds} assets={assets} />} />
                             <Route path="/weapons" element={<WeaponsPage assets={assets} />} />
                             <Route path="/artifacts" element={<ArtifactsPage assets={assets} />} />
+                            <Route path="/lab" element={<Lab builds={builds} assets={assets} />} />
                         </Routes>
                     </div>
                 </div>
