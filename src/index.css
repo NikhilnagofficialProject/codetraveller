@@ -5,11 +5,8 @@
 
 body {
   font-family: var(--font-family-base);
-<<<<<<< HEAD
   background-color: #0c0f1d;
   color: #e9ecef;
-=======
->>>>>>> 7bb20d4b4a205f015614370ff883869d6628d8eb
 }
 
 /* PostCard Responsive Styles */
@@ -18,20 +15,14 @@ body {
   color: #fff;
   overflow: hidden;
   max-height: 80vh;
-<<<<<<< HEAD
-=======
-  /* Desktop default */
->>>>>>> 7bb20d4b4a205f015614370ff883869d6628d8eb
+
   transition: all 0.3s ease;
 }
 
 .post-card-image {
   width: 100%;
   height: 50vh;
-<<<<<<< HEAD
-=======
-  /* Relative to container, but effectively controlled by max-height of container */
->>>>>>> 7bb20d4b4a205f015614370ff883869d6628d8eb
+
   object-fit: contain;
   background-color: #000;
   display: block;
@@ -41,28 +32,14 @@ body {
 @media (max-width: 768px) {
   .post-card-container {
     max-height: none;
-<<<<<<< HEAD
     height: auto;
   }
   .post-card-image {
     height: 300px;
-=======
-    /* Let it grow naturally on mobile */
-    height: auto;
-  }
-
-  .post-card-image {
-    height: 300px;
-    /* Fixed height for mobile to avoid taking up too much vertical space */
-    object-fit: cover;
-    /* Back to cover for mobile to avoid small images, or stick to contain if critical */
-    /* User preferred contain generally, so let's stick to contain but maybe adjustment */
->>>>>>> 7bb20d4b4a205f015614370ff883869d6628d8eb
     object-fit: contain;
   }
 }
 
-<<<<<<< HEAD
 /* ProfileBanner Styles */
 .profile-banner-card { background-color: #1b1b1b; overflow: hidden; }
 .profile-banner-hero { height: 150px; background-size: cover; background-position: center; position: relative; }
@@ -168,79 +145,3 @@ body {
 .hov-white:hover { color: white !important; }
 .hide-scrollbar::-webkit-scrollbar { display: none; }
 .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
-=======
-/* ProfileBanner Responsive Styles */
-.profile-banner-card {
-  background-color: #1b1b1b;
-  overflow: hidden;
-}
-
-.profile-banner-hero {
-  height: 150px;
-  background-size: cover;
-  background-position: center;
-  position: relative;
-}
-
-.profile-banner-avatar-container {
-  width: 100px;
-  height: 100px;
-  margin-top: -40px;
-}
-
-.profile-banner-name {
-  font-size: 1.75rem;
-  /* ~28px */
-}
-
-.profile-banner-bio {
-  font-size: 0.875rem;
-  /* ~14px */
-}
-
-.profile-stats-val {
-  font-size: 1.25rem;
-}
-
-.profile-stats-label {
-  font-size: 0.875rem;
-}
-
-/* Mobile Tweaks for ProfileBanner */
-@media (max-width: 576px) {
-  .profile-banner-avatar-container {
-    width: 80px;
-    height: 80px;
-    margin-top: -30px;
-  }
-
-  .profile-banner-name {
-    font-size: 1.5rem;
-  }
-
-  .profile-banner-bio {
-    font-size: 0.8rem;
-    line-height: 1.2;
-  }
-
-  .profile-sync-btn span {
-    display: none;
-    /* Hide text on mobile */
-  }
-
-  .profile-sync-btn {
-    padding-left: 0.75rem !important;
-    padding-right: 0.75rem !important;
-  }
-
-  /* Adjust stats spacing */
-  .profile-stats-row {
-    gap: 1rem !important;
-    justify-content: space-between;
-  }
-
-  .profile-stats-val {
-    font-size: 1.1rem;
-  }
-}
->>>>>>> 7bb20d4b4a205f015614370ff883869d6628d8eb

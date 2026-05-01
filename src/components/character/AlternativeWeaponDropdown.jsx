@@ -53,7 +53,7 @@ const AlternativeWeaponDropdown = ({ mainWeapon, assets }) => {
                     </div>
                 )}
             </div>
-            <div className="weapon-name fw-bold truncate" style={{ fontSize: '10px', whiteSpace: 'nowrap' }}>{w.name} {w.rarity}</div>
+            <div className="weapon-name fw-bold" style={{ fontSize: '10px', lineHeight: '1.2', marginTop: '4px' }}>{w.name} {w.rarity}</div>
             {w.note && <div className="artifact-note mx-auto" style={{ fontSize: '7px', opacity: 0.6 }}>{w.note}</div>}
         </div>
     );
@@ -87,7 +87,7 @@ const AlternativeWeaponDropdown = ({ mainWeapon, assets }) => {
                                     <img src={getWeaponImage(alt.name, assets?.weaponsMap)} alt="" className="w-100 h-100 object-contain" crossOrigin="anonymous" />
                                 </div>
                                 <div className="alt-item-info flex-grow-1 d-flex flex-column justify-content-center">
-                                    <div className="alt-item-name fw-bold lh-1 mb-1" style={{ fontSize: '10px' }}>
+                                    <div className="alt-item-name weapon-name fw-bold mb-1" style={{ fontSize: '10px' }}>
                                         {alt.name} <span className="opacity-75" style={{ fontSize: '9px' }}>{alt.rarity}</span>
                                     </div>
                                     {alt.category && (
@@ -113,7 +113,7 @@ const AlternativeWeaponDropdown = ({ mainWeapon, assets }) => {
                             <img src={getWeaponImage(alt.name, assets?.weaponsMap)} alt="" className="w-100 h-100 object-contain" crossOrigin="anonymous" />
                         </div>
                         <div className="alt-item-info overflow-hidden">
-                            <div className="alt-item-name fw-bold truncate" style={{ fontSize: '8px', whiteSpace: 'nowrap' }}>{alt.name}</div>
+                            <div className="alt-item-name weapon-name fw-bold" style={{ fontSize: '8px' }}>{alt.name}</div>
                             <div className="alt-item-tag opacity-50" style={{ fontSize: '6px' }}>{alt.rarity} {alt.category}</div>
                         </div>
                     </div>
