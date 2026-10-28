@@ -24,7 +24,18 @@ const ProfileBanner = ({ assets, posts = [], refreshPosts, refreshing: dataRefre
         const wallpaperKeys = Object.keys(assets?.wallpapers || {});
         if (wallpaperKeys.length > 0) {
             const randomMonth = wallpaperKeys[Math.floor(Math.random() * wallpaperKeys.length)];
-            setRandomBanner(assets.wallpapers[randomMonth].windows);
+            let bannerUrl = assets.wallpapers[randomMonth]?.windows;
+
+            // Apply normalization/fixes for the banner too
+            if (randomMonth === 'jun' && bannerUrl && bannerUrl.includes('Jun.webp')) {
+                bannerUrl = bannerUrl.replace('Jun.webp', 'June.webp');
+            } else if (randomMonth === 'jul' && bannerUrl && bannerUrl.includes('Jul.webp')) {
+                bannerUrl = bannerUrl.replace('Jul.webp', 'July.webp');
+            } else if (randomMonth === 'nov' && (!bannerUrl || bannerUrl.includes('Nov.webp'))) {
+                bannerUrl = 'https://images.weserv.nl/?url=https%3A%2F%2Flh3.googleusercontent.com%2Fd%2F1z1TzZrYAXr4sqWMf-rHpcdptI-xDr7mi%3Ds0&ssl=1&q=100';
+            }
+
+            setRandomBanner(bannerUrl);
         } else {
             setRandomBanner(fallbackBanners[Math.floor(Math.random() * fallbackBanners.length)]);
         }

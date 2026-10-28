@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { toDirectDriveLink } from '../utils/driveUtils';
+import { getImageUrl } from '../utils/driveUtils';
 import Papa from 'papaparse';
 
 export const useCalendarData = () => {
@@ -37,9 +37,16 @@ export const useCalendarData = () => {
                     if (name && birthStr && !uname.toLowerCase().includes('traveler')) {
                         const dateParts = birthStr.trim().split(/\s+/);
                         if (dateParts.length >= 2) {
-                            const monthName = dateParts[0].toLowerCase().trim();
-                            const day = parseInt(dateParts[1]);
-                            const monthIndex = MONTH_MAP[monthName];
+                            let monthName = dateParts[0].toLowerCase().trim();
+                            let day = parseInt(dateParts[1]);
+                            let monthIndex = MONTH_MAP[monthName];
+
+                            if (monthIndex === undefined) {
+                                // Try the other way around: Day Month (e.g. "12 January")
+                                monthName = dateParts[1]?.toLowerCase().trim();
+                                day = parseInt(dateParts[0]);
+                                monthIndex = MONTH_MAP[monthName];
+                            }
 
                             if (monthIndex !== undefined && !isNaN(day)) {
                                 const key = `${monthIndex}-${day}`;
@@ -50,7 +57,7 @@ export const useCalendarData = () => {
 
                                 parsedEvents[key].push({
                                     character: name,
-                                    image: toDirectDriveLink(portraitUrl) || `https://ui-avatars.com/api/?name=${name}&background=random&color=fff`,
+                                    image: getImageUrl(portraitUrl) || `https://ui-avatars.com/api/?name=${name}&background=random&color=fff`,
                                     dateDisplay: `${monthIndex + 1}/${day}`,
                                     monthIndex,
                                     day

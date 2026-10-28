@@ -64,7 +64,7 @@ const Calendar = ({ assets }) => {
         for (let day = 1; day <= daysInMonth; day++) {
             const eventKey = `${currentDate.getMonth()}-${day}`;
             const dayEvents = events[eventKey] || [];
-            const isToday = day === today.getDate() && currentDate.getMonth() === today.getMonth();
+            const isToday = day === today.getDate() && currentDate.getMonth() === today.getMonth() && currentDate.getFullYear() === today.getFullYear();
 
             days.push(
                 <div key={day} className={`calendar-day p-1 position-relative ${isToday && !isMinimal ? 'bg-primary bg-opacity-10' : ''}`} style={{

@@ -198,17 +198,19 @@ function CharacterDetail_Wrapper({ builds, assets, loading, onBack }) {
         return null;
     };
 
-    const character = builds.find(b => {
+    const matchingBuilds = builds.filter(b => {
         const charData = Array.isArray(b) ? b[0] : b;
         return (charData.uname || charData.name).toLowerCase() === name.toLowerCase();
     });
 
-    const mergedCharacter = character ? {
-        ...character,
-        baseStats: getBaseStats(character.name)
-    } : null;
+    if (matchingBuilds.length === 0) return <Navigate to="/builds" />;
+
+    const mergedBuilds = matchingBuilds.map(b => ({
+        ...b,
+        baseStats: getBaseStats(b.name)
+    }));
     
-    return mergedCharacter ? <CharacterDetail character={mergedCharacter} assets={assets} onBack={onBack} /> : <Navigate to="/builds" />;
+    return <CharacterDetail character={mergedBuilds} assets={assets} onBack={onBack} />;
 }
 
 

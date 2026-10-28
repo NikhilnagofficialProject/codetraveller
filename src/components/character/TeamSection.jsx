@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { parseTeams, getElementColor } from '../../utils/characterUtils.jsx';
+import { parseTeams, getElementColor, getPlaceholder } from '../../utils/characterUtils.jsx';
 
 const TeamSection = ({ character, assets }) => {
     const navigate = useNavigate();
@@ -88,7 +88,7 @@ const TeamSection = ({ character, assets }) => {
                                                             title={`View ${m} build`}
                                                             onClick={() => handleCharClick(m)}
                                                         >
-                                                            <img src={getPortrait(m)} alt={m} className="w-100 h-100 object-cover" />
+                                                            <img src={getPortrait(m) || getPlaceholder(42, 42, m[0])} alt={m} className="w-100 h-100 object-cover" />
                                                         </div>
                                                     ))}
                                                 </div>

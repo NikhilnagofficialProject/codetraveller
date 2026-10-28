@@ -9,8 +9,8 @@ const BirthdayCalendar = ({ assets, onViewAll }) => {
         if (loading || Object.keys(events).length === 0) return [];
 
         const today = new Date();
-        const currentMonth = today.getMonth();
-        const currentDay = today.getDate();
+        const currentYear = today.getFullYear();
+        const todayZero = new Date(currentYear, today.getMonth(), today.getDate());
 
         let upcoming = [];
 
@@ -18,20 +18,15 @@ const BirthdayCalendar = ({ assets, onViewAll }) => {
             const [m, d] = key.split('-').map(Number);
 
             dayEvents.forEach(event => {
-                upcoming.push({ ...event, m, d });
+                let nextDate = new Date(currentYear, m, d);
+                if (nextDate < todayZero) {
+                    nextDate = new Date(currentYear + 1, m, d);
+                }
+                upcoming.push({ ...event, m, d, nextDate });
             });
         });
 
-        upcoming = upcoming.filter(e => {
-            if (e.m > currentMonth) return true;
-            if (e.m === currentMonth && e.d >= currentDay) return true;
-            return false;
-        });
-
-        upcoming.sort((a, b) => {
-            if (a.m !== b.m) return a.m - b.m;
-            return a.d - b.d;
-        });
+        upcoming.sort((a, b) => a.nextDate - b.nextDate);
 
         return upcoming.slice(0, 3);
     }, [events, loading]);

@@ -120,7 +120,7 @@ const SummarySection = ({ character, assets }) => {
                             { label: 'Base DEF', value: character.baseStats.baseDef, icon: 'def' },
                             { label: character.baseStats.ascensionStat, value: character.baseStats.ascensionValue, icon: character.baseStats.ascensionStat?.toLowerCase() }
                         ].map((s, idx) => {
-                            const iconUrl = assets?.stats?.[s.icon] || assets?.stats?.[s.icon.replace(' base', '')] || assets?.stats?.[s.icon.replace(' bonus', '')];
+                            const iconUrl = assets?.stats?.[s.icon] || assets?.stats?.[s.icon?.replace(' base', '')] || assets?.stats?.[s.icon?.replace(' bonus', '')];
                             return (
                                 <div key={idx} className="d-flex align-items-center justify-content-between border-bottom border-white border-opacity-10 pb-1">
                                     <div className="d-flex align-items-center gap-2">

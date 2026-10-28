@@ -1,11 +1,12 @@
 import { useState, useEffect } from 'react';
 import Papa from 'papaparse';
-import { toDirectDriveLink } from '../utils/driveUtils';
+import { getImageUrl } from '../utils/driveUtils';
 import { sanitizeString } from '../utils/securityUtils';
 
-const SHEET_ID = '2PACX-1vTRe7S2uLO8jcpgYi-teDs6vdf7a6r6oZk-NXJTITK3z5-Ss0RukmknJCygBXOMdoWHOd7c-K7ITkWW';
+const SHEET_ID = import.meta.env.VITE_SHEET_ID || '2PACX-1vTRe7S2uLO8jcpgYi-teDs6vdf7a6r6oZk-NXJTITK3z5-Ss0RukmknJCygBXOMdoWHOd7c-K7ITkWW';
 
-const getSheetUrl = (gid) => `https://docs.google.com/spreadsheets/d/e/${SHEET_ID}/pub?gid=${gid}&single=true&output=csv`;
+const getSheetUrl = (gid) =>
+    `https://docs.google.com/spreadsheets/d/e/${SHEET_ID}/pub?gid=${gid}&single=true&output=csv`;
 
 const GIDS = {
     BUILDS: '1203618170',
@@ -16,31 +17,40 @@ const GIDS = {
     HOYOLAB: '0'
 };
 
+const CACHE_KEY = 'codetraveller_builds_cache';
+const CACHE_TIME = 10 * 60 * 1000; // 10 minutes
+
 export const useBuildsData = () => {
     const [builds, setBuilds] = useState([]);
-    const [assets, setAssets] = useState({ artifacts: {}, weapons: {}, regions: {}, stats: {}, weaponTypes: {}, wallpapers: {}, weaponsMap: {}, characters: {}, logo: '', avatar: '' });
+    const [assets, setAssets] = useState({
+        artifacts: {}, artifactShortNames: {}, regions: {}, stats: {},
+        sourceIcons: {}, weaponTypes: {}, wallpapers: {}, weaponsMap: {},
+        characters: {}, logo: '', avatar: '', logos: {}, artifactTypes: {},
+        roleIcons: {}, profile: { following: 0, followers: 0, likes: 0 }
+    });
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
 
     useEffect(() => {
         const fetchData = async () => {
-            // Caching logic
-            const CACHE_KEY = 'codetraveller_builds_cache';
-            const CACHE_TIME = 10 * 60 * 1000; // 10 minutes
-            const cached = localStorage.getItem(CACHE_KEY);
 
-            if (cached) {
-                const { builds: cachedBuilds, assets: cachedAssets, timestamp } = JSON.parse(cached);
-                if (Date.now() - timestamp < CACHE_TIME) {
-                    console.log('[Cache] Loading builds from localStorage');
-                    setBuilds(cachedBuilds);
-                    setAssets(cachedAssets);
-                    setLoading(false);
-                    return;
-                }
-            }
-
+            // ✅ FIXED: entire function wrapped in try-catch
+            // Previously JSON.parse(cached) was outside try-catch and could
+            // crash silently — leaving loading=true forever with no error shown.
             try {
+                // --- Cache check ---
+                const cached = localStorage.getItem(CACHE_KEY);
+                if (cached) {
+                    const { builds: cachedBuilds, assets: cachedAssets, timestamp } = JSON.parse(cached);
+                    if (Date.now() - timestamp < CACHE_TIME) {
+                        setBuilds(cachedBuilds);
+                        setAssets(cachedAssets);
+                        setLoading(false);
+                        return;
+                    }
+                }
+
+                // --- Fetch all sheets in parallel ---
                 const [buildsRes, dataRes, weaponsRes, assetsRes, roleRes, postsRes] = await Promise.all([
                     fetch(getSheetUrl(GIDS.BUILDS)),
                     fetch(getSheetUrl(GIDS.DATA)),
@@ -54,36 +64,32 @@ export const useBuildsData = () => {
                     throw new Error('Failed to fetch data from Google Sheets. Please check your connection.');
                 }
 
-                const parseCsv = (csv) => {
-                    return new Promise((resolve) => {
-                        Papa.parse(csv, { header: true, skipEmptyLines: true, complete: (res) => resolve(res.data) });
-                    });
-                };
+                const parseCsv = (csv) =>
+                    new Promise((resolve) =>
+                        Papa.parse(csv, { header: true, skipEmptyLines: true, complete: (res) => resolve(res.data) })
+                    );
 
-                const [buildsRaw, dataRaw, weaponsRaw, assetsRaw, roleRaw, postsRaw] = await Promise.all([
+                const [buildsRaw, dataRaw, weaponsRaw, assetsRaw, roleRaw] = await Promise.all([
                     buildsRes.text().then(parseCsv),
                     dataRes.text().then(parseCsv),
                     weaponsRes.text().then(parseCsv),
                     assetsRes.text().then(parseCsv),
                     roleRes.text().then(parseCsv),
-                    postsRes.text().then(parseCsv)
+                    postsRes.text().then(parseCsv) // fetched but not used here
                 ]);
 
-                // Helper to get non-empty value from row, supporting case-insensitive keys and PapaParse suffixes
+                // --- Helper: case-insensitive column getter ---
                 const getRowVal = (row, keyOrKeys) => {
                     if (!row || typeof row !== 'object') return '';
                     const searchKeys = Array.isArray(keyOrKeys) ? keyOrKeys : [keyOrKeys];
                     const rowHeaders = Object.keys(row);
 
                     for (const k of searchKeys) {
-                        const target = k.toLowerCase().replace(/[^a-z0-9]/g, ''); // Super aggressive clean
-
-                        // Find any header that matches the target after cleaning
+                        const target = k.toLowerCase().replace(/[^a-z0-9]/g, '');
                         const matchingHeader = rowHeaders.find(h => {
-                            const cleanedHeader = h.toLowerCase().replace(/[^a-z0-9]/g, '');
-                            return cleanedHeader === target || cleanedHeader.startsWith(target + '_');
+                            const clean = h.toLowerCase().replace(/[^a-z0-9]/g, '');
+                            return clean === target || clean.startsWith(target + '_');
                         });
-
                         if (matchingHeader) {
                             const val = row[matchingHeader];
                             if (val !== undefined && val !== null && String(val).trim() !== '') {
@@ -97,119 +103,125 @@ export const useBuildsData = () => {
                 const weaponsMap = {};
                 const dataMap = {};
                 const assetsMap = {
-                    artifacts: {},
-                    artifactShortNames: {},
-                    regions: {},
-                    stats: {},
-                    sourceIcons: {},
-                    weaponTypes: {},
-                    wallpapers: {},
-                    logo: '',
-                    avatar: '',
-                    logos: {},
-                    artifactTypes: {},
-                    roleIcons: {},
+                    artifacts: {}, artifactShortNames: {}, regions: {}, stats: {},
+                    sourceIcons: {}, weaponTypes: {}, wallpapers: {}, logo: '',
+                    avatar: '', logos: {}, artifactTypes: {}, roleIcons: {},
                     profile: { following: 0, followers: 0, likes: 0 }
                 };
 
-
+                // --- 1. Process Assets sheet ---
                 assetsRaw.forEach(row => {
-                    // Artifacts - ensure we catch all variations
+                    // Artifacts
                     const artifactName = getRowVal(row, ['Artifact-Name', 'Artifact Name', 'ArtifactName', 'Artifact']);
-                    if (artifactName && !artifactName.includes('drive.google.com')) {
+                    if (artifactName) {
                         const img = getRowVal(row, ['Artifact Sets', 'Artifact Set', 'Artifact Icon', 'Icon Artifact', 'Art Icon', 'Artifact Image', 'Image Artifact']);
                         const uArtifact = getRowVal(row, ['UArtifact', 'uartifact', 'ShortName', 'Short Name']);
                         if (img) {
-                            const direct = toDirectDriveLink(img);
                             const clean = artifactName.toLowerCase().trim();
+                            const direct = getImageUrl(img);
                             assetsMap.artifacts[clean] = direct;
                             if (uArtifact) {
                                 assetsMap.artifacts[uArtifact.toLowerCase().trim()] = direct;
                                 assetsMap.artifactShortNames[clean] = uArtifact;
                                 assetsMap.artifactShortNames[clean.replace(/\s+/g, '-')] = uArtifact;
-                                assetsMap.artifactShortNames[clean.replace(/['’]s/g, '').replace(/[^a-z0-9]/g, '')] = uArtifact;
+                                assetsMap.artifactShortNames[clean.replace(/['']/g, '').replace(/[^a-z0-9]/g, '')] = uArtifact;
                                 const superClean = artifactName.replace(/\s*\(.*?\)/g, '').replace(/\s*\[.*?\]/g, '').toLowerCase().trim();
                                 assetsMap.artifactShortNames[superClean] = uArtifact;
                             }
+                            // Legacy short keys
                             if (clean.includes("gladiator's")) assetsMap.artifacts["gladiator's"] = direct;
                             if (clean.includes("wanderer's troupe")) assetsMap.artifacts["wanderer's"] = direct;
                             if (clean.includes("emblem of severed fate")) assetsMap.artifacts["emblem"] = direct;
                             if (clean.includes("gilded dreams")) assetsMap.artifacts["gilded"] = direct;
-                            if (clean.includes("heart of depth")) assetsMap.artifacts["hydro set"] = direct;
-                            if (clean.includes("viridescent venerer")) assetsMap.artifacts["anemo set"] = direct;
                         }
                     }
 
-                    // Source Icons (Master List from Assets tab)
+                    // Source Icons
                     const sourceName = getRowVal(row, ['Source Name', 'SourceName', 'Source', 'Obtain Name', 'ObtainName']);
                     if (sourceName) {
                         const img = getRowVal(row, ['Source Icon', 'Source-Icon', 'Source-Link', 'SourceLink', 'SourceImage']);
-                        if (img) assetsMap.sourceIcons[sourceName.toLowerCase().trim()] = toDirectDriveLink(img);
+                        if (img) assetsMap.sourceIcons[sourceName.toLowerCase().trim()] = getImageUrl(img);
                     }
 
                     // Region icons
                     const regionName = getRowVal(row, ['Region Name', 'RegionName', 'Region']);
                     if (regionName) {
                         const img = getRowVal(row, ['Icon Region', 'Region Icon', 'Region-Icon', 'RegionIcon']);
-                        if (img) assetsMap.regions[regionName.toLowerCase().trim()] = toDirectDriveLink(img);
+                        if (img) assetsMap.regions[regionName.toLowerCase().trim()] = getImageUrl(img);
                     }
 
                     // Stats icons
                     const statsName = getRowVal(row, ['Stats Name', 'Stat Name', 'StatName', 'Stats']);
                     if (statsName) {
                         const img = getRowVal(row, ['Stats', 'Stat Icon', 'Stat-Icon', 'StatIcon', 'Image Stat']);
-                        if (img) assetsMap.stats[statsName.toLowerCase().trim()] = toDirectDriveLink(img);
+                        if (img) assetsMap.stats[statsName.toLowerCase().trim()] = getImageUrl(img);
                     }
 
                     // Weapon type icons
                     const weaponType = getRowVal(row, ['Weapon Type', 'WeaponType', 'Weapon-Type', 'Icon-Weapon-Type']);
                     if (weaponType) {
                         const img = getRowVal(row, ['Icon-Weapon', 'Icon Weapon', 'Weapon Icon', 'WeaponIcon']);
-                        if (img) assetsMap.weaponTypes[weaponType.toLowerCase().trim()] = toDirectDriveLink(img);
+                        if (img) assetsMap.weaponTypes[weaponType.toLowerCase().trim()] = getImageUrl(img);
                     }
 
-                    // Artifact Type icons (Sands/Goblet/Circlet)
+                    // Artifact Type icons
                     const artType = getRowVal(row, ['Artifact-Type', 'Artifact Type', 'ArtType']);
                     if (artType) {
                         const img = getRowVal(row, ['Artifact-Type-Link', 'Artifact Type Link', 'ArtTypeLink']);
-                        if (img) assetsMap.artifactTypes[artType.toLowerCase().trim()] = toDirectDriveLink(img);
+                        if (img) assetsMap.artifactTypes[artType.toLowerCase().trim()] = getImageUrl(img);
                     }
-                    
+
                     // Role Icons
                     const roleName = getRowVal(row, ['Role Icon Name', 'RoleName', 'Role']);
                     if (roleName) {
                         const img = getRowVal(row, ['Role Icon Link', 'RoleIconLink', 'RoleIcon', 'Role Image']);
-                        if (img) assetsMap.roleIcons[roleName.toLowerCase().trim()] = toDirectDriveLink(img);
+                        if (img) assetsMap.roleIcons[roleName.toLowerCase().trim()] = getImageUrl(img);
                     }
 
-                    // Wallpapers 
+                    // Wallpapers
                     const wallpaperMonth = getRowVal(row, ['Wallpaper', 'Month', 'WallpaperMonth']);
                     if (wallpaperMonth) {
                         const key = wallpaperMonth.toLowerCase().trim().substring(0, 3);
-                        const mobile = getRowVal(row, ['Mobile', 'Mobile Link', 'Mobile-Link', 'Phone', 'Vertical', 'Portrait']);
-                        const windows = getRowVal(row, ['Windows', 'Desktop', 'Windows Link', 'Windows-Link', 'PC', 'Horizontal']);
+                        let mobile = getRowVal(row, ['Mobile', 'Mobile Link', 'Mobile-Link', 'Phone', 'Vertical', 'Portrait']);
+                        let windows = getRowVal(row, ['Windows', 'Desktop', 'Windows Link', 'Windows-Link', 'PC', 'Horizontal']);
+
+                        // Fix for missing calendar June, July and Nov background images
+                        if (key === 'jun') {
+                            if (mobile && mobile.includes('Jun.webp')) mobile = mobile.replace('Jun.webp', 'June.webp');
+                            if (windows && windows.includes('Jun.webp')) windows = windows.replace('Jun.webp', 'June.webp');
+                        } else if (key === 'jul') {
+                            if (mobile && mobile.includes('Jul.webp')) mobile = mobile.replace('Jul.webp', 'July.webp');
+                            if (windows && windows.includes('Jul.webp')) windows = windows.replace('Jul.webp', 'July.webp');
+                        } else if (key === 'nov') {
+                            // November Cloudinary links are broken (404), fallback to working Google Drive links
+                            if (mobile && mobile.includes('Nov.webp')) {
+                                mobile = 'https://drive.google.com/file/d/1q5SjpiOiDtYgJqrtg1xCK45wjQ0nh4O2/view';
+                            }
+                            if (windows && windows.includes('Nov.webp')) {
+                                windows = 'https://drive.google.com/file/d/1z1TzZrYAXr4sqWMf-rHpcdptI-xDr7mi/view';
+                            }
+                        }
+
                         if (mobile || windows) {
                             assetsMap.wallpapers[key] = {
-                                mobile: toDirectDriveLink(mobile, true),
-                                windows: toDirectDriveLink(windows, true)
+                                mobile: getImageUrl(mobile),
+                                windows: getImageUrl(windows)
                             };
                         }
                     }
 
-                    // Avatar and Profile Detection
+                    // Avatar
                     const avatarVal = getRowVal(row, ['Avatar', 'Profile Icon', 'ProfileIcon', 'Profile-Icon', 'Profile Image', 'ProfileImage']);
-                    if (avatarVal) {
-                        assetsMap.avatar = toDirectDriveLink(avatarVal);
-                    }
+                    if (avatarVal) assetsMap.avatar = getImageUrl(avatarVal);
 
-                    // Named Logos
+                    // Logos
                     const rawLogoName = getRowVal(row, ['Logo name', 'LogoName', 'Logo-Name', 'Logo']);
                     const rawLogoUrl = getRowVal(row, ['Logo', 'Logo Link', 'Logo-Link', 'LogoUrl', 'Image Logo']);
                     if (rawLogoName && rawLogoUrl) {
                         const cleanName = rawLogoName.toLowerCase().trim();
-                        const directUrl = toDirectDriveLink(rawLogoUrl);
+                        const directUrl = getImageUrl(rawLogoUrl);
                         assetsMap.logos[cleanName] = directUrl;
-                        if (['profile', 'pfp', 'banner-logo', 'logo'].includes(cleanName)) {
+                        if (['profile', 'pfp', 'banner-logo', 'logo', 'codetraveller'].includes(cleanName)) {
                             assetsMap.logo = directUrl;
                             if (!assetsMap.avatar) assetsMap.avatar = directUrl;
                         }
@@ -225,22 +237,22 @@ export const useBuildsData = () => {
                     if (likes) assetsMap.profile.likes = parseNum(likes);
                 });
 
-
-                // 2. Process Weapons — Capture all rich data (ATK, Substat, Description, Rarity, How to get)
+                // --- 2. Process Weapons ---
                 weaponsRaw.forEach(row => {
                     const rawName = getRowVal(row, ['Weapon', 'weapon', 'Name', 'Weapon Name']);
                     if (rawName) {
                         const name = rawName.toLowerCase().trim();
                         const source = getRowVal(row, ['Source', 'source']);
                         const sourceIcon = getRowVal(row, ['Source-LInk', 'Source Link', 'SourceIcon']);
+                        const weaponImg = getRowVal(row, ['Weapon image', 'weapon image', 'Image', 'weapon-image']);
 
                         if (source && sourceIcon) {
-                            assetsMap.sourceIcons[source.toLowerCase().trim()] = toDirectDriveLink(sourceIcon);
+                            assetsMap.sourceIcons[source.toLowerCase().trim()] = getImageUrl(sourceIcon);
                         }
 
                         weaponsMap[name] = {
                             name: rawName,
-                            image: toDirectDriveLink(getRowVal(row, ['Weapon image', 'weapon image', 'Image', 'weapon-image'])),
+                            image: getImageUrl(weaponImg),
                             rarity: getRowVal(row, ['Rarity', 'Stars', 'rarity']),
                             baseAtk: getRowVal(row, ['Base ATK', 'ATK', 'BaseATK']),
                             substat: getRowVal(row, ['Main-stat type', 'Main-stat', 'Substat', 'Sub stat']),
@@ -250,13 +262,12 @@ export const useBuildsData = () => {
                             type: getRowVal(row, ['Weapon type', 'Category', 'Type']),
                             howToGet: getRowVal(row, ['How to get', 'Source', 'Obtain']),
                             sourceType: source,
-                            sourceIcon: sourceIcon ? toDirectDriveLink(sourceIcon) : null
+                            sourceIcon: sourceIcon ? getImageUrl(sourceIcon) : null
                         };
                     }
                 });
 
-                // 3. Build character data lookup from Genshin Data tab
-                // Headers: C.ID | UName | Name | Name Cards | Portrait
+                // --- 3. Character data lookup ---
                 dataRaw.forEach(row => {
                     const name = getRowVal(row, ['Name', 'names', 'name']);
                     const uname = getRowVal(row, ['UName', 'uname', 'Uname']);
@@ -266,15 +277,18 @@ export const useBuildsData = () => {
                         const lowerName = name.toLowerCase();
                         const existing = dataMap[lowerName] || {};
 
-                        // Merge entries so sparse rows don't overwrite filled data
+                        const rawPortrait = getRowVal(row, ['Portrait', 'portrait']);
+                        const rawSplash = getRowVal(row, ['Splash Art', 'SplashArt', 'Splash-Art']);
+                        const rawNamecard = getRowVal(row, ['Name Cards', 'Namecard', 'namecard']);
+
                         const entry = {
                             ...existing,
                             Name: name,
                             UName: uname || existing.UName || name.replace(/\s+/g, '-'),
                             CID: cid || existing.CID,
-                            portrait: toDirectDriveLink(getRowVal(row, ['Portrait', 'portrait'])) || existing.portrait,
-                            splashArt: toDirectDriveLink(getRowVal(row, ['Splash Art', 'SplashArt', 'Splash-Art'])) || existing.splashArt,
-                            namecard: toDirectDriveLink(getRowVal(row, ['Name Cards', 'Namecard', 'namecard'])) || existing.namecard,
+                            portrait: getImageUrl(rawPortrait) || existing.portrait,
+                            splashArt: getImageUrl(rawSplash) || existing.splashArt,
+                            namecard: getImageUrl(rawNamecard) || existing.namecard,
                             Region: getRowVal(row, ['Region', 'region']) || existing.Region,
                             'Weapon Type': getRowVal(row, ['Weapon Type', 'weapon type', 'WeaponType']) || existing['Weapon Type'],
                             DOB: getRowVal(row, ['DOB', 'dob']) || existing.DOB
@@ -286,15 +300,12 @@ export const useBuildsData = () => {
                     }
                 });
 
-                // Pre-cache Lumine for Traveler portrait
-                const lumineData = dataMap['lumine'] || dataMap['lumine (traveler)'] || null;
-
-                // 4. Parse Role and Ranking (Special handling for column-based mapping)
+                // --- 4. Role Ranking ---
                 const roleRankingMap = {};
                 if (Array.isArray(roleRaw)) {
                     roleRaw.forEach(row => {
                         const rowValues = Object.values(row);
-                        
+
                         const addRank = (name, rank, type) => {
                             if (!name || name === 'Character name') return;
                             const key = name.toLowerCase().replace(/[^a-z0-9]/g, '');
@@ -305,20 +316,17 @@ export const useBuildsData = () => {
                             }
                         };
 
-                        // Use positional indices based on CSV structure
                         addRank(rowValues[0], rowValues[1], 'DPS');
                         addRank(rowValues[3], rowValues[4], 'Off-Field');
                         addRank(rowValues[6], rowValues[7], 'Shielder');
                         addRank(rowValues[9], rowValues[10], 'Healer');
-                        addRank(rowValues[12], '', 'Buffer'); 
-                        
-                        // Role Icons (Col Q, R -> Index 16, 17)
+                        addRank(rowValues[12], '', 'Buffer');
+
                         const rName = rowValues[16]?.trim();
                         const rIcon = rowValues[17]?.trim();
                         if (rName && rIcon && rIcon.startsWith('http')) {
-                            const direct = toDirectDriveLink(rIcon);
+                            const direct = getImageUrl(rIcon);
                             assetsMap.roleIcons[rName.toLowerCase().trim()] = direct;
-                            // Map friendly keys for easier lookup in components
                             const lowerRName = rName.toLowerCase();
                             if (lowerRName.includes('dps')) assetsMap.roleIcons['dps'] = direct;
                             if (lowerRName.includes('off_field')) assetsMap.roleIcons['off-field'] = direct;
@@ -329,10 +337,9 @@ export const useBuildsData = () => {
                     });
                 }
 
-                // 5. Merge Builds with Data
+                // --- 5. Merge Builds ---
                 const processed = buildsRaw.map((row, index) => {
                     const getVal = (keys) => getRowVal(row, keys);
-
                     const rawName = getVal(['Name', 'name', 'Character', 'Build Name']);
                     if (!rawName) return null;
 
@@ -356,9 +363,7 @@ export const useBuildsData = () => {
 
                     const rawDesc = getVal([
                         'Description (All artifacts sets are alt)',
-                        'Description',
-                        'Notes',
-                        'description'
+                        'Description', 'Notes', 'description'
                     ]);
 
                     const roleMatch = rawDesc.match(/^([A-Z][A-Z\s\/\-&]+?)(?:\s*\(ER|\n|$)/);
@@ -393,21 +398,28 @@ export const useBuildsData = () => {
                     };
                 }).filter(Boolean).filter(b => b.name && b.name.trim() !== '');
 
-
-                setAssets({ ...assetsMap, weaponsMap, characters: dataMap });
+                // --- Save & update state ---
+                const finalAssets = { ...assetsMap, weaponsMap, characters: dataMap };
+                setAssets(finalAssets);
                 setBuilds(processed);
 
-                // Persist to cache
-                localStorage.setItem(CACHE_KEY, JSON.stringify({
-                    builds: processed,
-                    assets: { ...assetsMap, weaponsMap, characters: dataMap },
-                    timestamp: Date.now()
-                }));
+                try {
+                    localStorage.setItem(CACHE_KEY, JSON.stringify({
+                        builds: processed,
+                        assets: finalAssets,
+                        timestamp: Date.now()
+                    }));
+                } catch (cacheErr) {
+                    // localStorage can fail if storage is full — not critical
+                    console.warn('[Cache] Could not save to localStorage:', cacheErr.message);
+                }
 
                 setLoading(false);
 
             } catch (err) {
-                console.error('Data Fetch Error:', err);
+                console.error('[useBuildsData] Error:', err);
+                // Clear corrupted cache so next reload fetches fresh
+                localStorage.removeItem(CACHE_KEY);
                 setError(err);
                 setLoading(false);
             }

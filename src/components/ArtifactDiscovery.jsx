@@ -37,7 +37,7 @@ const ArtifactDiscovery = ({ builds, assets }) => {
     // Find set details from local JSON
     const setDetails = useMemo(() => {
         if (!setName) return null;
-        const clean = (s) => s.toLowerCase().replace(/['’]s/g, '').replace(/[^a-z0-9]/g, '').trim();
+        const clean = (s) => s.toLowerCase().replace(/['’]?s\b/g, '').replace(/[^a-z0-9]/g, '').trim();
         const search = clean(setName);
         
         // 1. Direct match
@@ -52,7 +52,7 @@ const ArtifactDiscovery = ({ builds, assets }) => {
 
     const getArtifactIcon = (name) => {
         if (!name || !assets?.artifacts) return null;
-        const clean = (str) => str.toLowerCase().replace(/'s/g, '').replace(/[^a-z0-9]/g, '').trim();
+        const clean = (str) => str.toLowerCase().replace(/['’]?s\b/g, '').replace(/[^a-z0-9]/g, '').trim();
         const search = clean(name);
         const keys = Object.keys(assets.artifacts);
         const match = keys.find(k => clean(k) === search || clean(k).includes(search) || search.includes(clean(k)));
@@ -63,16 +63,25 @@ const ArtifactDiscovery = ({ builds, assets }) => {
     const users = useMemo(() => {
         if (!builds || !setName || !assets) return [];
         
-        const clean = (s) => s.toLowerCase().replace(/['’]s/g, '').replace(/[^a-z0-9]/g, '').trim();
+        const clean = (s) => s.toLowerCase().replace(/['’]?s\b/g, '').replace(/[^a-z0-9]/g, '').trim();
         const searchBase = clean(setName);
-        const searchShort = assets.artifactShortNames?.[setName.toLowerCase().trim()]?.toLowerCase() || '';
+        
+        const getShortName = (name) => {
+            if (!name) return '';
+            const cleanKey = name.toLowerCase().trim().replace(/['’]?s\b/g, '').replace(/[^a-z0-9]/g, '');
+            const foundKey = Object.keys(assets.artifactShortNames || {}).find(k => 
+                k.toLowerCase().replace(/['’]?s\b/g, '').replace(/[^a-z0-9]/g, '') === cleanKey
+            );
+            return foundKey ? assets.artifactShortNames[foundKey].toLowerCase() : '';
+        };
+        const searchShort = getShortName(setName);
         
         return builds.filter(b => {
             const charData = Array.isArray(b) ? b[0] : b;
             const artifactStr = charData.artifacts || '';
             
-            // STRICT FILTER: Check if the set name even exists in assets
-            if (!getArtifactIcon(setName)) return false;
+            // Check if the set details exist
+            if (!setDetails) return false;
 
             // Get only the PRIMARY recommendations (handle numbered lists)
             // We'll take the first few lines and clean them
@@ -87,7 +96,7 @@ const ArtifactDiscovery = ({ builds, assets }) => {
 
             return primaryChoices.some(choice => {
                 const cleanedChoice = clean(choice);
-                const choiceShort = assets.artifactShortNames?.[choice.toLowerCase().trim()]?.toLowerCase() || '';
+                const choiceShort = getShortName(choice);
                 
                 // Precise Match Logic
                 // 1. Exact Name match (cleaned)
@@ -103,19 +112,19 @@ const ArtifactDiscovery = ({ builds, assets }) => {
                 return false;
             });
         });
-    }, [builds, setName, assets]);
+    }, [builds, setName, assets, setDetails]);
 
     const iconUrl = getArtifactIcon(setName);
 
     return (
         <div className="artifact-discovery-page animate-fade-in text-white py-4">
             {/* If set doesn't exist in assets, don't show the header info */}
-            {!getArtifactIcon(setName) ? (
+            {!setDetails ? (
                 <div className="text-center py-5 opacity-50">
                     <div className="mb-4">
                         <i className="bi bi-shield-slash display-1 mb-3 d-block text-primary"></i>
-                        <h2 className="fw-bold">Asset Not Found</h2>
-                        <p>This artifact set is not registered in your spreadsheet assets.</p>
+                        <h2 className="fw-bold">Artifact Set Not Found</h2>
+                        <p>This artifact set is not registered in the database.</p>
                     </div>
                     <button onClick={() => navigate('/artifacts')} className="btn btn-outline-primary rounded-pill px-4">
                         <i className="bi bi-arrow-left me-2"></i> Back to Database

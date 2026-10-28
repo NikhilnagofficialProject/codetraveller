@@ -1,0 +1,4444 @@
+﻿C.ID,UName,Name,Rarity,Vision,Weapons,Artifacts,Main Stat,Sub Stat,Talent Priority,Description (All artifacts sets are alt),Priority,Teams
+1,Aino,Aino,4,Hydro,"1. Favonius Greatsword (4) [F2P]
+  2. Makhaira Aquamarine (4) [2nd BIS]
+  3. Flame-Forged Insight (4) [R5] [BIS]
+  ~Master Key (4) [ALT]
+ 4. Forest Regalia [CRAFT]","1. Silken Moon's Serenade (4)
+ 2. Noblesse Oblige (4)
+ 3. Scroll of the Hero of Cinder City (4)
+ 4. Instructor (4)
+ 5. Deepwood Memories (4)","Sands - ER / EM
+ Goblet - EM
+ Circlet - EM / Crit Rate
+  
+ Notes: Crit Rate (if Favonius Greatsword used)","1. ER
+  2. EM
+  3. CRIT Rate 
+  
+ Notes: Crit Rate (if Favonius Greatsword used)","1. Burst
+ 2. Skill
+  
+ Notes: Normal Talent levels are not a necessity.","OFF-FIELD SUPPORT (ER 160–200%)
+ Aino provides off-field Hydro application with Burst but lacks a Moon Wheel and can’t trigger Lunar-Reactions alone. She benefits greatly from another Nod-Krai member. Her damage is low, so investment isn’t a priority.
+ 
+ Weapons:
+ Flame-Forged Insight: Only worth if triggering reactions.
+ Favonius Greatsword: Strong ER option; build some Crit Rate.
+ Makhaira Aquamarine: Only if team benefits from ATK%.
+ Master Key: Refinements unnecessary without DPS focus.
+ 
+ Notes:
+ Artifacts are flexible—choose based on team ER or buffing needs.
+ C4reduces Burst cost from 50 to 40, improving uptime.",ER (until requirement) > CRIT Rate (Favonius) > EM ≥ CRIT > ATK%,"1. Aino Lunar Charged Team 
+ [Premium] : Aino>Flins>Ineffa>Sucrose
+ [F2P] : Aino>Ororon/Fischl>Sucrose/Lan yan>Ifa/Ineffa
+ 
+ 2. Hyperbloom Team
+ [Premium] : Aino>Lauma/Nahida>Ineffa>Neuvillette
+ [F2P] : Aino>Traveler (Dendro)>Kuki Shinobu/Xingqiu>Kaveh/yaoyao"
+2,Albedo,Albedo,5,Geo,"1. Peak Patrol Song (5) [BIS]
+  ~Uraku Misugiri (5)
+ 2. Primordial Jade Cutter (5) [DPS]
+  ~Cinnabar Spindle (4) [R5] [ALT]
+ 3. Wolf-Fang (4) [R1] [BP]
+  ~Light of Foliar Incision (5)
+  ~Mistsplitter Reforged (5)
+  ~Haran Geppaku Futsu (5)
+ 4. Harbinger of Dawn (3) [R5] [F2P]
+ 5. Flute Of Ezpitzal (4) [R5] [CRAFT]","1. Husk of Opulent Dreams (4) 
+  ~Golden Troupe (4) 
+  2. Husk of Opulent Dreams (2) / Archaic Petra (2) / Golden Troupe (2) [Choose Two]
+  3. Archaic Petra (4) 
+  4. Tenacity of the Millelith (4)","Sands - DEF%
+ Goblet - Geo DMG / DEF 
+ Circlet - Crit Rate / DMG / DEF%","1. Crit Rate / DMG
+  2. DEF%
+  3. ATK% 
+  4. ER","1. Skill
+ 2. Burst
+  
+ Notes: Albedo's Burst is not used in some teams, namely Geo teams such as Itto, Albedo, Gorou, Flexible. In such cases, you do not need to level it.","OFF-FIELD DPS (ER 120–150%)
+ Albedo specializes in consistent off-field Geo damage via his Elemental Skill, which creates a Solar Isotoma construct dealing periodic AoE damage every 2 seconds. His Burst grants a 125EM team buff, useful for reaction-based teams (e.g. Vaporize), but can be skipped in pure Geo setups. Albedo performs best when built for DEF-scaling Skill damage and functions as a low-field-time, energy-efficient sub-DPS.
+ 
+ Weapons:
+ Peak Patrol Song — Best overall option; performs similarly to Cinnabar Spindle but provides superior team utility. Ensure to perform 2 Normal Attacks before Skill to activate the passive.
+ Harbinger of Dawn — Excellent free-to-play choice. Despite low Base ATK, its high Crit stats make it a top performer if Albedo maintains >90% HP.
+ Wolf-Fang — At [R5], surpasses Harbinger of Dawn due to being unconditional. The passive doesn’t stack off-field, but performing Skill → N1 → Swap can maintain consistent uptime.
+ Freedom-Sworn — Great support weapon; significantly lowers personal damage but provides powerful team buffs.
+ Mistsplitter Reforged — Usable but inefficient; typically capped at 2 stacks. Best reserved for other sword DPS units.
+ 
+ Artifacts:
+ Husk of Opulent Dreams (4) — Best-in-slot for consistent DEF-scaling Skill damage. Since Albedo’s Skill snapshots, pre-stack before fights or recast his Skill mid-rotation to maintain 4stacks.
+ Golden Troupe (4) — Comparable to Husk (4) with Peak Patrol Song or Cinnabar Spindle; performs slightly better in full Geo teams (e.g. with Gorou). Slightly worse if casting Burst frequently.
+ Tenacity of the Millelith (4) — Provides strong team ATK buffs with reliable uptime, though at the cost of lower personal damage.
+ Archaic Petra (4) — Niche buffing option for elemental teams; requires shard collection for uptime.
+ 
+ Main Stats:
+ Sands: DEF%
+ Goblet: DEF% (preferred, especially with Golden Troupe or Peak Patrol Song)
+ Circlet: Crit Rate / Crit DMG (1:2 ratio)
+ 
+ Substats Priority:
+ DEF% → Crit Rate / Crit DMG → ATK% / ER (only for Hybrid Burst builds)
+ 
+ Notes:
+ ER 120–150% is sufficient to Burst every rotation if desired; otherwise, focus entirely on DEF.
+ His Skill snapshots stats at cast, so pre-buffing before placement (e.g. with Bennett) improves uptime damage.
+ Albedo pairs exceptionally well with Gorou, Itto, or Zhongli in Geo compositions for steady DPS and energy support.",DEF% > CRIT Rate / DMG > ER > ATK%,"1. Mono Geo Team
+ [Premium] : Albedo > Zhongli > Arataki Itto> Gorou
+ [F2P] : Albedo > Ningguang > Noelle > Gorou
+ 
+ 2. Double Geo Core
+ [Premium] : Albedo > Zhongli > Yelan > Arlecchino
+ [F2P] : Albedo > Noelle > Xingqiu / barbara > Bennett
+ 
+ 
+ 3. Hexerei DPS Team
+ [Premium] : Albedo > Klee > Durin > Yelan / Furina 
+ [F2P] : Albedo > Razor / fischl > Lan yan > Xingqiu / Mona
+ 
+ 4. Crystallize Team
+ [Premium] : Albedo > Navia / Arataki Itto > Bennett > Durin
+ [F2P] : Albedo > Noelle > Fischl / Razor > Traveler (Pyro) / xiangling"
+3,Alhaitham,Alhaitham,5,Dendro,"1. Light of Foliar Incision (5)
+ 2. Uraku Misugiri (5)
+  ~Primordial Jade Cutter (5)
+ 3. Mistsplitter Reforged (5)
+  ~Haran Geppaku Futsu (5)
+ 4. Freedom-Sworn (5)
+ 5. Wolf-Fang (4)
+ 6. Toukabou Shigure (4)
+ 7. The Black Sword (4)
+ 8. Summit Shaper (5)
+  ~Iron Sting (4)
+  ~Blackcliff Longsword (4)
+  ~Harbinger of Dawn (3)
+ 9. Xiphos' Moonlight (4)
+  ~Festering Desire (4)
+ 10. Skyward Blade (5)","1. Gilded Dreams (4) 
+ 2. Deepwood Memories (2) / Emblem of Severed Fate (2) / +80 EM set (2) [Choose Two] 
+ 3. Deepwood Memories (4)
+ 4. Marechaussee Hunter (4)","Sands - EM / ATK%
+ Goblet - Dendro DMG
+ Circlet - Crit Rate / DMG","1. ER (Until Requirement)
+  2. Crit Rate / DMG
+  3. EM 
+  4. ATK%","1. Skill
+ 2. Normal Attack~Burst","DPS (ER 110–140%)
+ Alhaitham excels as an on-field Dendro driver, maximizing Spread procs and EM-scaling Skill damage. Ideal for Quicken/Quickbloom comps — and 90/90 leveling is strongly recommended.
+ 
+ Weapons:
+ Light of Foliar Incision: Prefers EM Sands even with fewer Spread procs.
+ Toukabou Shigure: Best in single-target; falls off in AoE.
+ Harbinger of Dawn: Strong if passive uptime is near perfect.
+ Xiphos / Festering Desire: Matches Black Sword in high ER comps.
+ Wolf-Fang (R5): ~ Haran / Mistsplitter.
+ Uraku Misugiri: Top pick with Geo teammate, excels in AoE.
+ 
+ Artifacts::
+ Gilded Dreams (4): Best if another unit holds Deepwood.
+ Deepwood (2) + EM / Emblem (2): Great alternative if better substats or higher ER needs.
+ Marechaussee Hunter (4): BiS with Furina.
+ 
+ Main Stats:
+ EM Sands best in Quicken/Quickbloom (~5% lead).
+ ATK% Sands preferred in Bloom/Burgeon/Hyperbloom with low Spread.
+ ER Sands viable if bursting every rotation for extra seed generation.
+ If EM < 200, prioritize EM substats over Crit.
+ 
+ Notes: Some teams can skip ER investment and Burst every other rotation with no DPS loss.",ER (until requirement) > 200–300 EM > CRIT > EM > ATK%,
+4,Aloy,Aloy,5,Cryo,"1. Thundering Pulse (5)
+  2. Polar Star (5)
+  3. Skyward Harp (5)
+  4. The Stringless (4)
+  5. Amos' Bow (5)
+  6. Alley Hunter (4)
+  7. Prototype Crescent (4)
+  8. Predator (4)
+  9. Sacrificial Bow (4)
+  10. Slingshot (3) [R5]","1. Blizzard Strayer (4) 
+  2. Noblesse Oblige (2) / Blizzard Strayer (2)
+  3. Emblem of Severed Fate (4)
+  4. Noblesse Oblige (2) / Blizzard Strayer (2) / +80 EM set (2) / +18% ATK set (2) / Emblem of Severed Fate (2) [Choose Two] 
+  5. Noblesse Oblige (4)","Sands - ATK% / EM 
+ Goblet - Cryo DMG
+ Circlet - Crit Rate / DMG","1. Crit Rate / DMG
+  2. ATK%
+  3. EM 
+  4. ER","1. Burst
+  2. Skill","SUPPORT (ER 125–165%)
+ Aloy is better as a Burst Support since coil stacking for Cryo infusion is unreliable. She fits mainly in Freeze or Reverse Melt teams, offering Cryo particles and a Burst nuke.
+ 
+ Weapons:
+ Polar Star: Not worth forcing stacks due to time loss.
+ The Stringless: Excels in Reverse Melt, especially at high refinements.
+ Prototype Crescent: Strong when weak points are hit.
+ Sacrificial Bow: Great for batterying with Skill’s 5Cryo particles.
+ 
+ Artifacts::
+ Blizzard Strayer (4): Best for Freeze builds, high Crit value.
+ +80 EM set (2): Only for Reverse Melt.
+ Noblesse Oblige (4): Excellent team support option.
+ EM: Only useful for Reverse Melt.
+ ATK% / Cryo DMG / Crit: Standard for Freeze setups.",ER% > ATK > CRIT%,
+5,Amber,Amber,4,Pyro,"1. Elegy for the End (5)
+ 2. Favonius Warbow (4)
+ 3. Sacrificial Bow (4)
+ 4. The Viridescent Hunt (4)","1. Noblesse Oblige (4)
+ 2. Instructor (4) 
+ 3. The Exile (4)","Sands - ER / ATK%
+ Goblet - Pyro DMG
+ Circlet - Crit Rate / DMG","ER
+ Crit Rate / DMG
+ ATK%
+ EM","Burst
+ Skill","DPS (ER 100–120%)
+ Amber Melt DPS focuses on Charged Attacks to trigger Melt, ideally with Bennett support.(ER 100–120%)
+ 
+ SUPPORT (ER 165–240%)
+ Low-investment build for utility and shieldbreaking through fast Pyro Burst application.
+ 
+ Notes:
+ Crit Rate weapons lose value since weak points guarantee Crit.
+ Amos’ Bow: High potential but hard to maintain stacks.
+ Sharpshooter’s Oath: Strong with headshot playstyle.
+ For support, Prioritize ER due to low generation.
+ Instructor (4) preferred over Noblesse (4) in Hu Tao Vaporize teams.",ER% > EM> CRIT%,
+6,Arataki-Itto,Arataki Itto,5,Geo,"1. Redhorn Stonethresher (5)
+  2. Serpent Spine (4)
+  ~Beacon of the Reed Sea (5)
+  ~Verdict (5)
+  ~A Thousand Blazing Suns (5)
+  3. Whiteblind (4) [R5] 
+  ~Skyward Pride (5)","1. Husk of Opulent Dreams (4)
+  2. Desert Pavilion Chronicle (4)
+  3. Retracing Bolide (4) 
+  4. Husk of Opulent Dreams (2) / Archaic Petra (2) / Emblem of Severed Fate (2) [Choose Two]","Sands - DEF%
+ Goblet - Geo DMG
+ Circlet - Crit Rate / DMG","ER
+ Crit Rate / DMG
+ ATK%
+ EM","1. Normal Attack
+  2. Burst
+  3. Skill","DPS (ER 115–145%)
+ Arataki Itto is a Geo on-field DPS who converts DEF into ATK during his Burst and deals massive damage through Arataki Kesagiri Charged Attacks. His gameplay revolves around building Superlative Superstrength stacks via Normal Attacks and his Elemental Skill (Ushi), then unleashing them in succession during Burst. With proper energy generation from teammates (e.g., Gorou or Albedo), he can maintain consistent Burst uptime and dominate sustained-field rotations.
+ 
+ Weapons:
+ Serpent Spine — Best overall weapon; scales extremely well with refinements. At [R5], it surpasses most 5 options. Prioritize Serpent Spine stacks over Husk stacks due to their conflicting on-/off-field buildup mechanics.
+ Skyward Pride — Excellent choice if Itto struggles with ER; value decreases if teammates (e.g., Gorou, Ningguang) provide sufficient energy.
+ Whiteblind — Strong free-to-play option; Burst snapshotting limits DEF% stack utilization but still reliable overall.
+ Redhorn Stonethresher — Premium best-in-slot option if available, offering both Crit DMG and DEF% scaling synergy.
+ 
+ Artifacts:
+ Husk of Opulent Dreams (4) — Best-in-slot for pure personal damage. Pre-stack before combat (12 seconds off-field) or refresh during fights to maintain 4stacks of DEF% and Geo DMG.
+ Retracing Bolide (4) — Strong alternative with consistent shield uptime (e.g., with Zhongli). Provides +40% Normal and Charged Attack DMG, enhancing Itto’s Burst phase heavily.
+ Archaic Petra (2) + Husk (2) — Viable transitional option when lacking full 4-piece Husk; stable and efficient.
+ 
+ Main Stats:
+ Sands: DEF%
+ Goblet: Geo DMG Bonus
+ Circlet: Crit Rate / Crit DMG
+ 
+ Substats Priority:
+ Crit Rate / Crit DMG → DEF% → ER
+ 
+ Notes:
+ ER 115–145% ensures consistent Burst uptime depending on team energy sources.
+ Pair with Gorou and Albedo for the optimal mono-Geo team synergy.
+ Burst snapshots DEF on cast, so make sure buffs (e.g., Bennett, Gorou) are active before casting.
+ A shielder (Zhongli, Noelle) is highly recommended when using Retracing Bolide (4) for maximum uptime.",ER% > EM > ATK% > CRIT Rate = CRIT DMG > ATK,
+7,Arlecchino,Arlecchino,5,Pyro,"1. Crimson Moon's Semblance (5)
+  2. Primordial Jade Winged-Spear (5)
+  ~Staff of the Scarlet Sands (5)
+  3. Staff of Homa (5)
+  ~Lumidouce Elegy (5)
+  ~Calamity Queller (5)
+  4. Vortex Vanquisher (5)
+  5. Deathmatch (4)
+  6. White Tassel (3) [R5]
+  7. Ballad of the Fjords (4)","1. Fragment of Harmonic Whimsy (4)
+  2. Gladiator's Finale (4)
+  3. Desert Pavilion Chronicle (4)
+  4. +18% ATK set (2) / Crimson Witch of Flames (2) / Marechaussee Hunter (2) [Choose Two]
+  ~Echoes of an Offering (4)","Sands - ATK% / EM 
+ Goblet - Pyro DMG
+ Circlet - Crit Rate / DMG
+  
+  EM should only be considered if Arlecchino
+  is in a Vaporize or Melt team.","1. Crit Rate / DMG
+  2. EM 
+  3. ATK%
+  
+  EM should
+  only be considered if Arlecchino
+  is in a Vaporize or Melt team.","1. Normal Attack
+  2. Skill 
+  3. Burst","DPS (ER 100–120%)
+ Arlecchino is a Pyro DPS built around Bond of Life and cannot be healed except by Burst, so a shielder is strongly recommended.
+ Focus investment on Normal Attack talent over Skill or Burst.
+ 
+ Weapons:
+ Staff of the Scarlet Sands: Ranks lower than Homa without EM Sands or reactions.
+ Vortex Vanquisher: Strong when shielded; similar to White Tassel (R5) without.
+ Deathmatch: Competitive at high refinement.
+ Ballad of the Fjords: Slightly better than Deathmatch in Vaporize.
+ 
+ Artifacts:
+ Desert Pavilion (4): Ensure Charged Attack hits fully for passive.
+ Echoes (4): Similar if ping <200.",ER% until requirement (if using Burst) > CRIT > ATK% ≥ EM (Vaporize),
+8,Baizhu,Baizhu,5,Dendro,"1. Jadefall's Splendor (5)
+  2. Prototype Amber (4) [R5] 
+  3. Favonius Codex (4)
+  4. Hakushin Ring (4)
+  5. Thrilling Tales of Dragon Slayers (3)
+  6. A Thousand Floating Dreams (5)","1. Deepwood Memories (4) 
+  2. Ocean-Hued Clam (4)
+  3. Instructor (4) 
+  4. Noblesse Oblige (4) 
+  5. Tenacity of the Millelith (2) / Vourukasha's Glow (2) / Emblem of Severed Fate (2) [Choose Two]","Sands - HP% / ER
+ Goblet - HP%
+ Circlet - HP% / Healing Bonus","1. ER 
+  2. Crit Rate / DMG
+  3. DEF%
+  4. ATK%
+ 
+ Notes: Prioritize ER until you meet the requirement.","1. Burst
+  2. Skill","SUPPORT (ER 170–230%)
+ Baizhu provides teamwide healing, interrupt resistance shields, and flexible Dendro application. His shields are not reliable for heavy damage mitigation but help stabilize rotations.
+ 
+ Weapons:
+ Hakushin Ring: Best in Quicken teams if buff uptime is good.
+ Prototype Amber: Excellent for flat energy regen + extra healing; strong synergy with Furina from rotation 2+.
+ Favonius Codex: Build some Crit Rate for consistent passive procs.
+ A Thousand Floating Dreams: Situational; usually better used elsewhere.
+ 
+ Artifacts::
+ Deepwood (4): Default choice unless another unit holds it for better AoE uptime.
+ Instructor (4): EM buff often outweighs lost A4scaling.
+ Noblesse (4): Good in ATK-scaling teams or for higher sustain.
+ 
+ Stats:
+ Prioritize HP (up to ~50k) for max A4buff.
+ Healing BonusCirclet is viable for stronger healing, especially with Furina or Prototype Amber synergy.","ER% (until requirement) > HP% (up to 50,000 Max HP)",
+9,Barbara,Barbara,4,Hydro,"1. Starcaller's Watch (5)
+  2. A Thousand Floating Dreams (5)
+  ~Sunny Morning Sleep-In (5)
+  3. Sacrificial Fragments (4)
+  ~Etherlight Spindlelute (4) [R5]
+  4. Magic Guide (3)","1. Flower of Paradise Lost (4)
+  2. Gilded Dreams (4)
+  3. +80 EM set (2) +80 EM set (2)
+  4. Ocean-Hued Clam (4)","Sands -  HP/EM
+Goblet - HP/EM
+Circlet - HP/Healing/EM","1. EM/HP
+2. ER","1. Skill
+ 2. Burst","SUPPORT (ER 100%)
+ barbara provides sustain through Skill; Burst is best saved for emergencies.
+ 
+ Weapons:
+ Everlasting Moonglow: Boosts personal damage on-field.
+ Thrilling Tales: Best for team DPS if buff is used.
+ Hakushin Ring: Strong if triggering Electro reactions.
+ 
+ Artifacts
+ Ocean-Hued Clam (4): Best generalist set.
+ Scroll of the Hero (4) / Instructor (4): Best if she can trigger reactions.
+ ER investment is low priority due to weak particle generation.
+ 
+ BLOOM DPS (ER 100%)
+ barbara triggers most Blooms while healing through self-damage.
+ 
+ Artifacts::
+ Ocean-Hued Clam (4): Strongest option for both damage and sustain.
+ Focus on EM and reaction uptime for max Bloom output.
+  
+ DPS: (ER 100%)
+ Artifacts::
+ Ocean-Hued Clam (4): This set can do more damage than other options in certain situations, while also increasing barbara's healing to deal with Bloom self-damage.",Hp% > EM (Reaction/Bloom),
+10,Beidou,Beidou,4,Electro,"1. A Thousand Blazing Suns (5)
+  2. Wolf's Gravestone (5)
+  ~Fang of the Mountain King (5)
+  ~Redhorn Stonethresher (5)
+  3. The Unforged (5)
+  4. Beacon of the Reed Sea (5)
+  ~Verdict (5)
+  5. Tidal Shadow (4) [R5] 
+  ~Serpent Spine (4)
+  6. Akuoumaru (4)
+  ~""Ultimate Overlord's Mega Magic Sword"" (4) [R5]
+  7. Lithic Blade (4)
+  ~Luxurious Sea-Lord (4) [R5]
+  ~Skyward Pride (5)","1. Emblem of Severed Fate (4)
+  2. Noblesse Oblige (2) / Thundering Fury (2) / +18% ATK set (2) / Emblem of Severed Fate (2) [Choose Two]
+  3. Scroll of the Hero of Cinder City (4) ~Noblesse Oblige (4)","Sands - ATK% / ER
+ Goblet - Electro DMG
+ Circlet - Crit Rate / DMG","1. ER 
+  2. Crit Rate / DMG
+  3. ATK%
+  4. EM 
+  
+  Notes: Prioritize ER first until you can burst off cooldown
+  
+  EM is a desirable sub stat in aggravate teams","1. Burst
+  2. Skill","OFF-FIELD AGGRAVATE DPS (ER 110–150%)
+ Beidou excels at burst snapshotting and reaction damage.
+ Weapon:
+ Serpent Spine (R5): Best when pre-stacked.
+ Tidal Shadow: Requires healing before Burst.
+ Akuoumaru (R5): Matches Verdict.
+ Skyward Pride: Stronger with high ER needs.
+ Lithic Blade (R5): Matches Luxurious Sea-Lord.
+ 
+ OFF-FIELD DPS (ER 130–160%)
+ Focus on consistent off-field Burst damage.
+ Weapon:
+ Tidal Shadow: Healed pre-Burst.
+ Serpent Spine (R5): Equal to Beacon of the Reed Sea.
+ Akuoumaru (R5): Matches Verdict.
+ Lithic Blade (R5): Similar to Tidal Shadow.
+ Skyward Pride: Gains value with high ER.
+ Artifacts:
+ Scroll of the Hero (4) / Noblesse (4): Lower personal DPS but strong team buffs.",ER% > CRIT Rate/CRIT DMG > ATK% > EM,
+11,Bennett,Bennett,4,Pyro,"1. Mistsplitter Reforged (5)
+  2. Primordial Jade Cutter (5)
+  ~Haran Geppaku Futsu (5)
+  3. Uraku Misugiri (5)
+  ~Absolution (5)
+  4. Light of Foliar Incision (5)
+  5. Splendor of Tranquil Waters (5)
+  ~Freedom-Sworn (5)
+  ~Summit Shaper (5)
+  6. Wolf-Fang (4)
+  7. The Alley Flash (4)
+  ~Finale of the Deep [R5] (4)
+  ~The Black Sword (4)
+8. Sapwood Blade","1. Noblesse Oblige (4)
+2. Crimson Witch of Flames (4) 
+3. Crimson Witch of Flames (2) / +18% ATK set (2) / +80 EM set (2) [Choose Two]
+4. Gilded Dreams (4)
+5. Thundering Fury (4) 
+6. Marechaussee Hunter (4)","Sands - HP/ATK% / EM
+ Goblet - HP/Pyro DMG
+ Circlet - Healing/HP/CRIT Rate / DMG","1. ER
+  2. Crit Rate / DMG
+  3. ATK%
+  4. EM","1. Burst
+  2. Skill~Normal Attack
+  Normal Attack (important only if Bennett C6)","SUPPORT (ER 200–250%)
+ Bennett’s main value comes from his flat ATK buff from Burst, which scales only with Base ATK.
+ 
+ Weapons:
+ Mistsplitter / Azurelight / Absolution: Best for personal damage.
+ Freedom-Sworn: Strong when passive is triggered.
+ Peak Patrol Song: Competitive if team values DMG%.
+ Favonius Sword: Low Base ATK but useful for high ER needs.
+ 
+ Artifacts:
+ Instructor (4): Best when EM is prioritized.
+ Scroll of the Hero of Cinder City (4): Good when Noblesse is covered or DMG Bonus is needed.
+ Deepwood (4): Ideal for Dendro teams.
+ 
+ DPS (ER 140–160%)
+ Weapon and set choices depend on reaction uptime and team composition.
+ 
+ Weapons::
+ Haran / Light of Foliar / Black Sword: Weak if no infused attacks.
+ Freedom-Sworn / Alley Flash: Poor without frequent reactions.
+ Summit Shaper: Stronger with shield.
+ Wolf-Fang (R5), Finale of the Deep: Comparable to Summit Shaper when conditions met.
+ 
+ Artifacts::
+ Crimson Witch (4): Best generalist option.
+ Thundering Fury (4): Competitive with Electro reactions.
+ Marechaussee Hunter (4): Best with Furina teams.",ER (until requirements) > HP% >> ATK% = EM > CRIT,
+12,Candace,Candace,4,Hydro,"1. Favonius Lance (4)
+  2. Engulfing Lightning (5)
+  3. Staff of Homa (5)
+  ~Deathmatch (4)
+  ~The catch (4)
+  4. Prototype Starglitter (4)
+  5. Skyward Spine (5)
+  6. Black Tassel (3)","1. Scroll of the Hero of Cinder City (4) 
+  2. Emblem of Severed Fate (4) 
+  3. Emblem of Severed Fate (2) / +Nymphs Dream/ Noblesse Oblige (2) / +20% HP set (2) [Choose Two]","Sands - ER / HP%
+ Goblet - HP% / Hydro DMG
+ Circlet - HP% / Crit Rate / DMG","1. ER 
+  2. Crit Rate 
+  3. HP%
+  4. Flat HP 
+  
+  Notes: Crit Rate (if Favonius Lance used)",1. Burst,"BUFF SUPPORT (250-280%)
+ Candace provides off-field Hydro infusion, defensive utility, and buffs through her Burst.
+ She’s not the strongest Hydro support but offers consistent Hydro application with high ER.
+ 
+ Weapons:
+ Favonius Lance: Best option; helps reach 200–300% ER. Requires Crit Rate for passive procs.
+ Engulfing Lightning: Strong ER option.
+ Staff of Homa / Deathmatch: Higher personal damage, best at C6.
+ The Catch: Best F2P pick for ER and Burst boost.
+ Scroll of the Hero (4): Gives team DMG Bonus and Energy refund.
+ 
+ Artifacts::
+ Emblem (4): Best for scaling ER into damage.
+ Emblem (2) + Hydro/Noblesse (2): Good alternative if Emblem is contested.",ER (until requirement) > CRIT Rate ( if Favonius) > HP% ~ CRIT DMG,
+13,Charlotte,Charlotte,4,Cryo,"1. Prototype Amber (4)
+  ~Favonius Codex (4)
+  2. Thrilling Tales of Dragon Slayers (3)
+  3. Oathsworn Eye (4) [R5]
+  ~Wine and Song (4)","1. Noblesse Oblige (4)
+  ~Tenacity of the Millelith (4)
+  2. Ocean-Hued Clam (4)
+  3. Emblem of Severed Fate (2) / +18% ATK set (2) / +15% Healing Bonus set (2) [Choose Two]
+  4. Maiden Beloved (4)
+  5. Blizzard Strayer (4)","Sands - ER / ATK%
+ Goblet - ATK%
+ Circlet - Healing Bonus / ATK% / Crit Rate 
+  
+ Notes: Crit Rate only if using Favonius Codex","1. ER 
+  2. ATK%
+  3. Crit Rate 
+  4. Flat ATK
+  5. Crit DMG
+  
+  ER should be prioritized until requirements are met.","1. Burst
+  2. Skill","SUPPORT (ER 180–230%)
+ Charlotte focuses on team healing and minor off-field damage. Her healing scales with ATK%, but personal damage is low, so support gear is optimal.
+ 
+ Weapons:
+ Thrilling Tales of Dragon Slayers: Strong team buff, but may not meet ER needs.
+ Wine and Song: Sprint before Burst to gain the ATK% buff.
+ Favonius Codex: Build Crit Rate to trigger passive reliably.
+ 
+ Artifacts::
+ Blizzard Strayer (4): Improves Favonius uptime and adds minor damage boost, especially at higher constellations.
+ Crit Rate substats: Prioritize only if using Favonius Codex.",ER% (until requirement) ≥ ATK% > Crit Rate (if Favonius) > CRIT DMG,
+14,Chasca,Chasca,5,Animo,"1. Astral Vulture's Crimson Plumage (5)
+  2. Aqua Simulacra (5)
+  ~The First Great Magic (5)
+  3. Thundering Pulse (5)
+  4. Skyward Harp (5)
+  5. Amos' Bow (5)
+  ~Polar Star (5)
+  ~Scion of the Blazing Sun (4)
+  6. Chain Breaker [R5] (4)
+  ~Song of Stillness [R5] (4)
+  ~Flower-Wreathed Feathers (4)
+  ~Hamayumi [R5] (4)
+  7. Range Gauge (4)","1. Obsidian Codex (4)
+ 2. Viridescent Venerer (4) 
+ 3.Marechaussee Hunter (4)","Sands - ATK%
+ Goblet - ATK%
+ Circlet - Crit Rate / DMG","1. Crit Rate / DMG
+  2. ATK%
+  3. EM
+  4. ER","1. Skill
+  2. Burst","DPS (ER 100%)
+ Chasca focuses on dealing damage through Shining Shadowhunt Shells, which convert to different elements based on team composition. Her Anemo scaling is weak, so she excels in multi-element (PHEC) teams that allow frequent conversions and reaction triggers.
+ 
+ Weapons:
+ Amos’ Bow — Solid stat stick; passive does not apply but still strong for base stats.
+ Polar Star — Slightly higher potential than Amos’, but overcrits easily due to high Crit Rate.
+ Scion of the Blazing Sun [R5] — Performs close to Skyward Harp; good balanced option.
+ Song of Stillness — Great if healing is frequent and consistent; otherwise unreliable.
+ Flower-Wreathed Feathers [R5] — Matches Skyward Harp performance at max refine.
+ Range Gauge [R5] — Best with steady heals; outperforms Song of Stillness and Amos’ Bow under those conditions.
+ 
+ Artifacts:
+ Obsidian Codex (4) — Best generalist set; strong and reliable across teams.
+ Marechaussee Hunter (4) — Only competitive with Furina due to HP-fluctuation synergy; otherwise inferior.
+ 
+ Main Stats:
+ Sands: ATK%
+ Goblet: ATK% or specific PHEC DMG Bonus (Pyro/Hydro/Electro/Cryo) depending on team focus.
+ Circlet: Crit Rate or Crit DMG (maintain ~1:2 ratio).
+ 
+ Notes:
+ High ER requirement in solo-Anemo or energy-poor teams; aim for 140–160% if Bursting every rotation.
+ Focus on multi-element comps for maximum Shell conversion.
+ In Furina teams, Marechaussee Hunter (4) becomes viable due to self-heal mechanics.",CRIT > ATK% > EM > ER%,
+15,Chevreuse,Chevreuse,4,Pyro,"1. Symphonist of Scents (5)
+  2. Engulfing Lightning (5)
+  3. Staff of Homa (5)
+  4. Staff of the Scarlet Sands (5)
+  ~Lumidouce Elegy (5)
+  5. Calamity Queller (5)
+  ~Skyward Spine (5)
+  6. Primordial Jade Winged-Spear (5)
+  ~Vortex Vanquisher (5)
+  7. The catch (4) [R5]
+  8. Deathmatch (4)
+  ~Ballad of the Fjords (4)
+  9. Missive Windspear (4) [R5]
+  10. Favonius Lance (4)","1. Noblesse Oblige (4)
+  2. Emblem of Severed Fate (4)
+  3. Golden Troupe (4)
+  4. Emblem of Severed Fate (2) / Noblesse Oblige (2) / Golden Troupe (2) / Crimson Witch of Flames (2) / +18% ATK set (2) [Choose Two]","Sands - ATK% / ER
+ Goblet - Pyro DMG%
+ Circlet - Crit Rate / DMG","1. ER 
+  2. Crit Rate / DMG
+  3. ATK%
+  4. HP%
+  5. EM
+  
+ Notes: Prioritize ER until you meet the requirement.",1. Burst ~Skill,"SUPPORT(170-200%)
+ Chevreuse provides team buffs and enemy debuffs through Overload reactions.
+ Pyro/Electro RES shred requires a full Pyro–Electro team, and buffs cap at 40k HP.
+ 
+ Weapon:
+ Favonius Lance: Good team Energy, less useful without Burst. (ER 170–200%)
+ Symphonist of Scents: Strong, but needs high HP rolls. (ER 100–120%)
+ 
+ Artifacts:
+ Noblesse (4): Only if Burst is used every rotation.
+ 
+ Healing Bonus main stat only after hitting 40k HP.
+ Crit Rate only matters with Favonius.
+ ER is optional if Burst isn’t needed.
+ 
+ SUPPORT AND DAMAGE (ER 170–200%)
+ Mixes support utility with Burst/Skill damage, especially effective post-C4.
+ Favonius Lance: Lower personal damage but strong team Energy.
+ Build for damage while keeping HP for buffs. Works best in Pyro–Electro teams.","ER (until requirement) > HP% (until 40,000) > Flat HP (until 40,000) > CRIT",
+16,Chiori,Chiori,5,Geo,"1. Uraku Misugiri (5)
+  2. Primordial Jade Cutter (5)
+  ~Peak Patrol Song (5)
+  3. Harbinger of Dawn (3) [R5] 
+  ~Cinnabar Spindle (4) [R5] 
+  ~Light of Foliar Incision (5)
+  ~Haran Geppaku Futsu (5)
+  ~Mistsplitter Reforged (5)
+  ~Splendor of Tranquil Waters (5)
+  4. Wolf-Fang (4)","1. Golden Troupe (4) 
+  ~Husk of Opulent Dreams (4) 
+  2. Golden Troupe (2) / Archaic Petra (2) / Husk of Opulent Dreams (2) [Choose two]","Sands - DEF%
+ Goblet - Geo DMG
+ Circlet - Crit Rate / DMG","1. Crit Rate / DMG
+  2. DEF%
+  3. ATK%
+  4. ER 
+  
+  Chiori is not Burst reliant and can opt to Burst less often. It is not recommended to build ER% at the expense of offensive stats. ER% gains in value at C2+ when Bursting is needed to summon an additional doll.","1. Skill
+  2. Burst","OFF-FIELD DPS (ER 100%)
+ Chiori is an off-field Geo DPS who deals most of her damage through her automation dolls summoned by her Elemental Skill. Her Skill DMG scales with DEF, making her a strong sub-DPS in Geo teams. While she benefits from having Geo Constructs on the field (especially pre-[C1]), she remains very effective even in non-construct teams such as with Navia or Itto.
+ 
+ Weapons:
+ Harbinger of Dawn [R5] — Best-in-slot under shielded conditions. Offers massive Crit Value and synergizes well with shielders like Zhongli. If paired with Furina or when facing corrosion, uptime may be inconsistent.
+ Mistsplitter Reforged — Strong premium option assuming 1 passive stack. Provides consistent Crit DMG and works well even without Burst focus.
+ Cinnabar Spindle [R5] — Excellent DEF-scaling weapon. Slightly weaker than Harbinger of Dawn [R5] if only one doll is active but still top-tier for DEF builds.
+ Wolf-Fang [R5] — Solid universal option; performs similarly to Primordial Jade Cutter at high refinement. Also more consistent if HP management or shields are unreliable.
+ 
+ Artifacts:
+ Golden Troupe (4) — Best overall set when focusing exclusively on Skill damage. Outperforms Husk of Opulent Dreams (4) if ignoring Burst.
+ Husk of Opulent Dreams (4) — Ideal if you plan to Burst frequently or want consistent DEF scaling from its stacks. Strong all-around hybrid option.
+ Archaic Petra (2) + Husk (2) — Viable transitional option if lacking full 4-piece sets.
+ 
+ Main Stats:
+ Sands: DEF%
+ Goblet: Geo DMG Bonus
+ Circlet: Crit Rate / Crit DMG
+ 
+ Substats Priority:
+ Crit Rate / Crit DMG → DEF% → ATK%
+ 
+ Notes:
+ ER 100% is sufficient since her Burst is optional and not rotation-critical.
+ Chiori’s damage improves with Geo Constructs (e.g., from Zhongli, Albedo, or Traveler (Geo)), but she remains potent even without them.
+ Pairing her with other Geo units (e.g., Navia, Itto, Gorou) ensures Geo Resonance uptime and better DEF/DMG synergy.
+ For unshielded teams, prioritize Wolf-Fang or Mistsplitter Reforged over Harbinger of Dawn.",CRIT > DEF% > ATK% > ER%,
+17,Chongyun,Chongyun,4,Cryo,"1. Sacrificial Greatsword (4) [R5] 
+  2. Wolf's Gravestone (5)
+  3. Favonius Greatsword (4)
+  3. Makhaira Aquamarine (4)","1. Noblesse Oblige (4)
+  2. Scroll of the Hero of Cinder City (4)
+  3. Instructor (4)","Sands - ATK% / ER
+ Goblet - Cryo DMG
+ Circlet - Crit Rate / DMG","1. Crit Rate / DMG 
+  2. ATK% 
+  3. EM 
+  4. ER","1. Burst
+  2. Skill","BURST NUKE (ER 125–150%)
+ Chongyun shines as a Burst Nuke, not as a main DPS. His Burst hits hard, especially with Reverse Melt setups on Pyro-applied enemies (e.g., Bennett). At [C2], his Skill reduces cooldowns by 15% within the field.
+ Weapons:
+ Akuoumaru: Best with 260+ total team energy. At [R2+] outperforms Luxurious Sea-Lord.
+ Luxurious Sea-Lord: Decent alternative.
+ 
+ Artifacts::
+ Noblesse Oblige (4): Excellent choice—low ER Burst and strong ATK% buff for team.
+ 
+ INFUSION SUPPORT
+ Used to grant Cryo infusion to melee units lacking one (notably Freminet). Niche but functional.",ER% > Crit/Dmg > ATK% > EM,
+18,Citlali,Citlali,5,Cryo,"1. Starcaller's Watch (5)
+  2. Thrilling Tales of Dragon Slayers (3)
+  ~Favonius Codex (4)
+  ~Etherlight Spindlelute (4) [R5] 
+  ~Sacrificial Fragments (4)
+  ~Wandering Evenstar (4)","1. Scroll of the Hero of Cinder City (4)
+  2. Tenacity of the Millelith (4)
+  3. Instructor (4)","Sands - EM / ER
+ Goblet - EM
+ Circlet - EM / Crit Rate","1. ER
+  2. EM
+  3. Crit Rate","1. Skill
+  2. Burst","SUPPORT (ER 160–200%)
+ Citlali provides strong team sustain through shielding and RES shred (Hydro & Pyro) from her passive Mamaloaco's Frigid Rain. She also fully benefits from Scroll of the Hero of Cinder City, adding notable offensive utility.
+ 
+ Weapons:
+ Thrilling Tales of Dragon Slayers: Preferred in hypercarry teams for strong ATK buffing.
+ Wandering Evenstar: At high refinements, better if multiple ATK-scaling units share damage.
+ Other Weapons: Usable if the team doesn’t rely on ATK scaling.
+ 
+ Artifacts set: 
+ Scroll of the Hero of Cinder City (4) is ideal for team utility.
+ Stats: ER to meet Burst uptime, then HP% / supportive substats.",ER (until requirements are met) > EM > CRIT > ATK%,
+19,Clorinde,Clorinde,5,Electro,"1. Absolution (5)
+  2. Light of Foliar Incision (5)
+  ~Haran Geppaku Futsu (5)
+  3. Mistsplitter Reforged (5)
+  ~Primordial Jade Cutter (5)
+  ~Uraku Misugiri (5)
+  ~Freedom-Sworn (5)
+  4. Calamity of Eshu (4) [R5]
+  5. Finale of the Deep (4) [R5]
+  ~The Black Sword (4)","1. Fragment of Harmonic Whimsy (4)
+  2. Gladiator's Finale (4)
+  3. Thundering Fury (4)","Sands - ATK% / EM 
+ Goblet - Electro DMG
+ Circlet - Crit Rate / DMG","1. Crit Rate / DMG
+  2. ATK%
+  3. EM 
+  4. ER","1. Skill
+  2. Burst","DPS (ER 100–130%)
+ Clorinde is an Electro DPS who deals damage mainly through Elemental Skill during Night Vigil, gaining and clearing Bond of Life. Outside healing gives Bond of Life instead of healing.
+ Weapons:
+ Haran / Jade Cutter: Watch Crit Rate—A4gives +20%.
+ Mistsplitter: Requires Burst before Skill to max stacks.
+ Freedom-Sworn: Strong in Dendro teams, weaker elsewhere.
+ Calamity of Eshu: Best with shield (e.g., Kirara).
+ Black Sword (R5): Beats Finale of the Deep (R5).
+  Artifacts::
+ Thundering Fury (4): Best in Quickbloom (Furina) and strong in Aggravate.
+ Sands: EM ~ ATK% in Quickbloom; ATK preferred in Aggravate.
+ Substats: EM useful in Quickbloom only; some ER helps rotations but don’t overstack.
+ 
+ Talent: Burst ≥ Lv. 7 recommended to fully leverage A4and Burst rotations.",ER (until requirement) > CRIT >> ATK% >> (EM) ≥ Flat ATK,
+20,Collei,Collei,4,Dendro,"1. Elegy for the End (5)
+  2. Favonius Warbow (4)
+  3. Polar Star (5)
+  4. Sacrificial Bow [R4+]","1. Deepwood Memories (4)
+  2. Noblesse Oblige (4)
+  3. Tenacity of the Millelith (4) 
+  4. Instructor (4)
+  5. Gilded Dreams (4)","Sands - ER / ATK% / EM
+ Goblet - Dendro DMG / EM 
+ Circlet - Crit Rate / DMG / EM 
+  
+ Notes: Prioritize ER if her Energy Requirements are not met.","1. ER 
+  2. Crit Rate / DMG
+  3. ATK% / EM","1. Burst 
+  2. Skill","REACTION SUPPORT (ER 160–220%)
+ Collei provides off-field Dendro application and light personal damage.
+ Weapons:
+ Polar Star: Best for personal DPS, but support weapons are usually more valuable.
+ Sacrificial Bow (R4+): Enables more frequent Skill use.
+ Artifacts::
+ Tenacity (4): Reliable uptime via Sprout Skill damage—alternative to Noblesse or Deepwood when those are already covered.
+ Gilded Dreams (4): For reaction-focused teams (Bloom/Burning).
+ 
+ Rotation:
+ Standard: Skill → Burst → Swap
+ With Polar Star: N1 → Charged → Skill → Burst → Swap",ER (until requirement) > CRIT Rate (Favonius) ≥ CRIT DMG > EM = ATK%,
+21,Columbina,Columbina,5,Hydro,"1. Nocturne's Curtain Call (5) [BIS]
+ 2. Prototype Amber (4) [R5]
+ ~Sacrificial Jade (4) [DPS]
+ 3. Favonius Codex (4)","1. Silken Moon Serenade (4)
+ ~Aubade of Morningstar and Moon (4)
+ 2. +20% HP set (2) / +80 EM set (2) / +20% ER set (2) [Choose Two]","Sands - HP% / ER
+ Goblet - HP%
+ Circlet - Crit Rate/Crit DMG","1. ER
+ 2. Crit Rate/DMG
+ 3. HP%
+ 4. EM","1. Skill ~ Burst
+ 2. Level Priority: Lv 90","OFF-FIELD DPS & BUFF SUPPORT (ER 150–210%)
+ 
+ Columbina buffs Lunar reactions massively while dealing strong off-field damage.
+ Her damage adapts to whichever Lunar reaction is dominant in your team.
+ 
+ Weapons:
+ Nocturne’s Curtain Call (5) — BIS.
+ Prototype Amber (4) [R5] — Strong F2P choice with healing + energy comfort and BIS.
+ Sacrificial Jade (4) — Performs similarly to Prototype Amber at base; at R5it becomes significantly stronger if ER requirements are met.
+ Favonius Codex (4) — Only if the entire team is desperate for Energy (ex: Stygian Onslaught). For Columbina herself, it’s generally outclassed by Prototype Amber.
+ 
+ Artifacts:
+ 1. Silken Moon Serenade (4) — Best-in-slot for buff/support setups ~ Aubade of Morningstar and Moon (4) — Can also be BiS; preferred for personal damage if another teammate already holds Silken Moon Serenade.
+ 
+ 2) 2pc + 2pc Mix (choose two): +20% HP (2) ~ 80 EM (2) +20% ER (2)
+ 
+ On-field variant only:
+ Night of the Sky’s Unveiling (4) — Best set if Columbina is played on-field.
+ 
+ Main Stats
+ Sands: HP% / ER
+ Goblet: HP%
+ Circlet: Crit Rate / Crit DMG
+ 
+ Substats Priority
+ ER → Crit Rate / Crit DMG → HP% → EM
+ 
+ Talent Priority:
+ Skill > Burst
+ 
+ Notes:
+ 
+ Prioritize ER until Burst uptime feels consistent.
+ At C1, use Burst → Skill for buffed Gravity Interference.",(ER until requirement) > CRIT = HP% > EM > Flat HP,"1. Lunar-Charged
+ [Premium] : Columbina>Flins>Ineffa>Sucrose/Jahoda
+ [F2P] : Columbina>Raiden Shogun/Clorinde>Fischl/Ororon>Sucrose/Jahoda
+ 
+ 2. Lunar Crystallize
+ [Premium] : Columbina>Zibai>Illuga>Zhongli/Chiori 
+ [F2P] : Columbina>Navia/Noelle>Gorou/Albedo/>Chiori/Mona
+ 
+ 3. Nefer Lunar-Bloom
+ Premium] : Columbina>Nefer>Lauma>Nahida/Baizhu
+ [F2P] : Columbina>Nefer>Yaoyao/Baizhu>Traveler (Dendro)/Aino
+ 
+ 4. DPS Columbina Lunar Bloom/ Bloom
+ Premium] : Columbina>Lauma>Baizhu>Nilou 
+ [F2P] : Columbina>Traveler (Dendro)>Baizhu/Yaoyao>Aino/xingqiu
+ 
+ 5. Lunar-Charged/ Electro-Charged
+ Premium] : Columbina>Neuvillette>Furina>Ineffa 
+ [F2P] : Columbina> Yelan/xingqiu>Ororon/Fischl>Sucrose/Jahoda
+ 
+ Notes: Jahoda C6 is recommended in both Premium/F2P, if no C6 sucrose would be recommended."
+22,Cyno,Cyno,5,Electro,"1. Staff of the Scarlet Sands (5)
+  2. Primordial Jade Winged-Spear (5)
+  3. White Tassel (3) [R5]
+  ~Ballad of the Fjords (4)
+  ~Staff of Homa (5)
+  ~Lumidouce Elegy (5)
+  ~Deathmatch (4)
+  4. Skyward Spine (5)
+  ~Kitain Cross Spear (4)
+  5. Favonius Lance (4)","1. Thundering Fury (4) 
+  2. Gladiator's Finale (4)
+  3. Gilded Dreams (4) 
+  4. +18% ATK set (2) / Thundering Fury (2) / Emblem of Severed Fate (2) / +80 EM set (2) [Choose Two]
+  5. Thundersoother (4)","Sands - EM / ATK% 
+ Goblet - Electro DMG
+ Circlet - Crit Rate / DMG","1. ER
+  2. Crit Rate / DMG 
+  3. ATK% 
+  ~EM","1. Burst 
+  2. Skill","QUICKBLOOM / HYPERBLOOM DPS (ER 100–180%)
+ Cyno’s strongest [C0] build, mixing talent, Aggravate, and Hyperbloom damage with strong Hydro application.
+ Weapons:
+ ER Weapons: Useful when lacking Electro batteries.
+ Skyward Spine: Can outperform White Tassel (R5) if ATK SPD is utilized.
+ Artifacts::
+ Marechaussee (4): Best with Furina + healer (e.g., Baizhu); ~ Gilded Dreams (4).
+ Main Stats: EM Sands / ElectroGoblet / EMCirclet give highest output, but all combos are close—substats decide.
+ 
+ AGGRAVATE DPS (ER 100–180%)
+ Focuses on burst stance Electro damage with Dendro support.
+ 
+ Weapons:
+ Skyward Spine: Only if ER needed; good ATK SPD value.
+ Kitain Cross Spear: Strong without an Electro battery.
+ Deathmatch (R5): ~ Primordial Jade Winged-Spear.
+ Thundering Fury (4): BiS if managed well; extra Skill casts ease ER issues—use a shielder.
+ 
+ Artifacts::
+ Gilded Dreams (4): Better than Gladiator with most weapons.
+ Thundersoother (4): Best if 100% uptime, but rare.
+ 
+ Main Stats: EM vs ATK Sands depends on weapon/team; EMCirclet viable with Scarlet Sands.",ER (until requirement) > CRIT > EM > ATK%,
+23,Dahlia,Dahlia,4,Hydro,"1. Favonius Sword (4)
+  2. Key of Khaj Nisut (5)
+  3. The Dockhand's Assistant (4)
+  4. Peak Patrol Song (5)
+  ~Freedom-Sworn (5)
+  5. Skyrider Sword (3)","1. Noblesse Oblige (4)
+  2. Tenacity of the Millelith (2) /  Vourukashas-Glow (2)
+  3. Scroll of the Hero of Cinder City (4)","Sands - ER / HP%
+ Goblet - HP%
+ Circlet - HP%","1. ER
+  2. HP%
+  3. CRIT Rate 
+  4. Flat HP
+  
+ Notes: Crit Rate (if Favonius Sword is used)",1. Burst,"SHIELD SUPPORT (ER 160–200%)
+ Dahlia provides strong shields and ATK SPD buffs, both scaling with HP%.
+ His shield takes overflow damage before refreshing with Benison stacks.
+ A4passive is capped at 40,000 HP.
+ Peak Patrol Song / Freedom-Sworn: Used for team buffs if passives can be triggered.
+ Focus on ER for Burst uptime and HP% for stronger shields and buffing.
+ Prioritize meeting stat thresholds before choosing utility weapons.
+ Ideal for teams needing steady shielding and ATK SPD support.",ER (until requirement) > CRIT Rate (Favonius) > HP% > Flat HP,
+24,Dehya,Dehya,5,Pyro,"1. Mailed Flower (4)
+  2. Makhaira Aquamarine (4)
+  ~Bloodtainted Greatsword (3)
+  ~Rainslasher (4)
+  3. Favonius Greatsword (4)
+  4. Sacrificial Greatsword (4) [R5]","1. Gilded Dreams (4)
+  ~Flower of Paradise Lost (4)
+  2. +80 EM set (2) +80 EM set (2)
+  3. Crimson Witch of Flames (4) 
+  4. Tenacity of the Millelith (4)","Sands - EM
+ Goblet - EM
+ Circlet - EM","1. HP%
+  2. Flat HP
+  3. Crit Rate","1. Burst
+ 2. Skill 
+  
+ Note: EM is a desirable stat if Dehya is played in a Vaporize or Melt team.","ON FIELD DPS (ER 160–220%)
+ Dehya deals damage through Skill and Burst, best in Melt or Vaporize teams.
+ 
+ Weapons:
+ Serpent Spine (R5): Strong if stacks are maintained.
+ Mailed Flower: Only for reaction teams.
+ Rainslasher (R5): Similar to Redhorn in Vaporize.
+ Tidal Shadow: Assumes healing uptime.
+ Talking Stick (R5): Best when affected by Pyro.
+ A Thousand Blazing Suns: Passive often inactive during Burst.
+ Akuoumaru (R5): Outperforms Wolf’s Gravestone.
+ 
+ Artifacts:
+ Unfinished Reverie (4): Best in Burning teams.
+ Marechaussee (4): Strong with Furina.
+ 
+ SUPPORT (ER 100–120%)
+ Provides Pyro application, interruption resistance, and passive damage.
+ 
+ Weapons
+ Sacrificial Greatsword (R5): Enables shorter rotations.
+ 
+ Artifacts:
+ Instructor (4): Boosts team EM.
+ Deepwood (4): For Dendro/Bloom comps.
+ 
+ REACTION DPS (ER 100–120%)
+ Uses Skill to trigger reactions like Overload or Burgeon off-field.
+ 
+ Weapons:
+ Sacrificial Greatsword (R5): Useful for quick rotations and uptime.",Sub-DPS/Burst (Crit/ATK/ER) or Support/Burgeon (EM/HP),
+25,Diluc,Diluc,5,Pyro,"1. Beacon of the Reed Sea (5)
+  ~Redhorn Stonethresher (5)
+  ~A Thousand Blazing Suns (5)
+  2. Verdict (5)
+  ~Serpent Spine (4)
+  3. Fang of the Mountain King (5)
+  4. Wolf's Gravestone (5)
+  ~The Unforged (5)
+  5. Song of Broken Pines (5)
+  ~Rainslasher (4) 
+  ~Mailed Flower (4) [R5]
+  6. Tidal Shadow (4)
+  ~Skyward Pride (5)
+  7. Earth Shaker (4)","1. Crimson Witch of Flames (4) 
+  2. Gilded Dreams (4)
+  3. Crimson Witch of Flames (2) / +18% ATK set (2) / +80 EM set (2) [Choose Two]
+  4. Gladiator's Finale (4)
+  5. Marechaussee Hunter (4)","Sands - EM / ATK%
+ Goblet - Pyro DMG
+ Circlet - Crit Rate / DMG","1. Crit Rate / DMG 
+  2. ATK%
+  3. EM (higher prio in Vaporize/Melt comps)
+  4. ER","1. Normal Attack
+  2. Skill
+  3. Burst","DPS (ER 100–120%)
+ Diluc thrives with strong ATK buffs (e.g., Bennett) and Vaporize/Melt setups.
+ 
+ Weapons:
+ Beacon of the Reed Sea: Assumes 1 stack.
+ Serpent Spine (R5): Best if stacks are maintained.
+ Rainslasher: Viable in consistent Vaporize; strong at R5.
+ Tidal Shadow: Only good with reliable healing.
+ 
+ Artifacts:
+ Crimson Witch (4): Best overall due to Pyro stacking ease.
+ Marechaussee (4): Competitive when paired with Furina.
+ EM Sands preferred in reaction teams.
+ Focus on sustained Pyro damage and reaction uptime.","CRIT Rate/DMG, EM, and ATK%",
+26,Diona,Diona,4,Cryo,"1. Favonius Warbow (4)
+  ~Sacrificial Bow (4) [R3+]
+  2. Sacrificial Bow (4)
+  3. Elegy for the End (5)
+  4. Silvershower Heartstrings (5)
+  5. Recurve Bow (3)
+  ~Sequence of Solitude (4) [R5]","1. Noblesse Oblige (4) 
+  ~Scroll of the Hero of Cinder City (4)
+  2. +20% HP set (2) / +20% HP set (2) / Emblem of Severed Fate (2) / +15% Healing Bonus set (2) [Choose Two]
+  3. Maiden Beloved (4)
+  ~Ocean-Hued Clam (4)
+  4. Instructor (4) 
+  5. Tenacity of the Millelith (4)","Sands - ER / HP% 
+ Goblet - HP% 
+ Circlet - HP% / Healing Bonus","1. ER
+  2. HP%
+  3. Crit Rate 
+  4. Flat HP
+  
+ Notes: Crit Rate only if using Favonius Warbow",1. Burst = Skill,"SUPPORT (ER 160–250%)
+ Diona provides shielding, healing, and Cryo particles, making her a great battery for Cryo DPS like Ayaka, Ganyu, and Eula. Sacrificial and Favonius bows greatly boost her energy utility.
+ 
+ Weapons:
+ Sacrificial Bow: Best battery option at high refinements.
+ Favonius Warbow: Build some Crit Rate to reliably proc passive.
+ Silvershower Heartstrings / Recurve Bow / Sequence of Solitude: Stronger shields but weaker utility.
+ 
+ Artifacts::
+ Noblesse Oblige (4): Team ATK% buff, decent uptime.
+ Instructor (4): For EM-focused teams (on-field reaction trigger needed).
+ Tenacity of the Millelith (4): Snapshot buff option for Ganyu Freeze variants.
+ Main Stats: Full HP% for max shield, or Healing BonusCirclet for balanced build.
+ Notes:
+ Talent Priority: Level Skill or Burst depending on role (or both for hybrid).",HP% > ER,
+27,Dori,Dori,4,Electro,"1. Favonius Greatsword (4)
+  2. Sacrificial Greatsword (4)
+  3. Katsuragikiri Nagamasa (4)
+  4. Forest Regalia (4)","1. Noblesse Oblige (4) 
+  2. Deepwood Memories (4) 
+  3. Instructor (4)
+  4. The Exile (4)","Sands - ER / HP% / EM
+ Goblet - HP% / EM 
+ Circlet - Healing Bonus / HP% / EM 
+  
+ Notes: Crit Rate (if Favonius Greatsword used)","1. Crit Rate 
+  2. ER 
+  3. HP% 
+  4. EM
+  
+ Notes: Crit Rate (if Favonius Greatsword used)","1. Burst 
+  2. Skill","SUPPORT (ER 180–250%)
+ Dori provides healing and energy to a teammate through her Burst.
+ Sacrificial Greatsword: Enables double Skill use per rotation.
+ Deepwood (4): Use only in Dendro teams for added utility.
+ Prioritize ER to ensure consistent Burst uptime and team battery support.",ER > HP% > EM,
+28,Durin,Durin,5,Pyro,"1.Athame Artis (5)
+ 2.Primordial Jade Cutter (5)
+ ~ Mistsplitter Reforged (5)
+ ~ Azurelight (5)
+ 3. Haran Geppaku Futsu (5)
+ 4. Absolution (5)
+ 5. Light of Foliar Incision (5)
+ ~ Freedom-Sworn (5)
+ ~ Lion's Roar (4)
+ ~ Wolf Fang (4)
+ ~ Finale of the Deep (4)
+ 6.Uraku Misugiri (5)
+ ~ Splendor of Tranquil Waters (5)
+ ~ Moonweaver's Dawn (4)","Off-field Vaporize/Melt DPS:
+ 1. A Day Carved From Rising Winds (4)
+ 2. Gilded Dreams (4)
+ 3. Crimson Witch of Flames (4)
+ 4. Emblem of Severed Fate (4) 
+ 5. Crimson Witch (2) / +18% ATK set (2) / +80 EM set (2) / +20% ER set (2) [Choose Two]
+ 
+Off-Field DPS & Buff Support:
+ 1. A Day Carved From Rising Winds (4)
+ 2. Noblesse Oblige (4)
+ 3. Emblem of Severed Fate (4)
+ 4. Scroll of the Hero of Cinder City (4)
+ 5. Crimson Witch (2) / +18% ATK set (2) / +20% ER set (2) [Choose Two]","Sands - ATK%
+ Goblet - Pyro DMG / ATK%
+ Circlet - Crit Rate / DMG","1. Crit Rate / DMG
+ 2. ATK%
+ 3. EM(Vape/Melt)
+ 4. ER","1. Burst
+ 2. Skill","VAPE/MELT OFF-FIELD DPS (White) (ER 100–150%)
+ This playstyle leverages Durin’s Denial to deal massively increased Vaporize/Melt damage. Durin is typically played as an off-field DPS, though on-field variants can work depending on the team. The main goal is maximizing reaction damage while meeting ER needs for smooth rotations.
+ 
+ BUFF SUPPORT & OFF-FIELD DPS (Dark) (ER 100–130%)
+ This playstyle uses Durin’s Purity to provide team utility by reducing enemy Elemental RES when Pyro triggers reactions. It supports reactions involving Pyro + Dendro/Electro/Anemo/Geo (and Pyro itself), while still contributing off-field damage.
+ 
+ Weapons:
+ Finale of the Deep — Ranking assumes Durin is healed and Bond of Life is cleared; if this cannot happen, it performs roughly equal to Moonweaver’s Dawn.
+ Wolf Fang — Very strong; at R5ranks above Summit Shaper (Vape/Melt) and above Absolution (Buff build).
+ Lion’s Roar — Assumes ~90% Pyro/Electro uptime.
+ Freedom-Sworn — Ranked conservatively; if the team benefits from its passive, it can perform roughly equal to Absolution.
+ 
+ Artifacts:
+ Preferred: Gilded Dreams (4) for reaction
+ Alternative: Emblem of Severed Fate (4) (better if Durin has higher Energy Requirements / needs frequent Burst uptime)
+ 
+ Main Stats:
+ Sands: ATK% (or ER if needed)
+ Goblet: Pyro DMG%
+ Circlet: Crit Rate / Crit DMG
+ 
+ Substats Priority:
+ Crit Rate / Crit DMG → ATK% → ER (only until requirement met) → EM (mainly valuable in Vape/Melt teams)
+ 
+ Talent Priority:
+ Vape/Melt DPS: Skill > Burst > Normal
+ Buff Support: Skill > Burst (Normal can be ignored)
+ 
+ Notes:
+ This build is best when your team can consistently trigger the Pyro reaction and ATK buff condition to maintain utility uptime.
+ Focusing on ATK 2100-2,500 works
+ Emblem reduces ER pressure by ~20% compared to non-Emblem builds.",ER (until requirement) > CRIT > ATK% ≥ EM > Flat ATK,
+29,Emilie,Emilie,5,Dendro,"1. Lumidouce Elegy (5)
+  2. Calamity Queller (5)
+  3. Symphonist of Scents (5)
+  ~Staff of Homa (5)
+  4. Engulfing Lightning (5)
+  ~Staff of the Scarlet Sands (5)
+  5. Primordial Jade Winged-Spear (5)
+  ~Crimson Moon's Semblance (5)
+  6. Deathmatch (4)
+  7. Skyward Spine (5)
+  ~Tamayuratei no Ohanashi (4)
+  8. Missive Windspear (4) [R5]
+  ~Lithic Spear (4)
+  ~Prospector's Drill (4)
+  9. Favonius Lance (4)
+  10. Kitain Cross Spear (4)","1. Unfinished Reverie (4)
+  2. Deepwood Memories (4) 
+  3. Golden Troupe (4)
+  4. Deepwood Memories (2) / Golden Troupe (2) / +18% ATK set (2) [Choose Two]","Sands - ATK%
+ Goblet - Dendro DMG
+ Circlet - Crit Rate / DMG","1. Crit Rate / DMG
+  2. ATK%
+  3. ER%","1. Skill
+ 2. Burst","OFF-FIELD DPS (ER 100–120%)
+ Emilie uses Burning only to maintain Dendro damage uptime, not as her main source of damage, so offensive stats take priority over reaction scaling.
+ 
+ Weapons:
+ Deathmatch (R5): Strong single-target; slightly below Staff of Homa, above Engulfing Lightning.
+ Symphonist of Scents: Decent stat stick but wastes its buff potential since Emilie can’t trigger it.
+ 
+ Artifacts::
+ Deepwood (4): Best if no other team member holds it; low value otherwise.
+ 
+ Substats:
+ ER is secondary—Burst isn’t required every rotation in many teams.",CRIT > ATK% > ER,
+30,Escoffier,Escoffier,5,Cryo,"1. Symphonist of Scents (5)
+  2. Calamity Queller (5)
+  3. Lumidouce Elegy (5)
+  ~Staff of Homa (5)
+  4. Deathmatch (4)
+  ~Staff of the Scarlet Sands (5)
+  ~Vortex Vanquisher (5)
+  ~Primordial Jade Winged-Spear (5)
+  ~Crimson Moon's Semblance (5)
+  ~Skyward Spine (5)
+  5. Engulfing Lightning (5)
+  6. Tamayuratei no Ohanashi (4) [R5]
+  ~Prospector's Drill (4)
+  ~Mountain-Bracing Bolt (4)
+  ~Wavebreaker's Fin (4)
+  ~Kitain Cross Spear (4) [R5]
+  7. Favonius Lance (4)","1. Golden Troupe (4)
+  2. Blizzard Strayer (4) 
+  3. Golden Troupe (2) / +15% Cryo DMG set (2) / +18% ATK set (2) / +20% ER set (2) [Choose Two]
+  4. Tenacity of the Millelith (4)","Sands - ATK%
+ Goblet - Cryo DMG / ATK% 
+ Circlet - Crit Rate / DMG","1. ER 
+  2. Crit Rate / DMG
+  3. ATK%
+  
+ Notes: Prioritize ER until Requirements are met","1. Skill
+  2. Burst","OFF-FIELD DPS (ER 100–180%)
+ Escoffier deals solid off-field Cryo damage through her Skill while shredding Cryo & Hydro RES (A4). Her Burst + A1 Talent also provide reliable team healing. Cryo DMG% is ideal, but ATK% Goblets can be competitive under high DMG% buffs.
+ 
+ Artifacts set:
+ Blizzard Strayer (4) — Best vs freezable enemies, strong Crit synergy.
+ Golden Troupe (4) — Consistent damage if Freeze uptime is unreliable.
+ Tenacity of the Millelith (4) — Pure support option.
+ 
+ HIGH ENERGY REQ (1–2 Cryo)
+ 
+ Weapons:
+ Deathmatch [R5] — Best personal damage in this setup.
+ Prospector’s Drill [R5] — Strong after 2nd rotation, close to Lumidouce Elegy.
+ Mountain-Bracing Bolt [R5] — Slightly higher than similar tier.
+ Favonius Lance — Lower personal DPS but strong team utility.
+ 
+ LOW ENERGY REQ (3–4Cryo)
+ 
+ Weapons:
+ Deathmatch [R5] — Matches Lumidouce Elegy.
+ Prospector’s Drill [R5] — Outperforms Scarlet Sands.
+ Mountain-Bracing Bolt [R5] — Similar to top options.
+ Favonius Lance — Only for team batterying; personal damage drops significantly.",ER (until requirements) > CRIT > ATK%,
+31,Eula,Eula,5,Cryo,"1. Song of Broken Pines (5)
+  2. Wolf's Gravestone (5) 
+  ~Beacon of the Reed Sea (5)
+  3. Skyward Pride (5)
+  ~Verdict (5)
+  4. The Unforged (5)
+  5. Redhorn Stonethresher (5)
+  6. Serpent Spine (4)
+  ~""Ultimate Overlord's Mega Magic Sword"" (4) [R5] 
+  7. Luxurious Sea-Lord (4) [R5] 
+  ~Akuoumaru (4)
+  ~Tidal Shadow (4)
+  8. Lithic Blade (4) (1 stack)
+  9. Prototype Archaic (4)
+  10. Snow-Tombed Starsilver (4)
+  11. Skyrider Greatsword (3) [R5]","1. Pale Flame (4) 
+  2. Pale Flame (2) Bloodstained Chivalry (2) 
+  3. Pale Flame (2) / Bloodstained Chivalry (2) / +18% ATK set (2) [Choose Two]
+  4. Gladiator's Finale (4)
+  5. +18% ATK set (2) / +18% ATK set (2)","Sands - ATK%
+ Goblet - Physical DMG
+ Circlet - Crit Rate / DMG","1. Crit Rate / DMG
+  2. ER 
+  3. ATK%","1. Normal Attack = Burst
+  2. Skill","DPS (ER 130–150%)
+ Eula is an on-field Physical DPS who deals most of her damage through Burst and Normal Attacks. Weapon rankings assume 130% ER, Superconduct, and 4-pc Noblesse Oblige buff.
+ 
+ Weapons:
+ Redhorn Stonethresher: Outperforms Wolf’s Gravestone with external ATK buffs.
+ Wolf’s Gravestone: Strong team buffing option.
+ Verdict: Competitive, no Crystallize assumed.
+ The Unforged: Matches Beacon/Wolf when shielded.
+ Akuoumaru (R5): Comparable to Verdict/Skyward Pride.
+ Beacon of the Reed Sea: One stack baseline; two stacks best.
+ Tidal Shadow (R5): Equal to Serpent Spine (R1) at 5stacks.
+ Serpent Spine (R5): Comparable to Beacon at max stacks.
+ ER weapons: Less effective in low ER requirement teams (e.g., Triple Cryo + Raiden).
+ 
+ Artifacts::
+ Pale Flame (4): Best set if its conditional buff is maintained. Keep tap Skill rotation to sustain stacks.
+ Pale Flame (2) + Bloodstained Chivalry (2): Solid and consistent alternative.",CRIT Rate/DMG > ER > ATK%,
+32,Faruzan,Faruzan,4,Animo,"1. Favonius Warbow (4)
+  2. Elegy for the End (5)
+  3. Snare Hook (4)
+  4. End of the Line (4)
+  5. Fading Twilight (4)
+  ~Sacrificial Bow (4)","1. Noblesse Oblige (4) 
+  ~Scroll of the Hero of Cinder City (4)
+  2. Viridescent Venerer (4) 
+  3. Emblem of Severed Fate (4) 
+  4. Golden Troupe (4) 
+  ~Tenacity of the Millelith (4) 
+  5. Emblem of Severed Fate (2) / Any (2) / +20% ER set (2)","Sands - ER
+ Goblet - Anemo DMG 
+ Circlet - Crit Rate / DMG","1. ER
+  2. Crit Rate 
+  3. Crit DMG
+  4. ATK%
+  
+ Notes: Crit Rate only if using Favonius Warbow","1. Burst
+  2. Skill","SUPPORT (ER 160–220%)
+ Faruzan is the premier Anemo support for Anemo DPS teams, offering strong Anemo DMG buffs and Anemo RES shred. Her main challenge is her high ER requirement, especially pre-C6.
+ 
+ Weapons:
+ Elegy for the End — Best at higher constellations when ER is stable.
+ Favonius Warbow — Top option for energy generation (requires Crit Rate).
+ Sacrificial Bow — Extra E doesn’t give extra particles if within cooldown.
+ 
+ Artifacts:
+ Viridescent Venerer (4) — Best for teams with Pyro/Hydro/Electro/Cryo damage.
+ Noblesse Oblige (4) — Best if another unit already uses VV.
+ Tenacity of the Millelith (4) — Good at C6 for uptime.
+ Emblem of Severed Fate (4) — Best personal damage if VV is covered.
+ Golden Troupe (4) — Strong at C6 due to Pressurized Collapse DMG.
+ 
+ Notes:
+ ERGoblet > AnemoGoblet pre-C6 for consistency.
+ Crit RateCirclet recommended for Favonius procs",ER% > Anemo DMG > CRIT Rate (for Favonius Bow),
+33,Fischl,Fischl,4,Electro,"1. Polar Star (5)
+  2. Hunter's Path (5)
+  ~Aqua Simulacra (5)
+  3. The First Great Magic (5)
+  4. Skyward Harp (5)
+  ~Thundering Pulse (5)
+  5. Astral Vulture's Crimson Plumage (5)
+  6. The Stringless (4)
+  7. Song of Stillness (4) [R5] 
+  ~The Viridescent Hunt (4)
+  ~Chain Breaker (4) [R5]
+  ~Windblume Ode (4) [R5]
+  8. Alley Hunter (4)
+  ~Fading Twilight (4) [R5]","1. Golden Troupe (4)
+  2. +18% ATK set (2) / +80 EM set (2) / Thundering Fury (2) / Golden Troupe (2) [Choose Two]
+  ~Gilded Dreams (4)
+  ~Thundering Fury (4)
+  3. Thundersoother (4)","Sands - ATK% / EM
+ Goblet - Electro DMG
+ Circlet - Crit Rate / DMG","1. ER 
+  2. Crit Rate / DMG
+  3. ATK% 
+  ~EM
+  
+  Notes: Prioritize ER first until you meet the requirement","1. Skill
+ 2. Burst","OFF-FIELD DPS (ER 120–180%)
+ Fischl excels as an off-field Electro DPS through Oz uptime.
+ Polar Star: Use quick NA + CA before Oz for stacks.
+ Song of Stillness: Requires healing before Oz.
+ Alley Hunter (R5): Outperforms Astral Vulture.
+ The Stringless (R5): Strong if triggering reactions, rivals Amos.
+ Thundersoother (4): Best with constant Electro aura.
+ Tenacity (4): Team utility at the cost of personal DPS.
+ 
+ OFF-FIELD AGGRAVATE DPS (ER 120–180%)
+ Focuses on maximizing reaction damage through Oz.
+ Polar Star: Same pre-cast setup for stacks.
+ Alley Hunter (R5): Matches Stringless.
+ Song of Stillness: Requires pre-heal.
+ Stringless (R5): Matches Skyward Harp performance.",Crit/Dmg > ATK% > EM > ER,
+34,Flins,Flins,5,Electro,"1. Bloodsoaked Ruins (5)
+  2. Staff of the Scarlet Sands (5)
+  3. Fractured Halo (5)
+  ~Staff of Homa (5)
+  4. Symphonist of Scents (5)
+  ~Primordial Jade Winged-Spear (5)
+  ~Lumidouce Elegy (5)
+  5. Ballad of the Fjords (4)
+  ~Deathmatch (4)
+  ~Crimson Moon's Semblance (5)
+  ~Calamity Queller (5)
+  ~Skyward Spine (5)
+  ~Vortex Vanquisher (5)
+  6. Tamayuratei no Ohanashi (4) [R5]
+  ~Engulfing Lightning (5)
+  ~Prospector's Shovel (4) [R5]
+  ~Blackcliff Pole (4)","1. Night of the Sky's Unveiling (4)
+  2. Gilded Dreams (4)
+  3. +18% ATK set (2) / +80 EM set (2) / +20% ER set (2) [Choose Two]","Sands - ATK%
+ Goblet - ATK%
+ Circlet - Crit Rate / DMG","1. ER 
+  2. Crit Rate / DMG
+  3. ATK%
+  ~EM
+  
+ Notes: Prioritize until requirements are met","1. Burst
+  2. Skill","DPS (ER (120-180%)
+ Flins is an on-field DPS unit who utilizes a short field time to generate energy for himself and use the lower Energy cost Burst when possible. Because most of his damage is Lunar Charged, Electro DMG% and other DMG% buffs are not particularly useful for him.
+  
+ Weapons:
+ Staff of the Scarlet Sands: With this weapon, an EM Main Stat on a Sands or aGoblet can outperform ATK%.",ER (until requirement) > CRIT > ATK% > EM > Flat ATK,
+35,Freminet,Freminet,4,Cryo,"1. A Thousand Blazing Suns (5)
+  ~Fang of the Mountain King (5)
+  2. Verdict (5)
+  3. Wolf's Gravestone (5)
+  ~Skyward Pride (5)
+  4. Beacon of the Reed Sea (5)
+  ~The Unforged (5)
+  5. Serpent Spine (4)
+  ~Redhorn Stonethresher (5)
+  ~Song of Broken Pines (5)
+  6. Tidal Shadow (4)
+  7. Mailed Flower [R5] (4)
+  ~Prototype Archaic (4)","1. Blizzard Strayer (4) 
+  2. Blizzard Strayer (2) / +18% ATK set (2) / Golden Troupe (2) [Choose Two]
+  ~Golden Troupe (4)
+ 3.Marechaussee Hunter (4)","Sands - ATK%
+ Goblet - Cryo DMG%
+ Circlet - Crit Rate / DMG","1. ER
+  2. Crit Rate / DMG
+  3. ATK%
+  4. EM","1. Skill
+  2. Normal Attack
+  ~Burst","PHYSICAL DPS (ER 150–200%)
+ Focus on stacking Pers Timer with Normal Attacks, then unleashing max Physical Shattering Pressure. Teams should reliably trigger Shatter and Superconduct.
+ 
+ Weapons:
+ Skyward Pride: Strong baseline option. Less valuable if low ER needs or at C2.
+ Serpent Spine (R5): Can match Skyward Pride.
+ Tidal Shadow: Equal to or better than Redhorn Stonethresher with strong healing support.
+ 
+ Artifacts::
+ Marechaussee Hunter (4): Best set with Furina.
+ Pale Flame (4): Alternative for consistent Physical DMG builds.
+ 
+ CRYO DPS
+ Relies on Level 0 Shattering Pressure for Cryo damage and consistent Shatter triggers.
+ 
+ Weapons:
+ Skyward Pride: Strong baseline; ER less useful at low ER needs or C2.
+ Serpent Spine (R5): Equal or better than Wolf’s Gravestone.
+ Tidal Shadow: Top option with reliable healing.
+ 
+ Artifacts::
+ Marechaussee Hunter (4): Best when paired with Furina.
+ Blizzard Strayer (4): Good for consistent Cryo setups.
+ 
+ Notes:
+ Marechaussee Hunter (4) is Freminet’s best set when paired with Furina.
+ Prioritize ER until requirements are met.",ER% (until requirement) > CRIT Rate/DMG > ATK%,
+36,Furina,Furina,5,Hydro,"1. Splendor of Tranquil Waters (5)
+  2. Primordial Jade Cutter (5)
+  3. Festering Desire (4) [R5]
+  ~Key of Khaj-Nisut (5)
+  ~Uraku Misugiri (5)
+  4. Fleuve Cendre Ferryman (4) [R5]
+  ~Favonius Sword (4)
+  5. Wolf-Fang (4)
+  ~Haran Geppaku Futsu (5)
+  ~Light of Foliar Incision (5)
+  ~Mistsplitter Reforged (5)
+  6. Skyward Blade (5)
+  ~The Dockhand's Assistant (4)
+  ~Harbinger of Dawn (3)","1. Golden Troupe (4)
+  2. Tenacity of the Millelith (4)
+  3. +15% Hydro DMG set (2) / Golden Troupe (2) / +20% HP set (2) / Emblem of Severed Fate (2) [Choose Two]","Sands - ER / HP%
+ Goblet - HP% / Hydro DMG 
+ Circlet - Crit Rate / Crit DMG","1. ER 
+  2. HP%
+  ~Crit Rate / Crit DMG
+  3. Flat HP
+  
+ Notes: ER should be prioritised until requirements are met.","1. Burst
+  ~Skill","OFF-FIELD DPS & SUPPORT (ER 150–220%)
+ Furina buffs the team with Burst and deals off-field damage with Skill.
+ 
+ Uraku Misugiri: Best without Geo; surpasses Jade Cutter with Geo.
+ Key of Khaj-Nisut: Reliable 3stacks, strong team EM buff.
+ Non-ER weapons: Work well with lower ER needs.
+ Favonius Sword: Value depends on team ER requirements.
+ 
+ Goblet: HP% with Golden Troupe (4); Hydro DMG if not.
+ Healing: Tenacity (2) / Vourukasha (2) / Ocean-Hued (4).
+ ATK buffer: Tenacity (4): Use it when another GT set is present.",ER (until requirement) > CRIT Rate / DMG > ATK% > EM,
+37,Gaming,Gaming,4,Pyro,"1. Serpent Spine (4)
+  2. Redhorn Stonethresher (5)
+  ~A Thousand Blazing Suns (5)
+  ~Verdict (5)
+  ~Beacon of the Reed Sea (5)
+  3. Fruitful Hook (4)
+  ~Wolf's Gravestone (5)
+  ~Rainslasher (4)
+  4. The Unforged (5) 
+  5. Mailed Flower (4) [R5]
+  ~Lithic Blade (4) (Two Stacks)
+  6. Tidal Shadow (4)
+  ~""Ultimate Overlord's Mega Magic Sword"" (4) [R5]","1. Crimson Witch of Flames (4)
+  2. Marechaussee Hunter (4) 
+  ~Long Night's Oath (4)
+  3. Gilded Dreams (4)","Sands - EM / ATK% / ER
+ Goblet - Pyro DMG
+ Circlet - Crit Rate / DMG","1. ER
+  2. Crit Rate / DMG
+  3. EM
+  4. ATK%","1. Skill
+  2. Burst
+  3. Normal Attack","VAPORIZE DPS (ER 145–190%) (For c4it changes)
+ Gaming excels at Vaporizing or Melting plunge attacks during Burst for high damage.
+ Prioritize Normal Attack over Burst with C6 Bennett.
+ Best used in reaction-focused teams.
+ 
+ Weapon:
+ Fruitful Hook (R4+): Best weapon.
+ Serpent Spine: Great with stacks and shielding; weak otherwise.
+ Rainslasher (R5): Viable only in Vaporize, similar to Redhorn.
+ ER weapons: Good pre-C4to meet Burst needs.
+ 
+ Artifacts: Marechaussee (4): Strong but weaker at C6 or with Crit Rate weapons.",ER (until requirement) > CRIT Rate / DMG > EM > ATK%,
+38,Ganyu,Ganyu,5,Cryo,"1. The First Great Magic (5)
+  2. Polar Star (5) 
+  3. Amos' Bow (5)
+  ~Aqua Simulacra (5)
+  ~Thundering Pulse (5)
+  4. Astral Vulture's Crimson Plumage (5)
+  ~Song of Stillness (4) [R5] 
+  5. Skyward Harp (5)
+  6. Flower-Wreathed Feathers (4) 
+  ~Prototype Crescent (4)
+  ~Mouun's Moon (4)","1. Blizzard Strayer (4)
+ 2. Blizzard Strayer (2) / 18% ATK set (2) / Noblesse Oblige (2) [Choose Two]","Sands - ATK%
+ Goblet - Cryo DMG
+ Circlet - Crit Rate / DMG","1. Crit Rate / DMG
+  2. ATK%
+  3. ER","1. Normal Attack
+  ~Burst
+  2. Skill","MELT DPS (ER 140–170%)
+ Ganyu’s Level 2 Charged Shots apply Cryo twice, allowing double Melt procs. Charged Shots are her main source of damage, while Skill/Burst are secondary.
+ 
+ Weapons:
+ Amos' Bow: Consistent top option, gains 3stacks even at point-blank.
+ Flower-Wreathed Feathers (R5): Outperforms The First Great Magic.
+ Hamayumi (R5): Works best with Wanderer’s Troupe (4), can surpass Thundering Pulse.
+ Scion of the Blazing Sun (R5): Competitive with top 5 options.
+ Prototype Crescent (R5): Strong if weak spots are easily hit.
+ 
+ Artifacts::
+ Wanderer’s Troupe (4): Most consistent set.
+ Shimenawa’s Reminiscence (4): Higher ceiling if you can fit 5Charged Shots.
+ Unfinished Reverie (4): Best with consistent Burn.
+ Talent Tip: Burst is low priority in Melt teams to avoid reaction stealing.
+ 
+ FREEZE DPS (ER 140–170%)
+ Relies mainly on Burst damage, weaving in Charged Attacks between skill windows. Works best with Shenhe.
+ 
+ Weapons:
+ Polar Star: High ceiling, but tricky to optimize.
+ Amos' Bow: Falls off in heavy quickswap rotations.
+ Song of Stillness: Strong with healing.
+ Prototype Crescent (R5): Excellent with weak spot hits.
+ Mouun’s Moon (R5): Solid based on team Burst cost.
+ 
+ Artifacts::
+ Blizzard Strayer (4): Core set for Freeze.
+ Marechaussee Hunter (4): Viable with Furina.
+ 
+ MONO CRYO DPS (ER 140–170%)
+ Blizzard Strayer and Cryo Resonance boost Ganyu’s on-field DPS from both Charged Attacks and Burst.
+ 
+ Weapons:
+ Amos' Bow: Slightly worse than Skyward Harp if Shenhe is present.
+ Flower-Wreathed Feathers (R5): Comparable to Prototype Crescent.
+ Prototype Crescent (R5): Slightly better without Shenhe, slightly worse with.
+ Mouun’s Moon: Very strong with Shenhe.
+ Song of Stillness: Good with healing uptime.
+ 
+ Artifacts::
+ Blizzard Strayer (4): Standard best set.
+ Marechaussee Hunter (4): Only with Furina, slightly weaker but viable.",CRIT Rate / DMG > ATK% > ER (until requirement),
+39,Gorou,Gorou,4,Geo,"1. Favonius Warbow (4)
+  2. Sacrificial Bow (4)
+  3. Elegy for the End (5)","1. The Exile (4) 
+  2. Noblesse Oblige (4) 
+  3. Emblem of Severed Fate (2) +20% ER set (2)","Sands - ER
+ Goblet - Geo DMG / DEF% 
+ Circlet - Crit Rate / DEF% / Healing Bonus","1. ER
+  2. DEF% 
+  3. Crit Rate",1. Skill,"SUPPORT (ER 220–250%)
+ Gorou is a specialized Geo support who provides powerful DEF, Interruption Resistance, and Geo DMG% buffs that scale with the number of Geo teammates. His buffs are most effective for DEF-scaling Geo DPS units such as Noelle and Arataki Itto. At [C4], he can also act as a healer, while his [C6] further increases teamwide Geo damage potential.
+ 
+ Weapons:
+ Elegy for the End — Offers high ER, plus EM and ATK% team buffs. Excellent if Energy needs are met and team benefits from the extra EM/ATK.
+ Favonius Warbow — Strong F2P and utility option; helps reduce team ER requirements. Build some Crit Rate for reliable passive procs.
+ Sacrificial Bow — Helps regain Skill uptime in longer rotations if refinements are high.
+ 
+ Artifacts:
+ The Exile (4) — Great early/mid-game choice for lowering team ER requirements; generates Energy for teammates upon Burst use.
+ Noblesse Oblige (4) — Best endgame option once ER needs are met; adds 20% teamwide ATK buff after Burst.
+ Emblem of Severed Fate (4) — Niche pick if prioritizing ER stats while maintaining solid Burst uptime.
+ 
+ Main Stats:
+ Sands: ER or DEF% (if ER requirements are already met)
+ Goblet: DEF%
+ Circlet: DEF% or Healing Bonus (at [C4+]); Crit Rate if using Favonius Warbow
+ 
+ Substats Priority:
+ ER > DEF% > Crit Rate (for Favonius only) > HP%
+ 
+ Notes:
+ Aim for 220–250% ER for consistent Burst uptime, especially as the sole Geo battery.
+ At [C4], prioritize DEF% and Healing Bonus if Gorou is the solo healer.
+ At [C6], his buffs significantly improve Geo DPS output; prioritize Burst uptime over personal stats.
+ Avoid investing in personal damage—Gorou’s value lies entirely in buffing, healing, and energy support.",ER (until requirement) > DEF% > CRIT Rate (Favonius) > HP%,
+40,Hu-Tao,Hu Tao,5,Pyro,"1. Staff of Homa (5)
+  2. Staff of the Scarlet Sands (5)
+  3. Ballad of the Fjords (4)
+  ~Lumidouce Elegy (5)
+  4. Dragon's Bane (4)
+  ~Deathmatch (4)
+  5. Primordial Jade Winged-Spear (5)
+  6. Lithic Spear (4Stacks) (4)
+  7. Missive Windspear (4)
+  8. White Tassel (3) 
+  ~Blackcliff Pole (0 stack) (4)
+  ~Kitain Cross Spear (4)
+  ~Rightful Reward (4)","1. Crimson Witch of Flames (4)
+  ~Shimenawas Reminiscence (4) 
+  2. Gilded Dreams (4) 
+  3. Crimson Witch of Flames (2) / +80 EM set (2) / +20% HP (2) [Choose Two] 
+  4. Marechaussee Hunter (4)","Sands - HP% / EM
+ Goblet - Pyro DMG
+ Circlet - Crit Rate / DMG","1. Crit Rate / DMG
+  2. EM 
+  3. HP%
+  4. ATK%","1. Normal Attack
+  2. Skill
+  3. Burst","DPS (ER 100–120%)
+ Hu Tao is a Charged Attack–focused DPS, best with strong off-field Hydro for consistent Vaporize.
+ 
+ Weapons:
+ Staff of the Scarlet Sands: Makes Gilded Dreams (4) competitive with Crimson Witch.
+ Ballad of the Fjords / Lithic Spear (R5): Stronger than Scarlet Sands.
+ Primordial Jade Winged-Spear: Powerful but inconsistent stacks.
+ Deathmatch: Better than Dragon’s Bane without Vaporize.
+ Blackcliff Pole: Underperforms due to unreliable stacks.
+ White Tassel: Best with N2C combo.
+ 
+ Artifacts:
+ Marechaussee (4): Best set with Furina or sustained healing.
+ EM substats are high priority below 100 total EM.",CRIT Rate / DMG > EM (until 100) > HP% > EM > ATK%,
+41,Iansan,Iansan,4,Electro,"1. Engulfing Lightning (5)
+  ~Symphonist of Scents (5)
+  2. Calamity Queller (5)
+  ~Favonius Lance (4)
+  ~Tamayuratei no Ohanashi (4) [R5]
+  3. Skyward Spine (5)
+  4. Vortex Vanquisher (5)
+  5. Missive Windspear (4) [R5]
+  6. Kitain Cross Spear (4) [R5]","1. Scroll of the Hero of Cinder City (4)
+  2. Noblesse Oblige (4)
+  3. Emblem of Severed Fate (2)/ +18% ATK set (2)","Sands - ATK% / ER
+ Goblet - ATK%
+ Circlet - ATK% / Crit Rate 
+  
+  Only if using Favonius Lance","1. ER 
+  2. ATK%
+  3. Crit Rate 
+  
+ Notes: Prioritize until requirements are met. Crit Only if using Favonius Lance",1. Burst,"SUPPORT (ER 130–250%)
+ Iansan buffs teammates via Burst and provides passive healing to the active character.
+ Her buffs scale with team movement, not her own—any vertical or horizontal movement (attacks, skills, jumps) builds Nightsoul Points. C1 reduces Burst cost to 55, easing ER needs.
+ Symphonist of Scents: Strong with ≥3Natlan characters for consistent uptime.
+ Non-ER weapons are less viable at C0 or in low-movement teams.
+ Weapons:
+ Favonius Lance: Requires some Crit Rate to proc passive.",ER (until requirement) > ATK% > CRIT Rate (Favonius),
+42,Ifa,Ifa,4,Animo,"1. Tulaytullah's Remembrance (5)
+  2. Vivid Notions (5)
+  3. Skyward Atlas (5)
+  ~Surf's Up! (5)
+  4. Tome of the Eternal Flow (5)
+  ~A Thousand Floating Dreams (5)
+  ~Kagura's Verity (5)
+  ~Lost Prayer to the Sacred Winds (5)
+  ~Cashflow Supervision (5)
+  5. Flowing Purity (4)
+  ~Sunny Morning Sleep-In (5)
+  ~Mappa Mare (4) [R5]
+  ~The Widsith (4)
+  ~Memory of Dust (5)","1. Obsidian Codex (4)
+  2. Viridescent Venerer (4) 
+  3. Scroll of the Hero of Cinder City (4)","Sands - ATK% 
+ Goblet - Anemo DMG
+ Circlet - Crit Rate / DMG","1. Crit Rate / DMG
+  2. ATK%
+  3. EM
+  4. ER","1. Skill
+  2. Burst","REACTION DPS (ER 100–160%)
+ Ifa scales with EM to provide teamwide healing and reaction damage. He boosts Swirl and Electro-Charged based on shared Nightsoul Points (max 150 / 200 at [C2]). Works best when paired with Ororon.
+ 
+ Weapons:
+ Sacrificial Fragments — Similar DMG to Mappa, better total healing.
+ Mappa Mare — Balanced option for both damage and healing.
+ Thrilling Tales of Dragon Slayers — ATK buff support for Fischl/Xingqiu/Ororon.
+ 
+ Artifacts: (ER 100–160%)
+ Viridescent Venerer (4) — Universal best-in-slot for reaction support.
+ 
+ ANEMO DPS
+ This build focuses on maximizing Ifa’s personal Anemo damage output.
+ 
+ Weapons:
+ Cashflow Supervision — BiS with HP loss mechanics (e.g., Furina teams).
+ The Widsith — [R5] equals Surf’s Up! in performance.
+ 
+ Artifacts:
+ Viridescent Venerer (4) — Best for damage and resistance shred.",CRIT Rate / DMG > ATK% > EM > ER (until requirement),
+43,Illuga,Illuga,4,Geo,,,,,,,,
+44,Ineffa,Ineffa,5,Electro,"1. Fractured Halo (5)
+  2. Staff of the Scarlet Sands (5)
+  3. Symphonist of Scents (5)
+  4. Staff of Homa (5)
+  5. Calamity Queller (5)
+  ~Lumidouce Elegy (5)
+  6. Engulfing Lightning (5)
+  ~Prospector's Shovel (4) [R5] 
+  ~Kitain Cross Spear (4) [R5] 
+  ~Skyward Spine (5)
+  ~Primordial Jade Winged-Spear (5)
+  7. Ballad of the Fjords (4)
+  8. Deathmatch (4)
+  9. Missive Windspear (4) [R5] 
+  
+  160% ER requirements are assumed here; in teams where they are lower, ER Weapons and Kitain Cross Spear perform worse.","1. Silken Moon's Serenade (4)
+  ~Gilded Dreams (4)
+ 2. +18% ATK set (2) / +80 EM set (2) [Choose Two]
+ 3. Thundering Fury (4)
+ 4. Emblem of Severed Fate (4)
+  ~Golden Troupe (4)
+  ~Tenacity of the Millelith (4)","Sands - ATK% / ER
+ Goblet - ATK% 
+ Circlet - Crit Rate / DMG
+  
+  ATK% is preferred over DMG% as Ineffa's A1 does not scale well with DMG%","1. ER 
+  2. Crit Rate / DMG
+  3. ATK%
+  ~EM
+  
+ Notes: Prioritize until requirements are met","1. Skill
+  2. Burst","DPS & SUPPORT (ER 140–250%)
+ Ineffa converts Electro-Charged into Lunar-Charged, which can crit. Both Skill and Burst summon Birgitta for off-field Electro damage, shielding, and EM buff scaling with ATK (A4talent).
+ Weapons:
+ Staff of the Scarlet Sands: May favor EM main stats in some builds.
+ Ballad of the Fjords (R5): Near Lumidouce Elegy performance.
+ Prospector’s Shovel: Best with Moonsign active; else = Missive Windspear.
+ Deathmatch (R5): Strong vs 2+ enemies, slightly better than Engulfing Lightning.
+ Missive Windspear: Matches Engulfing Lightning in quickswap teams.
+ Artifacts::
+ Tenacity (4): Support-focused—boosts ATK% and shield strength at cost of personal DPS.
+ Main Stats: ATK% preferred; EM Sands/Goblet viable with strong substats but slightly weaker.",ER (until requirement) > CRIT Rate / DMG > ATK% > EM,
+45,Jahoda,Jahoda,4,Animo,"1. Favonius Warbow (4)
+ 2. Elegy for the End (5)
+ 3. Rainbow Serpent's Rain Bow (4) [R5]
+ 4. Snare Hook (4)","1. Viridescent Venerer (4)
+ 2. Silken Moon's Serenade (4)","Sands - ER / ATK%
+ Goblet - ATK%
+ Circlet - Healing Bonus / ATK% / Crit Rate 
+ 
+  Crit Rate only if using Favonius Warbow","1. ER
+ 
+ 2. ATK%
+ 
+ 3. Crit Rate
+ 
+ 4. EM","1. Burst
+ 
+ 2. Skill","OFF-FIELD DPS & SUPPORT (ER 150–250%)
+ Jahoda provides continuous healing for the active character through her Elemental Burst, while also offering off-field Elemental application via her infused Skill and Burst. With Moonsign: Ascendant Gleam active, her Elemental Skill can steal enemy auras and use them for her own application, improving reaction consistency and team flexibility.
+ Jahoda strongly prefers running with Moonsign: Ascendant Gleam for maximum value and smooth rotations.
+ 
+ Artifacts:
+ Viridescent Venerer (4) — Highest priority if no one else in the team is holding VV.
+ Deepwood Memories (4) — Strong option in teams with heavy Dendro damage (ex: Nefer teams) to maintain resistance shred uptime.
+ 
+ Main Stats
+ Sands ATK%/ER 
+ Goblet ATK% 
+ Circlet Healing Bonus CRIT Rate (only on Favonius)
+ 
+ Substats Priority
+ ER→ATK%→CRIT Rate (only on Favonius)
+ 
+ Infusion Priority
+ Jahoda’s Skill/Burst infusion follows:
+ Pyro > Hydro > Electro > Cryo (prioritize until requirements are met)
+ 
+ Notes:
+ If the active character is at 70% HP or more, Jahoda’s Burst will additionally heal the teammate with the lowest HP.
+ C6 only activates when the Purr-Loined Treasure Flask is full.",ER (until requirement) > ATK% > CRIT Rate (Favonius) > EM,
+46,Jean,Jean,5,Animo,"1. Freedom-Sworn (5)
+  2. Xiphos' Moonlight (4)
+  3. Iron Sting (4)
+  ~Toukabou Shigure (4)
+  4. Favonius Sword (4)
+  5. Dark Iron Sword (3)","1. Viridescent Venerer (4)
+  2. Gilded Dreams (4)
+  3. +80 EM set (2) +80 EM set (2)","Sands - ER / EM
+ Goblet - EM
+ Circlet - EM","1. ER until requirement
+  2. EM
+  3. ATK%",1. Burst = Skill,"SUPPORT & DAMAGE (ER 160–220%)
+ Jean provides healing, crowd control, and strong team utility through Swirl and Viridescent shred. She can flex between Sub-DPS and healer roles.
+ 
+ Weapons:
+ Amenoma Kageuchi — Reduces ER needs; can outperform Skyward Blade at high refinements.
+ Lion’s Roar — High personal damage with good passive uptime.
+ Favonius Sword (alt) — Energy utility if Crit Rate is built.
+ 
+ Artifacts:
+ Viridescent Venerer (4) — Best overall for team damage.
+ Noblesse Oblige (4) — ATK% team buff option.
+ Ocean-Hued Clam (4) — Highest personal damage if healing is prioritized.
+ 
+ Main Stats:
+ ATK% / Anemo DMG / Crit (DPS) or ATK% / ATK% / Healing Bonus (healer).
+ Favonius users can run Crit Rate circlet.
+ 
+ Talent Tips:
+ Skill > Burst for damage.
+ Burst for healing and utility uptime.
+ 
+ REACTION DPS (EM Build) (ER 160–220%)
+ Jean uses her Burst interaction to infuse Pyro/Electro/Hydro/Cryo and trigger rapid Swirls, scaling with EM. Works especially well with Bennett for Pyro infusion.
+ 
+ Weapons:
+ EM or ER supportive weapons (e.g., Amenoma, Favonius).
+ 
+ Artifacts:
+ Viridescent Venerer (4) — Swirl damage and resistance shred.
+ 
+ Main Stats:
+ EM / EM / EM or EM / Anemo DMG / Crit depending on team.
+ 
+ Notes:
+ Talent levels are not crucial for EM builds.
+ Prioritize EM substats and Swirl setups for high reaction damage.",ER (until requirement) > EM > ATK% > CRIT Rate / DMG,
+47,Kachina,Kachina,4,Geo,"1. Favonius Lance (4)
+  2. Footprint of the Rainbow (4)
+  3. Engulfing Lightning (5)
+  4. Prototype Starglitter (4)",1. Scroll of the Hero of Cinder City (4),"Sands - DEF% / ER
+ Goblet - Geo DMG% / DEF%
+ Circlet - Crit Rate / DMG","1. ER until requirement is met
+  2. Crit Rate / DMG
+  3. DEF%","1. Skill
+  2. Burst","SUPPORT & OFF-FIELD DPS (ER 100–120%)
+ Kachina functions primarily as a low-investment Geo support and secondary off-field DPS. Her main utility lies in maintaining the 4-piece Scroll of the Hero of Cinder City set bonus while offering small bursts of off-field damage and summoning constructs that synergize well with other Geo characters—especially Chiori or construct-based teams. While she can deal damage, her scaling is modest, so it’s often better to treat her as a utility unit rather than an offensive one.
+ 
+ Weapons:
+ Favonius Lance — Best general option; supports both Kachina and the team with Energy generation. Build around ~50% Crit Rate for consistent passive triggers.
+ Footprint of the Rainbow — Excellent choice when ER needs are already met and the team doesn’t require Favonius particle generation. Offers a smoother offensive stat spread for higher uptime on her personal DMG.
+ Prototype Starglitter — Budget alternative for maintaining Burst uptime if no other ER polearm is available.
+ 
+ Artifacts:
+ Scroll of the Hero of Cinder City (4) — Best-in-slot. Provides valuable teamwide DMG% buffs that Kachina can maintain easily while contributing off-field Geo damage.
+ Noblesse Oblige (4) — Viable alternative if another party member cannot hold the set; adds a consistent ATK% buff after Burst.
+ Archaic Petra (4) — Niche pick for elemental-reaction teams, offering bonus DMG% when reliably collecting Crystallize shards.
+ 
+ Main Stats:
+ Sands: DEF% or ER% (depending on team energy flow)
+ Goblet: Geo DMG Bonus or DEF% (for pure support)
+ Circlet: Crit Rate (if using Favonius Lance) or DEF%
+ 
+ Substats Priority:
+ ER → Crit Rate (Favonius only) → DEF% → HP%
+ 
+ Notes:
+ Aim for ~100–120% ER, as Kachina’s Burst is cheap and rotations are smooth.
+ Crit Rate becomes important only when using Favonius Lance.
+ Her constructs synergize with other Geo units’ abilities (e.g., Chiori, Albedo), enhancing their uptime and coordination.
+ Treat her as a utility buffer and enabler rather than a main damage source — her best value comes from the Scroll set and Energy support.",ER (until requirement) > CRIT Rate (Favonius) > DEF% > HP%,
+48,Kaedehara-Kazuha,Kaedehara Kazuha,5,Animo,"1. Freedom-Sworn (5)
+  2. Favonius Sword (4)
+  3. Xiphos' Moonlight (4)
+  4. Sacrificial Sword (4)
+  ~Fleuve Cendre Ferryman (4)
+  ~Skyward Blade (5)
+  5. Iron Sting (4)
+  ~Toukabou Shigure (4)
+  ~Skyrider Sword (3)","1. Viridescent Venerer (4)
+  2. Thundering Fury (4)","Sands - EM / ER
+ Goblet - EM
+ Circlet - EM","1. ER
+  2. EM
+  3. Crit Rate 
+  
+ Notes: Crit Rate (if Favonius Sword is used)","1. Burst
+  2. Skill = 8 / 9 only for grouping ~NA for plunge DMG","REACTION DPS & SUPPORT (ER 180–220%)
+ Kazuha amplifies team damage by buffing Elemental DMG through his EM scaling and strong Swirl reactions. EM stacking and Burst uptime are the core priorities.
+ 
+ Weapons:
+ Favonius Sword — Excellent utility; build some Crit Rate for passive consistency.
+ Xiphos’ Moonlight — Great hybrid option; [R3–R5] rivals Freedom-Sworn due to shared ER.
+ Sacrificial Sword — Safe pick for energy needs; only use reset for extra grouping.
+ Iron Sting / Toukabou Shigure — Strong EM options if ER substats suffice.
+ Freedom-Sworn (alt) — BiS for team buffing when ER requirements are comfortably met.
+ 
+ Artifacts:
+ Viridescent Venerer (4) — Core set for all Kazuha builds; resistance shred + Swirl bonus.
+ Thundering Fury (4) — Niche on-field set for Aggravate/Swirl spam teams.
+ 
+ Main Stats:
+ EM / EM / EM for reaction builds.
+ If running ER weapon + high EM substats, ER/EM/EM is acceptable.
+ 
+ Notes:
+ Leveling talents is unnecessary for full EM builds.
+ Skill → Plunge → Burst maintains buffs efficiently.
+ NA talent upgrades only matter for on-field plunge damage builds.",ER (until requirement) > EM > CRIT Rate (Favonius),
+49,Kaeya,Kaeya,4,Cryo,"1. Primordial Jade Cutter (5)
+  2. Mistsplitter Reforged (5)
+  3. Haran Geppaku Futsu (5)
+  ~Uraku Misugiri (5)
+  ~Light of Foliar Incision (5)
+  4. Absolution (5)
+  ~Splendor of Tranquil Waters (5)
+  ~Freedom-Sworn (5)
+  ~Toukabou Shigure (4) [R5]
+  ~Iron Sting (4) [R5]
+  ~Harbinger of Dawn (3) [R5]
+  5. Summit Shaper (5)
+  ~Lion's Roar (4)
+  6. Finale of the Deep (4) [R5] 
+  7. Skyward Blade (5)
+  ~Favonius Sword (4)","1. Emblem of Severed Fate (4)
+  2. Noblesse Oblige (2) / +15% Cryo DMG set (2) [Choose One] and +18% ATK set (2) / +80 EM set (2) [Choose One]
+  ~Gilded Dreams (4)
+  3. Noblesse Oblige (4) 
+  4. Instructor (4)","Sands - ER / ATK% / EM
+ Goblet - Cryo DMG
+ Circlet - Crit Rate / DMG","1. ER 
+  2. Crit Rate / DMG 
+  3. ATK%
+  ~EM
+  
+ Notes: Prioritize ER until Requirements are met","1. Burst
+  2. Skill","FREEZE / MONO CRYO (ER 120–160%)
+ Kaeya works well as an on-field or sub-DPS in Freeze/Mono Cryo teams, providing strong Burst uptime and Cryo application.
+ 
+ Weapons:
+ Haran Geppaku Futsu: Slightly better than Light of Foliar Incision with Chongyun.
+ Primordial Jade Cutter: Overcrits with Blizzard Strayer (4); avoid pairing both.
+ Finale of the Deep: Strong with Bond of Life clear.
+ Amenoma / Skyward Blade / Favonius Sword: Useful if ER is needed.
+ 
+ Artifacts::
+ Noblesse Oblige (4): Buffs team damage at the cost of personal DPS.
+ 
+ REVERSE MELT (ER 120–160%)
+ Kaeya excels as DPS + battery, melting Burst and Skill hits for strong damage.
+ Weapons:
+ Uraku Misugiri: With Geo teammate, rivals Mistsplitter if melting 2+ Skills.
+ Lion’s Roar (R5) ~ Absolution.
+ Finale of the Deep: Strong with Bond of Life clear.
+ Skyward Blade: Higher value with no second Cryo.
+ Favonius Sword: For team ER support.
+ 
+ Artifacts::
+ Instructor (4) / Noblesse Oblige (4): Sacrifice personal DPS for valuable team buffs.",ER (until requirement) > CRIT Rate / DMG > ATK% > EM,
+50,Kamisato-Ayaka,Kamisato Ayaka,5,Cryo,"1. Mistsplitter Reforged (5)
+  2. Haran Geppaku Futsu (5)
+  3. Light of Foliar Incision (5) 
+  ~Primordial Jade Cutter (5)
+  ~Summit Shaper (5)
+  4. Finale of the Deep (4) [R5] 
+  5. Aquila Favonia (5)
+  ~Skyward Blade (5) 
+  ~Finale of the Deep (4)
+  6. Amenoma Kageuchi (4) 
+  ~The Black Sword (4) 
+  ~Kagotsurube Isshin (4)
+  7. Harbinger of Dawn (3) [R5]","1. Blizzard Strayer (4)
+  2. Blizzard Strayer (2) +18% ATK set (2)
+  3. +18% ATK set (2) +18% ATK set (2)
+  4. Blizzard Strayer (2) Noblesse Oblige (2)","Sands - ATK%
+ Goblet - Cryo DMG
+ Circlet - Crit DMG / ATK%","1. Crit DMG
+  2. ATK%
+  3. ER
+  4. Crit Rate","1. Burst
+  2. Normal Attack
+  3. Skill","DPS (ER 140–160%)
+ Ayaka deals most of her damage through her Burst. Her dash gives Cryo infusion, so always dash before attacking. She typically needs a Cryo battery (e.g., Diona, Kaeya, Rosaria).
+ Crit Rate loses value with Blizzard Strayer (4); otherwise, aim for a 1:2 Crit ratio.
+ 
+ Weapons:
+ Primordial Jade Cutter: Overcrits with Blizzard + Cryo Resonance — avoid excess Crit Rate.
+ Finale of the Deep: Best if Bond is cleared.
+ Aquila Favonia: Good stat stick but not optimal.
+ Skyward Blade: Excellent ER comfort, avoid extra ER rolls.
+ Amenoma Kageuchi: Lowers ER needs, frees substats.
+ Harbinger of Dawn: Great Crit option if HP stays above 90%.
+ 
+ Artifacts::
+ Blizzard Strayer (4): Core set, offers high Crit Rate.
+ Circlet: ATK% can match Crit in value due to high Crit gain from set, ascension, and weapons.",CRIT DMG > ATK% > ER (until requirement) > CRIT Rate,
+51,Kamisato-Ayato,Kamisato Ayato,5,Hydro,"1. Haran Geppaku Futsu (5)
+  ~Primordial Jade Cutter (5) 
+  2. Mistsplitter Reforged (5)
+  3. Light of Foliar Incision (5)
+  4. The Black Sword (4) 
+  5. Skyward Blade (5)
+  ~Splendor of Tranquil Waters (5)
+  6. Summit Shaper (5)
+  7. Finale of the Deep (4)
+  ~Kagotsurube Isshin (4)
+  8. Lion's Roar (4)
+  9. Harbinger of Dawn (3) [R5] 
+  ~The Flute (4)
+  ~Sword of Narzissenkreuz (4) [R5]","1. Heart of Depth (4) 
+  ~Gladiator's Finale (4)
+  ~Nymphs Dream (4) 
+ 2. +15% Hydro DMG set (2) +18% ATK set (2)
+ 3. Blizzard Strayer (4) 
+ 4. Thundering Fury (4) 
+ 5. Echoes of an Offering (4) 
+ 6. Marechaussee Hunter (4)","Sands - ATK%
+ Goblet - Hydro DMG
+ Circlet - Crit Rate / DMG","1. Crit Rate / DMG
+  2. ATK%
+  3. ER
+  4. HP%
+  5. EM","1. Skill
+  2. Burst","DPS (ER 120–160%)
+ Ayato deals strong on-field Hydro damage with Skill and Burst.
+ 
+ Weapons:
+ Skyward Blade: Great if ER is needed (~135%).
+ Summit Shaper: Strong when ATK buffs are low.
+ Finale of the Deep: Best if Bond of Life is cleared.
+ Lion’s Roar: Matches Summit in Electro-Charged teams.
+ Harbinger of Dawn: Top pick with shielding.
+ 
+ Artifacts::
+ Echoes (4): Strong but inconsistent; good with low ping.
+ Marechaussee (4): Best with Furina or Burgeon damage taken.
+ Nymph’s Dream (4): Strong with consistent passive stacks.
+ Blizzard (4): Best in Freeze; Thundering Fury (4) best in Electro-Charged.",CRIT Rate / DMG > ATK% > ER (until requirement) > HP% > EM,
+52,Kaveh,Kaveh,4,Dendro,"1. Flame-Forged Insight [R5] (4)
+  ~Favonius Greatsword (4)
+  2. Sacrificial Greatsword (4)
+  3. Mailed Flower [R5] (4)
+  4. Wolf's Gravestone (5)
+  ~Song of Broken Pines (5)
+  5. Makhaira Aquamarine (4)
+  ~Katsuragikiri Nagamasa (4)
+  6. Skyward Pride (5)
+  ~Forest Regalia (4)
+  ~Rainslasher (4)","1. Deepwood Memories (4) 
+  2. Ocean Hued Clam (4) 
+  3. Flower of Paradise Lost (4) 
+  4. Instructor (4)
+  5. Gilded Dreams (4)","Sands - ER / EM
+ Goblet - EM
+ Circlet - EM / Crit Rate","1. ER
+  2. EM
+  3. Crit Rate","1. Burst
+  2. Normal Attack
+  3. Skill","SUPPORT (ER 160–220%)
+ Kaveh serves as an on-field Bloom driver, boosting core damage with Burst and applying Dendro. His self-healing removes the need for extra defense.
+ Weapons:
+ Wolf’s Gravestone / Song of Broken Pines: Only viable if team ATK% buffs are impactful—otherwise avoid.
+ Artifacts::
+ Deepwood (4): Only if no one else holds it.
+ Ocean-Hued Clam (4): Best when Deepwood is covered; stronger at C1.
+ Flower of Paradise Lost (4): Best when Kaveh triggers most Blooms.
+ 
+ Main Stats:
+ Crit RateCirclet only if using Favonius Greatsword.
+ Combo:
+ N3D — 3Normal Attacks → Dash cancel.",ER (until requirement) > EM > CRIT Rate (Favonius),
+53,Keqing,Keqing,5,Electro,"1. Light of Foliar Incision (5)
+  ~Primordial Jade Cutter (5)
+  ~Mistsplitter Reforged (5)
+  2. Haran Geppaku Futsu (5)
+  ~Uraku Misugiri (5)
+  ~Freedom-Sworn (5)
+  3. Toukabou Shigure [R5] (4)
+  ~Harbinger of Dawn [R5] (3)
+  ~Splendor of Tranquil Waters (5)
+  4. Iron Sting [R5] (4)
+  ~Absolution (5)
+  5. Wolf-Fang (4)
+  6. The Black Sword (4)
+  7. Lion's Roar (4)
+  ~Calamity of Eshu [R5] (4)
+  ~Finale of the Deep [R5] (4)
+  ~Summit Shaper (5)","1. Thundering Fury (4)
+  2. Gilded Dreams (4)
+  3. Thundering Fury (2) / +80 EM set (2) / +18% ATK set (2) [Choose Two]
+  4. Marechaussee Hunter (4)","Sands - EM / ATK%
+ Goblet - Electro DMG
+ Circlet - Crit Rate / DMG","1. ER 
+  2. Crit Rate / DMG
+  3. EM
+  4. ATK%
+  
+ Notes: Prioritize ER first until requirements are met","1. Normal Attack
+  2. Burst
+  3. Skill
+  
+  It is recommended to level Keqing to level 90","AGGRAVATE DPS (ER 100%)
+ Keqing excels in fast, consistent Aggravate procs.
+ Uraku Misugiri: Top option with Geo unit.
+ Harbinger of Dawn: Best only above 90% HP.
+ Wolf-Fang (R5): ~ Light of Foliar Incision.
+ The Black Sword (R5): ~ Freedom-Sworn.
+ Toukabou Shigure: Weaker vs multi-target.
+ Calamity of Eshu: Shield required.
+ Finale of the Deep: Bond of Life cleared.
+ Summit Shaper: Shield boosts performance.
+ Lion’s Roar (R5): Reliable passive, near FS performance.
+ 
+ QUICKBLOOM DPS (ER 100%)
+ Focus on Electro application + Dendro reactions.
+ Uraku Misugiri: Equal to Light of Foliar Incision with Geo.
+ Harbinger of Dawn: Top if >90% HP.
+ Wolf-Fang (R5): ~ Haran Geppaku Futsu.
+ The Black Sword (R5): Slightly better than Wolf-Fang.
+ Lion’s Roar (R5): ~ Iron Sting (R5).
+ Calamity of Eshu: Shield required.
+ Finale of the Deep: Bond of Life cleared.
+ Marechaussee (4): Best with Furina, ~ Thundering Fury (4).",ER (until requirement) > CRIT Rate / DMG > EM > ATK%,
+54,Kinich,Kinich,5,Dendro,"1. Fang of the Mountain King (5)
+  2. A Thousand Blazing Suns (5)
+  ~Beacon of the Reed Sea (5)
+  3. Serpent Spine (4)
+  4. Verdict (5)
+  5. Earth Shaker (4) [R5] 
+  ~Wolf's Gravestone (5)
+  ~Redhorn Stonethresher (5)","1. Obsidian Codex (4) 
+  ~Unfinished Reverie (4) 
+  2. Golden Troupe (4)
+  3. Deepwood Memories (2) / +18 ATK% set (2) / Golden Troupe (2) [Choose Two]
+ 4.Marechaussee Hunter (4)","Sands - ATK%
+ Goblet - Dendro DMG
+ Circlet - Crit Rate / DMG","1. Crit Rate / DMG
+  2. ATK%
+  3. ER","1. Skill
+  2. Burst","DPS (ER 100%)
+ Kinich is an on-field Dendro DPS who builds Nightsoul Points via grappling + Loop Shots to fire Scalespiker Cannon (Skill DMG). His A1 enhances generation when Burning/Burgeon is active. Summoning Ajaw briefly extends Nightsoul Blessing.
+ 
+ Weapons:
+ Serpent Spine (R5): Top option with shield; falls off heavily without one.
+ Earth Shaker: Inconsistent in pure Pyro–Dendro comps (Burning triggers only once per enemy).
+ Wolf’s Gravestone: Used mostly as a stat stick; passive buff often underutilized.
+ 
+ Artifacts::
+ Obsidian Codex (4) ~ Unfinished Reverie (4): Pick based on existing DMG% buffs (less DMG% favors Reverie).
+ Marechaussee Hunter (4): Only with Furina or Burgeon; roughly equal to Reverie.",CRIT Rate / DMG > ATK% > ER (until requirement),
+55,Kirara,Kirara,4,Dendro,"1. Key of Khaj-Nisut (5)
+  2. Sapwood Blade (4)
+  3. The Dockhand's Assistant (4)
+  4. Favonius Sword (4)
+  5. Freedom-Sworn (5)
+  6. Sacrificial Sword (4)","1. Instructor (4) 
+  2. Deepwood Memories (4) 
+  3. Noblesse Oblige (4)
+  ~Tenacity of the Millelith (4) 
+  4. Tenacity of the Millelith (2) + Vourukasha's Glow (2)","Sands: HP% / ER%
+  Goblet: HP%
+  Circlet: HP% / Crit Rate","1. ER% 
+  2. HP%
+  3. Crit Rate 
+  4. Flat HP
+  
+ Notes: Prioritize ER until requirement is met","1. Skill
+  2. Burst","SHIELD SUPPORT (ER 100–160%)
+ Kirara provides team shielding and flexible on-field or off-field Dendro application.
+ 
+ Weapons:
+ Sapwood Blade: Strong team utility via Leaf buff despite lower shield strength.
+ Favonius Sword: Low ER needs, but great for team energy.
+ Freedom-Sworn: Viable for team buffing, though usually better on others.
+ 
+ Artifacts::
+ Instructor (4): Great EM buff for Aggravate teams.
+ Deepwood (4): Best if no other holder and team deals Dendro damage.
+ Tenacity (4): Ideal for on-field usage.
+ 
+ Main Stats/Substats:
+ CRIT Rate (if Favonius Sword is used)",ER (until requirement) > HP% > CRIT Rate (Favonius) > Flat HP,
+56,Klee,Klee,5,Pyro,"1. Lost Prayer to the Sacred Winds (5)
+  2. Surf's Up! (5)
+  ~Tome of the Eternal Flow (5)
+  3. Cashflow Supervision (5)
+  ~Kagura's Verity (5)
+  4. Tulaytullah's Remembrance (5)
+  5. The Widsith (4)
+  ~Skyward Atlas (5)
+  6. Memory of Dust (5)
+  ~Solar Pearl (4)
+  7. Crane's Echoing Call (5)
+  ~Ballad of the Boundless Blue (4) [R5]
+  8. Flowing Purity (4) [R5]","1. Lavawalker (4) 
+  2. +18% ATK set (2) / Crimson Witch of Flames (2)
+  ~Crimson Witch of Flames (4) 
+  3. Shimenawas Reminiscence (4)
+  ~Wanderer's Troupe (4) 
+ 4. Marechaussee Hunter (4)","Sands - ATK% 
+ Goblet - Pyro DMG
+ Circlet - Crit Rate / DMG","1. ER 
+  2. Crit Rate / DMG
+  3. ATK%
+  4. EM 
+  
+ Notes: Prioritize until requirements are met","1. Normal Attack
+  2. Burst
+  3. Skill","DPS (ER 100–140%)
+ Klee has high damage but is fragile and easily interrupted, often needing a shielder for comfort.
+ 
+ Weapons:
+ The Widsith (R5): Best overall; EM buff is unreliable.
+ Memory of Dust: Weaker without shield.
+ Solar Pearl (R5): Strong early option with animation canceling.
+ Flowing Purity: Great if Bond of Life is cleared.
+ Tome of the Eternal Flow / Cashflow: Strong with Furina.
+ 
+ Artifacts:
+ Lavawalker (4): Works well due to constant Pyro uptime.
+ Crimson Witch (4): Best in consistent Vaporize teams.
+ Marechaussee (4): Top option with Furina.
+ EM substats only help if triggering reactions consistently.",ER (until requirement) > CRIT Rate / DMG > ATK% > EM,
+57,Kujou-Sara,Kujou Sara,4,Electro,"1. Skyward Harp (5)
+  2. Polar Star (5)
+  ~Elegy for the End (5)
+  3. The First Great Magic (5)
+  4. Aqua Simulacra (5)
+  ~Hunter's Path (5)
+  5. Thundering Pulse (5)
+  6. Amos' Bow (5)
+  7. Fading Twilight (4)
+  ~Mouun's Moon (4)
+  ~Alley Hunter (4)
+  ~The Viridescent Hunt (4)
+  ~Scion of the Blazing Sun (4)
+  8. Sacrificial Bow (4)
+  ~Chain Breaker (4)
+  9. Favonius Warbow (4)","1. Emblem of Severed Fate (4)
+  2. Noblesse Oblige (4) 
+  3. Noblesse Oblige (2) +18% ATK set (2) Thundering Fury (2) Emblem of Severed Fate (2) [Choose Two]","Sands - ER / ATK%
+ Goblet - Electro DMG
+ Circlet - Crit Rate / DMG","1. ER 
+  2. Crit Rate / DMG
+  3. ATK%
+  
+ Notes: Prioritize ER first until requirements are met","1. Skill
+  2. Burst","SUPPORT AND DAMAGE (ER 160–250%)
+ Sara is a quickswap support who buffs allies with Crowfeathers and deals decent Burst damage.
+ At C2, Charged Shot can be skipped for faster setups; C6 Crit DMG buff can’t be snapshotted.
+ Weapons
+ Skyward Harp: Best mix of buff strength and personal DPS.
+ Polar Star: Higher personal damage with proper rotation.
+ Elegy: Strong team buff but unreliable in single-target.
+ Mouun’s Moon (R5): Matches or beats Thundering Pulse.
+ Alley Hunter (R5): Solid passive, comparable to Amos’.
+ Favonius Warbow: Best for high ER needs despite weak damage.
+  Artifacts::
+ Noblesse (4): Great team option if no other holder.",ER (until requirement) > CRIT Rate / DMG > ATK%,
+58,Kuki-Shinobu,Kuki Shinobu,4,Electro,"1. Favonius Sword (4)
+  2. Freedom-Sworn (5)
+  ~Key of Khaj-Nisut (5)
+  3. The Dockhand's Assistant (4)
+  4. Iron Sting (4)","1. Tenacity of the Millelith (4)
+  2. Noblesse Oblige (4) 
+  3. Instructor (4) / The Exile (4) 
+  4. Ocean-Hued Clam (4)","Sands - HP%
+ Goblet - HP%
+ Circlet - Healing Bonus / HP% / Crit Rate","1. HP%
+  2. Crit Rate 
+  3. EM / Flat HP
+  
+ Notes: Crit Rate (if Favonius Sword is used)","1. Skill
+ 2. Burst (Only recommend for AGGRAVATE Teams)
+ 
+ Note: Skill levels help with comfort but are not compulsory for a Hyperbloom build","HYPERBLOOM (ER 100%)
+ Kuki excels as a reliable Electro trigger in Dendro teams.
+ Key of Khaj-Nisut: Best at C4if 3stacks without rotation loss.
+ Toukabou Shigure: Performs similarly to Iron Sting.
+ Focus on EM for maximum Hyperbloom damage.
+ 
+ AGGRAVATE OFF-FIELD DPS (ER 100%)
+ Adds EM-scaling flat damage while healing the team.
+ Freedom-Sworn: Top team buff option.
+ Primordial Jade Cutter: Highest personal damage, low utility.
+ Key of Khaj-Nisut: Strong if fully stacked, but impractical.
+ Thundersoother (4): Best with consistent Electro aura.
+ TF (2) + EM (2) / Noblesse (2): Close to Gilded Dreams, flexible with substats.
+ 
+ SUPPORT (ER 100%)
+ In non-reaction teams, focus on healing and utility.
+ Favonius Sword: Energy battery; needs Crit for passive.
+ Freedom-Sworn: Buffs team with reactions.
+ Key of Khaj-Nisut / Dockhand's Assistant: Strong healing, less utility.
+ Noblesse (4): Burst uptime for team ATK buff.
+ Ocean-Hued Clam (4): Extra damage on full healer build.
+ Instructor (4) / Exile (4): Budget alternatives.",EM > HP% > ER (until requirement) > CRIT Rate (Favonius),
+59,Lan-Yan,Lan Yan,4,Animo,"1. Starcaller's Watch (5)
+  2. Sacrificial Fragments (4)
+  ~Wandering Evenstar (4)
+  3. Thrilling Tales of Dragon Slayers (3)
+  4. Favonius Codex (4)
+  5. Crane's Echoing Call (5)
+  6. Hakushin Ring (4)",1. Viridescent Venerer (4),"Sands - EM / ATK% / ER
+ Goblet - EM / ATK%
+ Circlet - EM / ATK% / Crit Rate 
+  
+ Notes: Crit Rate only if using Favonius Codex","1. ER
+  2. ATK%
+  3. EM
+  4. Crit Rate 
+  
+ Notes: Crit Rate only if using Favonius Codex","1. Skill
+  2. Burst","SUPPORT (ER 100%)
+ Lan Yan primarily provides shielding and grouping utility for the team. Simple to build and slot into many comps.
+ 
+ Weapons:
+ Hakushin Ring — Excels in Electro-based teams for teamwide DMG buffs.
+ 
+ Artifacts:
+ Viridescent Venerer (4) — Standard for Anemo support and resistance shred.
+ 
+ DRIVER (ER 100%)
+ Lan Yan can function as an on-field driver, contributing extra damage via EM scaling at the cost of some shield strength.
+ 
+ Weapons:
+ Hakushin Ring — Still viable for EM/DMG buffing synergy.
+ 
+ Artifacts:
+ Viridescent Venerer (4) or EM-focused sets — for stronger reaction output.",ATK% > EM > CRIT Rate (Favonius),
+60,Lauma,Lauma,5,Dendro,"1. Nightweaver's Looking Glass (5)
+  2. A Thousand Floating Dreams (5)
+  3. Starcaller's Watch (5)
+  ~Sunny Morning Sleep-In (5)
+  4. Sacrificial Fragments (4)
+  5. Surf's Up (5)
+  ~Wandering Evenstar (4)
+  ~Etherlight Spindlelute (4) [R5]
+  6. Blackmarrow Lantern (4) [R5]","1. Silken Moon's Serenade (4)
+  ~Deepwood Memories (4) 
+  2. Night of the Sky's Unveiling (4) 
+  3. Gilded Dreams (4)","Sands - EM
+ Goblet - EM
+ Circlet - EM / Crit Rate / DMG","1. ER 
+  2. EM
+  3. Crit Rate / DMG
+  
+  Notes: Prioritize ER first until you meet the requirement","1. Burst
+  ~Skill","BUFF SUPPORT (ER 150–220%)
+ Lauma grants Lunar-Bloom and lowers Hydro & Dendro RES, enabling Bloom crits via Moonsign: Nascent Gleam even without Nahida C2. Energy needs vary depending on role (solo/off-field vs on-field double Dendro).
+ 
+ HIGH ER (Solo/Off-field) (ER 200–280%)
+ 
+ Weapons:
+ A Thousand Floating Dreams: Top pick (32 EM + 20% Dendro DMG).
+ Etherlight Spindlelute: Passive always active.
+ Sunny Morning Sleep-In: Relies on Skill EM buff.
+ 
+ Artifacts::
+ Deepwood Memories (4): Default set if no other holder.
+ Night of the Sky's Unveiling (4): Only if Lauma is on-field and allies cover both Deepwood + Serenade.
+ 
+ LOW ER (On-field / Double Dendro) (ER 150–180%)
+ 
+ Weapons:
+ A Thousand Floating Dreams: Still best-in-slot.
+ Sacrificial Fragments (R5): Near top; save reset for max Verdant Dew stacks.
+ Surf’s Up: Dynamic stacking assumed.
+ Wandering Evenstar (R5): Close to Sac Fragments R1–R4.
+ Sunny Morning Sleep-In: EM from Skill passive.
+ 
+ Artifacts::
+ Deepwood Memories (4) or Night of the Sky's Unveiling (4) (same condition as above).
+ 
+ Notes: Crit stats only affect Lauma’s personal damage, not Bloom crit buffs.",ER (until requirement) > EM > CRIT Rate / DMG,
+61,Layla,Layla,4,Cryo,"1. Primordial Jade Cutter (5)
+  2. Harbinger of Dawn [R5] (3)
+  3. Uraku Misugiri (5)
+  ~Splendor of Tranquil Waters (5)
+  ~Light of Foliar Incision (5)
+  4. Mistsplitter Reforged (5)
+  ~Wolf-Fang (4)
+  5. Key of Khaj-Nisut (5)
+  6. Favonius Sword (4)","1. Tenacity of the Millelith (4) 
+  2. Blizzard Strayer (4) 
+  3. Vourukasha's Glow (2) / Tenacity of the Millelith (2) / Blizzard Strayer (2) [Choose two]
+  4. Noblesse Oblige (4)
+  5. Emblem of Severed Fate (4)","Sands - HP% / ER 
+ Goblet - Cryo DMG / HP% 
+ Circlet - Crit Rate / Crit DMG / HP%","1. ER until requirement is met
+  2. Crit Rate / Crit DMG
+  ~HP%
+  3. ATK%
+  4. Flat HP","1. Skill
+  2. Burst","SUPPORT (ER 130–220%)
+ Prioritizes maximum shield strength and team buffs rather than personal DPS.
+ 
+ Weapons:
+ Primordial Jade Cutter: Useful if also investing in damage.
+ Favonius Sword: Build Crit Rate to trigger passive consistently.
+ Freedom-Sworn: Strong team support if Layla can proc it reliably.
+ 
+ Artifacts::
+ Tenacity of the Millelith (4): Best set overall — HP%, team ATK% & shield buffs.
+ 
+ SUPPORT & DAMAGE (ER 130-220%)
+ Trades a bit of shield strength for increased personal damage. Stronger with higher constellations.
+ 
+ Weapons:
+ Harbinger of Dawn (R5): Best damage option if uptime on passive is good.
+ Wolf-Fang (R5): Performs similarly to Harbinger.
+ Favonius Sword: Lower personal DPS but good team utility.
+ 
+ Artifacts::
+ Tenacity of the Millelith (4): Top choice for shield + team buff.
+ Blizzard Strayer (4): Best for personal damage in Cryo/Frozen teams.
+ HP% / Cryo / Crit: Ideal main stats for DPS hybrid. Extra HP% maintains shield strength with minimal DPS loss.",ER (until requirement) > HP% > CRIT Rate / DMG > ATK%,
+62,Lisa,Lisa,4,Electro,"1. Fruit of Fulfillment (4)
+  ~Starcaller's Watch (5)
+  2. A Thousand Floating Dreams (5)
+  3. Sacrificial Fragments (4) 
+  ~Wandering Evenstar (4)
+  ~Favonius Codex (4)
+  4. Magic Guide (3)
+  5. Mappa Mare (4)
+  6. Hakushin Ring (4)
+  7. Thrilling Tales of Dragon Slayers (3)","1. Flower of Paradise Lost (4) 
+  2. Gilded Dreams (4)
+  3. +80 EM set (2) Emblem of Severed Fate (2) +80 EM set (2) [Choose Two] 
+  4. Thundering Fury (4)
+  5. Instructor (4)","Sands - EM / ER
+ Goblet - EM
+ Circlet - EM","1. ER
+  2. EM
+  3. ATK%
+  4. Crit Rate / DMG","1. Burst
+  2. Skill
+  3. Normal Attack
+  
+  Reaction DPS Lisa's Normal Talent levels are not a necessity","AGGRAVATE DPS (ER 110–150%)
+ Lisa acts as an on-field driver in Quicken teams, taking advantage of her EM scaling, fast Electro application, and low ER needs.
+ 
+ Widsith (R4–R5): Matches Lost Prayer.
+ Solar Pearl (R4–R5): Competitive with Skyward Atlas.
+ Flowing Purity (R5): Equal to or better than Mappa Mare when passive met.
+ Mappa Mare (R5): On par or stronger than Solar Pearl.
+ 
+ OFF-FIELD DPS (ER 180–220%)
+ Flexible off-field buffer and damage dealer, especially in Quicken teams.
+ Flowing Purity: Best if Bond of Life cleared.
+ Hakushin Ring: Team DMG buff (passive doesn’t trigger off-field).
+ Favonius Codex: Best for high ER needs.
+ Thrilling Tales: Strong ATK buff for single unit.
+ A Thousand Floating Dreams / Mappa Mare: Quicken only.
+ 
+ Scroll of the Hero (4): Valuable team DMG buff.
+ Noblesse (4): ATK% buff option.
+ Focus on Burst uptime for DEF shred.
+ 
+ REACTION DPS (ER 160–220%)
+ Used to trigger reactions like Hyperbloom and Overload with Burst uptime.
+ Avoid double Electro in Overload comps.
+ 
+ Fruit of Fulfillment (R4–R5): High ER and strong performance.
+ Flower of Paradise Lost (4): Slightly better Hyperbloom DPS than Gilded.
+ Gilded Dreams (4): More resin-efficient alternative.
+ Stack EM and ER for consistent reaction uptime.",ER (until requirement) > EM > ATK% > CRIT Rate / DMG,
+63,Lynette,Lynette,4,Animo,"1. Favonius Sword (4)
+  2. Fleuve Cendre Ferryman (4)
+  ~Sacrificial Sword (4)
+  ~Amenoma Kageuchi (4)
+  ~Skyward Blade (5) 
+  3. Freedom-Sworn (5)","1. Viridescent Venerer (4)
+  2. Emblem of Severed Fate (4) 
+  3. Noblesse Oblige (4) 
+  4. +15% Anemo DMG set (2) / +20% ER set (2) / Noblesse Oblige (2) / +18% ATK set (2) [Choose Two]","Sands - ER / ATK%
+ Goblet - Anemo DMG
+ Circlet - Crit Rate / DMG","1. ER 
+  2. Crit Rate 
+  3. Crit DMG
+  4. ATK%
+  
+ Notes: Prioritize ER until you meet the requirement.
+  
+ Notes: Crit Rate (if Favonius Sword is used)","1. Burst
+  2. Skill","OFF-FIELD DPS (ER 140–200%)
+ Lynette is a burst-oriented Anemo unit with moderate crowd control and buffing. She stands out by using Ousia-aligned attacks to trigger Arkhe Annihilation reactions, useful for specific enemy mechanics.
+ 
+ Weapons:
+ Freedom-Sworn — Best buffing option, but difficult to sustain ER.
+ Sacrificial Sword — Recommended [R3+] for smoother rotation and uptime.
+ 
+ Artifacts:
+ Noblesse Oblige (4) — Great team ATK buff when VV isn’t needed.
+ Emblem of Severed Fate (4) — Best personal damage if VV is already covered by another unit.
+ 
+ Notes:
+ She isn’t a top-tier buffer or CC unit, but her Arkhe utility gives her a unique niche.",ER (until requirement) > CRIT Rate / DMG > ATK%,
+64,Lyney,Lyney,5,Pyro,"1. The First Great Magic (5)
+  ~Astral Vulture's Crimson Plumage (5)
+  2. Aqua Simulacra (5)
+  3. Thundering Pulse (5)
+  4. Skyward Harp (5)
+  5. Amos' Bow (5)
+  6. Polar Star (5)
+  ~Song of Stillness (4)
+  ~Prototype Crescent (4)
+  7. Scion of the Blazing Sun (4)
+  ~Blackcliff Warbow (4)","1. Marechaussee Hunter (4)
+  2. Lavawalker (4)
+  ~Vermillion Hereafter (4) [see Notes]
+  ~Shimenawas Reminiscence (4) [see Notes]
+  3. Crimson Witch of Flames (2) / Marechaussee Hunter (2) / +18% ATK set (2) [Choose Two]
+  4. Retracing Bolide (4) 
+  ~Desert Pavilion Chronicle (4)
+  5. Wanderer's Troupe (4)","Sands - ATK%
+ Goblet - Pyro DMG
+ Circlet - Crit DMG","1. Crit Rate / DMG
+  2. ATK%
+  3. ER","1. Normal Attack
+  2. Skill / Burst","DPS (ER 120–140%)
+ Lyney excels with Charged Attacks, supported by Skill and Burst, typically in Mono-Pyro with Bennett.
+ Skill vs Burst talent priority depends on Prop stack usage.
+ 
+ Weapons:
+ The First Great Magic: Best with 3stacks; similar to Astral Vulture at 2.
+ Astral Vulture: Similar to Thundering Pulse with 1 stack.
+ 
+ Artifats:
+ Vermillion (4): Best if Burst is used every rotation.
+ Shimenawa (4): Better when Burst isn’t consistent.
+ Retracing Bolide (4): Only with strong shielding.
+ Marechaussee (4); Crit RateCirclet better on non-MH sets.",CRIT Rate / DMG > ATK% > ER (until requirement),
+65,Mavuika,Mavuika,5,Pyro,"1. A Thousand Blazing Suns (5)
+  2. Beacon of the Reed Sea (5)
+  ~Verdict (5)
+  3. The Unforged (5)
+  ~Redhorn Stonethresher (5)
+  ~Wolf's Gravestone (5)
+  4. Serpent Spine (4)
+  5. Mailed Flower (4) [R5]
+  ~Akuoumaru (4) [R5]
+  6. Tidal Shadow (4) [R5]
+  ~Fang of the Mountain King (5)
+  ~Skyward Pride (5)
+  7. Rainslasher (4) [R5]
+  8. Talking Stick (4)","1. Obsidian Codex (4)
+ 2. Scroll of the Hero of Cinder City (4) 
+ 3. Marechaussee Hunter (4) 
+ 4. Deepwood Memories (4)","Sands - EM / ATK% 
+ Goblet - Pyro DMG
+ Circlet - Crit Rate / DMG","1. Crit Rate / DMG
+  2. ATK%
+  3. EM","1. Burst
+  >= Skill","DPS (ER 100%)
+ Mavuika focuses on on-field Pyro damage with Flamestrider, triggering Melt or Vaporize. She benefits from Fighting Spirit and pairing with Natlan characters.
+ 
+ Weapons:
+ Beacon of the Reed Sea: Best if not taking damage.
+ Verdict: Assumes 1 stack.
+ The Unforged: Max stacks, unshielded.
+ Serpent Spine (R5): Top option at 3stacks, can overcap Crit easily.
+ 
+ Artifacts:
+ Marechaussee (4): Good with Furina.
+ Scroll of the Hero (4): Best off-field option if team lacks a holder.
+ Deepwood (4): Niche for Dendro teams.
+ 
+ (EM Sands preferred unless not reaction focused).
+ 
+ SUPPORT (100%)
+ Plays off-field, providing Pyro application, damage, and A4DMG% buff.
+ Still benefits from bursting for Fighting Spirit and buffs.
+ Prioritize EM/ER and utility over personal DPS.",CRIT Rate / DMG > ATK% > EM,
+66,Mika,Mika,4,Cryo,"1. Symphonist of Scents (5)
+  ~Favonius Lance (4)
+  2. Dialogues of the Desert Sages (4)
+  3. Engulfing Lightning (5)
+  4. Prototype Starglitter (4)
+  ~The catch (4)
+  ~Rightful Reward (4)
+  5. Black Tassel (3)","1. Noblesse Oblige (4) 
+  2. Ocean-Hued Clam (4) 
+  3. Maiden Beloved (4)
+  4. +15% Healing Bonus (2) / 20% ER set (2) / 20% HP (2) [Choose two]
+  5. The Exile (4)","Sands - ER / HP%
+ Goblet - HP%
+ Circlet - Healing Bonus / Crit Rate%","1. ER
+  2. Crit Rate 
+  3. HP%
+  4. Flat HP
+  
+  Notes: Crit Rate (if Favonius Lance used)","1. Skill
+  2. Burst","SUPPORT (ER 135–230%)
+ Mika provides Physical DMG% through Detector stacks, Physical Crit DMG at C6, healing, and Attack Speed buffs. His buffs only apply to the active character and do not linger, which is crucial when paired with Eula.
+ 
+ Weapons:
+ Favonius Lance: Best overall — reliable ER and particle generation.
+ Symphonist of Scents: High buff potential but harder ER requirements without C4.
+ 
+ Artifacts::
+ Noblesse Oblige (4): Best set if not already on another unit.
+ Ocean-Hued Clam (4): Alternative if Noblesse is taken.
+ Crit Rate circlet: Useful with Favonius for passive uptime.
+ Priority: Max Burst level for stronger healing and buffing.",ER (until requirement) > CRIT Rate (Favonius),
+67,Mona,Mona,5,Hydro,"1. Thrilling Tales of Dragon Slayers (3)
+  2. Favonius Codex (4)
+  3. A Thousand Floating Dreams (5)
+  4. Prototype Amber (4)
+  5. Wine and Song (4)","1. Noblesse Oblige (4)
+  2. Instructor (4)
+  3. Tenacity of the Millelith (4) 
+  4. +20% ER set (2) +20% ER set (2)","Sands - ER / ATK%
+ Goblet - Hydro DMG / ATK%
+ Circlet - Crit Rate
+  
+  Offensive stats aren't actually needed on a Freeze Support Mona, focus on Artifact Set Bonus","1. ER
+  2. Crit Rate
+  3. ATK%
+  
+  Offensive stats aren't needed, just stack ER for comfortable Elemental Burst uptime",1. Burst,"DPS (ER 200–250%)
+ Mona can act as a main DPS, best at C2 but usable without.
+ Her damage is subpar compared to meta DPS options but viable.
+ Focus on maintaining uptime and Vaporize setups for extra burst potential.
+ 
+ NUKE (ER 200–250%)
+ Mona’s Skill taunts and applies Wet, while Burst immobilizes and applies Omen.
+ Instructor (4): Niche pick for Hu Tao nuke teams.
+ Used mainly to enable Vaporize Burst combos for massive one-shot potential.
+ 
+ BURST SUPPORT (ER 200–280%)
+ Mona shines in Freeze teams, extending Omen debuff with Cryo–Hydro application.
+ Thrilling Tales: Best if uptime remains 100%.
+ A Thousand Floating Dreams: Use if EM helps the team more than ATK.
+ Tenacity (4): If Noblesse is already covered elsewhere.
+ Main goal is Omen uptime and buffing allies’ damage.",ER (until requirement) > CRIT Rate / DMG > ATK% > EM,
+68,Mualani,Mualani,5,Hydro,"1. Surf's Up (5)
+  2. Reliquary of Truth (5)
+  3. Sacrificial Jade (4)
+  ~A Thousand Floating Dreams (5)
+  4. Tome of the Eternal Flow (5)
+  ~Starcaller's Watch (5)
+  5. Sunny Morning Sleep-In (5)
+  6. Ring of Yaxche (4) [R5]
+  ~The Widsith (4) [R5]","1. Obsidian Codex (4)
+ 2. Heart of Depth (4)
+ 3. +20% HP set (2) / +15% Hydro DMG set / +80 EM set (2) / Marechaussee Hunter (2) [Choose Two]
+ 4. Marechaussee Hunter (4)","Sands - HP%/EM
+ Goblet - Hydro DMG
+ Circlet - Crit Rate/Crit DMG/HP%/EM 
+  
+  Check Notes","1. Crit Rate/DMG
+  2. EM ~HP%
+  3. Flat HP","1. Skill
+  2. Burst","VAPORIZE DPS (100)
+ Mualani consistently Vaporizes Sharky Bites, while Surfboard collisions don’t apply Hydro. Hitting a marked enemy triggers extra Missiles, all counting as Normal Attack damage.
+ 
+ Weapon:
+ Sacrificial Jade: Best with Obsidian Codex or Marechaussee—no Crit Rate needed.
+ The Widsith (R5): Matches Ring of Yaxche on average; buff RNG affects consistency.
+ 
+ Artifacts:
+ Marechaussee (4): Use only with Furina, otherwise weaker than Obsidian Codex.
+ EM main stats lose value with strong external EM buffs or EM weapons.
+ HPCirclet is viable with Crit DMG weapons.",CRIT Rate / DMG > EM > HP% > Flat HP,
+69,Nahida,Nahida,5,Dendro,"1. A Thousand Floating Dreams (5)
+  ~Sunny Morning Sleep-In (5)
+  2. Kagura's Verity (5)
+  3. Sacrificial Fragments (4)
+  ~Etherlight Spindlelute (4) [R5]
+  4. Wandering Evenstar (4)
+  5. The Widsith (4)
+  ~Sacrificial Jade (4)
+  6. Skyward Atlas (5)
+  ~Lost Prayer to Sacred Winds (5)
+  ~Memory of Dust (5)
+  ~Solar Pearl (4)
+  7. Favonius Codex (4)
+  8. Mappa Mare (4)
+  ~Magic Guide (3)
+  ~Hakushin Ring (4)
+  9. Thrilling Tales of Dragon Slayers (3)
+  10. Prototype Amber (4)","1. Deepwood Memories (4) 
+  2. Gilded Dreams (4)
+  ~Golden Troupe (4)
+  3. +80 EM set (2) / +80 EM set (2) / Deepwood Memories (2) [Choose Two]
+  4. Tenacity of the Millelith (4) 
+  5. Flower of Paradise Lost (4)","Sands - EM
+ Goblet - EM / Dendro DMG
+ Circlet - EM / Crit Rate / DMG","1. ER (Until Requirement)
+  2. Crit Rate / Crit DMG
+  ~EM
+  3. ATK%","1. Skill
+  2. Burst
+  3. Normal Attack","DPS & SUPPORT (ER 100–140%)
+ Nahida offers high Dendro application, team buffs, and strong personal damage. Main stat choice depends on EM count — more EM = stronger ATK/Crit weapons.
+ 
+ Weapons:
+ Wandering Evenstar: Can rival A Thousand Floating Dreams if team benefits from Flat ATK.
+ Widsith / Lost Prayer / Solar Pearl: Best when played on-field.
+ Skyward Atlas / Memory of Dust: Better with fewer triggered reactions.
+ Favonius Codex: Great if she can trigger passive often or needs ER.
+ Hakushin Ring: Only for Quicken / Hyperbloom.
+ Thrilling Tales: Low personal DPS, high buff potential.
+ Prototype Amber: Utility pick for sustain.
+ 
+ Artifacts::
+ Deepwood (4): Best if no one else is holding it.
+ Tenacity (4): Best in teams with another Deepwood holder or low personal damage share.
+ Flower of Paradise (4): Niche but strong in Bloom teams where she triggers reactions.
+ 
+ Main Stats:
+ Flexible EM/Crit DMG/Crit combinations depending on weapon.
+ Higher EM increases relative value of ATK/Crit weapons.",EM (until 1000) > CRIT Rate / DMG > ATK% > ER (until requirement),
+70,Navia,Navia,5,Geo,"1. Verdict (5)
+  ~A Thousand Blazing Suns (5)
+  2. Serpent Spine (4)
+  3. Beacon of the Reed Sea (5)
+  4. Skyward Pride (5)
+  5. Redhorn Stonethresher (5)
+  6. Fang of the Mountain King (5)
+  7. Wolf's Gravestone (5)
+  ~The Unforged (5)
+  8. Talking Stick (4)
+  9. Tidal Shadow (4) [R5] 
+  10. ""Ultimate Overlord's Mega Magic Sword"" (4) [R5]
+  11. Earth Shaker (4) [R5]
+  12. Prototype Archaic (4)","1. Nighttime Whispers in the Echoing Woods (4)
+  2. Golden Troupe (4)
+  3.Archaic Petra (2) + [Choose One] +18% ATK set (2) / Emblem of Severed Fate (2)
+  4. Marechaussee Hunter (4) 
+Note: Marechaussee Hunter is prefered with Furina teams only, as it performs as well or better than Nighttime Whispers in the Echoing Woods","Sands - ATK%
+ Goblet - Geo DMG
+ Circlet - Crit Rate / DMG","1. ER 
+  2. Crit Rate / DMG
+  3. ATK%
+  
+ Notes: Prioritize ER until you meet the requirement.","1. Skill
+  2. Burst
+  ~Normal Attack","DPS (ER 120–150%)
+ Navia is a front-loaded Geo DPS whose primary damage comes from her Elemental Skill, firing powerful Crystal Shrapnel shots that scale with the number of Crystallize shards consumed. She only needs short field time to unleash her full combo, making her rotation-friendly and flexible. Her Elemental Burst generates additional Shrapnel stacks and should be used every rotation to maintain energy flow and buff uptime.
+ 
+ Weapons:
+ Tidal Shadow — Top-tier 4option if healing is present. Without consistent healing, it loses significant performance and is not recommended.
+ Earth Shaker — Excellent choice when paired with a Pyro enabler (e.g., Bennett, Xiangling, Mavuika). Requires a Pyro-related reaction before Navia’s field time.
+ Serpent Spine — Consistent high performer; at [R5] with full stacks, it matches A Thousand Blazing Suns (5) in total damage output. Benefits from shielded playstyles for stack retention.
+ Fang of the Mountain King — Solid and flexible pick; assumes 0.5Burst% and 1 Skill% passive stacks active for Navia’s second Skill rotation.
+ The Unforged — Performs best when shielded and with dynamically refreshed stacks. Great synergy with Zhongli or Geo Crystallize teams.
+ Wolf’s Gravestone — Pure stat stick; passive rarely triggers reliably in practice.
+ 
+ Artifacts:
+ Nighttime Whispers in the Echoing Woods (4) — Best-in-slot for consistent Geo conversion and Skill-based damage scaling.
+ Golden Troupe (4) — Competitive with Nighttime Whispers if uptime is maintained and Navia doesn’t frequently use her Burst mid-rotation.
+ Archaic Petra (2) + ATK% (2) — Transitional or mixed option if you lack strong 4-piece sets.
+ Retracing Bolide (4) — Niche option in shield-heavy teams for boosted Normal/Charged damage, though less effective for her Skill damage focus.
+ 
+ Main Stats:
+ Sands: ATK%
+ Goblet: Geo DMG Bonus
+ Circlet: Crit Rate / Crit DMG
+ 
+ Substats Priority:
+ Crit Rate / Crit DMG → ATK% → ER (~125%)
+ 
+ Notes
+ ER 120–150% recommended to Burst every rotation for consistent Shrapnel generation.
+ Prefers being paired with Pyro teammates (e.g., Bennett) for damage amplification and stack generation.
+ Shield uptime increases survivability and enables stable Serpent Spine performance.
+ If healing is unavailable, avoid Tidal Shadow and consider Serpent Spine or Earth Shaker instead.",CRIT Rate / DMG > ATK% > ER (until requirement),
+71,Nefer,Nefer,5,Dendro,"1. Reliquary of Truth (5)
+ 
+ 2. Nightweaver's Looking Glass (5)
+ 
+ 3. Sunny Morning Sleep-In (5)
+ 
+ ~ Starcaller's Watch (5)
+ 
+ 4. Blackmarrow Lantern (4) [R5]
+ 
+ ~ A Thousand Floating Dreams (5)
+ 
+ ~ Tome of the Eternal Flow (5)
+ 
+ ~ Surf's Up! (5)
+ 
+ ~ Dawning Frost (4)
+ 
+ 5. The Widsith (4)",1. Night of the Sky's Unveiling (4),"Sands - EM
+ 
+ Goblet - EM
+ 
+ Circlet - Crit Rate / DMG","1. Crit Rate / DMG
+ 2. EM","1. Skill
+ 2. Burst","DPS (ER 100%)
+ Nefer is a Lunar-Bloom DPS who uses enhanced Charged Attacks in Shadow Dance state, consuming Verdant Dew to summon Shades (Lunar-Bloom coordinated damage). Bloom Cores are converted into Seeds of Deceit when Moonsign: Ascendant Gleam is active, powering up her Skill and Burst.
+ 
+ Weapons:
+ Dawning Frost (R5): Best option; outperforms Sunny Morning Sleep-In.
+ Sunny Morning Sleep-In: Strong EM synergy with Skill and partial Burst buffs.
+ The Widsith (R5): Excellent if EM buff rolls; otherwise weaker than Blackmarrow Lantern.",CRIT Rate / DMG > ATK% > ER (until requirement),
+72,Neuvillette,Neuvillette,5,Hydro,"1. Tome of the Eternal Flow (5)
+  2. Sacrificial Jade (4)
+  ~Surf's Up! (5)
+  3. Jadefall's Splendor (5)
+  ~Prototype Amber (4)
+  ~Cashflow Supervision (5)
+  ~The Widsith (4)
+  ~Kagura's Verity (5)
+  ~Lost Prayer to the Sacred Winds (5)
+  4. Ash-Graven Drinking Horn (4)","1. Marechaussee Hunter (4)
+  2. Heart of Depth (4)
+  3. +15% Hydro DMG set (2) / 20% HP set (2) / Marechaussee Hunter (2) [Choose Two]
+  ~Retracing Bolide (4)
+  ~Wanderer's Troupe (4)
+  ~Nymphs Dream (4)","Sands - HP%
+ Goblet - Hydro DMG / HP%
+ Circlet - Crit Rate / Crit DMG / HP%","1. ER 
+  2. Crit Rate / Crit DMG
+  ~HP%
+  3. Flat HP
+  ER should be prioritised until 110-150 reached","1. Normal Attack
+  2. Burst
+  ~Skill","DPS (≥150% ER)
+ Neuvillette focuses on Charged Attacks as his main damage source.
+ Prototype Amber: Solid option with team healing utility.
+ Ash-Graven Drinking Horn: Slightly stronger at low ER but lacks healing.
+ Other similar weapons are better used by different characters—avoid investing in them solely for him.",CRIT Rate / DMG > HP% > ER (until requirement) > Flat HP,
+73,Nilou,Nilou,5,Hydro,"1. Key of Khaj-Nisut (5)
+  2. The Dockhand's Assistant (4)
+  3. Serenity's Call (4) [R5]","1. +20% HP set (2) +20% HP set (2)
+  2. +20% HP set (2) +80 EM set (2)
+  3. Deepwood Memories (4)","Sands - HP%
+ Goblet - HP%
+ Circlet - HP%",,"1. Skill
+  2. Burst
+  
+  Talent levels do not affect Nilou's buff to Bloom damage, so heavy investment in Talents is not necessary","BLOOM SUPPORT (ER 100–120%)
+ Nilou maximizes Bloom damage in Hydro + Dendro–only teams.
+ Level 90 is recommended to boost HP and Bloom scaling.
+ Serenity’s Call: Passive only, Level 1 is fine.
+ Deepwood (4): Use if no other teammate holds it.
+ Focus on HP and ER for smooth rotations and Bloom triggers.",HP% > EM > ER (until requirement),
+74,Ningguang,Ningguang,4,Geo,"1. Kagura's Verity (5)
+  ~Lost Prayer to the Sacred Winds (5)
+  2. Surf's Up! (5)
+  3. Tome of the Eternal Flow (5)
+  ~Cashflow Supervision (5)
+  4. Skyward Atlas (5)
+  5. Memory of Dust (5)
+  ~Tulaytullah's Remembrance (5)
+  ~The Widsith (4)
+  6. Solar Pearl (4)
+  ~Crane's Echoing Call (5)
+  7. Flowing Purity (4)
+  8. Dodoco Tales (4)","1. Nighttime Whispers in the Echoing Woods (4) 
+  2. Archaic Petra (2) and [Choose Two] Noblesse Oblige (2) / +18% ATK set (2) / Emblem of Severed Fate (2)
+  ~Husk of Opulent Dreams (4) 
+  3. Emblem of Severed Fate (4)
+  4. Archaic Petra (4) 
+  5. Thundersoother (4) ~ Lavawalker (4)","Sands - ATK%
+ Goblet - Geo DMG
+ Circlet - Crit Rate / DMG","1. Crit Rate / DMG
+  2. ATK%
+  3. ER","1. Burst
+  2. Normal Attack
+  3. Skill","DPS (ER 120–140%)
+ Ningguang is a burst-oriented Geo DPS who excels in short, high-damage rotations. She thrives with consistent shields (via Crystallize or shielder teammates) and ATK/Geo DMG buffs from supports like Bennett and Gorou.
+ 
+ Weapons:
+ Memory of Dust — Best-in-slot when shielded or with consistent Crystallize uptime; otherwise loses value.
+ The Widsith [R5] — Extremely powerful for burst rotations; outperforms Skyward Atlas.
+ Solar Pearl [R5] — Excellent balance between consistent uptime and high damage.
+ Flowing Purity — Viable if Bond of Life can be reliably cleared; weaker than Dodoco Tales otherwise.
+ Dodoco Tales [R5] — Strong F2P choice with reliable charged attack synergy.
+ 
+ Artifacts:
+ Nighttime Whispers in the Echoing Woods (4) — Best set if shield uptime is consistent; large Geo DMG gains.
+ Husk of Opulent Dreams (4) — Great generalist option; competitive with Archaic Petra (2) + ATK% (2).
+ Thundersoother (4) / Lavawalker (4) — Competitive in specific comps maintaining full Electro or Pyro aura uptime.
+ Emblem of Severed Fate (2) — Decent filler but suboptimal when ER% isn’t required.
+ 
+ Main Stats:
+ Sands: ATK%
+ Goblet: Geo DMG Bonus
+ Circlet: Crit Rate or Crit DMG (aim for ~1:2 ratio)
+ 
+ Notes:
+ Aim for shield uptime—without it, Memory of Dust and Nighttime Whispers lose substantial value.
+ Ningguang benefits heavily from front-loaded buffs (e.g., Bennett Burst, Geo Resonance).
+ ER only matters if she bursts every rotation; otherwise, prioritize offensive substats.",CRIT Rate / DMG > ATK% > ER (until requirement),
+75,Noelle,Noelle,4,Geo,"1. Favonius Greatsword (4)
+  2. Other damaging options (see DPS)","1. Archaic Petra (4)
+  2. Other damaging options (see DPS)","Sands - DEF%
+ Goblet - Geo DMG / DEF% 
+ Circlet - Crit Rate / DMG / DEF%","1. Crit Rate / DMG
+  2. ER
+  3. DEF%","1. Skill
+ 2. Normal Attack = Burst","DPS (ER 100–150%)
+ Noelle functions as a DEF-scaling Geo DPS, dealing AoE damage while providing shields and healing. Her full potential unlocks at C6, converting 50% of DEF into ATK. At lower constellations, she’s better suited for hybrid or supportive roles.
+ 
+ Weapons:
+ Serpent Spine — Best-in-slot overall. Prioritize Serpent Spine stacks over Husk of Opulent Dreams stacks since they conflict (on-field vs. off-field).
+ Skyward Pride — Great for comfort and Burst uptime; excels in longer fights but loses out to refined Whiteblind or Serpent Spine.
+ Whiteblind [R5] — Excellent F2P option; provides both DEF and ATK via stacking. Consistent for sustained damage.
+ 
+ Artifacts:
+ Marechaussee Hunter (4) — Highest personal DPS when paired with Furina, due to HP fluctuation synergy.
+ Husk of Opulent Dreams (4) — Best standalone set; maximize stacks before Burst (wait 12s off-field). Snapshots DEF, so pre-stack before swapping in.
+ Archaic Petra (4) — Situational support option; boosts team DMG after picking up Crystallize shards.
+ 
+ Main Stats:
+ Sands: DEF%
+ Goblet: Geo DMG Bonus
+ Circlet: Crit Rate or Crit DMG (aim 1:2 ratio)
+ 
+ Notes:
+ Pre-stack Husk of Opulent Dreams before combat for max DEF%.
+ Ensure good energy flow from batteries like Gorou or Albedo.
+ At C6, Crit and ATK stats gain significant value—shift to more offensive substats.
+ Avoid full EM or ATK builds; Noelle’s strength scales purely off DEF.
+ 
+ DRIVER (Support / Hybrid) (ER 200–280%)
+ Driver Noelle focuses on triggering off-field abilities (e.g., Yelan, Xingqiu, Fischl) while maintaining shields and healing. Her role is to keep uptime and survivability, not raw damage.
+ 
+ Weapons:
+ Favonius Greatsword — Excellent for high ER needs and team battery support.
+ Whiteblind [R5] — Balanced option for sustain and moderate DPS.
+ 
+ Artifacts:
+ Archaic Petra (4) — Best for boosting team Elemental DMG.
+ Husk of Opulent Dreams (4) — Offers stronger shielding and personal survivability.
+ 
+ Main Stats:
+ Sands: DEF%
+ Goblet: DEF% or Geo DMG Bonus (if running Furina)
+ Circlet: Healing Bonus or DEF%
+ 
+ Notes:
+ In Furina teams, DEF% is crucial to counteract HP drain—double DEF% main stats are often ideal.
+ Prioritize Burst uptime for sustained healing and defensive uptime.
+ Can flex between full-support and sub-DPS depending on team needs.",CRIT Rate / DMG > DEF% > ER (until requirement),
+76,Ororon,Ororon,4,Electro,"1. Polar Star (5)
+  ~The First Great Magic (5)
+  2. Thundering Pulse (5)
+  ~Aqua Simulacra (5)
+  ~Hunter's Path (5)
+  ~Skyward Harp (5)
+  3. Astral Vulture's Crimson Plumage (5)
+  4. Chain Breaker (4) [R5]
+  ~Alley Hunter (4) [R5]
+  5. Range Gauge (4)
+  ~Song of Stillness (4) [R5] 
+  6. Elegy for the End (5)
+  ~Fading Twilight (4) [R5]
+  7. Favonius Warbow (4)","1. Scroll of the Hero of Cinder City (4) 
+  2. Noblesse Oblige (4)
+  3. Emblem of Severed Fate (4)","Sands - ATK% / ER
+ Goblet - Electro DMG
+ Circlet - Crit Rate / DMG
+  
+  Alternative Reaction Focused Build:
+  Sands - EM / ER
+ Goblet - EM
+ Circlet - EM","1. ER 
+  2. Crit Rate / DMG
+  3. ATK%
+  ~EM
+  
+ Notes: Prioritize ER","1. Burst
+  2. Skill","OFF-FIELD DPS (ER 160–220%)
+ Ororon deals off-field damage through Burst and A1 procs from Electro-Charged or Nightsoul hits. His A4grants up to 9 flat energy per rotation through attacks.
+ The First Great Magic: Best at 2 stacks; 1 stack = Hunter’s Path.
+ Chain Breaker: Strong at 3stacks.
+ Range Gauge (R5): Healer required to maintain stacks.
+ Song of Stillness: Works with overheal.
+ Elegy / Favonius: Sacrifice personal DPS for team utility.
+  Artifacts::
+ Scroll of the Hero (4): Strong synergy, adds team buffs.
+ Prioritize ER for smooth Burst uptime.",ER (until requirement) > CRIT Rate / DMG > ATK% > EM,
+77,Qiqi,Qiqi,5,Cryo,"1. Sacrificial Sword (4)
+  2. Favonius Sword (4)
+  3. Peak Patrol Song (5)
+  4. Skyward Blade (5)
+  5. Sapwood Blade (4)
+  6. Fleuve Cendre Ferryman (4)
+  7. Amenoma Kageuchi (4)","1. Tenacity of the Millelith (4) 
+  2. Scroll of the Hero of Cinder City (4) 
+  3. Ocean-Hued Clam (4) 
+  ~Song of Days Past (4)
+  4. +15% Healing Bonus set (2) +18% ATK set (2) +20% ER set (2) [Choose Two]","Sands - ATK% / ER 
+ Goblet - ATK%
+ Circlet - Healing Bonus / ATK%","1. ATK%
+  2. ER
+  3. Flat ATK
+  4. Crit Rate 
+  5. DEF% 
+  
+ Notes: Crit Rate only when using Favonius Sword","1. Burst
+  2. Skill","SUPPORT (ER 100%+)
+ Qiqi provides extremely strong healing but lacks self-battery and team utility pre-C1. Her A4lets Normal Attacks apply her healing talisman on a 30 s cooldown. ER is valuable but she doesn’t need to Burst every rotation.
+ DEF% substats only matter when using Peak Patrol Song.
+ 
+ Weapons:
+ Sacrificial Sword: Best for maintaining skill uptime; wait for Herald to vanish before re-casting.
+ Favonius Sword: Useful if the team values extra particles.
+ Peak Patrol Song: Buff scales well with her DEF. Use 2 Normal Attacks to activate passive.
+ 
+ Artifacts::
+ Tenacity of the Millelith (4): Best with Sacrificial Sword to sustain ATK buff uptime.
+ Scroll of the Hero of Cinder City (4): Strong in teams with a Natlan character.
+ Ocean-Hued Clam (4): Best when frequently healing or funded to Burst often.",ER (until requirement) > ATK% > Flat ATK > CRIT Rate (Favonius),You are serious aren't you. Sorry but I don't want to try her with any teams or meme build.
+78,Raiden-Shogun,Raiden Shogun,5,Electro,"1. Engulfing Lightning (5)
+  2. Staff of Homa (5)
+  ~Staff of the Scarlet Sands (5)
+  ~Symphonist of Scents (5)
+  ~Lumidouce Elegy (5)
+  ~Primordial Jade Winged-Spear (5)
+  3. Calamity Queller (5)
+  ~Deathmatch (4)
+  4. Vortex Vanquisher (5)
+  5. The catch (4) [R5]
+  ~Skyward Spine (5)
+  6. Wavebreaker's Fin (4)
+  ~Lithic Spear (4)
+  7. Favonius Lance (4)","1. Emblem of Severed Fate (4)
+  2. Noblesse Oblige (2) / Thundering Fury (2) / +18% ATK set (2) / Emblem of Severed Fate (2) [Choose Two]
+  3. Tenacity of the Millelith (4)","Sands - ER / ATK% 
+ Goblet - Electro DMG / ATK% 
+ Circlet - Crit Rate / DMG","1. Crit Rate / DMG
+  2. ATK%
+  3. ER
+  4. EM 
+  
+  EM is only desirable in Aggravate","1. Burst 
+  2. Skill","HYPERBLOOM (ER 100%)
+ Raiden excels as a Hyperbloom trigger, offering top-tier seed triggering, energy generation, and team Burst buffs.
+ 
+ +80 EM (2) + +80 EM (2): Nearly identical to Gilded Dreams (4), just 1–4substat rolls behind depending on team Electro count.
+ Prioritize EM and ER for smooth rotations.
+ 
+ DPS (ER 200%+)
+ Focus on Burst damage and energy batterying for the team.
+ Weapons:
+ Staff of the Scarlet Sands: Strong but don’t build EM for it.
+ Deathmatch (R5): Beats Homa in single-target.
+ Skyward Spine: Boosts combo with ATK speed.
+ Wavebreaker’s Fin (R5): ~ Deathmatch.
+ Lithic Spear (R5): ~ Deathmatch with 2 stacks.
+ Favonius Lance: Low personal damage but great team support.
+ Tenacity (4): Lower personal DPS but strong team buffing.
+ Main stat choice depends on substats, external buffs, and weapon—optimizer recommended.",ER (until requirement) > CRIT Rate / DMG > ATK% > EM,
+79,Razor,Razor,4,Electro,"1. Wolf's Gravestone (5)
+  ~Beacon of the Reed Sea (5)
+  2. Song of Broken Pines (5)
+  3. Redhorn Stonethresher (5)
+  4. The Unforged (5)
+  5. Serpent Spine (5stacks) (4) 
+  6. Skyward Pride (5)
+  7. Lithic Blade (2 stacks) (4) 
+  8. Prototype Archaic (4)","1. Pale Flame (4)
+  2. Gladiator's Finale (4) 
+  3. Pale Flame (2) Bloodstained Chivalry (2) 
+  4. +25% Physical DMG set (2) / +18% ATK set (2)
+  5. +18% ATK set (2) / +18% ATK set (2)","Sands - ATK%
+ Goblet - Physical DMG
+ Circlet - Crit Rate / DMG","1. Crit Rate / DMG
+  2. ATK%
+  3. ER 
+  4. EM","1. Normal Attack
+  2. Burst
+  3. Skill","HYPERBLOOM / REACTION DPS (ER 140–180%)
+  Hyperbloom / REACTION DPS Razor focuses on using his Burst's electro to trigger Hyperbloom. If you have C6 Bennett you can infuse Razor's Normal Attacks with Pyro to trigger Hyperbloom, Burgeon, and Overload. 
+  Regarding Weapons::
+  Favonius Greatsword: This weapon sacrifices some of Razor's potential reaction damage for team energy
+  
+  DPS (ER 100–180%)
+  Regarding Weapons::
+  Wolf's Gravestone: While the passive is inactive, this weapon outperforms Skyward Pride in every scenario except crowd battles.
+  Beacon of the Reed Sea: Weapon ranking assumes one stack, at two stacks it outperforms the other weapon options. 
+  Redhorn Stonethresher: Depending on the amount of ATK% buffs you're getting, this weapon can overtake Wolf's Gravestone in personal damage.
+  The Unforged: The playstyle with this weapon becomes a lot more comfortable without having to worry about snapshotting Wolf's Gravestone / Song of Broken Pines buffs for Sub DPSes, while also granting more Shield Bonus for better Shield uptime. A shielder is required for this, with Zhongli being the most ideal option.
+  Serpent Spine: At [C6] and high refinement Serpent Spine, it is better to run an ATK%Goblet over Physical Damage%. This is due to the oversaturation of damage bonuses (ascension stat + Serpent Spine) in addition to the fact that Electro accounts for a significant portion of Razor's damage. An in-depth explanation can be found here. It is also worth noting that an [R5] Serpent Spine with max stacks can outperform all 5 weapons at [R1].
+  Skyward Pride: This weapon is viable with a Physical DMG goblet, as the damage dealt through its passive scales with Physical%.
+  
+  Regarding Artifacts:: 
+  Pale Flame (2) Bloodstained Chivalry (2): This set is better if your ATK% is covered by your substats, otherwise you would be better off running Gladiator's Finale (4). This is only recommended to those who have no immediate access to a decent Pale Flame (4) set, otherwise you would be better off investing on Pale Flame pieces, regardless of weapon choice.",CRIT Rate / DMG > ATK% > ER (until requirement) > EM,
+80,Rosaria,Rosaria,4,Cryo,"1. Favonius Lance (4)
+  2. Staff of the Scarlet Sands (5)
+  3. Lumidouce Elegy (5)
+  4. Deathmatch (4)
+  5. Primordial Jade Winged-Spear (5)
+  6. Engulfing Lightning (5)
+  7. Skyward Spine (5)
+  8. The catch (4)","1. Noblesse Oblige (4)
+  2. Scroll of the Hero of Cinder City (4) 
+  3. Archaic Petra(4) 
+  4. Instructor (4)","Sands - ATK% / ER
+ Goblet - Cryo DMG
+ Circlet - Crit Rate","1. ER 
+  2. Crit Rate
+  3. Crit DMG
+  4. ATK%
+  
+  Until ER requirement is met","1. Burst
+  2. Skill","REVERSE MELT (ER 160–210%)
+ Rosaria’s Skill & Burst have no ICD, letting her Melt every hit for huge Burst DPS when snapshotting buffs.
+ 
+ Weapons:
+ Calamity Queller: Best overall with stacks.
+ Primordial Jade Winged-Spear: Avg. 3stacks.
+ Vortex Vanquisher: Shielded > Deathmatch [R1].
+ Deathmatch (R4–R5): Competitive, great in single-target with Gilded Dreams.
+ Dragon’s Bane (R4–R5): Slightly better than Calamity Queller.
+ Wavebreaker’s Fin (R4–R5): Just below Calamity Queller.
+ 
+ Artifacts::
+ Gilded Dreams (4): High personal DPS.
+ Emblem of Severed Fate (4): Best when ER >130%.
+ 
+ FREEZE (ER 160–210%)
+ 
+ Rosaria can act as a quickswap or perma-freeze DPS beside Ayaka, Ganyu, or Wriothesley.
+ 
+ Weapons:
+ Calamity Queller: Max stacks.
+ Wavebreaker’s Fin (R4–R5): Competitive with Staff of Homa in high energy cost teams.
+ Vortex Vanquisher: 2 stacks, unshielded.
+ Primordial Jade Winged-Spear: 2 stacks.
+ 
+ Artifacts::
+ Blizzard Strayer (4): Standard DPS set.
+ Noblesse Oblige (4): Support option if no one else holds it.
+ 
+ SUPPORT (ER 160–210%)
+ Focuses on Crit Rate buff, Cryo application & energy generation.
+ 
+ Weapons:
+ Favonius Lance: Best for energy needs.
+ Crit Rate weapons: Enhance A4buff when ER is sufficient.
+ 
+ Artifacts::
+ Instructor (4): EM buff teams (e.g. Hu Tao VapeMelt).
+ Archaic Petra (4): If crystals are reliable.
+ Scroll of the Hero of Cinder City (4): Consistent DMG% buff + ER utility from (2)pc.","CRIT Rate > CRIT DMG > ATK% > ER (until requirement)
+ 
+ Note: Recommended to get crit rate to 70-100 if posibble as she boosts crit of the partymemebers based on her crit.",
+81,Sangonomiya-Kokomi,Sangonomiya Kokomi,5,Hydro,"1. Starcaller's Watch (5)
+  2. A Thousand Floating Dreams (5)
+  ~Sunny Morning Sleep-In (5)
+  3. Sacrificial Fragments (4)
+  ~Etherlight Spindlelute (4) [R5]
+  4. Magic Guide (3)
+  ~Fruit of Fulfillment (4)","1. Flower of Paradise Lost (4)
+  2. Gilded Dreams (4)
+  3. +80 EM set (2) +80 EM set (2)
+  4. Ocean-Hued Clam (4)","Sands - EM
+ Goblet - EM
+ Circlet - EM","1. EM
+  2. ER
+  3. HP%
+  4. Flat HP","1. Skill
+  2. Burst","SUPPORT (ER 100)
+ Kokomi focuses on refreshing Skill with Burst for 100% Hydro uptime in Freeze/Electro-Charged teams.
+ Hakushin Ring: Best for team Elemental DMG%.
+ Sacrificial Fragments: Smooth rotations without Burst.
+ Tenacity (4): Max uptime with proper skill extension.
+ Ocean-Hued Clam (4): Better if attacking during Burst.
+ ER is the top priority to maintain consistent uptime.
+ 
+ DPS (ER 160–200%)
+ Kokomi deals most of her damage during Burst, outside damage is minimal.
+ Thrilling Tales: Best overall team DPS if not already used.
+ Hakushin Ring: Strong in Electro-Charged teams.
+ Tenacity (4): Buffs team damage despite lower personal output.
+ 
+ BLOOM DPS (ER 120–160%)
+ Kokomi triggers Blooms while self-healing through Clam set.
+ Sacrificial Fragments: High utility through repositioning.
+ Ocean-Hued Clam (4): Boosts Bloom and healing output.
+ Strong in dedicated Bloom comps.",HP% > ER (until requirement) > EM > Flat HP,
+82,Sayu,Sayu,4,Animo,"1. Favonius Greatsword (4)
+  2. Wolf's Gravestone (5)
+  3. Katsuragikiri Nagamasa (4)
+  4. Skyward Pride (5)
+  5. Sacrificial Greatsword (4) [R3+]
+  6. Makhaira Aquamarine (4)
+  7. Mailed Flower (4) [R5]
+  8. Forest Regalia (4)
+  9. Rainslasher (4)
+  10. Bloodtainted Greatsword (3)","1. Viridescent Venerer (4) 
+  2. Noblesse Oblige (4)
+  3. Emblem of Severed Fate (2) +15% Healing Bonus set (2)
+  4. Ocean-Hued Clam (4)","Sands - ER / EM
+ Goblet - EM / ATK%
+ Circlet - Healing Bonus / EM","1. ER
+  2. EM
+  3. ATK%
+  4. Crit Rate 
+  
+  
+  
+  Notes: Crit Rate (if Favonius Greatsword used)","1. Burst
+  2. Skill","SUPPORT (ER 200–250%)
+ Sayu can be built for EM to boost Swirl damage or ATK for stronger heals. Healing BonusCirclet increases healing while maintaining decent damage. High ER is required if she’s the only Anemo unit.
+ 
+ Weapons:
+ Wolf's Gravestone — Boosts team ATK and Sayu’s healing once ER needs are met.
+ Forest Regalia — Strong in Aggravate teams; otherwise an ER stat stick.
+ 
+ Artifacts:
+ Viridescent Venerer (4) — Core set for Swirl damage + RES shred.
+ Ocean-Hued Clam (4) — Extra healing and damage, lower utility.",ER (until requirement) > EM > ATK% > CRIT Rate (Favonius),
+83,Sethos,Sethos,4,Electro,"1. Hunter's Path (5)
+  ~Astral Vulture's Crimson Plumage (5)
+  ~Slingshot [R5] (3)","1. Wanderer's Troupe (4)
+  2. Gilded Dreams (4)
+  3. Thundering Fury (2) / +80 EM set (2) / Emblem of Severed Fate (2)","Sands - EM / ER
+ Goblet - Electro DMG
+ Circlet - Crit Rate / DMG","1. ER
+  2. Crit Rate / DMG
+  3. EM
+  4. ATK%","1. Normal Attack
+  2. Skill","DPS (ER 120–180%)
+ Sethos focuses on Normal and Charged Attack DPS, with identical builds apart from ER needs.
+ Weapon options beyond the top 3aren’t worth pulling just for him.
+ Desert Pavilion (4): Best set due to ATK SPD boost during Burst.
+ Prioritize ER for smooth rotations and sustained DPS uptime.",EM > CRIT Rate / DMG > ER (until requirement) > ATK%,
+84,Shenhe,Shenhe,5,Cryo,"1. Calamity Queller (5)
+  2. Engulfing Lightning (5)
+  3. Vortex Vanquisher (5)
+  4. Skyward Spine (5)
+  5. Favonius Lance (4)
+  6. Primordial Jade Winged-Spear (5)
+  7. Lithic Spear (2 stacks) (4)
+  8. Staff of Homa (5)
+  9. Wavebreaker's Fin (4)
+  10. Missive Windspear (4)
+  11. Prototype Starglitter (4)","1. Noblesse Oblige (4)
+  2. +18% ATK set / +18% ATK set (2) / Emblem of Severed Fate (2) [Choose Two]","Sands - ATK% / ER
+ Goblet - ATK%
+ Circlet - ATK%","1. ER until requirement is met
+  2. ATK%
+  3. Crit Rate / DMG
+  4. Flat ATK","1. Skill
+  2. Burst","SUPPORT (ER 160–220%)
+ Shenhe buffs Cryo characters through her Skill (flat Cryo DMG bonus, 5stacks on Tap / 7 on Hold) and her Burst (Cryo & Physical RES shred). Her buffs scale dynamically with her current ATK.
+ 
+ Weapons:
+ Calamity Queller: Best-in-slot — dynamic passive + high Base ATK.
+ Engulfing Lightning: Strong ATK from ER conversion.
+ Vortex Vanquisher: Good ATK stat stick (passive won’t stack off-field).
+ Favonius Lance: Great utility; build some Crit Rate for reliable passive procs (Cryo Resonance lowers the requirement).
+ 
+ Artifacts::
+ Main Stats: ATK% / Cryo DMG / Crit (or ER sands if needed).
+ Substats: ATK%, ER to meet requirements, Crit Rate for Favonius builds.",ATK% > ER (until requirement) > CRIT Rate / DMG >,
+85,Shikanoin-Heizou,Shikanoin Heizou,4,Animo,"1. Sunny Morning Sleep-In (5)
+  2. A Thousand Floating Dreams (5)
+  3. Sacrificial Fragments (4)
+  ~Wandering Evenstar (4)
+  4. Mappa Mare (4)
+  5. Favonius Codex (4)
+  ~Thrilling Tales of Dragon Slayers (3)
+  ~Hakushin Ring (4)
+  ~Prototype Amber (4)","1. Viridescent Venerer (4)
+  2. Noblesse Oblige (4)","Sands - EM
+ Goblet - EM
+ Circlet - EM","1. EM
+  2. ATK%
+  3. ER
+  4. Crit Rate","1. Skill
+  2. Normal Attack
+  3. Burst","SUPPORT (ER 100–180%)
+ Heizou can function as a support when equipped with 4VV and A4buffs. Prioritizes team utility over personal damage.
+ 
+ Weapons:
+ Favonius Codex — Lowers team ER needs.
+ Thrilling Tales of Dragon Slayers — 48% ATK buff for main DPS.
+ Hakushin Ring — EC teams; buffs Anemo, Hydro & Electro DMG.
+ Prototype Amber — Extra team sustain in no-healer comps.
+ 
+ Artifacts:
+ Viridescent Venerer (4) — Mandatory for VV shred support.
+ 
+ ANEMO DPS
+ Low ER requirements; can run pure damage stats. Scales well with ATK/Crit.
+ 
+ Weapons:
+ Lost Prayer to the Sacred Winds — Best in Bennett teams.
+ The Widsith — Highest single-hit damage, inconsistent uptime.
+ 
+ Artifacts:
+ Viridescent Venerer (4) — Core set for DPS & shred.
+ 
+ REACTION DPS (EC TEAMS)
+ Reaction-based build focuses on buffing team damage through Swirls.
+ 
+ Artifacts:
+ Noblesse Oblige (4) — Use only if another unit holds VV.",CRIT Rate / DMG > ATK% > EM,
+86,Sigewinne,Sigewinne,5,Hydro,"1. Silvershower Heartstrings (5)
+  2. Sequence of Solitude (4) [R5]
+  ~Recurve Bow (3)
+  ~Favonius Warbow (4)
+  ~Elegy for the End (5)
+  ~Sacrificial Bow (4) [R5]","1. Ocean-Hued Clam (4)
+  ~Song of Days Past (4)
+  2. Tenacity of the Millelith (2) / Vourukasha's Glow (2)
+  3. Tenacity of the Millelith (4)","Sands - HP%
+ Goblet - HP%
+ Circlet - HP% / Crit Rate 
+  
+ Notes: Crit Rate only if using Favonius Warbow","1. HP%
+  2. Flat HP
+  3. Crit Rate 
+  
+ Notes: Crit Rate only if using Favonius Warbow",1. Skill,"SUPPORT (ER 150–200%)
+ Sigewinne provides teamwide healing and energy generation through Sourcewater Droplets.
+ Convalescence stacks boost off-field Skill damage for teammates, not herself. Best in Furina teams.
+ Favonius Warbow: Strong if team needs Energy; build some Crit Rate.
+ Elegy: Passive utility; ER often unnecessary.
+ Sacrificial Bow (R5): Shorter rotations and more Convalescence uptime.
+ Weapons don’t need leveling if Burst isn’t used.
+ Tenacity (4): Best set for ATK-scaling teams, outperforming mixed sets.",HP% > ER (until requirement) > CRIT Rate (Favonius) > Flat HP,
+87,Skirk,Skirk,5,Cryo,"1. Azurelight (5)
+  2. Haran Geppaku Futsu (5)
+  3. Mistsplitter Reforged (5)
+  ~Primordial Jade Cutter (5)
+  4. Calamity of Eshu (4) [R5] 
+  5. Uraku Misugiri (5)
+  ~Absolution (5)
+  ~Light of Foliar Incision (5)
+  6. Finale of the Deep (4) [R5] 
+  ~Summit Shaper (5)
+  7. The Black Sword (4)","1. Finale of the Deep Galleries (4)
+  2. Desert Pavilion Chronicle (4)
+  3. Gladiator's Finale (4)
+  4. +15% Cryo DMG set (2) / +18% ATK set (2) / Marechaussee Hunter (2) [Choose Two]
+  5. Blizzard Strayer (4) 
+  
+  
+  Marechaussee Hunter (4)","Sands - ATK% 
+ Goblet - Cryo DMG / ATK%
+ Circlet - Crit Rate / Crit DMG","1. Crit Rate / DMG
+  2. ATK%","1. Skill
+  2. Burst","DPS (ER 100%)
+ Skirk focuses on sustained on-field Cryo DPS through Normal Attacks, with strong Burst nuke potential. Her A4passive grants a large Base DMG bonus, so running only Cryo + Hydro teammates is key to maximize it.
+ 
+ Weapons:
+ Calamity of Eshu — Best with consistent shielding; not recommended without.
+ Finale of the Deep [R5] — Top option if Bond of Life is cleared.
+ Summit Shaper — Matches Uraku Misugiri with shield.
+ The Black Sword [R5] — Close to Finale of the Deep [R5].
+ 
+ Artifacts:
+ Marechaussee Hunter (4) — Best with Furina; outperforms Finale of the Deep Galleries at C1+.
+ Blizzard Strayer (4) — Best-in-slot vs fully Freezable enemies but can lead to Crit Rate overcap.",CRIT Rate / DMG > ATK%,
+88,Sucrose,Sucrose,4,Animo,"1. A Thousand Floating Dreams (5)
+  ~Sunny Morning Sleep-In (5)
+  2. Wandering Evenstar (4)
+  3. Sacrificial Fragments (4)
+  ~Thrilling Tales of Dragon Slayers (3)
+  4. Hakushin Ring (4)
+  5. Magic Guide (3)
+  6. Favonius Codex (4)","1. Viridescent Venerer (4)
+  2. Instructor (4)
+  3. +80 EM set (2) +80 EM set (2)","Sands - EM 
+ Goblet - EM 
+ Circlet - EM","1. EM
+  2. ER
+  3. ATK%
+  4. Crit Rate / DMG","1. Skill
+  2. Burst
+  
+  Sucrose's Normal Talent levels are not a necessity.","EM SUPPORT (ER 160–220%)
+ Sucrose boosts team EM through her A4talent (20% of her EM), making EM stacking her top priority. Her value mainly comes from A1 and A4talents — no need to level her other talents.
+ 
+ Weapons:
+ Thrilling Tales of Dragon Slayers — Best team buff (48% ATK).
+ Sacrificial Fragments — Good EM stat stick.
+ Hakushin Ring — Buffs Electro or Hydro in EC teams.
+ Favonius Codex — Extra energy for the team (needs some Crit Rate).
+ 
+ Notes:
+ In Freeze or battery teams (e.g., for Xiao), TTDS is preferred over EM stacking.",EM > ER (until requirement) > CRIT Rate (Favonius),
+89,Tartaglia,Tartaglia,5,Hydro,"1. Polar Star (5) 
+  2. Hunter's Path (5)
+  ~Aqua Simulacra (5)
+  ~Skyward Harp (5)
+  ~Thundering Pulse (5)
+  ~Astral Vulture's Crimson Plumage (5)
+  3. The First Great Magic (5)
+  4. The Viridescent Hunt (4)
+  5. King's Squire (4) [R5] 
+  ~Amos' Bow (5)
+  ~The Stringless (4) [R5]
+  6. Scion of the Blazing Sun (4)
+  ~Blackcliff Warbow (4)
+  ~Chain Breaker (4) [R5]
+  7. Windblume Ode (4) [R5]
+  ~Hamayumi (4) [R5] 
+  ~Mouun's Moon (4)
+  ~Rust (4) [R5]","1. Nymphs Dream (4)
+  2. Heart of Depth (4)
+  3. +15% Hydro DMG set (2) +18% ATK set (2) 
+  4. Noblesse Oblige (2) / +15% Hydro DMG set (2) / +18% ATK set (2) [Choose Two]
+  5. Shimenawas Reminiscence (4)","Sands - ATK%
+ Goblet - Hydro DMG
+ Circlet - Crit Rate / DMG","1. Crit Rate / DMG
+  2. ATK%
+  3. EM
+  4. ER","1. Skill
+  2. Burst
+  3. Normal Attack","DPS (ER 120–150%)
+ Tartaglia is an on-field Hydro DPS and enabler, excelling in Vaporize teams with Xiangling for double reaction setups.
+ 
+ Weapons:
+ Polar Star: Best with stacked Nymph’s Dream.
+ King’s Squire: Requires CA setup change.
+ Hunter’s Path: Boosts EM in N1C/N2C rotations.
+ Viridescent Hunt (R5): Great grouping and Riptide synergy.
+ Blackcliff Warbow (R5): Equal to Amos’ with 1 stack.
+ Scion of the Blazing Sun (R5): Matches Viridescent (R1).
+ Hamayumi: Passive not doubled.
+ Mouun’s Moon (R5): Similar to Scion.
+ 
+ Artifacts::
+ 2pc Hydro + 2pc ATK: Nearly equal to HoD (4).
+ Shimenawa (4): Strong in single rotation, weaker with ER needs.",CRIT Rate / DMG > ATK% > EM > ER (until requirement),
+90,Thoma,Thoma,4,Pyro,"1. Favonius Lance (4)
+  2. Engulfing Lightning (5)
+  3. The catch (4) [R5]
+  4. Kitain Cross Spear (4)
+  5. Prototype Starglitter (4)
+  6. Skyward Spine (5)
+  7. Black Tassel (3)
+  8. Rightful Reward (4)","1. Noblesse Oblige (4)
+  2. Tenacity of the Millelith (2) / Emblem of Severed Fate (2) / Vourukasha's Glow (2) [Choose two]
+  3. Instructor (4) 
+  4. Deepwood Memories (4)","Sands - ER / HP%
+ Goblet - HP%
+ Circlet - HP% / Crit Rate 
+  
+ Notes: Crit RateCirclet if using Favonius Lance","1. ER until requirement is met
+  2. HP%
+  3. Crit Rate 
+  4. Flat HP
+  
+ Notes: Crit Rate is required if using Favonius Lance","1. Skill
+  2. Burst","BURGEON (ER 200–280%)
+ Thoma acts as a Burgeon trigger with steady Pyro application and reliable shields.
+ Focus on EM + ER, or HP% for stronger shields if needed.
+ Burgeon self-damage makes shield uptime valuable. Talents are optional unless building for shield strength.
+ ER and shield consistency are key to stable team protection.
+ 
+ Weapons:
+ Kitain Cross Spear: Best, lowers ER needs.
+ Dragon’s Bane: Good with C4.
+ Favonius Lance: Needs Crit Rate for passive.
+ Rightful Reward: Works if healed often.
+ 
+ SUPPORT (ER 200–280%)
+ Focuses on shield uptime and utility.
+ 
+ Weapon
+ Favonius Lance: Best option; build Crit Rate.
+ Rightful Reward: Good if passive procs.
+ 
+ Artifacts
+ Instructor (4): Ideal for reaction teams but harder to build.
+ Deepwood (4): Dendro support option.",ER (until requirement) > HP% > EM > CRIT Rate (Favonius),
+91,Tighnari,Tighnari,5,Dendro,"1. Hunter's Path (5)
+  2. Astral Vulture's Crimson Plumage (5)
+  ~Aqua Simulacra (5)
+  ~Polar Star (5)
+  ~The First Great Magic (5)
+  3. Skyward Harp (5)
+  ~Thundering Pulse (5)
+  4. Elegy for the End (5)
+  ~Amos' Bow (5)
+  ~Fading Twilight [R5] (4)
+  5. Scion of the Blazing Sun (4)
+  ~The Viridescent Hunt (4)
+  6. Slingshot (3) [R5]
+  ~Range Gauge (4)
+  ~Windblume Ode [R5] (4)
+  ~Song of Stillness (4)
+  7. Prototype Crescent (4)","1. Wanderer's Troupe (4)
+  ~Gilded Dreams (4) 
+  2. Emblem of Severed Fate (4)
+  3. Deepwood Memories (2) / +80 EM set (2) / +18% ATK set (2) [Choose Two]
+  4. Deepwood Memories (4)","Sands - ATK% / EM / ER 
+ Goblet - Dendro DMG
+ Circlet - Crit Rate / DMG","1. Crit Rate / DMG
+  2. EM
+  ~ATK%
+  3. ER","1. Normal Attack
+  2. Burst
+  3. Skill","QUICKSWAP DPS (ER 100–160%)
+ Tighnari uses Skill → Charged Attacks → Burst → Swap, enabling fast Dendro application and strong burst windows.
+ Weapons:
+ The First Great Magic: Top pick with 2 stacks, still strong solo Dendro.
+ Elegy: Great if ER is needed; otherwise weaker than Scion of the Blazing Sun.
+ Scion of the Blazing Sun (R5): Just below Thundering Pulse.
+ Slingshot: Weak at long range.
+ Range Gauge (R5): Equal to Thundering Pulse with 3stacks.
+ Song of Stillness (R5): Matches Range Gauge if passive is active.
+ Fading Twilight: Similar to Prototype Crescent if ER not needed.
+ Prototype Crescent (R5): Good if hitting weakspots consistently.
+ 
+ Artifacts::
+ Gilded Dreams (4): Slightly better than Wanderer’s if bursting every Skill.
+ Deepwood (4): Best overall if no other holder on the team.
+ 
+ Main Stats:
+ Prioritize ER to Burst every Skill use for max DPS.
+ ER requirement varies by team but is always valuable.",CRIT Rate / DMG > EM > ATK% > ER (until requirement),
+92,Traveler (Anemo),Aether,5,Animo,"1. Freedom-Sworn (5) 
+  2. Primordial Jade Cutter (5) 
+  ~Mistsplitter Reforged (5)
+  3. Sacrificial Sword (4)
+  4. Iron Sting (4)
+  5. Summit Shaper (5) 
+  ~Skyward Blade (5) 
+  ~Festering Desire (4)
+  6. Aquila Favonia (5)
+  7. Lion's Roar (4) 
+  ~Amenoma Kageuchi (4) [R1] 
+  ~Favonius Sword (4)
+  8. Dark Iron Sword (3)","1. Viridescent Venerer (4) 
+2. +15% Anemo DMG set (2) / +80 EM set (2) / Noblesse Oblige (2) / +18% ATK set (2) [Choose Two]","Sands - EM / ATK% / ER
+ Goblet - EM / Anemo DMG
+ Circlet - EM / Crit Rate / DMG","1. EM
+  2. ER
+  3. ATK%
+  4. Crit Rate / DMG","1. Skill
+  2. Burst","ANEMO DPS (ER 160–180%)
+ Anemo Traveler focuses on dealing damage through Skill/Burst in a quickswap Sub-DPS style. High ER is often required to Burst consistently. Both EM and ATK/Crit builds yield similar results.
+ 
+ Weapons:
+ Amenoma Kageuchi — Lowers ER needs; best balance at high refinements.
+ Sacrificial Sword — Extra Skill use for more damage; longer field time required.
+ Favonius Sword — Team energy utility; build some Crit Rate for passive.
+ 
+ Artifacts:
+ Viridescent Venerer (4) — Best set for Anemo damage and resistance shred.
+ 
+ Notes:
+ EM build requires no talent investment.
+ Crit build prioritizes Crit Rate / Crit DMG for higher burst impact.",EM > ER (until requirement) > ATK% > CRIT Rate / DMG,
+93,Traveler (Dendro),Aether,5,Dendro,"1. Freedom-Sworn (5)
+  2. Favonius Sword (4)
+  3. Sacrificial Sword (4)
+  4. Sapwood Blade (4)","1. Deepwood Memories (4)
+  2. Noblesse Oblige (4) 
+  3. Instructor (4)
+  4. Gilded Dreams (4)
+  5. The Exile (4)","Sands - ER / ATK% / EM
+ Goblet - Dendro DMG / EM 
+ Circlet - Crit Rate / Crit DMG / EM 
+  
+  Notes: Prioritize ER if their Energy Requirements are not met yet.","1. ER 
+  2. Crit Rate / DMG
+  3. ATK% ~EM","1. Burst
+  2. Skill
+  
+  Not priority investment","SUPPORT (ER 200%-260%)
+ Dendro Traveler provides consistent Dendro application and Burst utility, but has high ER needs when solo Dendro.
+ 
+ Weapons:
+ Sacrificial Sword: Best for maintaining Burst uptime.
+ Sapwood Blade: Lower priority due to higher ER demand.
+ 
+ Artifacts::
+ Noblesse (4): Best in Aggravate teams for team ATK buff.
+ Exile (4): Strong alternative to battery units like Cyno.
+ 
+ Main Stats:
+ Prioritize ER to ensure Burst consistency.",ER (until requirement) > EM > CRIT Rate / DMG > ATK%,
+94,Traveler (Electro),Aether,5,Electro,"1. Favonius Sword (4)
+  ~Freedom-Sworn (5)
+  2. Sacrificial Sword (4)
+  3. Skyward Blade (5)
+  4. Festering Desire (4)
+  5. Skyrider Sword (3)","1. Noblesse Oblige (4)
+  2. Emblem of Severed Fate (4) 
+  3. Instructor (4)
+  4. +20% ER set (2) +20% ER set (2)","Sands - ER
+ Goblet - Electro DMG
+ Circlet - Crit Rate / DMG 
+  
+  Main stats aren't as important. Stack ER for comfortable Elemental Burst uptime instead.","1. ER
+  2. ATK%
+  3. Crit Rate / DMG","1. Skill
+  2. Burst","SUPPORT (ER 120–200%)
+  Traveler can provide a lot of energy and ER to the on-field character through their Elemental Skill pick up or Elemental Burst procs. This is especially useful with a damage dealer that doesn't conflict with Traveler's element and can benefit from the abundance of energy. Due to the low damage scaling on Electro Traveler's Elemental Skill and Burst, its recommended to build Electro Traveler by just stacking ER to amplify the batterying power.",ER (until requirement) > ATK% > CRIT Rate / DMG,
+95,Traveler (Geo),Aether,5,Geo,"1. Uraku Misugiri (5)
+  2. Primordial Jade Cutter (5)
+  ~Mistsplitter Reforged (5)
+  3. Haran Geppaku Futsu (5)
+  ~Absolution (5)
+  4. Light of Foliar Incision (5)
+  5. Splendor of Tranquil Waters (5)
+  ~Summit Shaper (5)
+  6. Wolf-Fang (4)
+  7. Finale of the Deep (4)
+  ~Festering Desire (4) [R5] 
+  ~Amenoma Kageuchi (4) [R5] 
+  ~Skyward Blade (5)
+  ~Fleuve Cendre Ferryman (4) [R5] 
+  ~Peak Patrol Song (5)
+  ~Freedom-Sworn (5)
+  8. Favonius Sword (4)","1. Nighttime Whispers in the Echoing Woods (4) 
+  ~Golden Troupe (4) 
+  2. Archaic Petra (2) / Noblesse Oblige (2) / +18% ATK set (2) / Emblem of Severed Fate (2) / Golden Troupe (2) [Choose Two]
+  3. Emblem of Severed Fate (4) 
+  4. Noblesse Oblige (4)","Sands - ATK%
+ Goblet - Geo DMG
+ Circlet - Crit Rate / DMG","1. Crit Rate / DMG
+  2. ATK%
+  3. ER",1. Skill = Burst,"GEO DPS (ER 180–220%)
+ Traveler (Geo) excels as a quickswap Geo DPS and team battery. Their playstyle focuses on briefly entering the field to cast Skill or Burst, generating consistent Geo particles and maintaining team energy flow. While their personal damage can be respectable, their real value lies in energy generation and structure creation for Geo teams.
+ 
+ Weapons:
+ Summit Shaper — Best-in-slot if shield uptime is consistent. Without shields, performance drops below Wolf-Fang.
+ Wolf-Fang — Excellent all-around option; at [R5], comparable to Haran Geppaku Futsu.
+ Finale of the Deep — Great F2P option when the Bond of Life can be consistently cleared.
+ Festering Desire, Amenoma Kageuchi, Skyward Blade, Fleuve Cendre Ferryman — These options gain value if high ER is needed for reliable Burst uptime.
+ Peak Patrol Song, Freedom-Sworn, Favonius Sword — Weaker for personal damage, but strong for team utility and particle generation.
+ 
+ Artifacts:
+ Nighttime Whispers in the Echoing Woods (4) — Best damage option assuming consistent Crystallize shields.
+ Golden Troupe (4) — Strong alternative if Skill is cast immediately upon swap-in (within 2 seconds).
+ Emblem of Severed Fate (4) — Preferred in high ER setups; scales well with Burst-reliant rotations.
+ Noblesse Oblige (4) — Subpar for personal DPS but provides valuable teamwide ATK buff.
+ 
+ Main Stats:
+ Sands: ATK% or ER (depending on Burst frequency)
+ Goblet: Geo DMG Bonus
+ Circlet: Crit Rate / Crit DMG (1:2 ratio preferred)
+ 
+ Substats Priority:
+ Crit Rate / Crit DMG → ATK% → ER
+ 
+ Notes:
+ Aim for 180–220% ER to comfortably Burst every rotation.
+ Shield uptime significantly improves performance — pairing with units like Noelle, Zhongli, or Kachina is recommended.
+ The Geo Traveler’s constructs can serve as valuable supports for Geo resonance and structure-based synergies (e.g., with Chiori or Albedo).",CRIT Rate / DMG > ATK% > ER (until requirement),
+96,Traveler (Hydro),Aether,5,Hydro,"1. Primordial Jade Cutter (5)
+  ~Mistsplitter Reforged (5)
+  ~Splendor of Tranquil Waters (5)
+  ~Uraku Misugiri (5)
+  2. Light of Foliar Incision (5)
+  ~Haran Geppaku Futsu (5)
+  ~Absolution (5)
+  3. Summit Shaper (5)
+  4. Wolf Fang (4)
+  5. Finale of the Deep (4)
+  ~Harbinger of Dawn (3)
+  6. Fleuve Cendre Ferryman (4) [R5]
+  ~Festering Desire (4) [R5]
+  7. Favonius Sword (4)","1. Marechaussee Hunter (4)
+  2. Emblem of Severed Fate (4)
+  3. Golden Troupe (4)
+  ~+Nymphs Dream/ Golden Troupe (2) / Emblem of Severed Fate (2) / +18% ATK set (2)","Sands - ER / ATK%
+ Goblet - Hydro DMG
+ Circlet - Crit Rate / Crit DMG","1. ER
+  2. Crit Rate / DMG
+  3. ATK%
+  4. HP%","1. Skill
+  2. Burst","SUPPORT (ER 220–260%)
+ Hydro Traveler offers Pneuma damage and passive triggering, not unique utility. Only use if Pneuma is required and no other source is available.
+ Tenacity (4): Only with held Skill.
+ Limited usefulness if Sword of Narzissenkreuz is owned.
+ 
+ ON-FIELD DPS (ER 100%)
+ Traveler can function as an on-field DPS in specific teams (e.g., with Furina + Bennett).
+ Weapons:
+ Uraku Misugiri: Best with Geo teammate.
+ Summit Shaper: Best at C4for shield uptime.
+ Wolf Fang (R5): Equal to Foliar.
+ Favonius Sword: Utility can outweigh others.
+ 
+ Still useless",ER (until requirement) > CRIT Rate / DMG > ATK% > HP%,
+97,Traveler (Pyro),Aether,5,Pyro,"1. Uraku Misugiri (5)
+  ~Light of Foliar Incision (5)
+  ~Mistsplitter Reforged (5)
+  2. Primordial Jade Cutter (5)
+  ~Haran Geppaku Futsu (5)
+  3. Absolution (5)
+  ~Splendor of Tranquil Waters (5)
+  4. Freedom-Sworn (5)
+  ~Wolf Fang (4)
+  5. Iron Sting (4) [R5]
+  ~Finale of the Deep (4) [R5] 
+  ~Harbinger of Dawn (3) [R5]","1. Obsidian Codex (4)
+  2. Scroll of the Hero of Cinder City (4)
+  3. Crimson Witch of Flames (4) ~ Gilded Dreams (4)","Sands - ER / ATK% / EM
+ Goblet - Pyro DMG
+ Circlet - Crit Rate / DMG","1. ER
+  2. Crit Rate / DMG
+  3. EM
+  4. ATK%","1. Normal Attack
+  2. Burst
+  3. Skill","DPS (ER 140–200%)
+ C6 gives Pyro Traveler Pyro infusion and +40% Crit DMG, enabling Vaporize/Melt DPS.
+ 
+ Weapons:
+ Uraku Misugiri: Top pick, stronger with Geo teammates.
+ Primordial Jade Cutter / Haran: Comparable to Foliar if not using Obsidian Codex.
+ Wolf Fang (R5): Rivals Jade Cutter.
+ Finale of the Deep: Strong if Bond of Life is cleared.
+ Harbinger of Dawn: Strong but unreliable passive. Best used in reaction-heavy comps.
+ 
+ SUPPORT (ER 200–240%)
+ Pyro Traveler provides Pyro application and utility through supportive Artifacts: and weapons.
+ They don’t benefit from Nightsoul cooldown reduction but can restore Nightsoul Points with Burst.
+ Their personal damage is low, so investment isn’t a priority.
+ 
+ Weapons:
+ Freedom-Sworn / Key of Khaj Nisut: Don’t need to be leveled if not focusing on damage.
+ 
+ Scroll of the Hero of Cinder City (4): Strong support option.
+ ER and team utility take priority over personal DPS.",ER (until requirement) > CRIT Rate / DMG > EM > ATK%,
+98,Varesa,Varesa,5,Electro,"1. Vivid Notions (5)
+  2. Tome of the Eternal Flow (5)
+  ~Surf's Up! (5)
+  3. Kagura's Verity (5)
+  4. Lost Prayer to the Sacred Winds (5)
+  ~Cashflow Supervision (5)
+  5. Crane's Echoing Call (5)
+  6. Tulaytullah's Remembrance (5)
+  7. The Widsith (4)
+  ~Sacrificial Jade (4)
+  8. Flowing Purity (4) [R5]","1. Obsidian Codex (4) 
+  ~Long Night's Oath (4)
+ 2. Marechaussee Hunter (4)","Sands - ATK%
+ Goblet - Electro DMG%
+ Circlet - Crit Rate / DMG","1. ER 
+  2. Crit Rate / DMG
+  3. ATK%
+  
+ Notes: Prioritize until requirements are met","1. Normal Attack
+  ~Burst
+  2. Skill","PLUNGE DPS (ER 120–140%)
+ Varesa is an Electro DPS focused on Plunge combos, typically paired with Iansan.
+ Weapons:
+ Crane’s Echoing Call: Stronger with higher ER needs.
+ Tome of the Eternal Flow / Cashflow Supervision: Passive not assumed.
+ Widsith (R5): Slightly better than Tulaytullah’s on average.
+ Flowing Purity: Assumes dynamic stacking.
+ Obsidian Codex: Main set, but beware of Crit Rate overcap from weapon + ascension.
+ Long Night’s Oath: Good alternative if overcapping.
+ Artifacts::
+ Marechaussee Hunter: Only with Furina; weaker than Long Night’s Oath.",ER (until requirement) > CRIT Rate / DMG > ATK%,
+99,Varka,Varka,5,Animo,"1. Gest of the Mighty Wolf (5)
+ 2. Beacon of the Reed Sea (5)
+ ~ A Thousand Blazing Suns (5)
+ 3. Redhorn Stonethresher (5)
+ 4. Verdict (5)
+ 5. Song of Broken Pines (5)
+ 6. Serpent Spine (4)
+ ~ Wolf's Gravestone (5)
+ 7. Fang of the Mountain King (5)
+ ~ The Unforged (5)
+ 8. Tidal Shadow (4)
+ ~ Talking Stick (4)
+ ~ Blackcliff Slasher (4)
+ 9. Ultimate Overlord's Mega Magic Sword (4) [R5]","1. A Day Carved from Rising Winds (4)
+ 2. Shimenawas Reminiscence (4)
+ 3. Desert Pavilion Chronicle (4)
+ 4. Gladiator's Finale (4)","Sands - ATK%
+ Goblet - ATK%
+ Circlet - CRIT Rate / DMG
+ 
+ Note: While an ATK% goblet is a versatile, all-around choice, a specific Elemental DMG goblet (Pyro, Hydro, Electro, or Cryo) typically offers better performance in most team setups.","1. CRIT Rate / DMG
+ 2. ATK%","1. Skill
+ 2. Level Priority: Lv 90","DPS
+ Varka is a versatile, dual-element DPS who adapts his combat style based on your team composition and weapon choice.
+ 
+ Weapon Breakdown:
+ Song of Broken Pines: High ceiling; skip if combo timing is an issue.
+ 
+ Serpent Spine: [R5] matches Verdict; top-tier alternative.
+ 
+ Fang of the Mountain King: Prioritize special Skill over Charged Attacks.
+ 
+ Tidal Shadow: Unreliable; requires a healer absent in meta teams.
+ 
+ Talking Stick: [R5] matches Fang if Pyro passive is active.
+ 
+ ""Ultimate Overlord's Mega Magic Sword"": Reliable F2P fallback despite wasted ER.
+ 
+ Team Requirements:
+ Varka’s damage relies heavily on specific team resonances. To prevent his damage from plummeting, he requires:
+ A second Hex character, a second Anemo character.
+ Two characters of the same element (Pyro, Hydro, Electro, or Cryo).
+ For maximum damage, a Dual Pyro / Dual Anemo setup is highly recommended.",ATK% > CRIT Rate / DMG > EM,"Anemo-Pyro
+ [Premium] : Varka > Venti > Bennett > Durin 
+ [F2P] : Varka > sucrose / Lan Yan > Bennett / Dehya > Xiangling / Thoma
+ 
+ Notes: 
+1. Pyro Teams: Pyro DMG > ATK% (choose based on better sub-stats).
+ 2. Team Rule: For peak DPS, always use: 2 Same Element + 1 Anemo."
+100,Venti,Venti,5,Animo,"1. Polar Star (5)
+  2. Elegy for the End (5)
+  ~The Stringless (4)
+  3. Aqua Simulacra (5)
+  ~Hunter's Path (5)
+  ~Cloudforged [R5] (4)
+  4. Skyward Harp (5)
+  5. Alley Hunter (4)
+  ~Mouun's Moon (4)
+  6. Thundering Pulse (5)
+  ~The First Great Magic (5)
+  7. Song of Stillness (4)
+  8. Favonius Warbow (4)","1. Viridescent Venerer (4) 
+  2. Noblesse Oblige (4)
+  3. Emblem of Severed Fate (4)
+  4. Viridescent Venerer (2) / Noblesse Oblige (2) / Emblem of Severed Fate (2) / +18% ATK set (2) [Choose Two]","Sands - ATK%
+ Goblet - ATK% / Anemo DMG
+ Circlet Crit Rate / DMG","1. Crit Rate / DMG
+  2. ER
+  3. ATK%
+  4. EM","1. Burst
+  2. Skill","REACTION OFF-FIELD DPS (ER 160–220%)
+ Venti focuses on Swirl and reaction-based damage, leveraging his EM and grouping utility. His ER ascension makes damage builds more flexible.
+ 
+ Weapons:
+ Cloudforged — Highest EM; strong with consistent Burst uptime.
+ Elegy for the End — Slightly lower personal DPS but gives huge team EM & ATK buff.
+ Alley Hunter / Mouun’s Moon [R5] — High personal damage options.
+ Favonius Warbow — Pure utility and energy support; Crit Rate recommended.
+ 
+ Artifacts:
+ Viridescent Venerer (4) — Best overall for Swirl damage & resistance shred.
+ 
+ Main Stats:
+ EM / Anemo DMG / Crit or EM / EM / EM (for reaction-focused builds).
+ 
+ Notes:
+ Elegy’s ATK buff doesn’t affect his Burst directly (it snapshots before buff), but EM does.
+ 
+ ANEMO OFF-FIELD DPS (ER 160–220%)
+ Best used when Venti receives strong team buffs (e.g. Bennett, Faruzan) and isn’t triggering reactions himself.
+ 
+ Weapons:
+ Elegy for the End — Competitive DPS + excellent team support.
+ 
+ Artifacts:
+ Viridescent Venerer (4) — Core option for Anemo damage.
+ 
+ Main Stats:
+ ATK% or Anemo DMGGoblet (pick higher substat piece).
+ Crit-focusedCirclet for personal DPS.
+ 
+ Tip:
+ If his Burst absorbs an element and gets external buffs (e.g., Shenhe), ATK%Goblet often wins over Anemo DMG.
+ Prioritize VV set unless someone else holds it",EM > ER (until requirement) > CRIT Rate / DMG > ATK%,
+101,Wanderer,Wanderer,5,Animo,"1. Tulaytullah's Remembrance (5)
+ 2. Memory of Dust (5)
+ ~ Skyward Atlas (5)
+ ~ Lost Prayer to the Sacred Winds (5)
+ 3. The Widsith (4)
+ ~ Dodoco Tales [R5] (4)
+ 4. Kagura's Verity (5)
+ ~ Tome of the Eternal Flow (5)
+ 5. Solar Pearl (4)
+ 6. Ballad of the Boundless Blue [R5] (4)
+ 7. Blackcliff Agate (4)
+ ~ Eye of Perception (4)
+ 8. Mappa Mare (4)
+ ~ Frostbearer (4)","1. Desert Pavilion Chronicle (4)
+ 2. Shimenawas Reminiscence (4)
+ 3. Echoes of an Offering (4)
+ 4. Desert Pavilion Chronicle (2) / VV (2) / 18% ATK Set (2) / Shimenawas Reminiscence (2) [Choose Two]
+ 5. Viridescent Venerer (4)","Sands - ATK%
+ Goblet - Anemo DMG
+ Circlet - Crit Rate / DMG","1. Crit Rate / DMG
+ 2. ATK%
+ 3. Flat ATK
+ 4. EM
+ 5. ER","1. Normal Attack
+ 2. Skill
+ 3. Burst
+ 
+ Note:
+ PRIORITIZE BURST OVER SKILL IF WANDERER IS C2.","ON-FIELD DPS (ER 100–140%)
+ Wanderer deals sustained Anemo Normal Attack damage via Skill; low ER needs and prefers shielding for interruption resistance.
+ 
+ Weapons:
+ Tulaytullah's Remembrance - BIS
+ Memory of Dust - Best when shielded; top option overall.
+ The Widsith - Strong but inconsistent due to RNG (EM buff is weak).
+ Dodoco Tales [R5] - Solid F2P with optimized rotation.
+ 
+ Artifacts:
+ Desert Pavilion Chronicle (4) - Best-in-slot.
+ Shimenawa (4) - Strong but not for C2+.
+ Echoes (4) - Good but ping-dependent (>100 not recommended).
+ Lavawalker (4) - Viable in Pyro teams.
+ Blizzard Strayer (4) - Only in full Freeze uptime (still weaker).
+ Viridescent Venerer (4) - For support/driver playstyle.
+ 
+ Main Stats:
+ ATK% / Anemo DMG / Crit (focus on Crit + ATK subs).
+ 
+ Rotations:
+ (Q) E NA/CA strings vary by set; N2C/N3 loops standard, Dodoco uses N1 CA spam.
+ 
+ Notes:
+ Shielding and external ATK buffs are valuable; Burst every other rotation unless C2+, EM is low value.",CRIT > ATK% > ER,
+102,Wriothesley,Wriothesley,5,Cryo,"1. Cashflow Supervision (5)
+  ~Tulaytullah's Remembrance (5)
+  2. Memory of Dust (5)
+  ~Tome of the Eternal Flow (5)
+  ~Kagura's Verity (5)
+  ~Lost Prayer to the Sacred Winds (5)
+  ~Skyward Atlas (5)
+  3. Ballad of the Boundless Blue [R5] (4)
+  ~The Widsith (4)
+  4. Flowing Purity (4)","1. Marechaussee Hunter (4)
+  2. Blizzard Strayer (4)
+  ~Shimenawas Reminiscence (4) 
+  3. Blizzard Strayer (2) / +18% ATK set (2) / Marechaussee Hunter (2) [Choose Two]","Sands - ATK%
+ Goblet - Cryo DMG
+ Circlet - Crit DMG","1. Crit Rate / Crit DMG
+  2. ATK%
+  3. ER","1. Normal Attack
+  2. Skill
+  3. Burst","MELT DPS (ER 100–120%)
+ 
+ Wriothesley leverages Melt to amplify his damage. Rankings assume Bennett support.
+ 
+ Flowing Purity: Strong option when Bond of Life is consistently cleared; matches or beats Ballad of the Boundless Blue [R5].
+ 
+ Artifacts: Marechaussee Hunter (4) for maximum Melt consistency.
+ 
+ MONO CRYO / FREEZE DPS (ER 100–120%)
+ 
+ Freeze can be inconsistent since Wriothesley’s Charged Attacks shatter enemies. Mono Cryo avoids this by adding Cryo supports instead.
+ 
+ Flowing Purity: Best if Bond of Life is cleared; equal or better than The Widsith.
+ 
+ Artifacts: Blizzard Strayer (4) gives good Crit Rate but loses uptime vs shatter. Marechaussee Hunter (4) offers better flexibility across teams.",CRIT Rate / DMG > ATK% > ER (until requirement),
+103,Xiangling,Xiangling,4,Pyro,"Engulfing Lightning (5)
+ The Catch (4) [R5]
+ Staff of the Scarlet Sands (5)
+  ~Staff of Homa (5)
+  ~Skyward Spine (5)
+  ~Lumidouce Elegy (5)
+  Favonius Lance (4)
+  Kitain Cross Spear (4)
+  ~Prototype Starglitter (4)","1. Emblem of Severed Fate (4)
+ 2. Crimson Witch of Flames (4) 
+ 3. Gilded Dreams (4)
+ ~Noblesse Oblige (2) / Crimson Witch of Flames (2) / +18% ATK set (2) / +80 EM set (2) / Emblem of Severed Fate (2) [Choose Two]
+ 4. Noblesse Oblige (4)
+ 5. Deepwood Memories (4) (Ideal for Dendro teams.)","Sands - ER / ATK% / EM
+ Goblet - Pyro DMG 
+ Circlet - Crit Rate / DMG","1. ER
+  2. Crit Rate / DMG
+  3. ATK%
+  4. EM","1. Burst
+  2. Skill","OFF-FIELD DPS (ER 200–300%)
+ Xiangling is used as a Vaporize or reactionless off-field DPS with strong utility.
+ 
+ Weapons & Artifacts with EM
+ Dragon’s Bane / Kitain / EM stats excel when triggering Vaporize + Overload (e.g., Raiden National).
+ Wavebreaker’s Fin (R5): Matches or beats Lumidouce Elegy.
+ Dragon’s Bane (R5), Lithic Spear (R5): Comparable to Vortex Vanquisher.
+ Favonius Lance: Great for high ER needs.
+ Ballad of the Fjords / Deathmatch (R5): Outperform Elegy for Vaporize and reactionless teams.
+ Kitain Cross Spear: Best energy generation for long rotations.
+ 
+ Artifacts:
+ Crimson Witch (4): Competitive with Emblem in low ER teams with Overload.
+ Deepwood (4): Support option in Dendro teams.",ER (until requirement) > CRIT Rate / DMG > EM > ATK%,
+104,Xianyun,Xianyun,5,Animo,"1. Crane's Echoing Call (5)
+  2. Skyward Atlas (5)
+  ~Memory of Dust (5)
+  3. Cashflow Supervision (5)
+  4. Thrilling Tales of Dragon Slayers (3)
+  5. Favonius Codex (4)
+  ~Oathsworn Eye (4) [R5]
+  6. Flowing Purity (4)
+  7. Wine and Song (4)
+  8. Ballad of the Boundless Blue (4)
+  ~Hakushin Ring (4)
+  9. Frostbearer (4)
+  10. Prototype Amber (4)","1.Viridescent Venerer (4)
+  2. Noblesse Oblige (4) 
+  3. Ocean-Hued Clam (4) 
+  ~Song of Days Past (4) 
+  ~Scroll of the Hero of Cinder City (4)
+  4. +18% ATK Set (2) / +18% ATK Set (2) / Emblem of Severed Fate (2) [Choose One]","Sands - ATK% / ER
+ Goblet - ATK%
+ Circlet - ATK%","1. ER
+  2. ATK%
+  3. Flat ATK
+  
+  Crit Rate only if using Favonius Codex",1. Burst,"1.Viridescent Venerer (4)
+  2. Noblesse Oblige (4) 
+  3. Ocean-Hued Clam (4) 
+  ~Song of Days Past (4) 
+  ~Scroll of the Hero of Cinder City (4)
+  4. +18% ATK Set (2) / Shimenawas Reminiscence (2) / Emblem of Severed Fate (2) [Choose One]",ATK% > ER (until requirement) > CRIT Rate (Favonius),
+105,Xiao,Xiao,5,Animo,"1. Fractured Halo (5)
+  ~Staff of Homa (5)
+  ~Primordial Jade Winged-Spear (5)
+  ~Lumidouce Elegy (5)
+  ~Symphonist of Scents (5)
+  2. Staff of the Scarlet Sands (5)
+  3. Calamity Queller (5)
+  ~Deathmatch (4)
+  ~Crimson Moon's Semblance (5)
+  ~Vortex Vanquisher (5)
+  ~Skyward Spine (5)
+  4. Blackcliff Pole (0 stacks) (4)
+  ~Tamayuratei no Ohanashi [R5] (4)
+  5. Lithic Spear (4)
+  6. Missive Windspear [R5] (4)
+  ~Prospector's Drill (4)
+  ~Wavebreaker's Fin (4)
+  7. Favonius Lance (4)
+  8. White Tassel (3)","1. Marechaussee Hunter (4) 
+  ~Vermillion Hereafter (4)
+  ~Long Night's Oath (4) 
+  2. Desert Pavilion Chronicle (4) 
+  3. Long Night's Oath (2) / VV (2) / +18% ATK set (2) / Emblem of Severed Fate (2) [Choose One]","Sands - ATK%
+ Goblet - Anemo DMG / ATK% 
+ Circlet - Crit Rate / DMG","1. ER until requirement is met
+  2. Crit Rate/DMG
+  3. ATK%","1. Normal Attack
+  2. Burst
+  3. Skill","DPS (ER 120–150%)
+ Xiao is a hypercarry focused on plunge attacks. Due to his high Burst cost, he usually needs an Anemo battery (e.g., Sucrose, Faruzan [C6], Xianyun) or high ER to sustain his rotation.
+ 
+ Weapons:
+ Calamity Queller — Strong pick, especially without Bennett/Xianyun buffs.
+ Crimson Moon’s Semblance — Stat stick; passive usable with CA at Burst start.
+ Vortex Vanquisher — No-shield baseline; performs better with shield or no Bennett.
+ Skyward Spine / Favonius Lance — Excellent in high ER teams.
+ Blackcliff Pole / Lithic Spear — Consistent free-to-play options; scaling improves with buffs/stacks.
+ Missive Windspear [R5] — Close to Blackcliff if passive is triggered.
+ Prospector’s Drill [R5] — Comparable to Skyward Spine with a healer present.
+ 
+ Artifacts:
+ Marechaussee Hunter (4) — Best-in-slot with Bennett/Xianyun, but tricky with Crit Rate weapons.
+ Vermillion Hereafter (4) — Solid baseline set.
+ Long Night’s Oath (4) — Viable alternative but domain is inefficient.
+ Desert Pavilion Chronicle (4) — Competitive with low Base ATK + Bennett.
+ 
+ Main Stats:
+ ATK% / Anemo DMG / Crit.
+ AnemoGoblet preferred; ATK% viable with strong substats.
+ 
+ Notes:
+ Use Charged Attack at Burst start to activate weapon/set passives where applicable.
+ Energy management is crucial for consistent Burst uptime.",CRIT Rate / DMG > ATK% > ER (until requirement),
+106,Xilonen,Xilonen,5,Geo,"1. Peak Patrol Song (5)
+  2. Freedom-Sworn (5)
+  3. Favonius Sword (4)
+  4. Flute of Ezpitzal (4)
+  5. Skyrider Sword (3)","1. Scroll of the Hero of Cinder City (4)
+  2. Archaic Petra (4)
+  3. Noblesse Oblige (4)
+  4. Instructor (4)","Sands - DEF% / ER
+ Goblet - DEF%
+ Circlet - DEF% / Healing Bonus / Crit Rate 
+  
+ Notes: Crit Rate (if Favonius Sword is used)","1. ER 
+  2. DEF%
+  3. Flat DEF
+  4. Crit Rate 
+ 
+ Notes: Prioritize ER until requirements are met
+ Notes: Crit Rate (if Favonius Sword is used)","1. Skill
+  2. Burst","SUPPORT / HEALER (ER 110–200%)
+ Xilonen functions primarily as a Support unit, reducing Elemental Resistance through her Samplers while providing excellent team utility with Scroll of the Hero of Cinder City (4). She can also act as a healer if built accordingly, though her healing scaling is not required in pure support setups. Her flexibility allows her to slot into many team types, especially those benefiting from RES shred or Cinder City’s multi-element buff.
+ 
+ Weapons:
+ Peak Patrol Song — Top-tier choice; its buff caps out at 3,200 DEF, which Xilonen can reach easily with proper gear. Excellent for both support and hybrid healing builds.
+ Freedom-Sworn — Competitive with Peak Patrol Song when the team benefits from both ATK% and DMG% buffs. To consistently trigger its passive, either burst every rotation or delay between Skill hit and Normal Attack. Weapon leveling is not required for utility use.
+ Favonius Sword — Best general support weapon if your team values energy generation. Build some Crit Rate to ensure consistent passive activation.
+ Flute of Ezpitzal — Serviceable option; refinements do not meaningfully affect performance on Xilonen.
+ 
+ Artifacts:
+ Scroll of the Hero of Cinder City (4) — Best-in-slot for maximizing team buffs through Elemental DMG% bonuses. Xilonen is an ideal holder if no other team member can use it.
+ Noblesse Oblige (4) — Solid alternative if Scroll is already taken, providing a reliable party-wide ATK buff after Burst use.
+ Tenacity of the Millelith (4) — Decent fallback option that adds ATK% and Shield Strength utility, though weaker than Scroll overall.
+ Ocean-Hued Clam (4) — Only recommended for healing builds when her Burst is consistently used.
+ 
+ Main Stats:
+ Sands: DEF% / ER% (depending on needs)
+ Goblet: DEF% / HP%
+ Circlet: Healing Bonus (for healer build) / DEF% (for support build)
+ Substats Priority:
+ ER% → DEF% → HP% → Crit Rate (if using Favonius Sword)
+ 
+ Talent Priority:
+ For Support build: Focus on Skill; Burst can be ignored.
+ For Healing build: Level both Skill and Burst for stronger sustain.
+ 
+ Notes:
+ ER 100–120% for Support-only setups; 160–200% for Heal builds that burst every rotation.
+ Scroll of the Hero of Cinder City (4) should always take priority if available, as it provides unmatched teamwide DMG% utility.
+ If not using Peak Patrol Song or Scroll, artifact main stats are largely irrelevant in pure resistance-shred roles.
+ In teams relying on frequent bursts, Favonius Sword can outperform Peak Patrol Song due to energy consistency.",DEF% > ER (until requirement) > CRIT Rate (Favonius),
+107,Xingqiu,Xingqiu,4,Hydro,"1. Primordial Jade Cutter (5)
+  2. Mistsplitter Reforged (5)
+  3. Azurelight (5)
+  ~Haran Geppaku Futsu (5)
+  ~Light of Foliar Incision (5)
+  ~Absolution (5) 
+  4. Summit Shaper (5)
+  ~Skyward Blade (5)
+  ~Uraku Misugiri (5)
+  5. Splendor of Tranquil Waters (5)
+  6. Wolf-Fang (4)
+  7. Favonius Sword (4)
+  8. Fleuve Cendre Ferryman (4) [R5] 
+  ~Finale of the Deep (4)
+  ~Amenoma Kageuchi (4) 
+  9. Freedom-Sworn (5)","1. Emblem of Severed Fate (4) 
+  2. Noblesse Oblige (4) 
+  ~Scroll of the Hero of Cinder City (4)
+  3. Nymphs Dream (4)
+  ~Noblesse Oblige (2) / Nymphs Dream/ +18% ATK set (2) / Emblem of Severed Fate (2) [Choose Two]","Sands - ER / ATK%
+ Goblet - Hydro DMG
+ Circlet - Crit Rate / DMG","1. Crit Rate / DMG
+  2. ATK%
+  3. ER
+  
+  Prioritize ER","1. Burst
+  2. Skill","OFF-FIELD DPS (200-240)
+ Xingqiu provides high Hydro application and strong off-field damage with Burst.
+ ER needs vary by team and constellations.
+ 
+ High ER Requirements weapons:
+ Sacrificial Sword (R4+): Best for comfort, extends rotations.
+ Primordial Jade Cutter: Top if ER is met.
+ Freedom-Sworn: Competitive if triggering reactions and team benefits.
+ 
+ Low ER Requirements wepons: (≥130% ER)
+ Finale of the Deep: Great with healer clearing Bond of Life.
+ Freedom-Sworn: Outperforms Summit Shaper with reactions.
+ 
+ Artifacts:
+ Emblem (4): Best with 180%+ ER.
+ Noblesse (4): Use only if no one else holds it.
+ Blizzard (4): Good in Freeze, not worth farming otherwise.",ER (until requirement) > CRIT Rate / DMG > ATK%,
+108,Xinyan,Xinyan,4,Pyro,"1. Sacrificial Greatsword (4)
+  2. Whiteblind (4)
+  3. Favonius Greatsword (4)","1. Tenacity of the Millelith (4) 
+  2. Husk of Opulent Dreams (4)
+  3. Husk of Opulent Dreams (2)","Sands - DEF% / ER
+ Goblet - DEF%
+ Circlet - DEF%","1. ER
+  2. ATK% / DEF%
+  3. Crit Rate / DMG",1. Skill,"PHYSICAL DPS (ER 160–220%)
+ Focuses on on-field Physical damage. At C2, Xinyan can aim for a 1:3Crit Rate:DMG ratio instead of the standard 1:2.
+ 
+ Weapons:
+ Serpent Spine (R5): Outperforms Skyward Pride.
+ The Unforged: Better when shielded.
+ Prototype Archaic (R5): Beats Snow-Tombed Starsilver (R5).
+ 
+ PYRO DPS (ER 160–220%)
+ Requires C6 Bennett to function effectively.
+ 
+ Weapons:
+ Serpent Spine (R5): Can surpass Redhorn (R1) with good stacks.
+ Lithic Blade: Ranking assumes 2 stacks.
+ Beacon of the Reed Sea: Assumes 1 stack.
+ 
+ Artifacts:
+ Lavawalker (4): Best set due to high Pyro aura uptime.
+ 
+ SUPPORT (ER 160–220%)
+ Focuses on shielding and team buffs.
+ 
+ Artifacts
+ Tenacity of the Millelith (4): Strong when Level 3shield uptime is high. Works best with Sacrificial Greatsword or C2+.
+ Shield uptime is key. Without Sacrificial or C2+, DPS builds may be more effective.
+ Not recommended for Pyro application due to limited shield pulses.",ER (until requirement) > ATK% / DEF% > CRIT Rate / DMG,
+109,Yae-Miko,Yae Miko,5,Electro,"1. Kagura's Verity (5)
+  2. A Thousand Floating Dreams (5)
+  ~Sunny Morning Sleep-In (5)
+  3. Tome of the Eternal Flow (5)
+  4. Lost Prayer to the Sacred Winds (5)
+  ~Skyward Atlas (5)
+  ~The Widsith (4)
+  ~Tulaytullah's Remembrance (5)
+  5. Solar Pearl (4)
+  6. Oathsworn Eye R5(4)
+  7. Hakushin Ring (4)
+  8. Mappa Mare (4)","1. Gilded Dreams (4)
+  ~Emblem of Severed Fate (4) 
+  ~Golden Troupe (4) 
+  2. Thundering Fury (2) and +80 EM set (2) / +18% ATK set (2) / Golden Troupe (2) / Noblesse Oblige (2) [Choose One]
+  3. Thundersoother (4)
+  4. Tenacity of the Millelith (4)","Sands - ER / EM / ATK%
+ Goblet - Electro DMG 
+ Circlet - Crit Rate / DMG","1. Crit Rate / DMG
+  2. EM
+  3. ATK%
+  4. ER","1. Skill
+  2. Burst","GENERAL – ARTIFACTS ((ER 100–160%))
+ Emblem of Severed Fate (4): Best in multi-target when bursting every rotation. Don’t overbuild ER at the cost of damage—bursting every other rotation may be better without a good battery.
+ Emblem (2): Viable if you need ER.
+ Golden Troupe (4): Best in single-target or non-burst setups.
+ Thundersoother (4): Competitive BiS in Electro-Charged teams with 100% passive uptime.
+ Tenacity (4): Trades personal DPS for team ATK buff; not worth farming specifically.
+ Talent Tip: Burst outdamages Skill in multi-target. If ER is tight, Burst every second rotation.
+ 
+ OFF-FIELD DPS
+ Solar Pearl (R5): Very strong with buffs; Normal Attack before swapping keeps passive active.
+ Hakushin Ring: Provides team buff, not triggered off-field.
+ 
+ OFF-FIELD AGGRAVATE DPS
+ A Thousand Floating Dreams: Strong personal + team EM buff.
+ Widsith (R5): Equal to A Thousand Floating Dreams.
+ Solar Pearl (R5): Outperforms Tome of the Eternal Flow.
+ Hakushin Ring: Buff utility > personal DPS in some rotations.",CRIT Rate / DMG > ATK% > EM > ER (until requirement),
+110,Yanfei,Yanfei,4,Pyro,"1. Prototype Amber (4)
+  2. Favonius Codex (4)
+  3. Thrilling Tales of Dragon Slayers (3)
+  ~Starcaller's Watch (5)","1. Emblem of Severed Fate (2) / Tenacity of the Millelith (2)
+ 2. Noblesse Oblige (4) 
+~ Scroll of the Hero of Cinder City (4)","Sands - ER / HP% 
+ Goblet - HP%
+ Circlet - HP%","1. ER
+  2. HP% 
+  3. Flat HP","1. Normal Attack
+  2. Burst
+  3. Skill","DPS (ER 100–120%)
+ Yanfei focuses on Charged Attack damage using her stack mechanic for enhanced hits. Her optimal combo is N2C during Burst with two Hydro units for consistent Vaporize. With only one Hydro unit, N3C may be more reliable.
+ 
+ Weapon:
+ Tome of the Eternal Flow: Best with Furina.
+ Cashflow Supervision: Second best under the same condition.
+ Flowing Purity: Loses value without reliable healing.
+ The Widsith (R5): Outperforms Surf’s Up!.
+ Starcaller’s Watch: Similar to A Thousand Floating Dreams at C4+.
+ Memory of Dust: Best with consistent shielding (C4+).
+ 
+ Artifacts:
+ Marechaussee Hunter (4) is her BiS set with Furina. Prioritize ER only if needed for Burst consistency, otherwise EM and Crit are key.
+ 
+ SHIELD SUPPORT (ER 100–120%)
+ This playstyle revolves around Yanfei’s C4shield. She requires high ER to maintain Burst uptime and consistent shielding. Ideal in teams that can keep her protected and allow shield cycling.",CRIT Rate / DMG > EM > ATK% > ER (until requirement),
+111,Yaoyao,Yaoyao,4,Dendro,"1. Favonius Lance (4)
+  2. Dialogues of the Desert Sages (4)
+  3. Black Tassel (3)
+  ~Rightful Reward (4)
+  4. Moonpiercer (4)
+  5. Kitain Cross Spear (4)","1. Deepwood Memories (4) 
+  2. Tenacity of the Millelith (4) 
+  3. Instructor (4) 
+  4. Ocean-Hued Clam (4) 
+  5. Maiden Beloved (4)
+  6. +15% Healing Bonus set (2) / +20% HP set (2) / Emblem of Severed Fate (2) [Choose Two]
+  7. Flower of Paradise Lost (4) 
+  8. Gilded Dreams (4) 
+  9. 80 EM (2) + 80 EM (2)","Sands - HP% / ER%
+ Goblet - HP%
+ Circlet - Healing Bonus%","1. ER% until requirement is met
+  2. HP%
+  3. Crit Rate 
+  4. Flat HP
+  
+  Notes: Crit Rate (if Favonius Lance used)","1. Burst 
+ 2. Skill
+  
+ Note: Prioritize her Skill only if you do not spend time on-field with Yaoyao after using her Bursts.","SUPPORT (ER 150–260%)
+ Yaoyao provides healing and off-field Dendro application with Skill and Burst. Her Skill alone is not enough for solo Dendro in Bloom/Hyperbloom/Burgeon teams.
+ Weapons:
+ Favonius Lance: Great generalist pick; trigger passive with Skill + 2 Normals.
+ Rightful Reward: Weaker if Burst isn’t used.
+ Kitain Cross Spear: Better with high Bloom ownership.
+ Deepwood (4): Default for Dendro RES shred if no one else holds it.
+ Tenacity (4): If RES shred isn’t needed (e.g., Aggravate comps).
+ Instructor (4): Budget team buff, but requires on-field reaction trigger.
+ Ocean-Hued Clam (4): For on-field healing focus.
+ Flower of Paradise / Gilded / EM mix: Bloom teams where Yaoyao owns reactions (EM build).
+ 
+ Main Stats:
+ EM Goblet/Circlet (and Sands if no ER needed) for Bloom ownership.
+ Prioritize ER if playing as pure support.
+ 
+ Notes:
+ Burst Yueguis disappear when swapping out.
+ ER range: 150–260% support, 110–220% Bloom.",ER(200 avg) > HP% > Crit Rate (if using fav),"1. Hyperbloom Team:
+ [Premium] : Yaoyao>Alhaitham>Kuki_Shinobu/Raiden_Shogun>Furina/Yelan
+ [F2P] : yaoyao>Traveler (Dendro)>Kuki_Shinobu>Xingqiu
+ 
+ 2. Aggravate Team:
+ [Premium] : Yaoyao>Clorinde/Raiden_Shogun>Fischl/Yae_Miko>Kaedehara_Kazuha
+ [F2P]: Yaoyao>Raiden_Shogun/Beidou>Fischl>Sucrose
+ 
+ 3.bloom Team:
+ [Premium] : Yaoyao>Nilou/Nefer>Lauma>Columbina/Sangonomiya_Kokomi
+ [F2P] : Yaoyao>Xingqiu>Traveler (Dendro)>Candace/Sangonomiya_Kokomi"
+112,Yelan,Yelan,5,Hydro,"1. Aqua Simulacra (5)
+  2. Silvershower Heartstrings (5)
+  3. Mouun's Moon (4) [R3-R5] 
+  ~The Stringless (4) [R3-R5]
+  ~Slingshot (3) 
+  ~Sequence of Solitude (4) [R5]
+  4. Hunter's Path (5)
+  ~Polar Star (5)
+  ~Thundering Pulse (5)
+  ~Skyward Harp (5)
+  5. Fading Twilight (4) [R5] 
+  6. Recurve Bow (3)","1. Emblem of Severed Fate (4)
+  2. Emblem of Severed Fate (2) / +20% HP set (2) / +15% Hydro DMG set (2) / Noblesse Oblige (2) [Choose Two]
+  3. Marechaussee Hunter (4)","Sands - ER / HP%
+ Goblet - Hydro DMG / HP% 
+ Circlet - Crit Rate / Crit DMG / HP%","1. ER 
+  2. HP% 
+  ~Crit Rate / DMG
+  3. Flat HP
+  
+Notes: ER should be prioritised until requirements are met.","1. Burst
+  2. Skill
+  3. Normal Attack","OFF-FIELD DPS (ER 140–250)
+ Yelan excels as an off-field Hydro DPS and reaction enabler through Burst-linked Normal Attacks.
+ 
+ Aqua Simulacra: Best personal damage but high ER needs.
+ Hunter’s Path / Polar Star / Thundering Pulse / Skyward Harp: Only if unclaimed elsewhere.
+ Elegy: Team buff only, not personal DPS.
+ Mouun’s Moon (R3+): Makes HPGoblet competitive.
+ Sacrificial Bow (R3–R5): Helps maintain rotation flow.
+ Marechaussee (4): Only for on-field with Furina.
+ Hydro DMG% Goblet: Default; HP% viable with heavy buffs.
+ Don’t use more than 2 HP% mains.
+ Normal Attack leveling is optional for Breakthrough Barbs.",CRIT Rate / DMG > EM > ATK% > ER (until requirement),
+113,Yoimiya,Yoimiya,5,Pyro,"1. Thundering Pulse (5)
+  2. Aqua Simulacra (5)
+  ~The First Great Magic (5)
+  3. Polar Star (5)
+  4. Hunter's Path (5)
+  ~Skyward Harp (5)
+  5. Slingshot (3) [R5]
+  ~Amos' Bow (5)
+  6. Rust (4)","1. Shimenawas Reminiscence (4)
+  2. Crimson Witch of Flames (4)
+  3. Gilded Dreams (4) 
+  4. Echoes of an Offering (4) 
+  5. Crimson Witch of Flames (2) / +18% ATK set (2) / +80 EM set (2) [Choose Two]","Sands - ATK% / EM
+ Goblet - Pyro DMG
+ Circlet - Crit Rate / DMG","1. Crit Rate / DMG 
+  2. ATK%
+  3. EM
+  4. ER","1. Normal Attack
+  2. Skill
+  3. Burst","DPS (ER 100–120%)
+ Yoimiya is an on-field Pyro DPS focused on Normal Attacks.
+ She benefits from interruption resistance, as broken strings cause major DPS loss.
+ 
+ Weapons:
+ Rust (R5): Top option, similar to Polar Star.
+ Polar Star: Assumes 2 stacks with quick aimed shot.
+ Amos’ Bow: Good at 3stacks; weaker at 2 or close range.
+ Gilded Dreams (4): Best in reaction-heavy teams.
+ 
+ Artifacts:
+ Echoes (4): Usable but inconsistent, especially at high ping.
+ Excels in Vaporize teams with Bennett support.",CRIT Rate / DMG > ATK% > EM > ER (until requirement),
+114,Yumemizuki-Mizuki,Yumemizuki Mizuki,5,Animo,"1. Sunny Morning Sleep-In (5)
+  2. Starcaller's Watch (5)
+  3. A Thousand Floating Dreams (5)
+  4. Sacrificial Fragments (4)
+  ~Favonius Codex (4)
+  ~Fruit of Fulfillment (4)
+  5. Hakushin Ring (4)
+  ~Wandering Evenstar (4)
+  ~Magic Guide (3)",1. Viridescent Venerer (4),"Sands - EM / ER
+ Goblet - EM
+ Circlet - EM","1. ER
+ 2. EM
+ 3. Crit Rate","1. Skill
+  2. Burst","REACTION DPS (ER 120–160%)
+ Yumemizuki Mizuki functions as a Swirl driver, amplifying team damage through consistent reaction triggers. Her gameplay revolves around high EM for both swirl damage and her swirl-based team buff, while maintaining enough ER for consistent Burst uptime and healing.
+ 
+ Weapons:
+ Favonius Codex — Best for solo-Anemo or energy-hungry teams; build some Crit Rate for consistent passive procs.
+ Hakushin Ring — Great pick in Electro-centric teams to grant teamwide DMG% buffs.
+ Wandering Evenstar — Excellent offensive choice; provides EM and a teamwide ATK buff. Outperforms Sacrificial Fragments at high refinements.
+ 
+ Artifacts:
+ Viridescent Venerer (4) — Best-in-slot for all swirl users; provides 60% Swirl DMG and 40% enemy RES shred.
+ Instructor (4) — Budget option for early game or low investment; provides a teamwide EM buff.
+ 
+ Main Stats:
+ Sands: EM
+ Goblet: EM
+ Circlet: EM
+ 
+ Substats Priority:
+ ER (until ~140–160%) > EM > Crit Rate (for Favonius Codex only).
+ 
+ Notes:
+ Always aim to Burst every rotation for healing and extra Swirl uptime.
+ She scales purely from EM; ATK, Crit DMG, and Crit Rate (outside Favonius) are low priority.
+ Works best in multi-element reaction teams (e.g., Electro-Charged or Overload setups).",ER (until requirement) > EM > CRIT Rate (Favonius),
+115,Yun-Jin,Yun Jin,4,Geo,"1. Favonius Lance (4)
+  2. Engulfing Lightning (5)
+  3. The catch (4)
+  ~Prototype Starglitter (4)
+  ~Kitain Cross Spear (4)","1. Husk of Opulent Dreams (4)
+  2. Husk of Opulent Dreams (2) Emblem of Severed Fate (2)
+  3. Noblesse Oblige (4)","Sands - DEF% / ER
+ Goblet - DEF%
+ Circlet - DEF% / Crit Rate","1. DEF%
+  2. ER
+  3. Flat DEF
+  4. Crit Rate","1. Burst
+  2. Skill","SUPPORT (ER 200–270%)
+ Yun Jin is a DEF-scaling Normal Attack buffer, granting a powerful flat DMG bonus to her teammates’ Normal Attacks via her Elemental Burst. She excels when paired with on-field characters who rely heavily on Normal Attacks (e.g., Yoimiya, Ayato, Childe, or Noelle). Her buff scales purely from DEF, so external DEF buffs from teammates (like Gorou) do not affect the value of her Burst bonus.
+ 
+ Weapons:
+ Favonius Lance — Best general option; generates Energy for the team while supporting Yun Jin’s high ER needs. Build some Crit Rate (~50%) for reliable passive procs.
+ Kitain Cross Spear — Great ER reduction weapon. The passive helps battery Yun Jin despite the EM main stat being wasted. Cast Burst before Skill to offset the 3Energy drain. Works even at level 1 with full passive effect.
+ Prototype Starglitter — Safe F2P choice if Favonius isn’t available; offers consistent ER and smooth Burst uptime.
+ 
+ Artifacts:
+ Husk of Opulent Dreams (4) — Best for maximizing Yun Jin’s DEF scaling, improving her Normal Attack buff strength.
+ Noblesse Oblige (4) — Strong alternative for additional team ATK support if another character isn’t already holding it.
+ The Exile (4) — Good early-game option for Energy management if ER requirements are not yet met.
+ 
+ Main Stats:
+ Sands: DEF%
+ Goblet: DEF%
+ Circlet: DEF% (or Crit Rate if using Favonius Lance)
+ 
+ Substats Priority:
+ ER > DEF% > Crit Rate (Favonius only)
+ 
+ Notes:
+ Aim for 200–270% ER, depending on team particle generation and rotations.
+ Always cast Burst before Skill when using Kitain Cross Spear.
+ External ATK or DEF buffs do not affect Yun Jin’s Burst bonus scaling—it’s snapshot-based from her own DEF only.
+ Yun Jin works best when teammates trigger all 30 stacks within Burst duration (fast hitters or multi-strike Normal Attacks).",ER (until requirement) > DEF% > CRIT Rate (Favonius) > HP%,
+116,Zhongli,Zhongli,5,Geo,"1. Staff of Homa (5)
+  2. Lumidouce Elegy (5)
+  3. Primordial Jade Winged-Spear (5)
+  4. Skyward Spine (5) 
+  ~Vortex Vanquisher (5) 
+  ~Calamity Queller (5)
+  5. The catch (4) [R5]
+  6. Deathmatch (4)
+  7. Engulfing Lightning (5) 
+  8. Lithic Spear (3stacks) (4)
+  9. Blackcliff Pole (0 stacks) (4)
+  10. Missive Windspear (4)
+  11. Favonius Lance (4)","1. Emblem of Severed Fate (4)
+  2. Noblesse Oblige (2) Archaic Petra (2) 
+  3. Noblesse Oblige (4) 
+  4. Tenacity of the Millelith (4)","Sands - ATK% / HP% 
+ Goblet - Geo DMG 
+ Circlet - Crit Rate / DMG","1. Crit Rate / DMG
+  2. ATK%
+  3. HP%
+  4. ER","1. Burst
+  2. Skill","SHIELD SUPPORT (ER 100%)
+ Zhongli excels as the premier shield support in the game. His playstyle focuses on stacking HP% to maximize shield strength and team durability. His Burst is mainly used for crowd control, as it’s typically a DPS loss on pure HP builds. Paired with Xingqiu or Beidou, Zhongli’s shield becomes almost unbreakable due to additional damage reduction effects.
+ 
+ Weapons:
+ Black Tassel — Best-in-slot for maximum shield HP.
+ Favonius Lance — Chosen for team utility; build ~50% Crit Rate for reliable passive procs.
+ Prototype Starglitter — Viable alternative if Favonius Lance isn’t available, offering additional ER for smoother Burst uptime.
+ 
+ Artifacts:
+ Tenacity of the Millelith (4) — Best overall for shield strength and team ATK buff. However, the buff uptime can be inconsistent in boss fights or poor construct placement.
+ Archaic Petra (4) — Strong alternative for teams that don’t benefit much from ATK buffs. Requires Zhongli to collect Crystallize shards for uptime.
+ Scroll of the Hero of Cinder City (4) — Best when multiple Crystallize-compatible elements are present or other Geo units benefit from DMG% bonuses.
+ Deepwood Memories (4) — Viable in Dendro teams where Zhongli holds Deepwood to free damage sets for other characters.
+ Instructor (4) — Niche pick for reaction-heavy teams (e.g. Ganyu Melt, Hu Tao Vape) where shield durability is secondary.
+ 
+ Main Stats:
+ Sands: HP%
+ Goblet: HP%
+ Circlet: HP% (or Crit Rate if using Favonius Lance)
+ 
+ Substats Priority:
+ HP% → ER → Crit Rate (for Favonius only)
+ 
+ Notes:
+ His shield scales directly with Max HP — prioritize HP in all gear and Weapons:.
+ Burst should primarily be used for petrification or emergency crowd control.
+ Damage reduction effects from Xingqiu and Beidou further enhance shield endurance.
+ 
+ BURST SUPPORT (ER 100%)
+ As a Geo Burst Support, Zhongli can contribute solid damage while maintaining his powerful shield. His Burst scales with 33% of Max HP via his Ascension 4talent, making it scale effectively with both HP and ATK builds.
+ 
+ Weapons:
+ Favonius Lance — Best for team support and energy regeneration; build Crit Rate for consistency.
+ Black Tassel — Viable if prioritizing HP over damage.
+ Deathmatch / Wavebreaker’s Fin — Optional if leaning more toward hybrid Burst DPS.
+ 
+ Artifacts:
+ Noblesse Oblige (4) — Best all-around option, providing a strong teamwide ATK buff after Burst.
+ Tenacity of the Millelith (4) — Offers both team utility and stronger shield uptime.
+ Noblesse Oblige (2) + Archaic Petra (2) — Highest personal damage option if ER needs are low.
+ 
+ Main Stats:
+ Sands: ATK% (or HP% for stronger shield)
+ Goblet: Geo DMG Bonus
+ Circlet: Crit Rate / Crit DMG
+ 
+ Substats Priority:
+ Crit Rate / Crit DMG → HP% → ER
+ 
+ Notes:
+ ER 100% is usually sufficient; Zhongli’s Burst is low-cost (40 Energy).
+ ATK sands increases Burst damage significantly but sacrifices shield HP.
+ Use Burst mainly for short rotations or AoE petrify utility; in long fights, focus on consistent shield uptime instead.",HP% > CRIT Rate / DMG > ATK%,
+117,Zibai,Zibai,5,Geo,,,,,,,,
+118,Linnea,Linnea,5,Geo,,,,,,,,
+119,Nicole,Nicole,5,Pyro,,,,,,,,
+120,Lohen,Lohen,5,Cryo,,,,,,,,
+121,Prune,Prune,4,Anemo,,,,,,,,
+122,Sandrone,Sandrone,5,Cryo,,,,,,,,

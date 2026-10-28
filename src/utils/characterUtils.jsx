@@ -1,5 +1,5 @@
 import React from 'react';
-import { toDirectDriveLink } from './driveUtils';
+import { getImageUrl } from './driveUtils';
 
 export const getPlaceholder = (w, h, text) => {
     const svg = `
@@ -19,9 +19,9 @@ export const getWeaponImage = (weaponName, weaponsMap) => {
     // Check for object or string entry
     const getUrl = (val) => typeof val === 'string' ? val : val?.image;
     
-    if (weaponsMap?.[lower]) return toDirectDriveLink(getUrl(weaponsMap[lower]));
+    if (weaponsMap?.[lower]) return getImageUrl(getUrl(weaponsMap[lower]));
     const clean = lower.replace(/^\d+\.\s*/, '').replace(/\b[rR][1-5]\b/gi, '').split('(')[0].split('[')[0].trim();
-    return toDirectDriveLink(getUrl(weaponsMap?.[clean])) || getPlaceholder(150, 150, 'Weapon');
+    return getImageUrl(getUrl(weaponsMap?.[clean])) || getPlaceholder(150, 150, 'Weapon');
 };
 
 export const parseWeapons = (rawText) => {
@@ -126,7 +126,48 @@ export const cleanArtifactLabelV2 = (text) => {
     }
 
     // Remove (4), [Tags], etc. if not a stat shorthand
-    return clean.replace(/\s*\(.*?\)/g, '').replace(/\s*\[.*?\]/g, '').split('/')[0].trim();
+    const baseName = clean.replace(/\s*\(.*?\)/g, '').replace(/\s*\[.*?\]/g, '').split('/')[0].trim();
+
+    // Canonical name mappings for standardization
+    const canonicalMap = {
+        "shimenawas reminiscence": "Shimenawa's Reminiscence",
+        "shimenawa's reminiscence": "Shimenawa's Reminiscence",
+        "gladiator's finale": "Gladiator's Finale",
+        "gladiators finale": "Gladiator's Finale",
+        "wanderer's troupe": "Wanderer's Troupe",
+        "wanderers troupe": "Wanderer's Troupe",
+        "emblem of severed fate": "Emblem of Severed Fate",
+        "viridescent venerer": "Viridescent Venerer",
+        "heart of depth": "Heart of Depth",
+        "tenacity of the millelith": "Tenacity of the Millelith",
+        "crimson witch of flames": "Crimson Witch of Flames",
+        "deepwood memories": "Deepwood Memories",
+        "desert pavilion chronicle": "Desert Pavilion Chronicle",
+        "vourukasha's glow": "Vourukasha's Glow",
+        "vourukashas glow": "Vourukasha's Glow",
+        "unfinished reverie": "Unfinished Reverie",
+        "bloodstained chivalry": "Bloodstained Chivalry",
+        "maiden beloved": "Maiden Beloved",
+        "nymph's dream": "Nymph's Dream",
+        "nymphs dream": "Nymph's Dream",
+        "silken moon's serenade": "Silken Moon's Serenade",
+        "silken moons serenade": "Silken Moon's Serenade"
+    };
+
+    const lowerBase = baseName.toLowerCase();
+    if (canonicalMap[lowerBase]) {
+        return canonicalMap[lowerBase];
+    }
+
+    // Fallback: case-insensitive match against canonical keys ignoring non-alphanumeric and word-ending 's'
+    const cleanStr = (s) => s.toLowerCase().replace(/['’]?s\b/g, '').replace(/[^a-z0-9]/g, '').trim();
+    const targetClean = cleanStr(baseName);
+    const foundKey = Object.keys(canonicalMap).find(k => cleanStr(k) === targetClean);
+    if (foundKey) {
+        return canonicalMap[foundKey];
+    }
+
+    return baseName;
 };
 
 export const extractArtifactNote = (text) => {

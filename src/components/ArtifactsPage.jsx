@@ -9,7 +9,7 @@ const ArtifactsPage = ({ assets }) => {
 
     const getIcon = (name) => {
         if (!name || !assets?.artifacts) return null;
-        const clean = (s) => s.toLowerCase().replace(/['’]s/g, '').replace(/[^a-z0-9]/g, '').trim();
+        const clean = (s) => s.toLowerCase().replace(/['’]?s\b/g, '').replace(/[^a-z0-9]/g, '').trim();
         const search = clean(name);
         const keys = Object.keys(assets.artifacts);
         const match = keys.find(k => clean(k) === search || clean(k).includes(search) || search.includes(clean(k)));
@@ -23,7 +23,7 @@ const ArtifactsPage = ({ assets }) => {
         Object.entries(artifactsData).forEach(([name, data]) => {
             const icon = getIcon(name);
             
-            // STRICT FILTER: Only show if it exists in your Assets tab
+            // Skip sets not registered in the sheet assets
             if (!icon) return;
 
             // Apply search filter
@@ -81,7 +81,7 @@ const ArtifactsPage = ({ assets }) => {
                             className="form-control bg-transparent border-0 text-white shadow-none" 
                             placeholder="Search by name or effect (e.g. ATK)..." 
                             value={search}
-                            onChange={(e) => setSearch(e.value || e.target.value)}
+                            onChange={(e) => setSearch(e.target.value)}
                         />
                     </div>
                 </div>

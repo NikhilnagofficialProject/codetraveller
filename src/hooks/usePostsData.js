@@ -1,7 +1,7 @@
 import { useState, useEffect, useCallback } from 'react';
 import Papa from 'papaparse';
 import { sanitizeString } from '../utils/securityUtils';
-import { toDirectDriveLink } from '../utils/driveUtils';
+import { getImageUrl } from '../utils/driveUtils';
 
 const cleanUrl = (url) => {
     if (!url) return null;
@@ -99,8 +99,7 @@ export const usePostsData = () => {
                 if (imageStr) {
                     images = imageStr.split(',')
                         .map(s => s.trim())
-                        .map(cleanUrl)
-                        .map(url => toDirectDriveLink(url))
+                        .map(url => getImageUrl(cleanUrl(url)))
                         .filter(Boolean);
                 }
 
@@ -110,7 +109,7 @@ export const usePostsData = () => {
                     content: sanitizeString(rawContent),
                     cover_image_url: images.length > 0
                         ? images[0]
-                        : (imageStr ? toDirectDriveLink(cleanUrl(imageStr)) : `https://placehold.co/600x400/151725/FFF?text=${encodeURIComponent(title.substring(0, 20))}`),
+                        : (imageStr ? getImageUrl(cleanUrl(imageStr)) : `https://placehold.co/600x400/151725/FFF?text=${encodeURIComponent(title.substring(0, 20))}`),
                     images,
                     stat_view: parseStat(getField(row, 'Stat_View', 'stat_view', 'views', 'Views')),
                     stat_like: parseStat(getField(row, 'Stat_Like', 'stat_like', 'likes', 'Likes')),

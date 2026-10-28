@@ -61,9 +61,15 @@ const Lab = ({ builds, assets }) => {
     const elColor = getElementColor(char.element); 
 
     const hexToRgba = (hex, alpha) => {
-        const r = parseInt(hex.slice(1, 3), 16);
-        const g = parseInt(hex.slice(3, 5), 16);
-        const b = parseInt(hex.slice(5, 7), 16);
+        if (!hex || typeof hex !== 'string') return `rgba(200, 200, 200, ${alpha})`;
+        let cleanHex = hex.replace('#', '');
+        if (cleanHex.length === 3) {
+            cleanHex = cleanHex.split('').map(char => char + char).join('');
+        }
+        const num = parseInt(cleanHex, 16);
+        const r = (num >> 16) & 255;
+        const g = (num >> 8) & 255;
+        const b = num & 255;
         return `rgba(${r}, ${g}, ${b}, ${alpha})`;
     };
 
@@ -212,9 +218,15 @@ const ModelPlaceholder = () => (
 const TreeStructure = ({ char, color, bestWeapon, alternatives, getWeaponIcon, hexToRgba }) => {
     // Safety check for hexToRgba if not passed from Lab
     const safeRgba = hexToRgba || ((hex, alpha) => {
-        const r = parseInt(hex.slice(1, 3), 16);
-        const g = parseInt(hex.slice(3, 5), 16);
-        const b = parseInt(hex.slice(5, 7), 16);
+        if (!hex || typeof hex !== 'string') return `rgba(200, 200, 200, ${alpha})`;
+        let cleanHex = hex.replace('#', '');
+        if (cleanHex.length === 3) {
+            cleanHex = cleanHex.split('').map(char => char + char).join('');
+        }
+        const num = parseInt(cleanHex, 16);
+        const r = (num >> 16) & 255;
+        const g = (num >> 8) & 255;
+        const b = num & 255;
         return `rgba(${r}, ${g}, ${b}, ${alpha})`;
     });
 
@@ -575,11 +587,23 @@ const InteractiveGrid = ({ builds, assets }) => {
 const ArtifactShowcase = ({ assets }) => {
     const navigate = useNavigate();
     
+    const getIcon = (name) => {
+        if (!name || !assets?.artifacts) return null;
+        const clean = (s) => s.toLowerCase().replace(/['’]?s\b/g, '').replace(/[^a-z0-9]/g, '').trim();
+        const search = clean(name);
+        const keys = Object.keys(assets.artifacts);
+        const match = keys.find(k => clean(k) === search || clean(k).includes(search) || search.includes(clean(k)));
+        return match ? assets.artifacts[match] : null;
+    };
+    
     // Group artifacts by their 2-piece effect
     const groupedArtifacts = useMemo(() => {
         const groups = {};
         
         Object.entries(artifactsData).forEach(([name, data]) => {
+            const icon = getIcon(name);
+            if (!icon) return; // Skip if not present in sheets assets
+
             const effect = data.effect2Pc || 'Utility / Specialized';
             // Simplify grouping by common keywords
             let key = 'Other';
@@ -599,16 +623,7 @@ const ArtifactShowcase = ({ assets }) => {
         });
         
         return groups;
-    }, []);
-
-    const getIcon = (name) => {
-        if (!name || !assets?.artifacts) return null;
-        const clean = (s) => s.toLowerCase().replace(/['’]s/g, '').replace(/[^a-z0-9]/g, '').trim();
-        const search = clean(name);
-        const keys = Object.keys(assets.artifacts);
-        const match = keys.find(k => clean(k) === search || clean(k).includes(search) || search.includes(clean(k)));
-        return match ? assets.artifacts[match] : null;
-    };
+    }, [assets]);
 
     return (
         <div className="artifact-showcase py-4">

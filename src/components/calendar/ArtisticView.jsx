@@ -15,9 +15,29 @@ const ArtisticView = ({
     const monthIndex = currentDate.getMonth();
     const monthPrefix = monthNames[monthIndex].toLowerCase().substring(0, 3);
     const wallpaperData = assets?.wallpapers?.[monthPrefix];
+    
+    let mobileUrl = wallpaperData?.mobile;
+    let windowsUrl = wallpaperData?.windows;
+
+    // Normalization fallback for June, July, and Nov backgrounds
+    if (monthPrefix === 'jun') {
+        if (mobileUrl && mobileUrl.includes('Jun.webp')) mobileUrl = mobileUrl.replace('Jun.webp', 'June.webp');
+        if (windowsUrl && windowsUrl.includes('Jun.webp')) windowsUrl = windowsUrl.replace('Jun.webp', 'June.webp');
+    } else if (monthPrefix === 'jul') {
+        if (mobileUrl && mobileUrl.includes('Jul.webp')) mobileUrl = mobileUrl.replace('Jul.webp', 'July.webp');
+        if (windowsUrl && windowsUrl.includes('Jul.webp')) windowsUrl = windowsUrl.replace('Jul.webp', 'July.webp');
+    } else if (monthPrefix === 'nov') {
+        if (!mobileUrl || mobileUrl.includes('Nov.webp')) {
+            mobileUrl = 'https://images.weserv.nl/?url=https%3A%2F%2Flh3.googleusercontent.com%2Fd%2F1q5SjpiOiDtYgJqrtg1xCK45wjQ0nh4O2%3Ds0&ssl=1&q=100';
+        }
+        if (!windowsUrl || windowsUrl.includes('Nov.webp')) {
+            windowsUrl = 'https://images.weserv.nl/?url=https%3A%2F%2Flh3.googleusercontent.com%2Fd%2F1z1TzZrYAXr4sqWMf-rHpcdptI-xDr7mi%3Ds0&ssl=1&q=100';
+        }
+    }
+
     const wallpaper = isMobile 
-        ? (wallpaperData?.mobile || wallpaperData?.windows) 
-        : (wallpaperData?.windows || wallpaperData?.mobile);
+        ? (mobileUrl || windowsUrl) 
+        : (windowsUrl || mobileUrl);
 
     const currentMonthBirthdays = [];
     Object.entries(events).forEach(([key, dayEvents]) => {

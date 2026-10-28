@@ -28,6 +28,9 @@ export const getCharacterStats = (identifier) => {
   return null;
 };
 
+// Alias for engine.js and other consumers
+export const getCharacter = getCharacterStats;
+
 /**
  * Helper to get all character keys in a specific role
  * @param {string} role - 'main_dps', 'sub_dps', or 'support'
