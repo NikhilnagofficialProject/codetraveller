@@ -65,12 +65,12 @@ const TeamSection = ({ character, assets }) => {
 
                             <div className="variants-stack d-flex flex-column gap-2">
                                 {group.variants.map((v, vIdx) => (
-                                    <div key={vIdx} className="variant-row d-flex align-items-center gap-3 bg-dark bg-opacity-25 rounded-3 p-2">
-                                        <div className={`variant-label-badge ${v.type.toLowerCase() === 'premium' ? 'bg-premium' : 'bg-f2p'}`}>
+                                    <div key={vIdx} className="variant-row d-flex flex-wrap align-items-center gap-3 bg-dark bg-opacity-25 rounded-3 p-2" style={{ rowGap: '0.5rem' }}>
+                                        <div className={`variant-label-badge ${v.type.toLowerCase() === 'premium' ? 'bg-premium' : 'bg-f2p'}`} style={{ minWidth: '80px', textAlign: 'center' }}>
                                             {v.type.toUpperCase()}
                                         </div>
 
-                                        <div className="variant-members-list d-flex gap-2">
+                                        <div className="variant-members-list d-flex flex-wrap gap-2 flex-grow-1" style={{ rowGap: '0.5rem' }}>
                                             {v.slots.map((slot, sIdx) => (
                                                 <div key={sIdx} className="member-slot-box d-flex align-items-center" style={{ minWidth: '42px' }}>
                                                     {slot.map((m, idx) => (

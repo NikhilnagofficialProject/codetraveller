@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react';
 import GenshinFilters from './GenshinFilters';
 
 const GenshinBuilds = ({ builds, assets, loading, error, onCharacterClick }) => {
@@ -10,6 +10,22 @@ const GenshinBuilds = ({ builds, assets, loading, error, onCharacterClick }) => 
         rarities: []
     });
 
+    const filteredBuilds = useMemo(() => {
+        if (!builds) return [];
+        return builds.filter(b => {
+            const matchesSearch =
+                b.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+                b.element.toLowerCase().includes(searchTerm.toLowerCase());
+
+            const matchesElement = activeFilters.elements.length === 0 || activeFilters.elements.some(f => f.toLowerCase() === b.element?.toLowerCase());
+            const matchesWeapon = activeFilters.weapons.length === 0 || activeFilters.weapons.some(f => f.toLowerCase() === b.weaponType?.toLowerCase());
+            const matchesRegion = activeFilters.regions.length === 0 || activeFilters.regions.some(f => f.toLowerCase() === b.region?.toLowerCase());
+            const matchesRarity = activeFilters.rarities.length === 0 || activeFilters.rarities.includes(parseInt(String(b.rarity).trim()));
+
+            return matchesSearch && matchesElement && matchesWeapon && matchesRegion && matchesRarity;
+        }).sort((a, b) => a.name.localeCompare(b.name));
+    }, [builds, searchTerm, activeFilters]);
+
     if (loading) return (
         <div className="text-center text-white p-5 animate-pulse">
             <div className="spinner-border text-primary mb-3" role="status"></div>
@@ -18,19 +34,6 @@ const GenshinBuilds = ({ builds, assets, loading, error, onCharacterClick }) => 
     );
 
     if (error) return <div className="text-center text-danger p-5">Error loading database. Please check your connection.</div>;
-
-    const filteredBuilds = builds.filter(b => {
-        const matchesSearch =
-            b.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-            b.element.toLowerCase().includes(searchTerm.toLowerCase());
-
-        const matchesElement = activeFilters.elements.length === 0 || activeFilters.elements.some(f => f.toLowerCase() === b.element?.toLowerCase());
-        const matchesWeapon = activeFilters.weapons.length === 0 || activeFilters.weapons.some(f => f.toLowerCase() === b.weaponType?.toLowerCase());
-        const matchesRegion = activeFilters.regions.length === 0 || activeFilters.regions.some(f => f.toLowerCase() === b.region?.toLowerCase());
-        const matchesRarity = activeFilters.rarities.length === 0 || activeFilters.rarities.includes(parseInt(String(b.rarity).trim()));
-
-        return matchesSearch && matchesElement && matchesWeapon && matchesRegion && matchesRarity;
-    }).sort((a, b) => a.name.localeCompare(b.name));
 
     const getElementColor = (element) => {
         const map = {
@@ -53,13 +56,12 @@ const GenshinBuilds = ({ builds, assets, loading, error, onCharacterClick }) => 
                     </p>
                 </div>
 
-                <div className="position-relative" style={{ maxWidth: '300px', width: '100%' }}>
+                <div className="position-relative" style={{ maxWidth: '400px', width: '100%' }}>
                     <i className="bi bi-search position-absolute top-50 start-0 translate-middle-y ms-3 text-white-50"></i>
                     <input
                         type="text"
-                        placeholder="Search name or element..."
-                        className="form-control bg-dark border-secondary text-white rounded-pill ps-5"
-                        style={{ backdropFilter: 'blur(10px)', backgroundColor: 'rgba(255,255,255,0.1)' }}
+                        placeholder="Search characters or elements..."
+                        className="form-control premium-input rounded-pill ps-5 py-2"
                         value={searchTerm}
                         onChange={(e) => setSearchTerm(e.target.value)}
                     />
@@ -68,48 +70,82 @@ const GenshinBuilds = ({ builds, assets, loading, error, onCharacterClick }) => 
 
             <GenshinFilters activeFilters={activeFilters} assets={assets} onFilterChange={setActiveFilters} />
 
-            <div className="row g-3">
+            <div className="builds-grid mt-4">
                 {filteredBuilds.map((build) => (
-                    <div key={build.id} className="col-6 col-sm-4 col-md-3 col-lg-2 d-flex justify-content-center">
+                    <div key={build.id} className="d-flex justify-content-center">
                         <div
-                            className="card border-0 overflow-hidden shadow character-card"
+                            className="card border-0 overflow-hidden shadow-lg character-card glass hover-grow"
                             onClick={() => onCharacterClick([build])}
                             style={{
                                 cursor: 'pointer',
-                                background: '#1f2937',
-                                borderRadius: '16px',
-                                transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
+                                borderRadius: '20px',
                                 position: 'relative',
                                 aspectRatio: '3/4',
-                                border: `1px solid ${getElementColor(build.element)}40`,
                                 width: '100%',
-                                maxWidth: '200px',
-                                background: `linear-gradient(135deg, #151725 0%, ${getElementColor(build.element)}15 100%)`
+                                background: `linear-gradient(135deg, rgba(21, 23, 37, 0.4) 0%, ${getElementColor(build.element)}20 100%)`
                             }}
                         >
                             <div style={{ position: 'absolute', inset: 0 }}>
                                 <img
                                     src={build.portrait || 'https://placehold.co/400x600/151725/FFF?text=No+Image'}
                                     alt={build.name}
-                                    style={{ width: '100%', height: '100%', objectFit: 'cover', opacity: 0.9 }}
+                                    style={{ width: '100%', height: '100%', objectFit: 'cover', opacity: 0.85 }}
                                     loading="lazy"
                                 />
                                 <div style={{ 
                                     position: 'absolute', inset: 0, 
-                                    background: `linear-gradient(to top, rgba(0,0,0,0.95) 15%, transparent 70%), linear-gradient(to top right, ${getElementColor(build.element)}20, transparent)` 
+                                    background: `linear-gradient(to top, rgba(12, 15, 29, 0.9) 10%, transparent 60%), linear-gradient(to top right, ${getElementColor(build.element)}15, transparent)` 
                                 }} />
+                                
+                                {/* Role Icons Badge */}
+                                <div className="position-absolute top-0 end-0 m-2 d-flex flex-column gap-1" style={{ zIndex: 3 }}>
+                                    {(() => {
+                                        const roles = build.officialRoles && build.officialRoles.length > 0 
+                                            ? build.officialRoles 
+                                            : [build.role || ''];
+                                        
+                                        return roles.map((r, idx) => {
+                                            const roleStr = r.toLowerCase();
+                                            let iconKey = '';
+                                            if (roleStr.includes('dps') && !roleStr.includes('sub')) iconKey = 'dps';
+                                            else if (roleStr.includes('sub') || roleStr.includes('off')) iconKey = 'off-field';
+                                            else if (roleStr.includes('healer')) iconKey = 'healer';
+                                            else if (roleStr.includes('tank') || roleStr.includes('shield') || roleStr.includes('shielder')) iconKey = 'tank';
+                                            else if (roleStr.includes('support') || roleStr.includes('buffer')) iconKey = 'support';
+                                            
+                                            const iconUrl = assets?.roleIcons?.[iconKey];
+                                            if (!iconUrl) return null;
+
+                                            return (
+                                                <div 
+                                                    key={idx} 
+                                                    className="rounded-circle bg-dark bg-opacity-75 border border-white border-opacity-10 d-flex align-items-center justify-content-center" 
+                                                    style={{ 
+                                                        width: idx === 0 ? '32px' : '24px', 
+                                                        height: idx === 0 ? '32px' : '24px', 
+                                                        backdropFilter: 'blur(8px)',
+                                                        boxShadow: '0 4px 10px rgba(0,0,0,0.3)',
+                                                        padding: idx === 0 ? '6px' : '4px'
+                                                    }}
+                                                    title={r}
+                                                >
+                                                    <img src={iconUrl} alt={r} className="w-100 h-100 object-contain" style={{ filter: 'brightness(1.2)' }} />
+                                                </div>
+                                            );
+                                        });
+                                    })()}
+                                </div>
                             </div>
 
                             <div className="card-body d-flex flex-column justify-content-end p-3" style={{ position: 'relative', zIndex: 2 }}>
                                 <div className="d-flex align-items-center gap-2 mb-1">
-                                    <span style={{ width: '8px', height: '8px', borderRadius: '50%', backgroundColor: getElementColor(build.element), boxShadow: `0 0 8px ${getElementColor(build.element)}` }} />
-                                    <span className="text-uppercase fw-bold" style={{ fontSize: '10px', letterSpacing: '1.2px', color: getElementColor(build.element) }}>{build.element}</span>
+                                    <span style={{ width: '6px', height: '6px', borderRadius: '50%', backgroundColor: getElementColor(build.element), boxShadow: `0 0 10px ${getElementColor(build.element)}` }} />
+                                    <span className="text-uppercase fw-black" style={{ fontSize: '9px', letterSpacing: '1.5px', color: getElementColor(build.element) }}>{build.element}</span>
                                 </div>
-                                <h5 className="card-title text-white fw-bold mb-1" style={{ fontSize: '1rem', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>{build.name}</h5>
-                                <div className="text-warning small" style={{ letterSpacing: '2px' }}>
+                                <h5 className="card-title text-white fw-bold mb-0" style={{ fontSize: '1rem', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>{build.name}</h5>
+                                <div className="text-warning opacity-75" style={{ fontSize: '10px', letterSpacing: '1px' }}>
                                     {'★'.repeat(Math.min(5, Math.max(4, parseInt(String(build.rarity).trim()) || 4)))}
                                 </div>
-
                             </div>
                         </div>
                     </div>
@@ -127,4 +163,4 @@ const GenshinBuilds = ({ builds, assets, loading, error, onCharacterClick }) => 
     );
 };
 
-export default GenshinBuilds;
+export default React.memo(GenshinBuilds);

@@ -122,13 +122,13 @@ const PostCard = ({ post, onClick }) => {
                 <div className="d-flex align-items-center justify-content-between pt-3 border-top border-white border-opacity-10">
                     <div className="d-flex gap-4 text-secondary" style={{ fontSize: '0.85rem' }}>
                         <span className="d-flex align-items-center gap-1">
-                            <i className="bi bi-eye"></i> {post.stat_view || 0}
+                            <i className="bi bi-eye"></i> {post.stat_view?.toLocaleString() || 0}
                         </span>
                         <span className="d-flex align-items-center gap-1">
-                            <i className="bi bi-hand-thumbs-up"></i> {post.stat_like || 0}
+                            <i className="bi bi-hand-thumbs-up"></i> {post.stat_like?.toLocaleString() || 0}
                         </span>
                         <span className="d-flex align-items-center gap-1">
-                            <i className="bi bi-chat-dots"></i> {post.stat_reply || 0}
+                            <i className="bi bi-chat-dots"></i> {post.stat_reply?.toLocaleString() || 0}
                         </span>
                     </div>
                     <div className="text-primary small fw-bold cursor-pointer hover-underline" onClick={handleTitleClick}>
@@ -193,4 +193,4 @@ const PostCard = ({ post, onClick }) => {
     );
 };
 
-export default PostCard;
+export default React.memo(PostCard);

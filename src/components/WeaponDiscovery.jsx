@@ -1,10 +1,38 @@
 import React, { useMemo } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
+import artifactsData from '../data/artifacts.json';
+import characterRoles from '../data/characters.json';
 import { getPlaceholder } from '../utils/characterUtils.jsx';
 
 const WeaponDiscovery = ({ builds, assets }) => {
     const { weaponName } = useParams();
     const navigate = useNavigate();
+
+    // Helper to get official role from characters.json
+    const getOfficialRole = (name) => {
+        if (!name) return 'Unknown';
+        const clean = (n) => n.toLowerCase().trim().replace(/[\s\-_]+/g, '').replace(/[^a-z0-9]/g, '');
+        const search = clean(name);
+        
+        // SPECIAL: Map all travelers to the traveler/aether role in JSON
+        const isTraveler = search.includes('traveler') || search.includes('lumine') || search.includes('aether');
+
+        for (const [role, chars] of Object.entries(characterRoles)) {
+            if (Object.keys(chars).some(k => {
+                const cleanK = clean(k);
+                if (isTraveler && (cleanK === 'aether' || cleanK === 'lumine' || cleanK === 'traveler')) return true;
+                return cleanK === search || search.includes(cleanK) || cleanK.includes(search);
+            })) {
+                const roleMap = {
+                    'main_dps': 'Main DPS',
+                    'sub_dps': 'Sub DPS',
+                    'support': 'Support'
+                };
+                return roleMap[role] || role;
+            }
+        }
+        return 'Unknown';
+    };
 
     const weaponInfo = useMemo(() => {
         if (!weaponName || !assets?.weaponsMap) return null;
@@ -195,8 +223,8 @@ const WeaponDiscovery = ({ builds, assets }) => {
                                             <div className="position-absolute inset-0 opacity-20" style={{ background: elColor, filter: 'blur(10px)', zIndex: 0 }} />
                                             <img src={portrait} alt={char.name} className="w-100 h-100 object-cover position-relative" style={{ zIndex: 1 }} />
                                         </div>
-                                        <div className="fw-bold text-white mb-1 truncate small">{char.name}</div>
-                                        <div className="text-uppercase fw-bold" style={{ fontSize: '9px', letterSpacing: '1.2px', color: elColor }}>{char.role}</div>
+                                        <div className="fw-bold text-white mb-1 truncate small text-capitalize">{char.name.replace(/_/g, ' ')}</div>
+                                        <div className="text-uppercase fw-bold" style={{ fontSize: '9px', letterSpacing: '1.2px', color: elColor }}>{getOfficialRole(char.name)}</div>
                                     </div>
                                 </div>
                             );

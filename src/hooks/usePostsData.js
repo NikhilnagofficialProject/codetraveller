@@ -1,5 +1,7 @@
 import { useState, useEffect, useCallback } from 'react';
 import Papa from 'papaparse';
+import { sanitizeString } from '../utils/securityUtils';
+import { toDirectDriveLink } from '../utils/driveUtils';
 
 const cleanUrl = (url) => {
     if (!url) return null;
@@ -17,14 +19,57 @@ const cleanUrl = (url) => {
     return url;
 };
 
+const getField = (row, ...keys) => {
+    if (!row) return null;
+    const rowHeaders = Object.keys(row);
+
+    for (const key of keys) {
+        const target = key.toLowerCase().replace(/[^a-z0-9]/g, '');
+
+        const matchingHeader = rowHeaders.find(h => {
+            const cleanedHeader = h.toLowerCase().replace(/[^a-z0-9]/g, '');
+            return cleanedHeader === target;
+        });
+
+        if (matchingHeader) {
+            const val = row[matchingHeader];
+            if (val !== undefined && val !== null && String(val).trim() !== '') {
+                return String(val).trim();
+            }
+        }
+    }
+    return null;
+};
+
+const parseStat = (val) => {
+    if (!val) return 0;
+    const num = parseInt(String(val).replace(/,/g, ''), 10);
+    return isNaN(num) ? 0 : num;
+};
+
 export const usePostsData = () => {
     const [posts, setPosts] = useState([]);
     const [loading, setLoading] = useState(true);
     const [refreshing, setRefreshing] = useState(false);
 
     const fetchPosts = useCallback(async (isBackground = false) => {
-        if (isBackground) setRefreshing(true);
-        else setLoading(true);
+        const CACHE_KEY = 'codetraveller_posts_cache';
+        const CACHE_TIME = 10 * 60 * 1000; // 10 minutes
+
+        if (!isBackground) {
+            const cached = localStorage.getItem(CACHE_KEY);
+            if (cached) {
+                const { posts: cachedPosts, timestamp } = JSON.parse(cached);
+                if (Date.now() - timestamp < CACHE_TIME) {
+                    setPosts(cachedPosts);
+                    setLoading(false);
+                    return;
+                }
+            }
+            setLoading(true);
+        } else {
+            setRefreshing(true);
+        }
 
         try {
             const CSV_URL = `https://docs.google.com/spreadsheets/d/e/2PACX-1vTRe7S2uLO8jcpgYi-teDs6vdf7a6r6oZk-NXJTITK3z5-Ss0RukmknJCygBXOMdoWHOd7c-K7ITkWW/pub?gid=0&single=true&output=csv`;
@@ -32,7 +77,6 @@ export const usePostsData = () => {
             const response = await fetch(CSV_URL);
             const csvText = await response.text();
 
-            // Use PapaParse for robust CSV parsing (handles multi-line fields, quotes, etc.)
             const result = await new Promise((resolve) => {
                 Papa.parse(csvText, {
                     header: true,
@@ -42,63 +86,47 @@ export const usePostsData = () => {
             });
 
             const rows = result.data;
-            console.log(`[Posts] Total rows from sheet: ${rows.length}`);
-            if (rows.length > 0) console.log('[Posts] Headers:', Object.keys(rows[0]));
-
-            // Case-insensitive header lookup
-            const getField = (row, ...keys) => {
-                const headers = Object.keys(row);
-                for (const k of keys) {
-                    const found = headers.find(h => h.trim().toLowerCase() === k.toLowerCase());
-                    if (found !== undefined && row[found] !== undefined && row[found] !== '') {
-                        return row[found].trim();
-                    }
-                }
-                return '';
-            };
-
-            const parseStat = (val) => {
-                if (!val) return 0;
-                const num = parseInt(String(val).replace(/,/g, ''), 10);
-                return isNaN(num) ? 0 : num;
-            };
-
             const parsedPosts = rows.map((row, idx) => {
                 const title = getField(row, 'PostTitle', 'Title', 'title');
-                if (!title) return null;   // skip rows with no title
+                if (!title) return null;
 
                 const rawUrl = getField(row, 'FullUrl', 'fullurl', 'url', 'URL');
-                const imageStr = getField(row, 'CoverImageUrl', 'coverimageurl', 'image', 'Image');
-                const rawContent = getField(row, 'Content', 'Description', 'Snippet', 'content') || '';
+                const imageStr = getField(row, 'CoverImageURL', 'CoverImageUrl', 'coverimageurl', 'image', 'Image');
+                const rawContent = getField(row, 'Content', 'Description', 'Snippet', 'content', 'content') || '';
                 const postId = getField(row, 'PostId', 'postid', 'id', 'ID') || String(idx + 1);
 
                 let images = [];
                 if (imageStr) {
-                    images = imageStr.split(', ')
+                    images = imageStr.split(',')
                         .map(s => s.trim())
                         .map(cleanUrl)
+                        .map(url => toDirectDriveLink(url))
                         .filter(Boolean);
                 }
 
                 return {
                     postId,
-                    subject: title,
-                    content: rawContent,
+                    subject: sanitizeString(title),
+                    content: sanitizeString(rawContent),
                     cover_image_url: images.length > 0
                         ? images[0]
-                        : (imageStr ? cleanUrl(imageStr) : `https://placehold.co/600x400/151725/FFF?text=${encodeURIComponent(title.substring(0, 20))}`),
+                        : (imageStr ? toDirectDriveLink(cleanUrl(imageStr)) : `https://placehold.co/600x400/151725/FFF?text=${encodeURIComponent(title.substring(0, 20))}`),
                     images,
                     stat_view: parseStat(getField(row, 'Stat_View', 'stat_view', 'views', 'Views')),
                     stat_like: parseStat(getField(row, 'Stat_Like', 'stat_like', 'likes', 'Likes')),
                     stat_reply: parseStat(getField(row, 'Stat_Reply', 'stat_reply', 'replies', 'Replies', 'comments')),
-                    collection: getField(row, 'CollectionTitle', 'collectiontitle', 'collection') || 'Uncategorized',
+                    collection: sanitizeString(getField(row, 'CollectionTitle', 'collectiontitle', 'collection') || 'Uncategorized'),
                     Builds: 'Genshin Impact',
                     url: cleanUrl(rawUrl)
                 };
             }).filter(Boolean);
-
-            console.log(`[Posts] Parsed ${parsedPosts.length} valid posts`);
             setPosts(parsedPosts);
+
+            localStorage.setItem(CACHE_KEY, JSON.stringify({
+                posts: parsedPosts,
+                timestamp: Date.now()
+            }));
+
         } catch (error) {
             console.error('Failed to fetch posts', error);
         } finally {

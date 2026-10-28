@@ -9,7 +9,9 @@ const Navbar = ({
     logoFailed,
     setLogoFailed,
     isMenuOpen,
-    setIsMenuOpen
+    setIsMenuOpen,
+    theme,
+    toggleTheme
 }) => {
     return (
         <nav className="navbar navbar-expand-lg sticky-top p-0 no-capture" style={{
@@ -74,9 +76,18 @@ const Navbar = ({
                         ))}
                     </ul>
 
-                    <div className="d-flex align-items-center gap-3">
-                        <div className="d-none d-md-block text-white-50 small fw-bold" style={{ letterSpacing: '1px' }}>
-                            {new Date().toLocaleDateString('en-US', { month: 'short', day: 'numeric' }).toUpperCase()}
+                    <div className="d-flex align-items-center">
+                        <button 
+                            className="btn glass p-0 border-0 d-flex align-items-center justify-content-center transition-all me-2"
+                            onClick={toggleTheme}
+                            aria-label="Toggle Theme"
+                            style={{ width: '38px', height: '38px', borderRadius: '12px', border: '1px solid var(--glass-border)' }}
+                        >
+                            <i className={`bi ${theme === 'dark' ? 'bi-moon-stars-fill text-info' : 'bi-sun-fill text-warning'} fs-5`}></i>
+                        </button>
+
+                        <div className="d-flex align-items-baseline gap-1 me-3 d-none d-md-flex">
+                            <span className="text-white-50 small fw-bold" style={{ letterSpacing: '1px' }}>{new Date().toLocaleDateString('en-US', { month: 'long', day: 'numeric' }).toUpperCase()}</span>
                         </div>
 
                         <button
@@ -96,4 +107,4 @@ const Navbar = ({
     );
 };
 
-export default Navbar;
+export default React.memo(Navbar);

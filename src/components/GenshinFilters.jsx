@@ -78,7 +78,7 @@ const GenshinFilters = ({ activeFilters, assets, onFilterChange }) => {
                                 {iconUrl ? (
                                     <img src={iconUrl} alt={w} className="w-100 h-100 object-contain p-1" style={{ filter: 'brightness(0) invert(1)' }} />
                                 ) : (
-                                    <span style={{ fontSize: '10px', fontWeight: 'bold' }}>{w.substring(0, 3).toUpperCase()}</span>
+                                    <span style={{ fontSize: '10px', fontWeight: 'bold', color: 'white' }}>{w.substring(0, 3).toUpperCase()}</span>
                                 )}
                             </button>
                         );

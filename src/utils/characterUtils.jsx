@@ -95,25 +95,38 @@ export const getTalentIcons = (text, isNote = false, weaponIconUrl = null) => {
 export const cleanArtifactLabelV2 = (text) => {
     if (!text) return '';
     // Remove prefixes like ~ or 1.
-    let clean = text.replace(/^[~*\d.\s]+/, '');
+    let clean = text.replace(/^[~*\d.\s]+/, '').trim();
     
-    // Remove common prefixes/suffixes like 2pc, 4pc, set, etc globally
-    clean = clean.replace(/\b(?:2pc|4pc|2-set|4-set|set)\b/gi, '').trim();
+    // Remove common prefixes/suffixes globally
+    clean = clean.replace(/\b(?:2pc|4pc|2-set|4-set|set|sets|piece)\b/gi, '').trim();
 
-    // Handle specific common stat-based names before general cleaning
-    let processed = clean
-        .replace(/(?:\+?18%?\s*ATK|ATK\s*\+?18%?)(?:\s*set)?/gi, "Gladiator's")
-        .replace(/(?:\+?80\s*EM|EM\s*\+?80)(?:\s*set)?/gi, "Gilded")
-        .replace(/(?:\+?20%?\s*ER|ER\s*\+?20%?)(?:\s*set)?/gi, "Emblem")
-        .replace(/(?:\+?15%?\s*Hydro|Hydro\s*\+?15%?)(?:\s*set)?/gi, "Heart of Depth")
-        .replace(/(?:\+?15%?\s*Anemo|Anemo\s*\+?15%?)(?:\s*set)?/gi, "Viridescent")
-        .replace(/(?:\+?15%?\s*Pyro|Pyro\s*\+?15%?)(?:\s*set)?/gi, "Crimson Witch")
-        .replace(/(?:\+?15%?\s*Cryo|Cryo\s*\+?15%?)(?:\s*set)?/gi, "Blizzard Strayer")
-        .replace(/(?:\+?20%?\s*HP|HP\s*\+?20%?)(?:\s*set)?/gi, "Tenacity")
-        .replace(/(?:\+?15%?\s*Healing|Healing\s*\+?15%?)(?:\s*set)?/gi, "Maiden");
+    // Map common shorthand stats to primary set names
+    const statMap = [
+        { regex: /.*(?:18%?\s*ATK|ATK\s*\+?18%?).*/gi, name: "Gladiator's Finale" },
+        { regex: /.*(?:80\s*EM|EM\s*\+?80|Elemental Mastery\s*\+?80).*/gi, name: "Wanderer's Troupe" },
+        { regex: /.*(?:20%?\s*ER|ER\s*\+?20%?|Energy Recharge\s*\+?20%?).*/gi, name: "Emblem of Severed Fate" },
+        { regex: /.*(?:20%?\s*HP|HP\s*\+?20%?).*/gi, name: "Tenacity of the Millelith" },
+        { regex: /.*(?:15%?\s*Anemo|Anemo\s*DMG|Anemo\s*\+?15%?).*/gi, name: "Viridescent Venerer" },
+        { regex: /.*(?:15%?\s*Geo|Geo\s*DMG|Geo\s*\+?15%?).*/gi, name: "Archaic Petra" },
+        { regex: /.*(?:15%?\s*Hydro|Hydro\s*DMG|Hydro\s*\+?15%?).*/gi, name: "Heart of Depth" },
+        { regex: /.*(?:15%?\s*Pyro|Pyro\s*DMG|Pyro\s*\+?15%?).*/gi, name: "Crimson Witch of Flames" },
+        { regex: /.*(?:15%?\s*Cryo|Cryo\s*DMG|Cryo\s*\+?15%?).*/gi, name: "Blizzard Strayer" },
+        { regex: /.*(?:15%?\s*Electro|Electro\s*DMG|Electro\s*\+?15%?).*/gi, name: "Thundering Fury" },
+        { regex: /.*(?:15%?\s*Dendro|Dendro\s*DMG|Dendro\s*\+?15%?).*/gi, name: "Deepwood Memories" },
+        { regex: /.*(?:25%?\s*Physical|Physical\s*DMG|Physical\s*\+?25%?).*/gi, name: "Bloodstained Chivalry" },
+        { regex: /.*(?:15%?\s*Healing|Healing\s*Bonus|Healing\s*\+?15%?).*/gi, name: "Maiden Beloved" }
+    ];
 
-    // Remove (4), [Tags], etc.
-    return processed.replace(/\s*\(.*?\)/g, '').replace(/\s*\[.*?\]/g, '').split('/')[0].trim();
+    for (const item of statMap) {
+        // Reset regex state for global flag
+        item.regex.lastIndex = 0;
+        if (item.regex.test(clean)) {
+            return item.name;
+        }
+    }
+
+    // Remove (4), [Tags], etc. if not a stat shorthand
+    return clean.replace(/\s*\(.*?\)/g, '').replace(/\s*\[.*?\]/g, '').split('/')[0].trim();
 };
 
 export const extractArtifactNote = (text) => {
@@ -216,6 +229,6 @@ export const parseTeams = (text) => {
     return { groups, notes: globalNotes };
 };
 export const getElementColor = (el) => {
-    const map = { pyro: '#ff7b00', hydro: '#00aaff', cryo: '#8be8ff', electro: '#9b51e0', anemo: '#7ef9ff', geo: '#ffd700', dendro: '#7fff00' };
+    const map = { pyro: '#ff4d4d', hydro: '#20c5ff', cryo: '#99ffff', electro: '#b08dff', anemo: '#35ecc3', geo: '#ffcc33', dendro: '#80ff00' };
     return map[el?.toLowerCase()] || '#ccc';
 };

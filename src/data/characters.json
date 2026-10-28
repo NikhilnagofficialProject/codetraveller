@@ -1,0 +1,936 @@
+{
+  "main_dps": {
+    "aratakiitto": {
+      "cid": 6,
+      "baseHp": 12858,
+      "baseAtk": 227,
+      "baseDef": 959,
+      "ascensionStat": "CRIT Rate",
+      "ascensionValue": "24.2%"
+    },
+    "arlecchino": {
+      "cid": 7,
+      "baseHp": 13103,
+      "baseAtk": 342,
+      "baseDef": 765,
+      "ascensionStat": "CRIT DMG",
+      "ascensionValue": "88.4%"
+    },
+    "chasca": {
+      "cid": 14,
+      "baseHp": 9797,
+      "baseAtk": 347,
+      "baseDef": 615,
+      "ascensionStat": "CRIT Rate",
+      "ascensionValue": "24.2%"
+    },
+    "clorinde": {
+      "cid": 19,
+      "baseHp": 12956,
+      "baseAtk": 337,
+      "baseDef": 784,
+      "ascensionStat": "CRIT Rate",
+      "ascensionValue": "24.2%"
+    },
+    "cyno": {
+      "cid": 22,
+      "baseHp": 12491,
+      "baseAtk": 318,
+      "baseDef": 859,
+      "ascensionStat": "CRIT DMG",
+      "ascensionValue": "88.4%"
+    },
+    "diluc": {
+      "cid": 25,
+      "baseHp": 12981,
+      "baseAtk": 335,
+      "baseDef": 784,
+      "ascensionStat": "CRIT Rate",
+      "ascensionValue": "24.2%"
+    },
+    "eula": {
+      "cid": 31,
+      "baseHp": 13226,
+      "baseAtk": 342,
+      "baseDef": 751,
+      "ascensionStat": "CRIT DMG",
+      "ascensionValue": "88.4%"
+    },
+    "gaming": {
+      "cid": 37,
+      "baseHp": 11419,
+      "baseAtk": 302,
+      "baseDef": 703,
+      "ascensionStat": "ATK",
+      "ascensionValue": "24.0%"
+    },
+    "ganyu": {
+      "cid": 38,
+      "baseHp": 9797,
+      "baseAtk": 335,
+      "baseDef": 630,
+      "ascensionStat": "CRIT DMG",
+      "ascensionValue": "88.4%"
+    },
+    "hutao": {
+      "cid": 40,
+      "baseHp": 15552,
+      "baseAtk": 106,
+      "baseDef": 876,
+      "ascensionStat": "CRIT DMG",
+      "ascensionValue": "88.4%"
+    },
+    "kamisatoayaka": {
+      "cid": 50,
+      "baseHp": 12858,
+      "baseAtk": 342,
+      "baseDef": 784,
+      "ascensionStat": "CRIT DMG",
+      "ascensionValue": "88.4%"
+    },
+    "kamisatoayato": {
+      "cid": 51,
+      "baseHp": 13715,
+      "baseAtk": 299,
+      "baseDef": 769,
+      "ascensionStat": "CRIT DMG",
+      "ascensionValue": "88.4%"
+    },
+    "keqing": {
+      "cid": 53,
+      "baseHp": 13103,
+      "baseAtk": 323,
+      "baseDef": 799,
+      "ascensionStat": "CRIT DMG",
+      "ascensionValue": "88.4%"
+    },
+    "kinich": {
+      "cid": 54,
+      "baseHp": 12858,
+      "baseAtk": 332,
+      "baseDef": 802,
+      "ascensionStat": "CRIT DMG",
+      "ascensionValue": "88.4%"
+    },
+    "klee": {
+      "cid": 56,
+      "baseHp": 10287,
+      "baseAtk": 311,
+      "baseDef": 615,
+      "ascensionStat": "Pyro DMG Bonus",
+      "ascensionValue": "28.8%"
+    },
+    "lyney": {
+      "cid": 64,
+      "baseHp": 11021,
+      "baseAtk": 318,
+      "baseDef": 538,
+      "ascensionStat": "CRIT Rate",
+      "ascensionValue": "24.2%"
+    },
+    "mavuika": {
+      "cid": 65,
+      "baseHp": 12552,
+      "baseAtk": 359,
+      "baseDef": 792,
+      "ascensionStat": "CRIT DMG",
+      "ascensionValue": "88.4%"
+    },
+    "mualani": {
+      "cid": 68,
+      "baseHp": 15185,
+      "baseAtk": 182,
+      "baseDef": 570,
+      "ascensionStat": "CRIT Rate",
+      "ascensionValue": "24.2%"
+    },
+    "navia": {
+      "cid": 70,
+      "baseHp": 12650,
+      "baseAtk": 352,
+      "baseDef": 793,
+      "ascensionStat": "CRIT DMG",
+      "ascensionValue": "88.4%"
+    },
+    "neuvillette": {
+      "cid": 72,
+      "baseHp": 14695,
+      "baseAtk": 208,
+      "baseDef": 576,
+      "ascensionStat": "CRIT DMG",
+      "ascensionValue": "88.4%"
+    },
+    "noelle": {
+      "cid": 75,
+      "baseHp": 12071,
+      "baseAtk": 191,
+      "baseDef": 799,
+      "ascensionStat": "DEF",
+      "ascensionValue": "30.0%"
+    },
+    "razor": {
+      "cid": 79,
+      "baseHp": 11962,
+      "baseAtk": 234,
+      "baseDef": 751,
+      "ascensionStat": "Physical DMG Bonus",
+      "ascensionValue": "30.0%"
+    },
+    "sethos": {
+      "cid": 83,
+      "baseHp": 9787,
+      "baseAtk": 227,
+      "baseDef": 560,
+      "ascensionStat": "Elemental Mastery",
+      "ascensionValue": 96
+    },
+    "skirk": {
+      "cid": 87,
+      "baseHp": 12417,
+      "baseAtk": 359,
+      "baseDef": 806,
+      "ascensionStat": "CRIT DMG",
+      "ascensionValue": "88.4%"
+    },
+    "tartaglia": {
+      "cid": 89,
+      "baseHp": 13103,
+      "baseAtk": 301,
+      "baseDef": 815,
+      "ascensionStat": "Hydro DMG Bonus",
+      "ascensionValue": "28.8%"
+    },
+    "tighnari": {
+      "cid": 91,
+      "baseHp": 10850,
+      "baseAtk": 268,
+      "baseDef": 630,
+      "ascensionStat": "Dendro DMG Bonus",
+      "ascensionValue": "28.8%"
+    },
+    "wanderer": {
+      "cid": 101,
+      "baseHp": 10164,
+      "baseAtk": 328,
+      "baseDef": 607,
+      "ascensionStat": "CRIT Rate",
+      "ascensionValue": "24.2%"
+    },
+    "wriothesley": {
+      "cid": 102,
+      "baseHp": 13593,
+      "baseAtk": 311,
+      "baseDef": 763,
+      "ascensionStat": "CRIT DMG",
+      "ascensionValue": "88.4%"
+    },
+    "xiao": {
+      "cid": 105,
+      "baseHp": 12736,
+      "baseAtk": 349,
+      "baseDef": 799,
+      "ascensionStat": "CRIT Rate",
+      "ascensionValue": "24.2%"
+    },
+    "yanfei": {
+      "cid": 110,
+      "baseHp": 9352,
+      "baseAtk": 240,
+      "baseDef": 587,
+      "ascensionStat": "Pyro DMG Bonus",
+      "ascensionValue": "24.0%"
+    },
+    "yoimiya": {
+      "cid": 113,
+      "baseHp": 10164,
+      "baseAtk": 323,
+      "baseDef": 615,
+      "ascensionStat": "CRIT Rate",
+      "ascensionValue": "24.2%"
+    }
+  },
+  "sub_dps": {
+    "albedo": {
+      "cid": 2,
+      "baseHp": 13226,
+      "baseAtk": 251,
+      "baseDef": 876,
+      "ascensionStat": "Geo DMG Bonus",
+      "ascensionValue": "28.8%"
+    },
+    "beidou": {
+      "cid": 10,
+      "baseHp": 13050,
+      "baseAtk": 225,
+      "baseDef": 648,
+      "ascensionStat": "Electro DMG Bonus",
+      "ascensionValue": "24.0%"
+    },
+    "dehya": {
+      "cid": 24,
+      "baseHp": 15675,
+      "baseAtk": 265,
+      "baseDef": 628,
+      "ascensionStat": "HP",
+      "ascensionValue": "28.8%"
+    },
+    "emilie": {
+      "cid": 29,
+      "baseHp": 13568,
+      "baseAtk": 335,
+      "baseDef": 730,
+      "ascensionStat": "CRIT DMG",
+      "ascensionValue": "88.4%"
+    },
+    "fischl": {
+      "cid": 33,
+      "baseHp": 9189,
+      "baseAtk": 244,
+      "baseDef": 594,
+      "ascensionStat": "ATK",
+      "ascensionValue": "24.0%"
+    },
+    "furina": {
+      "cid": 36,
+      "baseHp": 15307,
+      "baseAtk": 244,
+      "baseDef": 696,
+      "ascensionStat": "CRIT Rate",
+      "ascensionValue": "24.2%"
+    },
+    "kachina": {
+      "cid": 47,
+      "baseHp": 11799,
+      "baseAtk": 217,
+      "baseDef": 792,
+      "ascensionStat": "Geo DMG Bonus",
+      "ascensionValue": "24.0%"
+    },
+    "kaeya": {
+      "cid": 49,
+      "baseHp": 11636,
+      "baseAtk": 223,
+      "baseDef": 792,
+      "ascensionStat": "Energy Recharge",
+      "ascensionValue": "126.7%"
+    },
+    "kujousara": {
+      "cid": 57,
+      "baseHp": 9570,
+      "baseAtk": 195,
+      "baseDef": 628,
+      "ascensionStat": "ATK",
+      "ascensionValue": "24.0%"
+    },
+    "lynette": {
+      "cid": 63,
+      "baseHp": 12397,
+      "baseAtk": 232,
+      "baseDef": 712,
+      "ascensionStat": "Anemo DMG Bonus",
+      "ascensionValue": "24.0%"
+    },
+    "mona": {
+      "cid": 67,
+      "baseHp": 10409,
+      "baseAtk": 287,
+      "baseDef": 653,
+      "ascensionStat": "Energy Recharge",
+      "ascensionValue": "132.0%"
+    },
+    "ororon": {
+      "cid": 76,
+      "baseHp": 9244,
+      "baseAtk": 244,
+      "baseDef": 587,
+      "ascensionStat": "ATK",
+      "ascensionValue": "24.0%"
+    },
+    "raidenshogun": {
+      "cid": 78,
+      "baseHp": 12907,
+      "baseAtk": 337,
+      "baseDef": 789,
+      "ascensionStat": "Energy Recharge",
+      "ascensionValue": "132.0%"
+    },
+    "rosaria": {
+      "cid": 80,
+      "baseHp": 12289,
+      "baseAtk": 240,
+      "baseDef": 710,
+      "ascensionStat": "ATK",
+      "ascensionValue": "24.0%"
+    },
+    "shikanoinheizou": {
+      "cid": 85,
+      "baseHp": 10657,
+      "baseAtk": 225,
+      "baseDef": 684,
+      "ascensionStat": "Anemo DMG Bonus",
+      "ascensionValue": "24.0%"
+    },
+    "xiangling": {
+      "cid": 103,
+      "baseHp": 10875,
+      "baseAtk": 225,
+      "baseDef": 669,
+      "ascensionStat": "Elemental Mastery",
+      "ascensionValue": 96
+    },
+    "xingqiu": {
+      "cid": 107,
+      "baseHp": 10222,
+      "baseAtk": 202,
+      "baseDef": 758,
+      "ascensionStat": "ATK",
+      "ascensionValue": "24.0%"
+    },
+    "yaemiko": {
+      "cid": 109,
+      "baseHp": 10372,
+      "baseAtk": 340,
+      "baseDef": 569,
+      "ascensionStat": "CRIT Rate",
+      "ascensionValue": "24.2%"
+    },
+    "yelan": {
+      "cid": 112,
+      "baseHp": 14450,
+      "baseAtk": 244,
+      "baseDef": 548,
+      "ascensionStat": "CRIT Rate",
+      "ascensionValue": "24.2%"
+    }
+  },
+  "support": {
+    "aether": {
+      "cid": 97,
+      "baseHp": 10875,
+      "baseAtk": 212,
+      "baseDef": 683,
+      "ascensionStat": "ATK",
+      "ascensionValue": "24.0%"
+    },
+    "aino": {
+      "cid": 1,
+      "baseHp": 11201,
+      "baseAtk": 242,
+      "baseDef": 607,
+      "ascensionStat": "Elemental Mastery",
+      "ascensionValue": 96
+    },
+    "alhaitham": {
+      "cid": 3,
+      "baseHp": 13348,
+      "baseAtk": 313,
+      "baseDef": 782,
+      "ascensionStat": "Dendro DMG Bonus",
+      "ascensionValue": "28.8%"
+    },
+    "aloy": {
+      "cid": 4,
+      "baseHp": 10899,
+      "baseAtk": 234,
+      "baseDef": 676,
+      "ascensionStat": "Cryo DMG Bonus",
+      "ascensionValue": "28.8%"
+    },
+    "amber": {
+      "cid": 5,
+      "baseHp": 9461,
+      "baseAtk": 223,
+      "baseDef": 601,
+      "ascensionStat": "ATK",
+      "ascensionValue": "24.0%"
+    },
+    "baizhu": {
+      "cid": 8,
+      "baseHp": 13348,
+      "baseAtk": 193,
+      "baseDef": 500,
+      "ascensionStat": "HP",
+      "ascensionValue": "28.8%"
+    },
+    "barbara": {
+      "cid": 9,
+      "baseHp": 9787,
+      "baseAtk": 159,
+      "baseDef": 669,
+      "ascensionStat": "HP",
+      "ascensionValue": "24.0%"
+    },
+    "bennett": {
+      "cid": 11,
+      "baseHp": 12397,
+      "baseAtk": 191,
+      "baseDef": 771,
+      "ascensionStat": "Energy Recharge",
+      "ascensionValue": "126.7%"
+    },
+    "candace": {
+      "cid": 12,
+      "baseHp": 10875,
+      "baseAtk": 212,
+      "baseDef": 683,
+      "ascensionStat": "HP",
+      "ascensionValue": "24.0%"
+    },
+    "charlotte": {
+      "cid": 13,
+      "baseHp": 10766,
+      "baseAtk": 173,
+      "baseDef": 546,
+      "ascensionStat": "ATK",
+      "ascensionValue": "24.0%"
+    },
+    "chevreuse": {
+      "cid": 15,
+      "baseHp": 11962,
+      "baseAtk": 193,
+      "baseDef": 605,
+      "ascensionStat": "HP",
+      "ascensionValue": "24.0%"
+    },
+    "chiori": {
+      "cid": 16,
+      "baseHp": 11438,
+      "baseAtk": 323,
+      "baseDef": 953,
+      "ascensionStat": "CRIT Rate",
+      "ascensionValue": "24.2%"
+    },
+    "chongyun": {
+      "cid": 17,
+      "baseHp": 10984,
+      "baseAtk": 223,
+      "baseDef": 648,
+      "ascensionStat": "ATK",
+      "ascensionValue": "24.0%"
+    },
+    "citlali": {
+      "cid": 18,
+      "baseHp": 11634,
+      "baseAtk": 127,
+      "baseDef": 763,
+      "ascensionStat": "Elemental Mastery",
+      "ascensionValue": 115.2
+    },
+    "collei": {
+      "cid": 20,
+      "baseHp": 9787,
+      "baseAtk": 200,
+      "baseDef": 601,
+      "ascensionStat": "ATK",
+      "ascensionValue": "24.0%"
+    },
+    "columbina": {
+      "cid": 21,
+      "baseHp": 14695,
+      "baseAtk": 96,
+      "baseDef": 515,
+      "ascensionStat": "CRIT Rate",
+      "ascensionValue": "24.2%"
+    },
+    "dahlia": {
+      "cid": 23,
+      "baseHp": 12506,
+      "baseAtk": 189,
+      "baseDef": 560,
+      "ascensionStat": "HP",
+      "ascensionValue": "24.0%"
+    },
+    "diona": {
+      "cid": 26,
+      "baseHp": 9570,
+      "baseAtk": 212,
+      "baseDef": 601,
+      "ascensionStat": "Cryo DMG Bonus",
+      "ascensionValue": "24.0%"
+    },
+    "dori": {
+      "cid": 27,
+      "baseHp": 12397,
+      "baseAtk": 223,
+      "baseDef": 723,
+      "ascensionStat": "HP",
+      "ascensionValue": "24.0%"
+    },
+    "durin": {
+      "cid": 28,
+      "baseHp": 12430,
+      "baseAtk": 347,
+      "baseDef": 822,
+      "ascensionStat": "CRIT DMG",
+      "ascensionValue": "88.4%"
+    },
+    "escoffier": {
+      "cid": 30,
+      "baseHp": 13348,
+      "baseAtk": 347,
+      "baseDef": 732,
+      "ascensionStat": "CRIT Rate",
+      "ascensionValue": "24.2%"
+    },
+    "faruzan": {
+      "cid": 32,
+      "baseHp": 9570,
+      "baseAtk": 196,
+      "baseDef": 628,
+      "ascensionStat": "ATK",
+      "ascensionValue": "24.0%"
+    },
+    "flins": {
+      "cid": 34,
+      "baseHp": 12491,
+      "baseAtk": 352,
+      "baseDef": 809,
+      "ascensionStat": "CRIT DMG",
+      "ascensionValue": "88.4%"
+    },
+    "freminet": {
+      "cid": 35,
+      "baseHp": 12071,
+      "baseAtk": 255,
+      "baseDef": 708,
+      "ascensionStat": "ATK",
+      "ascensionValue": "24.0%"
+    },
+    "gorou": {
+      "cid": 39,
+      "baseHp": 9570,
+      "baseAtk": 183,
+      "baseDef": 648,
+      "ascensionStat": "Geo DMG Bonus",
+      "ascensionValue": "24.0%"
+    },
+    "iansan": {
+      "cid": 41,
+      "baseHp": 10657,
+      "baseAtk": 257,
+      "baseDef": 638,
+      "ascensionStat": "ATK",
+      "ascensionValue": "24.0%"
+    },
+    "ifa": {
+      "cid": 42,
+      "baseHp": 10081,
+      "baseAtk": 178,
+      "baseDef": 605,
+      "ascensionStat": "Elemental Mastery",
+      "ascensionValue": 96
+    },
+    "illuga": {
+      "cid": 43,
+      "baseHp": 11962,
+      "baseAtk": 191,
+      "baseDef": 814,
+      "ascensionStat": "Elemental Mastery",
+      "ascensionValue": 96
+    },
+    "ineffa": {
+      "cid": 44,
+      "baseHp": 12613,
+      "baseAtk": 330,
+      "baseDef": 828,
+      "ascensionStat": "CRIT Rate",
+      "ascensionValue": "24.2%"
+    },
+    "jahoda": {
+      "cid": 45,
+      "baseHp": 9646,
+      "baseAtk": 223,
+      "baseDef": 580,
+      "ascensionStat": "Healing Bonus",
+      "ascensionValue": "18.5%"
+    },
+    "jean": {
+      "cid": 46,
+      "baseHp": 14695,
+      "baseAtk": 239,
+      "baseDef": 769,
+      "ascensionStat": "Healing Bonus",
+      "ascensionValue": "22.1%"
+    },
+    "kaedeharakazuha": {
+      "cid": 48,
+      "baseHp": 13348,
+      "baseAtk": 297,
+      "baseDef": 807,
+      "ascensionStat": "Elemental Mastery",
+      "ascensionValue": 115.2
+    },
+    "kaveh": {
+      "cid": 52,
+      "baseHp": 11962,
+      "baseAtk": 234,
+      "baseDef": 751,
+      "ascensionStat": "Elemental Mastery",
+      "ascensionValue": 96
+    },
+    "kirara": {
+      "cid": 55,
+      "baseHp": 12180,
+      "baseAtk": 223,
+      "baseDef": 546,
+      "ascensionStat": "HP",
+      "ascensionValue": "24.0%"
+    },
+    "kukishinobu": {
+      "cid": 58,
+      "baseHp": 12289,
+      "baseAtk": 212,
+      "baseDef": 751,
+      "ascensionStat": "HP",
+      "ascensionValue": "24.0%"
+    },
+    "lanyan": {
+      "cid": 59,
+      "baseHp": 9244,
+      "baseAtk": 251,
+      "baseDef": 580,
+      "ascensionStat": "ATK",
+      "ascensionValue": "24.0%"
+    },
+    "lauma": {
+      "cid": 60,
+      "baseHp": 10654,
+      "baseAtk": 255,
+      "baseDef": 669,
+      "ascensionStat": "Elemental Mastery",
+      "ascensionValue": 115.2
+    },
+    "layla": {
+      "cid": 61,
+      "baseHp": 11092,
+      "baseAtk": 217,
+      "baseDef": 655,
+      "ascensionStat": "HP",
+      "ascensionValue": "24.0%"
+    },
+    "linnea": {
+      "cid": 10000130,
+      "baseHp": 9895,
+      "baseAtk": 144,
+      "baseDef": 907,
+      "ascensionStat": "CRIT Rate",
+      "ascensionValue": "24.2%"
+    },
+    "lisa": {
+      "cid": 62,
+      "baseHp": 9570,
+      "baseAtk": 232,
+      "baseDef": 573,
+      "ascensionStat": "Elemental Mastery",
+      "ascensionValue": 96
+    },
+    "lumine": {
+      "cid": 10000007,
+      "baseHp": 10875,
+      "baseAtk": 212,
+      "baseDef": 683,
+      "ascensionStat": "ATK",
+      "ascensionValue": "24.0%"
+    },
+    "manekin": {
+      "cid": 10000117,
+      "baseHp": 10875,
+      "baseAtk": 212,
+      "baseDef": 683,
+      "ascensionStat": "ATK",
+      "ascensionValue": "24.0%"
+    },
+    "manekina": {
+      "cid": 10000118,
+      "baseHp": 10875,
+      "baseAtk": 212,
+      "baseDef": 683,
+      "ascensionStat": "ATK",
+      "ascensionValue": "24.0%"
+    },
+    "mika": {
+      "cid": 66,
+      "baseHp": 12506,
+      "baseAtk": 223,
+      "baseDef": 713,
+      "ascensionStat": "HP",
+      "ascensionValue": "24.0%"
+    },
+    "nahida": {
+      "cid": 69,
+      "baseHp": 10360,
+      "baseAtk": 299,
+      "baseDef": 630,
+      "ascensionStat": "Elemental Mastery",
+      "ascensionValue": 115.2
+    },
+    "nefer": {
+      "cid": 71,
+      "baseHp": 12704,
+      "baseAtk": 344,
+      "baseDef": 799,
+      "ascensionStat": "CRIT DMG",
+      "ascensionValue": "88.4%"
+    },
+    "nilou": {
+      "cid": 73,
+      "baseHp": 15185,
+      "baseAtk": 230,
+      "baseDef": 729,
+      "ascensionStat": "HP",
+      "ascensionValue": "28.8%"
+    },
+    "ningguang": {
+      "cid": 74,
+      "baseHp": 9787,
+      "baseAtk": 212,
+      "baseDef": 573,
+      "ascensionStat": "Geo DMG Bonus",
+      "ascensionValue": "24.0%"
+    },
+    "qiqi": {
+      "cid": 77,
+      "baseHp": 12368,
+      "baseAtk": 287,
+      "baseDef": 922,
+      "ascensionStat": "Healing Bonus",
+      "ascensionValue": "22.1%"
+    },
+    "sangonomiyakokomi": {
+      "cid": 81,
+      "baseHp": 13471,
+      "baseAtk": 234,
+      "baseDef": 657,
+      "ascensionStat": "Hydro DMG Bonus",
+      "ascensionValue": "28.8%"
+    },
+    "sayu": {
+      "cid": 82,
+      "baseHp": 11854,
+      "baseAtk": 244,
+      "baseDef": 745,
+      "ascensionStat": "Elemental Mastery",
+      "ascensionValue": 96
+    },
+    "shenhe": {
+      "cid": 84,
+      "baseHp": 12993,
+      "baseAtk": 304,
+      "baseDef": 830,
+      "ascensionStat": "ATK",
+      "ascensionValue": "28.8%"
+    },
+    "sigewinne": {
+      "cid": 86,
+      "baseHp": 13348,
+      "baseAtk": 193,
+      "baseDef": 500,
+      "ascensionStat": "HP",
+      "ascensionValue": "28.8%"
+    },
+    "sucrose": {
+      "cid": 88,
+      "baseHp": 9244,
+      "baseAtk": 170,
+      "baseDef": 703,
+      "ascensionStat": "Anemo DMG Bonus",
+      "ascensionValue": "24.0%"
+    },
+    "thoma": {
+      "cid": 90,
+      "baseHp": 10331,
+      "baseAtk": 202,
+      "baseDef": 751,
+      "ascensionStat": "ATK",
+      "ascensionValue": "24.0%"
+    },
+    "varesa": {
+      "cid": 98,
+      "baseHp": 12699,
+      "baseAtk": 356,
+      "baseDef": 782,
+      "ascensionStat": "CRIT Rate",
+      "ascensionValue": "24.2%"
+    },
+    "varka": {
+      "cid": 99,
+      "baseHp": 12613,
+      "baseAtk": 353,
+      "baseDef": 795,
+      "ascensionStat": "CRIT DMG",
+      "ascensionValue": "88.4%"
+    },
+    "venti": {
+      "cid": 100,
+      "baseHp": 10531,
+      "baseAtk": 263,
+      "baseDef": 669,
+      "ascensionStat": "Energy Recharge",
+      "ascensionValue": "132.0%"
+    },
+    "xianyun": {
+      "cid": 104,
+      "baseHp": 10409,
+      "baseAtk": 335,
+      "baseDef": 573,
+      "ascensionStat": "ATK",
+      "ascensionValue": "28.8%"
+    },
+    "xilonen": {
+      "cid": 106,
+      "baseHp": 12405,
+      "baseAtk": 275,
+      "baseDef": 930,
+      "ascensionStat": "DEF",
+      "ascensionValue": "36.0%"
+    },
+    "xinyan": {
+      "cid": 108,
+      "baseHp": 11201,
+      "baseAtk": 249,
+      "baseDef": 799,
+      "ascensionStat": "ATK",
+      "ascensionValue": "24.0%"
+    },
+    "yaoyao": {
+      "cid": 111,
+      "baseHp": 12289,
+      "baseAtk": 212,
+      "baseDef": 751,
+      "ascensionStat": "HP",
+      "ascensionValue": "24.0%"
+    },
+    "yumemizukimizuki": {
+      "cid": 114,
+      "baseHp": 12736,
+      "baseAtk": 215,
+      "baseDef": 757,
+      "ascensionStat": "Elemental Mastery",
+      "ascensionValue": 115.2
+    },
+    "yunjin": {
+      "cid": 115,
+      "baseHp": 10657,
+      "baseAtk": 191,
+      "baseDef": 734,
+      "ascensionStat": "Energy Recharge",
+      "ascensionValue": "126.7%"
+    },
+    "zhongli": {
+      "cid": 116,
+      "baseHp": 14695,
+      "baseAtk": 251,
+      "baseDef": 738,
+      "ascensionStat": "Geo DMG Bonus",
+      "ascensionValue": "28.8%"
+    },
+    "zibai": {
+      "cid": 117,
+      "baseHp": 12919,
+      "baseAtk": 225,
+      "baseDef": 957,
+      "ascensionStat": "CRIT DMG",
+      "ascensionValue": "88.4%"
+    }
+  }
+}

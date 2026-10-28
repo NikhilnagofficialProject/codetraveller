@@ -44,7 +44,29 @@ const SummarySection = ({ character, assets }) => {
                 <div className="summary-content">
                     <div className="summary-item mb-2">
                         <div className="label">Playstyle:</div>
-                        <div className="value fw-bold text-primary">{character.role || 'General Build'}</div>
+                        <div className="d-flex align-items-center gap-2 mt-1">
+                            {(() => {
+                                const roles = character.officialRoles && character.officialRoles.length > 0 
+                                    ? character.officialRoles 
+                                    : [character.role || ''];
+                                
+                                return roles.map((r, idx) => {
+                                    const roleStr = r.toLowerCase();
+                                    let iconKey = '';
+                                            if (roleStr.includes('dps') && !roleStr.includes('sub')) iconKey = 'dps';
+                                            else if (roleStr.includes('sub') || roleStr.includes('off')) iconKey = 'off-field';
+                                            else if (roleStr.includes('healer')) iconKey = 'healer';
+                                            else if (roleStr.includes('tank') || roleStr.includes('shield') || roleStr.includes('shielder')) iconKey = 'tank';
+                                            else if (roleStr.includes('support') || roleStr.includes('buffer')) iconKey = 'support';
+                                            
+                                            const iconUrl = assets?.roleIcons?.[iconKey];
+                                            return iconUrl && <img key={idx} src={iconUrl} alt={r} style={{ width: '24px', height: '24px', filter: 'brightness(1.1)' }} title={r} />;
+                                        });
+                                    })()}
+                                    <div className="value fw-bold text-primary">
+                                        {character.role || 'General Build'}
+                                    </div>
+                                </div>
                     </div>
 
                     <div className="description-text small opacity-75 mb-3" style={{ whiteSpace: 'pre-line' }}>
@@ -86,6 +108,32 @@ const SummarySection = ({ character, assets }) => {
                     ))}
                 </div>
             </div>
+
+            {/* Base Stats Card (Lv. 90) */}
+            {character.baseStats && (
+                <div className="card stats-card side-col p-3">
+                    <div className="small-title mb-3">BASE STATS (LV.90)</div>
+                    <div className="stats-list d-flex flex-column gap-2">
+                        {[
+                            { label: 'Base HP', value: character.baseStats.baseHp, icon: 'hp' },
+                            { label: 'Base ATK', value: character.baseStats.baseAtk, icon: 'atk' },
+                            { label: 'Base DEF', value: character.baseStats.baseDef, icon: 'def' },
+                            { label: character.baseStats.ascensionStat, value: character.baseStats.ascensionValue, icon: character.baseStats.ascensionStat?.toLowerCase() }
+                        ].map((s, idx) => {
+                            const iconUrl = assets?.stats?.[s.icon] || assets?.stats?.[s.icon.replace(' base', '')] || assets?.stats?.[s.icon.replace(' bonus', '')];
+                            return (
+                                <div key={idx} className="d-flex align-items-center justify-content-between border-bottom border-white border-opacity-10 pb-1">
+                                    <div className="d-flex align-items-center gap-2">
+                                        {iconUrl && <img src={iconUrl} alt="" style={{ width: '16px', height: '16px', filter: 'brightness(0) invert(1)' }} />}
+                                        <div className="text-white-50" style={{ fontSize: '11px' }}>{s.label}</div>
+                                    </div>
+                                    <div className="fw-bold" style={{ fontSize: '11px' }}>{s.value}</div>
+                                </div>
+                            );
+                        })}
+                    </div>
+                </div>
+            )}
         </div>
     );
 };

@@ -39,12 +39,12 @@ const BirthdayCalendar = ({ assets, onViewAll }) => {
     return (
         <div className="container mt-2 mb-4 animate-fade-in">
             <div 
-                className="rounded-4 p-3 d-flex flex-column flex-md-row align-items-center justify-content-between gap-3"
+                className="rounded-4 p-3 d-flex flex-column flex-md-row align-items-center justify-content-between gap-3 glass"
                 style={{ 
-                    background: 'rgba(255, 255, 255, 0.03)', 
+                    background: 'var(--glass-bg)', 
                     backdropFilter: 'blur(10px)',
-                    border: '1px solid rgba(255, 255, 255, 0.05)',
-                    boxShadow: '0 8px 32px rgba(0,0,0,0.2)'
+                    border: '1px solid var(--glass-border)',
+                    boxShadow: '0 8px 32px rgba(0,0,0,0.1)'
                 }}
             >
                 <div className="d-flex align-items-center gap-2 flex-shrink-0">
@@ -74,7 +74,7 @@ const BirthdayCalendar = ({ assets, onViewAll }) => {
                                             className="rounded-circle border border-2 border-primary"
                                             style={{ width: '45px', height: '45px', objectFit: 'cover', padding: '2px' }}
                                         />
-                                        <div className="position-absolute bottom-0 end-0 bg-primary rounded-circle" style={{ width: '12px', height: '12px', border: '2px solid #0c0f1d' }}></div>
+                                        <div className="position-absolute bottom-0 end-0 bg-primary rounded-circle" style={{ width: '12px', height: '12px', border: '2px solid var(--bg-deep)' }}></div>
                                     </div>
                                     <div className="overflow-hidden d-none d-md-block" style={{ minWidth: '80px' }}>
                                         <div className="fw-bold text-white small text-truncate" style={{ fontSize: '0.85rem' }}>{bday.character}</div>

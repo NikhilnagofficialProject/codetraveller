@@ -15,7 +15,9 @@ const ArtisticView = ({
     const monthIndex = currentDate.getMonth();
     const monthPrefix = monthNames[monthIndex].toLowerCase().substring(0, 3);
     const wallpaperData = assets?.wallpapers?.[monthPrefix];
-    const wallpaper = isMobile ? wallpaperData?.mobile : wallpaperData?.windows;
+    const wallpaper = isMobile 
+        ? (wallpaperData?.mobile || wallpaperData?.windows) 
+        : (wallpaperData?.windows || wallpaperData?.mobile);
 
     const currentMonthBirthdays = [];
     Object.entries(events).forEach(([key, dayEvents]) => {
@@ -34,7 +36,7 @@ const ArtisticView = ({
             className="position-relative rounded-4 overflow-hidden shadow-lg mx-auto d-flex flex-column justify-content-between p-3"
             style={{
                 aspectRatio: isMobile ? '8/16' : artisticRatio,
-                background: wallpaper ? `url(${wallpaper}) center/cover no-repeat` : '#151725',
+                background: wallpaper ? `url("${wallpaper}") center/cover no-repeat` : '#151725',
                 width: '100%',
                 maxWidth: isMobile ? '440px' : (artisticRatio === '12/9' ? '900px' : '1200px'),
                 minHeight: isMobile ? '700px' : '600px'

@@ -90,26 +90,58 @@ const GearSection = ({ character, assets }) => {
                             };
 
                             if (parts.length > 1 && is2pc) {
+                                // Smart variant mapping for "Choose Two" with same stats
+                                const STAT_VARIANTS = {
+                                    "Gladiator's Finale": ["Shimenawa's Reminiscence", "Vermillion Hereafter", "Echoes of an Offering", "Nighttime Whispers in the Echoing Woods", "A Day Carved From Rising Winds", "Fragment of Harmonic Whimsy"],
+                                    "Wanderer's Troupe": ["Gilded Dreams", "Flower of Paradise Lost", "Aubade of Morningstar and Moon", "Night of the Sky's Unveiling"],
+                                    "Emblem of Severed Fate": ["Silken Moon's Serenade", "The Exile", "Scholar"],
+                                    "Viridescent Venerer": ["Desert Pavilion Chronicle"],
+                                    "Heart of Depth": ["Nymph's Dream"],
+                                    "Tenacity of the Millelith": ["Vourukasha's Glow"],
+                                    "Crimson Witch of Flames": ["Unfinished Reverie"],
+                                    "Deepwood Memories": ["Gilded Dreams"]
+                                };
+
+                                const uniqueParts = [];
+                                const usedIcons = new Set();
+
+                                parts.forEach((p, idx) => {
+                                    let artName = cleanArtifactLabelV2(p);
+                                    let iconUrl = getArtifactIcon(artName);
+
+                                    // If this icon is already used in this pill, try a variant
+                                    if (usedIcons.has(iconUrl) && STAT_VARIANTS[artName]) {
+                                        for (const variant of STAT_VARIANTS[artName]) {
+                                            const vUrl = getArtifactIcon(variant);
+                                            if (vUrl && !usedIcons.has(vUrl)) {
+                                                artName = variant;
+                                                iconUrl = vUrl;
+                                                break;
+                                            }
+                                        }
+                                    }
+
+                                    usedIcons.add(iconUrl);
+                                    uniqueParts.push({ name: artName, url: iconUrl });
+                                });
+
                                 return (
                                     <div key={i} className="artifact-pill combo-pill text-center">
                                         <div className="d-flex justify-content-center mb-1">
-                                            {parts.slice(0, 3).map((p, idx) => {
-                                                const url = getArtifactIcon(cleanArtifactLabelV2(p));
-                                                return (
-                                                    <div 
-                                                        key={idx} 
-                                                        className="art-icon-box mini pointer-hover" 
-                                                        style={{ width: '30px', height: '30px', marginLeft: idx > 0 ? '-10px' : '0' }}
-                                                        onClick={() => navigate(`/artifacts/${cleanArtifactLabelV2(p)}`)}
-                                                        title={`See who else uses ${cleanArtifactLabelV2(p)}`}
-                                                    >
-                                                        <img src={url || getPlaceholder(30, 30, '?')} alt="" className="w-100 h-100 object-contain rounded-circle" crossOrigin="anonymous" />
-                                                    </div>
-                                                );
-                                            })}
+                                            {uniqueParts.slice(0, 3).map((p, idx) => (
+                                                <div 
+                                                    key={idx} 
+                                                    className="art-icon-box mini pointer-hover" 
+                                                    style={{ width: '30px', height: '30px', marginLeft: idx > 0 ? '-10px' : '0' }}
+                                                    onClick={() => navigate(`/artifacts/${p.name}`)}
+                                                    title={`See who else uses ${p.name}`}
+                                                >
+                                                    <img src={p.url || getPlaceholder(30, 30, '?')} alt="" className="w-100 h-100 object-contain rounded-circle" crossOrigin="anonymous" />
+                                                </div>
+                                            ))}
                                         </div>
                                         <div className="art-name-label opacity-75 fw-bold">
-                                            {parts.map(getDisplayName).join(' / ')}
+                                            {uniqueParts.map(p => getDisplayName(p.name)).join(' / ')}
                                         </div>
                                         {artNote && <div className="artifact-note mx-auto">{artNote}</div>}
                                     </div>
